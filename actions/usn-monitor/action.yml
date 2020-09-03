@@ -1,0 +1,15 @@
+name: 'USN Monitor'
+
+description: |
+  Monitors for new USNS and adds them to main USN list.
+inputs:
+  usn_list_path:
+    description: 'Path to USN list'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+  - "--usn-path"
+  - ${{ inputs.usn_list_path }}
