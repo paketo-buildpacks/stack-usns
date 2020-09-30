@@ -1,1 +1,222 @@
-[]
+[
+    {
+        "title": "USN-4560-1: Gon gem vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4560-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25739",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25739",
+                "description": "An issue was discovered in the gon gem before gon-6.4.0 for Ruby. MultiJson does not honor the escape_mode parameter to escape fields as an XSS protection mechanism. To mitigate, json_dumper.rb in gon now does escaping for XSS by default without relying on MultiJson."
+            }
+        ],
+        "affected_packages": [
+            "ruby-gon"
+        ]
+    },
+    {
+        "title": "USN-4559-1: Samba update",
+        "link": "https://ubuntu.com/security/notices/USN-4559-1",
+        "cves": [
+            {
+                "title": "CVE-2020-1472",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1472",
+                "description": "An elevation of privilege vulnerability exists when an attacker establishes a vulnerable Netlogon secure channel connection to a domain controller, using the Netlogon Remote Protocol (MS-NRPC), aka 'Netlogon Elevation of Privilege Vulnerability'."
+            }
+        ],
+        "affected_packages": [
+            "samba"
+        ]
+    },
+    {
+        "title": "USN-4558-1: libapreq2 vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4558-1",
+        "cves": [
+            {
+                "title": "CVE-2019-12412",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12412",
+                "description": "[Remotely exploitable null pointer dereference bug]"
+            }
+        ],
+        "affected_packages": [
+            "libapreq2"
+        ]
+    },
+    {
+        "title": "USN-4557-1: Tomcat vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4557-1",
+        "cves": [
+            {
+                "title": "CVE-2016-6797",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-6797",
+                "description": "The ResourceLinkFactory implementation in Apache Tomcat 9.0.0.M1 to 9.0.0.M9, 8.5.0 to 8.5.4, 8.0.0.RC1 to 8.0.36, 7.0.0 to 7.0.70 and 6.0.0 to 6.0.45 did not limit web application access to global JNDI resources to those resources explicitly linked to the web application. Therefore, it was possible for a web application to access any global JNDI resource whether an explicit ResourceLink had been configured or not."
+            },
+            {
+                "title": "CVE-2016-6816",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-6816",
+                "description": "The code in Apache Tomcat 9.0.0.M1 to 9.0.0.M11, 8.5.0 to 8.5.6, 8.0.0.RC1 to 8.0.38, 7.0.0 to 7.0.72, and 6.0.0 to 6.0.47 that parsed the HTTP request line permitted invalid characters. This could be exploited, in conjunction with a proxy that also permitted the invalid characters but with a different interpretation, to inject data into the HTTP response. By manipulating the HTTP response the attacker could poison a web-cache, perform an XSS attack and/or obtain sensitive information from requests other then their own."
+            },
+            {
+                "title": "CVE-2016-6794",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-6794",
+                "description": "When a SecurityManager is configured, a web application's ability to read system properties should be controlled by the SecurityManager. In Apache Tomcat 9.0.0.M1 to 9.0.0.M9, 8.5.0 to 8.5.4, 8.0.0.RC1 to 8.0.36, 7.0.0 to 7.0.70, 6.0.0 to 6.0.45 the system property replacement feature for configuration files could be used by a malicious web application to bypass the SecurityManager and read system properties that should not be visible."
+            },
+            {
+                "title": "CVE-2016-5018",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-5018",
+                "description": "In Apache Tomcat 9.0.0.M1 to 9.0.0.M9, 8.5.0 to 8.5.4, 8.0.0.RC1 to 8.0.36, 7.0.0 to 7.0.70 and 6.0.0 to 6.0.45 a malicious web application was able to bypass a configured SecurityManager via a Tomcat utility method that was accessible to web applications."
+            },
+            {
+                "title": "CVE-2016-8735",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-8735",
+                "description": "Remote code execution is possible with Apache Tomcat before 6.0.48, 7.x before 7.0.73, 8.x before 8.0.39, 8.5.x before 8.5.7, and 9.x before 9.0.0.M12 if JmxRemoteLifecycleListener is used and an attacker can reach JMX ports. The issue exists because this listener wasn't updated for consistency with the CVE-2016-3427 Oracle patch that affected credential types."
+            },
+            {
+                "title": "CVE-2016-6796",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-6796",
+                "description": "A malicious web application running on Apache Tomcat 9.0.0.M1 to 9.0.0.M9, 8.5.0 to 8.5.4, 8.0.0.RC1 to 8.0.36, 7.0.0 to 7.0.70 and 6.0.0 to 6.0.45 was able to bypass a configured SecurityManager via manipulation of the configuration parameters for the JSP Servlet."
+            },
+            {
+                "title": "CVE-2016-0762",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-0762",
+                "description": "The Realm implementations in Apache Tomcat versions 9.0.0.M1 to 9.0.0.M9, 8.5.0 to 8.5.4, 8.0.0.RC1 to 8.0.36, 7.0.0 to 7.0.70 and 6.0.0 to 6.0.45 did not process the supplied password if the supplied user name did not exist. This made a timing attack possible to determine valid user names. Note that the default configuration includes the LockOutRealm which makes exploitation of this vulnerability harder."
+            }
+        ],
+        "affected_packages": [
+            "tomcat6"
+        ]
+    },
+    {
+        "title": "USN-4556-1: netqmail vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4556-1",
+        "cves": [
+            {
+                "title": "CVE-2005-1513",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2005-1513",
+                "description": "Integer overflow in the stralloc_readyplus function in qmail, when running on 64 bit platforms with a large amount of virtual memory, allows remote attackers to cause a denial of service and possibly execute arbitrary code via a large SMTP request."
+            },
+            {
+                "title": "CVE-2005-1514",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2005-1514",
+                "description": "commands.c in qmail, when running on 64 bit platforms with a large amount of virtual memory, allows remote attackers to cause a denial of service and possibly execute arbitrary code via a long SMTP command without a space character, which causes an array to be referenced with a negative index."
+            },
+            {
+                "title": "CVE-2005-1515",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2005-1515",
+                "description": "Integer signedness error in the qmail_put and substdio_put functions in qmail, when running on 64 bit platforms with a large amount of virtual memory, allows remote attackers to cause a denial of service and possibly execute arbitrary code via a large number of SMTP RCPT TO commands."
+            },
+            {
+                "title": "CVE-2020-3811",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3811",
+                "description": "qmail-verify as used in netqmail 1.06 is prone to a mail-address verification bypass vulnerability."
+            },
+            {
+                "title": "CVE-2020-3812",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3812",
+                "description": "qmail-verify as used in netqmail 1.06 is prone to an information disclosure vulnerability. A local attacker can test for the existence of files and directories anywhere in the filesystem because qmail-verify runs as root and tests for the existence of files in the attacker's home directory, without dropping its privileges first."
+            }
+        ],
+        "affected_packages": [
+            "netqmail"
+        ]
+    },
+    {
+        "title": "USN-4547-2: SSVNC vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4547-2",
+        "cves": [
+            {
+                "title": "CVE-2018-20020",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20020",
+                "description": "LibVNC before commit 7b1ef0ffc4815cab9a96c7278394152bdc89dc4d contains heap out-of-bound write vulnerability inside structure in VNC client code that can result remote code execution"
+            },
+            {
+                "title": "CVE-2018-20021",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20021",
+                "description": "LibVNC before commit c3115350eb8bb635d0fdb4dbbb0d0541f38ed19c contains a CWE-835: Infinite loop vulnerability in VNC client code. Vulnerability allows attacker to consume excessive amount of resources like CPU and RAM"
+            },
+            {
+                "title": "CVE-2018-20022",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20022",
+                "description": "LibVNC before 2f5b2ad1c6c99b1ac6482c95844a84d66bb52838 contains multiple weaknesses CWE-665: Improper Initialization vulnerability in VNC client code that allows attacker to read stack memory and can be abuse for information disclosure. Combined with another vulnerability, it can be used to leak stack memory layout and in bypassing ASLR"
+            },
+            {
+                "title": "CVE-2018-20024",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20024",
+                "description": "LibVNC before commit 4a21bbd097ef7c44bb000c3bd0907f96a10e4ce7 contains null pointer dereference in VNC client code that can result DoS."
+            }
+        ],
+        "affected_packages": [
+            "ssvnc"
+        ]
+    },
+    {
+        "title": "USN-4554-1: libPGF vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4554-1",
+        "cves": [
+            {
+                "title": "CVE-2015-6673",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2015-6673",
+                "description": "Use-after-free vulnerability in Decoder.cpp in libpgf before 6.15.32."
+            }
+        ],
+        "affected_packages": [
+            "libpgf"
+        ]
+    },
+    {
+        "title": "USN-4552-1: Pam-python vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4552-1",
+        "cves": [
+            {
+                "title": "CVE-2019-16729",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16729",
+                "description": "pam-python before 1.0.7-1 has an issue in regard to the default environment variable handling of Python, which could allow for local root escalation in certain PAM setups."
+            }
+        ],
+        "affected_packages": [
+            "pam-python"
+        ]
+    },
+    {
+        "title": "USN-4553-1: Teeworlds vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4553-1",
+        "cves": [
+            {
+                "title": "CVE-2020-12066",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12066",
+                "description": "CServer::SendMsg in engine/server/server.cpp in Teeworlds 0.7.x before 0.7.5 allows remote attackers to shut down the server."
+            }
+        ],
+        "affected_packages": [
+            "teeworlds"
+        ]
+    },
+    {
+        "title": "USN-4551-1: Squid vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4551-1",
+        "cves": [
+            {
+                "title": "CVE-2020-15049",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15049",
+                "description": "An issue was discovered in http/ContentLengthInterpreter.cc in Squid before 4.12 and 5.x before 5.0.3. A Request Smuggling and Poisoning attack can succeed against the HTTP cache. The client sends an HTTP request with a Content-Length header containing \"+\\ \"-\" or an uncommon shell whitespace character prefix to the length field-value."
+            },
+            {
+                "title": "CVE-2020-15810",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15810",
+                "description": "An issue was discovered in Squid before 4.13 and 5.x before 5.0.4. Due to incorrect data validation, HTTP Request Smuggling attacks may succeed against HTTP and HTTPS traffic. This leads to cache poisoning. This allows any client, including browser scripts, to bypass local security and poison the proxy cache and any downstream caches with content from an arbitrary source. When configured for relaxed header parsing (the default), Squid relays headers containing whitespace characters to upstream servers. When this occurs as a prefix to a Content-Length header, the frame length specified will be ignored by Squid (allowing for a conflicting length to be used from another Content-Length header) but relayed upstream."
+            },
+            {
+                "title": "CVE-2020-15811",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15811",
+                "description": "An issue was discovered in Squid before 4.13 and 5.x before 5.0.4. Due to incorrect data validation, HTTP Request Splitting attacks may succeed against HTTP and HTTPS traffic. This leads to cache poisoning. This allows any client, including browser scripts, to bypass local security and poison the browser cache and any downstream caches with content from an arbitrary source. Squid uses a string search instead of parsing the Transfer-Encoding header to find chunked encoding. This allows an attacker to hide a second request inside Transfer-Encoding: it is interpreted by Squid as chunked and split out into a second request delivered upstream. Squid will then deliver two distinct responses to the client, corrupting any downstream caches."
+            },
+            {
+                "title": "CVE-2020-24606",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24606",
+                "description": "Squid before 4.13 and 5.x before 5.0.4 allows a trusted peer to perform Denial of Service by consuming all available CPU cycles during handling of a crafted Cache Digest response message. This only occurs when cache_peer is used with the cache digests feature. The problem exists because peerDigestHandleReply() livelocking in peer_digest.cc mishandles EOF."
+            }
+        ],
+        "affected_packages": [
+            "squid3"
+        ]
+    }
+]
