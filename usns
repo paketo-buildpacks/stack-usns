@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4563-1: NTP vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4563-1",
+        "cves": [
+            {
+                "title": "CVE-2019-8936",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-8936",
+                "description": "NTP through 4.2.8p12 has a NULL Pointer Dereference."
+            }
+        ],
+        "affected_packages": [
+            "ntp"
+        ]
+    },
+    {
         "title": "USN-4562-1: kramdown vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4562-1",
         "cves": [
