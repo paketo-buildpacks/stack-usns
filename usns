@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4565-1: OpenConnect vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4565-1",
+        "cves": [
+            {
+                "title": "CVE-2019-16239",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16239",
+                "description": "process_http_response in OpenConnect before 8.05 has a Buffer Overflow when a malicious server uses HTTP chunked encoding with crafted chunk sizes."
+            }
+        ],
+        "affected_packages": [
+            "openconnect"
+        ]
+    },
+    {
         "title": "USN-4564-1: Apache Tika vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4564-1",
         "cves": [
