@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4566-1: Cyrus IMAP Server vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4566-1",
+        "cves": [
+            {
+                "title": "CVE-2019-11356",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11356",
+                "description": "The CalDAV feature in httpd in Cyrus IMAP 2.5.x through 2.5.12 and 3.0.x through 3.0.9 allows remote attackers to execute arbitrary code via a crafted HTTP PUT operation for an event with a long iCalendar property name."
+            },
+            {
+                "title": "CVE-2019-19783",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19783",
+                "description": "An issue was discovered in Cyrus IMAP before 2.5.15, 3.0.x before 3.0.13, and 3.1.x through 3.1.8. If sieve script uploading is allowed (3.x) or certain non-default sieve options are enabled (2.x), a user with a mail account on the service can use a sieve script containing a fileinto directive to create any mailbox with administrator privileges, because of folder mishandling in autosieve_createfolder() in imap/lmtp_sieve.c."
+            }
+        ],
+        "affected_packages": [
+            "cyrus-imapd"
+        ]
+    },
+    {
         "title": "USN-4571-1: rack-cors vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4571-1",
         "cves": [
