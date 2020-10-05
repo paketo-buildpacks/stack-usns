@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4567-1: OpenDMARC vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4567-1",
+        "cves": [
+            {
+                "title": "CVE-2019-16378",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16378",
+                "description": "OpenDMARC through 1.3.2 and 1.4.x through 1.4.0-Beta1 is prone to a signature-bypass vulnerability with multiple From: addresses, which might affect applications that consider a domain name to be relevant to the origin of an e-mail message."
+            }
+        ],
+        "affected_packages": [
+            "opendmarc"
+        ]
+    },
+    {
         "title": "USN-4566-1: Cyrus IMAP Server vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4566-1",
         "cves": [
