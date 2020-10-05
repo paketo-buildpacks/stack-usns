@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4571-1: rack-cors vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4571-1",
+        "cves": [
+            {
+                "title": "CVE-2019-18978",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18978",
+                "description": "An issue was discovered in the rack-cors (aka Rack CORS Middleware) gem before 1.0.4 for Ruby. It allows ../ directory traversal to access private resources because resource matching does not ensure that pathnames are in a canonical format."
+            }
+        ],
+        "affected_packages": [
+            "ruby-rack-cors"
+        ]
+    },
+    {
         "title": "USN-4565-1: OpenConnect vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4565-1",
         "cves": [
