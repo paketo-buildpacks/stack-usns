@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4564-1: Apache Tika vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4564-1",
+        "cves": [
+            {
+                "title": "CVE-2020-1951",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1951",
+                "description": "A carefully crafted or corrupt PSD file can cause an infinite loop in Apache Tika's PSDParser in versions 1.0-1.23."
+            },
+            {
+                "title": "CVE-2020-1950",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1950",
+                "description": "A carefully crafted or corrupt PSD file can cause excessive memory usage in Apache Tika's PSDParser in versions 1.0-1.23."
+            }
+        ],
+        "affected_packages": [
+            "tika"
+        ]
+    },
+    {
         "title": "USN-4570-1: urllib3 vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4570-1",
         "cves": [
