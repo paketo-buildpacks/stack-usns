@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4570-1: urllib3 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4570-1",
+        "cves": [
+            {
+                "title": "CVE-2020-26137",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26137",
+                "description": "urllib3 before 1.25.9 allows CRLF injection if the attacker controls the request method"
+            }
+        ],
+        "affected_packages": [
+            "python-urllib3"
+        ]
+    },
+    {
         "title": "USN-4568-1: Brotli vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4568-1",
         "cves": [
