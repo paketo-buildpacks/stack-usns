@@ -1,5 +1,49 @@
 [
     {
+        "title": "USN-4573-1: Vino vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4573-1",
+        "cves": [
+            {
+                "title": "CVE-2014-6053",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6053",
+                "description": "The rfbProcessClientNormalMessage function in libvncserver/rfbserver.c in LibVNCServer 0.9.9 and earlier does not properly handle attempts to send a large amount of ClientCutText data, which allows remote attackers to cause a denial of service (memory consumption or daemon crash) via a crafted message that is processed by using a single unchecked malloc."
+            },
+            {
+                "title": "CVE-2018-7225",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7225",
+                "description": "An issue was discovered in LibVNCServer through 0.9.11. rfbProcessClientNormalMessage() in rfbserver.c does not sanitize msg.cct.length, leading to access to uninitialized and potentially sensitive data or possibly unspecified other impact (e.g., an integer overflow) via specially crafted VNC packets."
+            },
+            {
+                "title": "CVE-2019-15681",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15681",
+                "description": "LibVNC commit before d01e1bb4246323ba6fcee3b82ef1faa9b1dac82a contains a memory leak (CWE-655) in VNC server code, which allow an attacker to read stack memory and can be abused for information disclosure. Combined with another vulnerability, it can be used to leak stack memory and bypass ASLR. This attack appear to be exploitable via network connectivity. These vulnerabilities have been fixed in commit d01e1bb4246323ba6fcee3b82ef1faa9b1dac82a."
+            },
+            {
+                "title": "CVE-2020-14404",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14404",
+                "description": "An issue was discovered in LibVNCServer before 0.9.13. libvncserver/rre.c allows out-of-bounds access via encodings."
+            },
+            {
+                "title": "CVE-2020-14402",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14402",
+                "description": "An issue was discovered in LibVNCServer before 0.9.13. libvncserver/corre.c allows out-of-bounds access via encodings."
+            },
+            {
+                "title": "CVE-2020-14397",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14397",
+                "description": "An issue was discovered in LibVNCServer before 0.9.13. libvncserver/rfbregion.c has a NULL pointer dereference."
+            },
+            {
+                "title": "CVE-2020-14403",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14403",
+                "description": "An issue was discovered in LibVNCServer before 0.9.13. libvncserver/hextile.c allows out-of-bounds access via encodings."
+            }
+        ],
+        "affected_packages": [
+            "vino"
+        ]
+    },
+    {
         "title": "USN-4572-1: Spice vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4572-1",
         "cves": [
