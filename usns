@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4572-2: Spice vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4572-2",
+        "cves": [
+            {
+                "title": "CVE-2020-14355",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14355",
+                "description": "Multiple buffer overflow vulnerabilities were found in QUIC image decoding"
+            }
+        ],
+        "affected_packages": [
+            "spice"
+        ]
+    },
+    {
         "title": "USN-4573-1: Vino vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4573-1",
         "cves": [
