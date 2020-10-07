@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4574-1: libseccomp-golang vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4574-1",
+        "cves": [
+            {
+                "title": "CVE-2017-18367",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-18367",
+                "description": "libseccomp-golang 0.9.0 and earlier incorrectly generates BPFs that OR multiple arguments rather than ANDing them. A process running under a restrictive seccomp filter that specified multiple syscall arguments could bypass intended access restrictions by specifying a single matching argument."
+            }
+        ],
+        "affected_packages": [
+            "golang-github-seccomp-libseccomp-golang"
+        ]
+    },
+    {
         "title": "USN-4572-2: Spice vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4572-2",
         "cves": [
