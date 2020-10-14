@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4582-1: Vim vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4582-1",
+        "cves": [
+            {
+                "title": "CVE-2019-20807",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20807",
+                "description": "In Vim before 8.1.0881, users can circumvent the rvim restricted mode and execute arbitrary OS commands via scripting interfaces (e.g., Python, Ruby, or Lua)."
+            },
+            {
+                "title": "CVE-2017-17087",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17087",
+                "description": "fileio.c in Vim prior to 8.0.1263 sets the group ownership of a .swp file to the editor's primary group (which may be different from the group ownership of the original file), which allows local users to obtain sensitive information by leveraging an applicable group membership, as demonstrated by /etc/shadow owned by root:shadow mode 0640, but /etc/.shadow.swp owned by root:users mode 0640, a different vulnerability than CVE-2017-1000382."
+            }
+        ],
+        "affected_packages": [
+            "vim"
+        ]
+    },
+    {
         "title": "USN-4581-1: Python vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4581-1",
         "cves": [
