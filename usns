@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-4581-1: Python vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4581-1",
+        "cves": [
+            {
+                "title": "CVE-2020-26116",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26116",
+                "description": "http.client in Python 3.x before 3.5.10, 3.6.x before 3.6.12, 3.7.x before 3.7.9, and 3.8.x before 3.8.5 allows CRLF injection if the attacker controls the HTTP request method, as demonstrated by inserting CR and LF control characters in the first argument of HTTPConnection.request."
+            }
+        ],
+        "affected_packages": [
+            "python2.7",
+            "python3.4",
+            "python3.5",
+            "python3.6"
+        ]
+    },
+    {
         "title": "USN-4577-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4577-1",
         "cves": [
