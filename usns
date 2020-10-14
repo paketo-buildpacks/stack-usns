@@ -1,5 +1,185 @@
 [
     {
+        "title": "USN-4577-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4577-1",
+        "cves": [
+            {
+                "title": "CVE-2020-16119",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16119",
+                "description": "DCCP CCID structure use-after-free -- reusing a DCCP socket with an attached dccps_hc_tx_ccid as a listener, it will be used after being released, leading to denial of service (system crash) or possibly code execution."
+            },
+            {
+                "title": "CVE-2020-16120",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16120",
+                "description": "It was discovered when using shiftfs with overlayfs and fuse in an unprivileged user namespace, it was possible to receive the data of files that were not readable by the mounter before setting up permissions. It was later found that by only using unprivileged user namespaces and overlayfs, it was possible to have a file not readable by the unprivileged user to be copied to a mountpoint controlled by such user, like a removable device."
+            }
+        ],
+        "affected_packages": [
+            "linux-gke-5.0",
+            "linux-gke-5.3",
+            "linux-hwe",
+            "linux-oem-osp1",
+            "linux-raspi2-5.3"
+        ]
+    },
+    {
+        "title": "USN-4580-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4580-1",
+        "cves": [
+            {
+                "title": "CVE-2020-16119",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16119",
+                "description": "DCCP CCID structure use-after-free -- reusing a DCCP socket with an attached dccps_hc_tx_ccid as a listener, it will be used after being released, leading to denial of service (system crash) or possibly code execution."
+            }
+        ],
+        "affected_packages": [
+            "linux",
+            "linux-lts-trusty"
+        ]
+    },
+    {
+        "title": "USN-4579-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4579-1",
+        "cves": [
+            {
+                "title": "CVE-2020-16119",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16119",
+                "description": "DCCP CCID structure use-after-free -- reusing a DCCP socket with an attached dccps_hc_tx_ccid as a listener, it will be used after being released, leading to denial of service (system crash) or possibly code execution."
+            },
+            {
+                "title": "CVE-2020-25285",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25285",
+                "description": "A race condition between hugetlb sysctl handlers in mm/hugetlb.c in the Linux kernel before 5.8.8 could be used by local attackers to corrupt memory, cause a NULL pointer dereference, or possibly have unspecified other impact, aka CID-17743798d812."
+            },
+            {
+                "title": "CVE-2020-14314",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14314",
+                "description": "A memory out-of-bounds read flaw was found in the Linux kernel before 5.9-rc2 with the ext3/ext4 file system, in the way it accesses a directory with broken indexing. This flaw allows a local user to crash the system if the directory exists. The highest threat from this vulnerability is to system availability."
+            },
+            {
+                "title": "CVE-2018-10322",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-10322",
+                "description": "The xfs_dinode_verify function in fs/xfs/libxfs/xfs_inode_buf.c in the Linux kernel through 4.16.3 allows local users to cause a denial of service (xfs_ilock_attr_map_shared invalid pointer dereference) via a crafted xfs image."
+            }
+        ],
+        "affected_packages": [
+            "linux",
+            "linux-aws",
+            "linux-kvm",
+            "linux-lts-xenial",
+            "linux-raspi2",
+            "linux-snapdragon"
+        ]
+    },
+    {
+        "title": "USN-4578-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4578-1",
+        "cves": [
+            {
+                "title": "CVE-2020-26088",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26088",
+                "description": "A missing CAP_NET_RAW check in NFC socket creation in net/nfc/rawsock.c in the Linux kernel before 5.8.2 could be used by local attackers to create raw sockets, bypassing security mechanisms, aka CID-26896f01467a."
+            },
+            {
+                "title": "CVE-2018-10322",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-10322",
+                "description": "The xfs_dinode_verify function in fs/xfs/libxfs/xfs_inode_buf.c in the Linux kernel through 4.16.3 allows local users to cause a denial of service (xfs_ilock_attr_map_shared invalid pointer dereference) via a crafted xfs image."
+            },
+            {
+                "title": "CVE-2020-25212",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25212",
+                "description": "A TOCTOU mismatch in the NFS client code in the Linux kernel before 5.8.3 could be used by local attackers to corrupt memory or possibly have unspecified other impact because a size check is in fs/nfs/nfs4proc.c instead of fs/nfs/nfs4xdr.c, aka CID-b4487b935452."
+            },
+            {
+                "title": "CVE-2020-14314",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14314",
+                "description": "A memory out-of-bounds read flaw was found in the Linux kernel before 5.9-rc2 with the ext3/ext4 file system, in the way it accesses a directory with broken indexing. This flaw allows a local user to crash the system if the directory exists. The highest threat from this vulnerability is to system availability."
+            },
+            {
+                "title": "CVE-2020-16119",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16119",
+                "description": "DCCP CCID structure use-after-free -- reusing a DCCP socket with an attached dccps_hc_tx_ccid as a listener, it will be used after being released, leading to denial of service (system crash) or possibly code execution."
+            },
+            {
+                "title": "CVE-2019-19448",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19448",
+                "description": "In the Linux kernel 5.0.21 and 5.3.11, mounting a crafted btrfs filesystem image, performing some operations, and then making a syncfs system call can lead to a use-after-free in try_merge_free_space in fs/btrfs/free-space-cache.c because the pointer to a left data structure can be the same as the pointer to a right data structure."
+            },
+            {
+                "title": "CVE-2020-16120",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16120",
+                "description": "It was discovered when using shiftfs with overlayfs and fuse in an unprivileged user namespace, it was possible to receive the data of files that were not readable by the mounter before setting up permissions. It was later found that by only using unprivileged user namespaces and overlayfs, it was possible to have a file not readable by the unprivileged user to be copied to a mountpoint controlled by such user, like a removable device."
+            }
+        ],
+        "affected_packages": [
+            "linux",
+            "linux-aws",
+            "linux-aws-hwe",
+            "linux-azure",
+            "linux-azure-4.15",
+            "linux-gcp",
+            "linux-gcp-4.15",
+            "linux-gke-4.15",
+            "linux-hwe",
+            "linux-kvm",
+            "linux-oem",
+            "linux-oracle",
+            "linux-raspi2",
+            "linux-snapdragon"
+        ]
+    },
+    {
+        "title": "USN-4576-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4576-1",
+        "cves": [
+            {
+                "title": "CVE-2020-14314",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14314",
+                "description": "A memory out-of-bounds read flaw was found in the Linux kernel before 5.9-rc2 with the ext3/ext4 file system, in the way it accesses a directory with broken indexing. This flaw allows a local user to crash the system if the directory exists. The highest threat from this vulnerability is to system availability."
+            },
+            {
+                "title": "CVE-2020-25641",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25641",
+                "description": "A flaw was found in the Linux kernel's implementation of biovecs in versions before 5.9-rc7. A zero-length biovec request issued by the block subsystem could cause the kernel to enter an infinite loop, causing a denial of service. This flaw allows a local attacker with basic privileges to issue requests to a block device, resulting in a denial of service. The highest threat from this vulnerability is to system availability."
+            },
+            {
+                "title": "CVE-2020-16120",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16120",
+                "description": "It was discovered when using shiftfs with overlayfs and fuse in an unprivileged user namespace, it was possible to receive the data of files that were not readable by the mounter before setting up permissions. It was later found that by only using unprivileged user namespaces and overlayfs, it was possible to have a file not readable by the unprivileged user to be copied to a mountpoint controlled by such user, like a removable device."
+            },
+            {
+                "title": "CVE-2020-25285",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25285",
+                "description": "A race condition between hugetlb sysctl handlers in mm/hugetlb.c in the Linux kernel before 5.8.8 could be used by local attackers to corrupt memory, cause a NULL pointer dereference, or possibly have unspecified other impact, aka CID-17743798d812."
+            },
+            {
+                "title": "CVE-2020-14385",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14385",
+                "description": "A flaw was found in the Linux kernel before 5.9-rc4. A failure of the file system metadata validator in XFS can cause an inode with a valid, user-creatable extended attribute to be flagged as corrupt. This can lead to the filesystem being shutdown, or otherwise rendered inaccessible until it is remounted, leading to a denial of service. The highest threat from this vulnerability is to system availability."
+            },
+            {
+                "title": "CVE-2020-16119",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16119",
+                "description": "DCCP CCID structure use-after-free -- reusing a DCCP socket with an attached dccps_hc_tx_ccid as a listener, it will be used after being released, leading to denial of service (system crash) or possibly code execution."
+            }
+        ],
+        "affected_packages": [
+            "linux",
+            "linux-aws",
+            "linux-aws-5.4",
+            "linux-azure",
+            "linux-azure-5.4",
+            "linux-gcp",
+            "linux-gcp-5.4",
+            "linux-hwe-5.4",
+            "linux-kvm",
+            "linux-oracle",
+            "linux-oracle-5.4",
+            "linux-raspi",
+            "linux-raspi-5.4"
+        ]
+    },
+    {
         "title": "USN-4575-1: dom4j vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4575-1",
         "cves": [
