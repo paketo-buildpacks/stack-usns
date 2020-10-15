@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4585-1: Newsbeuter vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4585-1",
+        "cves": [
+            {
+                "title": "CVE-2017-12904",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12904",
+                "description": "Improper Neutralization of Special Elements used in an OS Command in bookmarking function of Newsbeuter versions 0.7 through 2.9 allows remote attackers to perform user-assisted code execution by crafting an RSS item that includes shell code in its title and/or URL."
+            },
+            {
+                "title": "CVE-2017-14500",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-14500",
+                "description": "Improper Neutralization of Special Elements used in an OS Command in the podcast playback function of Podbeuter in Newsbeuter 0.3 through 2.9 allows remote attackers to perform user-assisted code execution by crafting an RSS item with a media enclosure (i.e., a podcast file) that includes shell metacharacters in its filename, related to pb_controller.cpp and queueloader.cpp, a different vulnerability than CVE-2017-12904."
+            }
+        ],
+        "affected_packages": [
+            "newsbeuter"
+        ]
+    },
+    {
         "title": "USN-4584-1: HtmlUnit vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4584-1",
         "cves": [
