@@ -33,25 +33,10 @@ jobs:
       if: steps.commit.outputs.UPDATED
       uses: paketo-buildpacks/github-config/actions/dispatch@main
       with:
-        repos: paketo-buildpacks/tiny-release
-        token: ${{ secrets.CORE_DEPS_CI_BOT_GITHUB_TOKEN }}
-        event: new-usn
-        payload: '{}'
-
-    - name: Trigger Release
-      if: steps.commit.outputs.UPDATED
-      uses: paketo-buildpacks/github-config/actions/dispatch@main
-      with:
-        repos: paketo-buildpacks/base-release
-        token: ${{ secrets.CORE_DEPS_CI_BOT_GITHUB_TOKEN }}
-        event: new-usn
-        payload: '{}'
-
-    - name: Trigger Release
-      if: steps.commit.outputs.UPDATED
-      uses: paketo-buildpacks/github-config/actions/dispatch@main
-      with:
-        repos: paketo-buildpacks/full-release
+        repos: > 
+          paketo-buildpacks/tiny-release,
+          paketo-buildpacks/base-release,
+          paketo-buildpacks/full-release 
         token: ${{ secrets.CORE_DEPS_CI_BOT_GITHUB_TOKEN }}
         event: new-usn
         payload: '{}'
