@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4546-2: Firefox regressions",
+        "link": "https://ubuntu.com/security/notices/USN-4546-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1900032",
+                "link": "https://launchpad.net/bugs/1900032",
+                "description": "Update to 81.0.2"
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-4585-1: Newsbeuter vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4585-1",
         "cves": [
