@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4594-1: Quassel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4594-1",
+        "cves": [
+            {
+                "title": "CVE-2018-1000178",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000178",
+                "description": "A heap corruption of type CWE-120 exists in quassel version 0.12.4 in quasselcore in void DataStreamPeer::processMessage(const QByteArray \u0026amp;msg) datastreampeer.cpp line 62 that allows an attacker to execute code remotely."
+            },
+            {
+                "title": "CVE-2018-1000179",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000179",
+                "description": "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login \u0026amp;msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service."
+            }
+        ],
+        "affected_packages": [
+            "quassel"
+        ]
+    },
+    {
         "title": "USN-4587-1: iTALC vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4587-1",
         "cves": [
