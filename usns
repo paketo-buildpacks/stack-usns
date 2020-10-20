@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4595-1: Grunt vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4595-1",
+        "cves": [
+            {
+                "title": "CVE-2020-7729",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7729",
+                "description": "The package grunt before 1.3.0 are vulnerable to Arbitrary Code Execution due to the default usage of the function load() instead of its secure replacement safeLoad() of the package js-yaml inside grunt.file.readYAML."
+            }
+        ],
+        "affected_packages": [
+            "grunt"
+        ]
+    },
+    {
         "title": "USN-4594-1: Quassel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4594-1",
         "cves": [
