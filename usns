@@ -1,5 +1,109 @@
 [
     {
+        "title": "USN-4587-1: iTALC vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4587-1",
+        "cves": [
+            {
+                "title": "CVE-2018-20749",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20749",
+                "description": "LibVNC before 0.9.12 contains a heap out-of-bounds write vulnerability in libvncserver/rfbserver.c. The fix for CVE-2018-15127 was incomplete."
+            },
+            {
+                "title": "CVE-2014-6052",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6052",
+                "description": "The HandleRFBServerMessage function in libvncclient/rfbproto.c in LibVNCServer 0.9.9 and earlier does not check certain malloc return values, which allows remote VNC servers to cause a denial of service (application crash) or possibly execute arbitrary code by specifying a large screen size in a (1) FramebufferUpdate, (2) ResizeFrameBuffer, or (3) PalmVNCReSizeFrameBuffer message."
+            },
+            {
+                "title": "CVE-2018-20024",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20024",
+                "description": "LibVNC before commit 4a21bbd097ef7c44bb000c3bd0907f96a10e4ce7 contains null pointer dereference in VNC client code that can result DoS."
+            },
+            {
+                "title": "CVE-2018-20019",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20019",
+                "description": "LibVNC before commit a83439b9fbe0f03c48eb94ed05729cb016f8b72f contains multiple heap out-of-bound write vulnerabilities in VNC client code that can result remote code execution"
+            },
+            {
+                "title": "CVE-2018-20020",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20020",
+                "description": "LibVNC before commit 7b1ef0ffc4815cab9a96c7278394152bdc89dc4d contains heap out-of-bound write vulnerability inside structure in VNC client code that can result remote code execution"
+            },
+            {
+                "title": "CVE-2016-9942",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9942",
+                "description": "Heap-based buffer overflow in ultra.c in LibVNCClient in LibVNCServer before 0.9.11 allows remote servers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted FramebufferUpdate message with the Ultra type tile, such that the LZO payload decompressed length exceeds what is specified by the tile dimensions."
+            },
+            {
+                "title": "CVE-2018-20750",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20750",
+                "description": "LibVNC through 0.9.12 contains a heap out-of-bounds write vulnerability in libvncserver/rfbserver.c. The fix for CVE-2018-15127 was incomplete."
+            },
+            {
+                "title": "CVE-2018-15127",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-15127",
+                "description": "LibVNC before commit 502821828ed00b4a2c4bef90683d0fd88ce495de contains heap out-of-bound write vulnerability in server code of file transfer extension that can result remote code execution"
+            },
+            {
+                "title": "CVE-2019-15681",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15681",
+                "description": "LibVNC commit before d01e1bb4246323ba6fcee3b82ef1faa9b1dac82a contains a memory leak (CWE-655) in VNC server code, which allow an attacker to read stack memory and can be abused for information disclosure. Combined with another vulnerability, it can be used to leak stack memory and bypass ASLR. This attack appear to be exploitable via network connectivity. These vulnerabilities have been fixed in commit d01e1bb4246323ba6fcee3b82ef1faa9b1dac82a."
+            },
+            {
+                "title": "CVE-2014-6053",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6053",
+                "description": "The rfbProcessClientNormalMessage function in libvncserver/rfbserver.c in LibVNCServer 0.9.9 and earlier does not properly handle attempts to send a large amount of ClientCutText data, which allows remote attackers to cause a denial of service (memory consumption or daemon crash) via a crafted message that is processed by using a single unchecked malloc."
+            },
+            {
+                "title": "CVE-2018-20022",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20022",
+                "description": "LibVNC before 2f5b2ad1c6c99b1ac6482c95844a84d66bb52838 contains multiple weaknesses CWE-665: Improper Initialization vulnerability in VNC client code that allows attacker to read stack memory and can be abuse for information disclosure. Combined with another vulnerability, it can be used to leak stack memory layout and in bypassing ASLR"
+            },
+            {
+                "title": "CVE-2014-6054",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6054",
+                "description": "The rfbProcessClientNormalMessage function in libvncserver/rfbserver.c in LibVNCServer 0.9.9 and earlier allows remote attackers to cause a denial of service (divide-by-zero error and server crash) via a zero value in the scaling factor in a (1) PalmVNCSetScaleFactor or (2) SetScale message."
+            },
+            {
+                "title": "CVE-2014-6051",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6051",
+                "description": "Integer overflow in the MallocFrameBuffer function in vncviewer.c in LibVNCServer 0.9.9 and earlier allows remote VNC servers to cause a denial of service (crash) and possibly execute arbitrary code via an advertisement for a large screen size, which triggers a heap-based buffer overflow."
+            },
+            {
+                "title": "CVE-2018-20748",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20748",
+                "description": "LibVNC before 0.9.12 contains multiple heap out-of-bounds write vulnerabilities in libvncclient/rfbproto.c. The fix for CVE-2018-20019 was incomplete."
+            },
+            {
+                "title": "CVE-2016-9941",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9941",
+                "description": "Heap-based buffer overflow in rfbproto.c in LibVNCClient in LibVNCServer before 0.9.11 allows remote servers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted FramebufferUpdate message containing a subrectangle outside of the client drawing area."
+            },
+            {
+                "title": "CVE-2018-7225",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7225",
+                "description": "An issue was discovered in LibVNCServer through 0.9.11. rfbProcessClientNormalMessage() in rfbserver.c does not sanitize msg.cct.length, leading to access to uninitialized and potentially sensitive data or possibly unspecified other impact (e.g., an integer overflow) via specially crafted VNC packets."
+            },
+            {
+                "title": "CVE-2018-20021",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20021",
+                "description": "LibVNC before commit c3115350eb8bb635d0fdb4dbbb0d0541f38ed19c contains a CWE-835: Infinite loop vulnerability in VNC client code. Vulnerability allows attacker to consume excessive amount of resources like CPU and RAM"
+            },
+            {
+                "title": "CVE-2018-20023",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20023",
+                "description": "LibVNC before 8b06f835e259652b0ff026898014fc7297ade858 contains CWE-665: Improper Initialization vulnerability in VNC Repeater client code that allows attacker to read stack memory and can be abuse for information disclosure. Combined with another vulnerability, it can be used to leak stack memory layout and in bypassing ASLR"
+            },
+            {
+                "title": "CVE-2014-6055",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6055",
+                "description": "Multiple stack-based buffer overflows in the File Transfer feature in rfbserver.c in LibVNCServer 0.9.9 and earlier allow remote authenticated users to cause a denial of service (crash) and possibly execute arbitrary code via a (1) long file or (2) directory name or the (3) FileTime attribute in a rfbFileTransferOffer message."
+            }
+        ],
+        "affected_packages": [
+            "italc"
+        ]
+    },
+    {
         "title": "USN-4586-1: PHP ImageMagick vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4586-1",
         "cves": [
