@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4586-1: PHP ImageMagick vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4586-1",
+        "cves": [
+            {
+                "title": "CVE-2019-11037",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11037",
+                "description": "In PHP imagick extension in versions between 3.3.0 and 3.4.4, writing to an array of values in ImagickKernel::fromMatrix() function did not check that the address will be within the allocated array. This could lead to out of bounds write to memory if the function is called with the data controlled by untrusted party."
+            }
+        ],
+        "affected_packages": [
+            "php-imagick"
+        ]
+    },
+    {
         "title": "USN-4593-1: FreeType vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4593-1",
         "cves": [
