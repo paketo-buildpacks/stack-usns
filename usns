@@ -1,5 +1,55 @@
 [
     {
+        "title": "USN-4592-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4592-1",
+        "cves": [
+            {
+                "title": "CVE-2020-12351",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12351",
+                "description": "Linux: Heap-Based Type Confusion in L2CAP (BleedingTooth)"
+            },
+            {
+                "title": "CVE-2020-24490",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24490",
+                "description": "Linux bluetooth: Heap-Based Buffer Overflow in HCI event packet parser"
+            },
+            {
+                "title": "CVE-2020-12352",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12352",
+                "description": "Linux: Stack-Based Information Leak in A2MP (BleedingTooth)"
+            }
+        ],
+        "affected_packages": [
+            "linux-oem-osp1",
+            "linux-raspi2-5.3"
+        ]
+    },
+    {
+        "title": "USN-4591-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4591-1",
+        "cves": [
+            {
+                "title": "CVE-2020-12352",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12352",
+                "description": "Linux: Stack-Based Information Leak in A2MP (BleedingTooth)"
+            },
+            {
+                "title": "CVE-2020-12351",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12351",
+                "description": "Linux: Heap-Based Type Confusion in L2CAP (BleedingTooth)"
+            }
+        ],
+        "affected_packages": [
+            "linux",
+            "linux-hwe",
+            "linux-hwe-5.4",
+            "linux-oem",
+            "linux-raspi",
+            "linux-raspi-5.4",
+            "linux-snapdragon"
+        ]
+    },
+    {
         "title": "USN-4590-1: Collabtive vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4590-1",
         "cves": [
