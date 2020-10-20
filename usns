@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4593-1: FreeType vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4593-1",
+        "cves": [
+            {
+                "title": "CVE-2020-15999",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15999",
+                "description": "A buffer overflow was discovered in Load_SBit_Png."
+            }
+        ],
+        "affected_packages": [
+            "freetype"
+        ]
+    },
+    {
         "title": "USN-4592-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4592-1",
         "cves": [
