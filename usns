@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4552-2: Pam-python vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4552-2",
+        "cves": [
+            {
+                "title": "CVE-2019-16729",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16729",
+                "description": "pam-python before 1.0.7-1 has an issue in regard to the default environment variable handling of Python, which could allow for local root escalation in certain PAM setups."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4588-1: FlightGear vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4588-1",
         "cves": [
