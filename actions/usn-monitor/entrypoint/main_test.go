@@ -55,13 +55,11 @@ decryption functions. In certain scenarios, a remote attacker could
 possibly use this issue to perform a padding oracle attack and decrypt
 traffic. This issue only affected Ubuntu 18.04 LTS. (CVE-2019-1563)
 
-</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4504-1</guid><pubDate>Wed, 16 Sep 2020 13:58:04 +0000</pubDate></item><item><title>USN-4498-1: Loofah vulnerability</title><link>https://ubuntu.com/security/notices/USN-4498-1</link><description>It was discovered that Loofah does not properly sanitize JavaScript in 
-sanitized output. An attacker could possibly use this issue to perform 
-XSS attacks. (CVE-2019-15587)
-</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4498-1</guid><pubDate>Tue, 15 Sep 2020 19:25:01 +0000</pubDate></item><item><title>USN-4499-1: MilkyTracker vulnerabilities</title><link>https://ubuntu.com/security/notices/USN-4499-1</link><description>It was discovered that MilkyTracker did not properly handle certain input. If
+</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4504-1</guid><pubDate>Wed, 16 Sep 2020 13:58:04 +0000</pubDate></item><item><title>USN-4499-1: MilkyTracker vulnerabilities</title><link>https://ubuntu.com/security/notices/USN-4499-1</link><description>It was discovered that MilkyTracker did not properly handle certain input. If
 a user were tricked into opening a malicious file, an attacker could cause
 MilkyTracker to crash or potentially execute arbitrary code.
-</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4499-1</guid><pubDate>Tue, 15 Sep 2020 19:00:53 +0000</pubDate></item></channel></rss>`)
+</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4499-1</guid><pubDate>Tue, 15 Sep 2020 19:00:53 +0000</pubDate></item><item><title>USN-4594-1: Quassel vulnerabilities</title> <link>https://ubuntu.com/security/notices/USN-4594-1</link> <description>It was discovered that Quassel incorrectly handled Qdatastream protocol.
+(CVE-2018-1000179) </description> <guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4594-1</guid> <pubDate>Tue, 20 Oct 2020 18:56:12 +0000</pubDate> </item></channel></rss>`)
 		}))
 
 		tempFile, err := ioutil.TempFile("", "entrypoint")
@@ -117,19 +115,7 @@ MilkyTracker to crash or potentially execute arbitrary code.
 						Description: "The Raccoon attack exploits a flaw in the TLS specification which can lead to an attacker being able to compute the pre-master secret in connections which have used a Diffie-Hellman (DH) based ciphersuite. In such a case this would result in the attacker being able to eavesdrop on all encrypted communications sent over that TLS connection. The attack can only be exploited if an implementation re-uses a DH secret across multiple TLS connections. Note that this issue only impacts DH ciphersuites and not ECDH ciphersuites. This issue affects OpenSSL 1.0.2 which is out of support and no longer receiving public updates. OpenSSL 1.1.1 is not vulnerable to this issue. Fixed in OpenSSL 1.0.2w (Affected 1.0.2-1.0.2v).",
 					},
 				},
-				AffectedPackages: []string{"openssl", "openssl1.0"},
-			},
-			{
-				Title: "USN-4498-1: Loofah vulnerability",
-				Link:  "https://ubuntu.com/security/notices/USN-4498-1",
-				CveArray: []CVE{
-					{
-						Title:       "CVE-2019-15587",
-						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15587",
-						Description: "In the Loofah gem for Ruby through v2.3.0 unsanitized JavaScript may occur in sanitized output when a crafted SVG element is republished.",
-					},
-				},
-				AffectedPackages: []string{"ruby-loofah"},
+				AffectedPackages: []string{"libssl1.0.0"},
 			},
 			{
 				Title: "USN-4499-1: MilkyTracker vulnerabilities",
@@ -151,7 +137,24 @@ MilkyTracker to crash or potentially execute arbitrary code.
 						Description: "ModuleEditor::convertInstrument in tracker/ModuleEditor.cpp in MilkyTracker 1.02.00 has a heap-based buffer overflow.",
 					},
 				},
-				AffectedPackages: []string{"milkytracker"},
+				AffectedPackages: []string{},
+			},
+			{
+				Title: "USN-4594-1: Quassel vulnerabilities",
+				Link:  "https://ubuntu.com/security/notices/USN-4594-1",
+				CveArray: []CVE{
+					{
+						Title:       "CVE-2018-1000178",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000178",
+						Description: "A heap corruption of type CWE-120 exists in quassel version 0.12.4 in quasselcore in void DataStreamPeer::processMessage(const QByteArray &amp;msg) datastreampeer.cpp line 62 that allows an attacker to execute code remotely.",
+					},
+					{
+						Title:       "CVE-2018-1000179",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000179",
+						Description: "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login &amp;msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service.",
+					},
+				},
+				AffectedPackages: []string{"quassel", "quassel-core"},
 			},
 		}
 
@@ -168,16 +171,21 @@ MilkyTracker to crash or potentially execute arbitrary code.
 	it("successfully prepends USN into USNs file with content from rss feed", func() {
 		oldUSNArray := []USN{
 			{
-				Title: "USN-4498-1: Loofah vulnerability",
-				Link:  "https://ubuntu.com/security/notices/USN-4498-1",
+				Title: "USN-4594-1: Quassel vulnerabilities",
+				Link:  "https://ubuntu.com/security/notices/USN-4594-1",
 				CveArray: []CVE{
 					{
-						Title:       "CVE-2019-15587",
-						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15587",
-						Description: "In the Loofah gem for Ruby through v2.3.0 unsanitized JavaScript may occur in sanitized output when a crafted SVG element is republished.",
+						Title:       "CVE-2018-1000178",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/2018/CVE-2018-1000178.html",
+						Description: "A heap corruption of type CWE-120 exists in quassel version 0.12.4 in quasselcore in void DataStreamPeer::processMessage(const QByteArray &amp;msg) datastreampeer.cpp line 62 that allows an attacker to execute code remotely.",
+					},
+					{
+						Title:       "CVE-2018-1000179",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/2018/CVE-2018-1000179",
+						Description: "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login &amp;msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service.",
 					},
 				},
-				AffectedPackages: []string{"ruby-loofah"},
+				AffectedPackages: []string{"quassel", "quassel-core"},
 			},
 			{
 				Title: "USN-4499-1: MilkyTracker vulnerabilities",
@@ -238,7 +246,7 @@ MilkyTracker to crash or potentially execute arbitrary code.
 						Description: "The Raccoon attack exploits a flaw in the TLS specification which can lead to an attacker being able to compute the pre-master secret in connections which have used a Diffie-Hellman (DH) based ciphersuite. In such a case this would result in the attacker being able to eavesdrop on all encrypted communications sent over that TLS connection. The attack can only be exploited if an implementation re-uses a DH secret across multiple TLS connections. Note that this issue only impacts DH ciphersuites and not ECDH ciphersuites. This issue affects OpenSSL 1.0.2 which is out of support and no longer receiving public updates. OpenSSL 1.1.1 is not vulnerable to this issue. Fixed in OpenSSL 1.0.2w (Affected 1.0.2-1.0.2v).",
 					},
 				},
-				AffectedPackages: []string{"openssl", "openssl1.0"},
+				AffectedPackages: []string{"libssl1.0.0"},
 			},
 		}
 

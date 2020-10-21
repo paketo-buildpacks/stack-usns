@@ -152,15 +152,18 @@ func get(url string) (string, error) {
 }
 
 func getAffectedPackages(usnBody string) []string {
-	re := regexp.MustCompile("Packages</h2(.*?)</div>")
+	re := regexp.MustCompile("Update instructions</h2>(.*?)References")
 	packagesList := re.FindString(usnBody)
 
-	re = regexp.MustCompile(`__item">(\S+)`)
-	packageMatches := re.FindAllStringSubmatch(packagesList, -1)
+	re = regexp.MustCompile("18\\.04.*?</ul>")
+	bioinicPackages := re.FindString(packagesList)
 
-	var packages []string
+	re = regexp.MustCompile(`(__item">)(.*?>)(.*?)</a>`)
+	packageMatches := re.FindAllStringSubmatch(bioinicPackages, -1)
+
+	packages := []string{}
 	for _, p := range packageMatches {
-		packages = append(packages, p[1])
+		packages = append(packages, p[3])
 	}
 
 	return packages
