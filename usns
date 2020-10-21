@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4588-1: FlightGear vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4588-1",
+        "cves": [
+            {
+                "title": "CVE-2016-9956",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9956",
+                "description": "The route manager in FlightGear before 2016.4.4 allows remote attackers to write to arbitrary files via a crafted Nasal script."
+            }
+        ],
+        "affected_packages": [
+            "flightgear"
+        ]
+    },
+    {
         "title": "USN-4596-1: Tomcat vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4596-1",
         "cves": [
