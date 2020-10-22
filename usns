@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4593-2: FreeType vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4593-2",
+        "cves": [
+            {
+                "title": "CVE-2020-15999",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15999",
+                "description": "A buffer overflow was discovered in Load_SBit_Png."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4598-1: LibEtPan vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4598-1",
         "cves": [
