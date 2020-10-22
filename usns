@@ -1,5 +1,39 @@
 [
     {
+        "title": "USN-4598-1: LibEtPan vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4598-1",
+        "cves": [
+            {
+                "title": "CVE-2020-15953",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15953",
+                "description": "LibEtPan through 1.9.4, as used in MailCore 2 through 0.6.3 and other products, has a STARTTLS buffering issue that affects IMAP, SMTP, and POP3. When a server sends a \"begin TLS\" response, the client reads additional data (e.g., from a meddler-in-the-middle attacker) and evaluates it in a TLS context, aka \"response injection.\""
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4597-1: mod_auth_mellon vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4597-1",
+        "cves": [
+            {
+                "title": "CVE-2019-3877",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-3877",
+                "description": "A vulnerability was found in mod_auth_mellon before v0.14.2. An open redirect in the logout URL allows requests with backslashes to pass through by assuming that it is a relative URL, while the browsers silently convert backslash characters into forward slashes treating them as an absolute URL. This mismatch allows an attacker to bypass the redirect URL validation logic in apr_uri_parse function."
+            },
+            {
+                "title": "CVE-2019-3878",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-3878",
+                "description": "A vulnerability was found in mod_auth_mellon before v0.14.2. If Apache is configured as a reverse proxy and mod_auth_mellon is configured to only let through authenticated users (with the require valid-user directive), adding special HTTP headers that are normally used to start the special SAML ECP (non-browser based) can be used to bypass authentication."
+            },
+            {
+                "title": "CVE-2017-6807",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6807",
+                "description": "mod_auth_mellon before 0.13.1 is vulnerable to a Cross-Site Session Transfer attack, where a user with access to one web site running on a server can copy their session cookie to a different web site on the same server to get access to that site."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4552-2: Pam-python vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4552-2",
         "cves": [
