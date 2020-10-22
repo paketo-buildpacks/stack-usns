@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4601-1: pip vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4601-1",
+        "cves": [
+            {
+                "title": "CVE-2019-20916",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20916",
+                "description": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, because a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs in _download_http_url in _internal/download.py."
+            }
+        ],
+        "affected_packages": [
+            "python-pip",
+            "python3-pip"
+        ]
+    },
+    {
         "title": "USN-4600-1: Netty vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4600-1",
         "cves": [
