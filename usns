@@ -1,5 +1,32 @@
 [
     {
+        "title": "USN-4600-1: Netty vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4600-1",
+        "cves": [
+            {
+                "title": "CVE-2019-20444",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20444",
+                "description": "HttpObjectDecoder.java in Netty before 4.1.44 allows an HTTP header that lacks a colon, which might be interpreted as a separate header with an incorrect syntax, or might be interpreted as an \"invalid fold.\""
+            },
+            {
+                "title": "CVE-2019-16869",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16869",
+                "description": "Netty before 4.1.42.Final mishandles whitespace before the colon in HTTP headers (such as a \"Transfer-Encoding : chunked\" line), which leads to HTTP request smuggling."
+            },
+            {
+                "title": "CVE-2020-7238",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7238",
+                "description": "Netty 4.1.43.Final allows HTTP Request Smuggling because it mishandles Transfer-Encoding whitespace (such as a [space]Transfer-Encoding:chunked line) and a later Content-Length header. This issue exists because of an incomplete fix for CVE-2019-16869."
+            },
+            {
+                "title": "CVE-2019-20445",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20445",
+                "description": "HttpObjectDecoder.java in Netty before 4.1.44 allows a Content-Length header to be accompanied by a second Content-Length header, or by a Transfer-Encoding header."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4593-2: FreeType vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4593-2",
         "cves": [
