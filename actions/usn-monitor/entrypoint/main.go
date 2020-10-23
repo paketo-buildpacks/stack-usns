@@ -214,7 +214,11 @@ func getCVEDescription(url string) (string, error) {
 
 	re := regexp.MustCompile(`>Description.*?<div>(.*?)</div>`)
 	desc := re.FindStringSubmatch(body)
-	return strings.TrimSpace(desc[1]), nil
+	if len(desc) >= 2 {
+		return strings.TrimSpace(desc[1]), nil
+	}
+
+	return "", nil
 }
 
 func getLPDescription(url string) (string, error) {

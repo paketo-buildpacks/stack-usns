@@ -59,7 +59,12 @@ traffic. This issue only affected Ubuntu 18.04 LTS. (CVE-2019-1563)
 a user were tricked into opening a malicious file, an attacker could cause
 MilkyTracker to crash or potentially execute arbitrary code.
 </description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4499-1</guid><pubDate>Tue, 15 Sep 2020 19:00:53 +0000</pubDate></item><item><title>USN-4594-1: Quassel vulnerabilities</title> <link>https://ubuntu.com/security/notices/USN-4594-1</link> <description>It was discovered that Quassel incorrectly handled Qdatastream protocol.
-(CVE-2018-1000179) </description> <guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4594-1</guid> <pubDate>Tue, 20 Oct 2020 18:56:12 +0000</pubDate> </item></channel></rss>`)
+(CVE-2018-1000179) </description> <guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4594-1</guid> <pubDate>Tue, 20 Oct 2020 18:56:12 +0000</pubDate> </item><item><title>USN-4599-1: Firefox vulnerabilities</title><link>https://ubuntu.com/security/notices/USN-4599-1</link><description>Multiple security issues were discovered in Firefox. If a user were
+tricked in to opening a specially crafted website, an attacker could
+potentially exploit these to cause a denial of service, spoof the prompt
+for opening an external application, obtain sensitive information, or execute
+arbitrary code.
+</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4599-1</guid><pubDate>Fri, 23 Oct 2020 10:29:55 +0000</pubDate></item></channel></rss>`)
 		}))
 
 		tempFile, err := ioutil.TempFile("", "entrypoint")
@@ -156,6 +161,48 @@ MilkyTracker to crash or potentially execute arbitrary code.
 				},
 				AffectedPackages: []string{"quassel", "quassel-core"},
 			},
+			{
+			Title: "USN-4599-1: Firefox vulnerabilities",
+			Link:  "https://ubuntu.com/security/notices/USN-4599-1",
+			CveArray: []CVE{
+				{
+					Title:       "CVE-2020-15680",
+					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15680",
+					Description: "",
+				},
+				{
+					Title:       "CVE-2020-15682",
+					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15682",
+					Description: "",
+				},
+				{
+					Title:       "CVE-2020-15681",
+					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15681",
+					Description: "",
+				},
+				{
+					Title:       "CVE-2020-15683",
+					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15683",
+					Description: "",
+				},
+				{
+					Title:       "CVE-2020-15684",
+					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15684",
+					Description: "",
+				},
+				{
+					Title:       "CVE-2020-15254",
+					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15254",
+					Description: "",
+				},
+				{
+					Title:       "CVE-2020-15969",
+					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15969",
+					Description: "",
+				},
+			},
+			AffectedPackages: []string{"firefox"},
+		},
 		}
 
 		contents, err := ioutil.ReadFile(usnList.Name())
@@ -209,18 +256,6 @@ MilkyTracker to crash or potentially execute arbitrary code.
 				},
 				AffectedPackages: []string{"milkytracker"},
 			},
-		}
-
-		jsonUSNArray, err := json.Marshal(oldUSNArray)
-		require.NoError(err)
-		_, err = usnList.Write(jsonUSNArray)
-		require.NoError(err)
-
-		cmd := exec.Command(cliPath, "--usn-path", usnList.Name(), "--rss-url", testRSSFeed.URL)
-		output, err := cmd.CombinedOutput()
-		require.NoError(err, string(output))
-
-		newUSN := []USN{
 			{
 				Title: "USN-4504-1: OpenSSL vulnerabilities",
 				Link:  "https://ubuntu.com/security/notices/USN-4504-1",
@@ -247,6 +282,61 @@ MilkyTracker to crash or potentially execute arbitrary code.
 					},
 				},
 				AffectedPackages: []string{"libssl1.0.0"},
+			},
+
+		}
+
+		jsonUSNArray, err := json.Marshal(oldUSNArray)
+		require.NoError(err)
+		_, err = usnList.Write(jsonUSNArray)
+		require.NoError(err)
+
+		cmd := exec.Command(cliPath, "--usn-path", usnList.Name(), "--rss-url", testRSSFeed.URL)
+		output, err := cmd.CombinedOutput()
+		require.NoError(err, string(output))
+
+		newUSN := []USN{
+			{
+				Title: "USN-4599-1: Firefox vulnerabilities",
+				Link:  "https://ubuntu.com/security/notices/USN-4599-1",
+				CveArray: []CVE{
+					{
+						Title:       "CVE-2020-15680",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15680",
+						Description: "",
+					},
+					{
+						Title:       "CVE-2020-15682",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15682",
+						Description: "",
+					},
+					{
+						Title:       "CVE-2020-15681",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15681",
+						Description: "",
+					},
+					{
+						Title:       "CVE-2020-15683",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15683",
+						Description: "",
+					},
+					{
+						Title:       "CVE-2020-15684",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15684",
+						Description: "",
+					},
+					{
+						Title:       "CVE-2020-15254",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15254",
+						Description: "",
+					},
+					{
+						Title:       "CVE-2020-15969",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15969",
+						Description: "",
+					},
+				},
+				AffectedPackages: []string{"firefox"},
 			},
 		}
 
