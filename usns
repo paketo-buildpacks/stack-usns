@@ -1,5 +1,49 @@
 [
     {
+        "title": "USN-4599-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4599-1",
+        "cves": [
+            {
+                "title": "CVE-2020-15680",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15680",
+                "description": ""
+            },
+            {
+                "title": "CVE-2020-15682",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15682",
+                "description": ""
+            },
+            {
+                "title": "CVE-2020-15681",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15681",
+                "description": ""
+            },
+            {
+                "title": "CVE-2020-15683",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15683",
+                "description": ""
+            },
+            {
+                "title": "CVE-2020-15684",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15684",
+                "description": ""
+            },
+            {
+                "title": "CVE-2020-15254",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15254",
+                "description": ""
+            },
+            {
+                "title": "CVE-2020-15969",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15969",
+                "description": ""
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-4601-1: pip vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4601-1",
         "cves": [
