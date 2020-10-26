@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-4602-1: Perl vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4602-1",
+        "cves": [
+            {
+                "title": "CVE-2020-10543",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10543",
+                "description": "Perl before 5.30.3 on 32-bit platforms allows a heap-based buffer overflow because nested regular expression quantifiers have an integer overflow.  An application written in Perl would only be vulnerable to this flaw if  it evaluates regular expressions supplied by the attacker. Evaluating  regular expressions in this fashion is known to be dangerous since the  regular expression engine does not protect against denial of service  attacks in this usage scenario.  Additionally, the target system needs a sufficient amount of memory to  allocate partial expansions of the nested quantifiers prior to the  overflow occurring. This requirement is unlikely to be met on 64bit  systems.]"
+            },
+            {
+                "title": "CVE-2020-12723",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12723",
+                "description": "regcomp.c in Perl before 5.30.3 allows a buffer overflow via a crafted regular expression because of recursive S_study_chunk calls.  An application written in Perl would only be vulnerable to this flaw if  it evaluates regular expressions supplied by the attacker. Evaluating  regular expressions in this fashion is known to be dangerous since the  regular expression engine does not protect against denial of service  attacks in this usage scenario.]"
+            },
+            {
+                "title": "CVE-2020-10878",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10878",
+                "description": "Perl before 5.30.3 has an integer overflow related to mishandling of a \"PL_regkind[OP(n)] == NOTHING\" situation. A crafted regular expression could lead to malformed bytecode with a possibility of instruction injection.  An application written in Perl would only be vulnerable to this flaw if  it evaluates regular expressions supplied by the attacker. Evaluating  regular expressions in this fashion is known to be dangerous since the  regular expression engine does not protect against denial of service  attacks in this usage scenario.]"
+            }
+        ],
+        "affected_packages": [
+            "perl"
+        ]
+    },
+    {
         "title": "USN-4599-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4599-1",
         "cves": [
