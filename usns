@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4562-2: kramdown vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4562-2",
+        "cves": [
+            {
+                "title": "CVE-2020-14001",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14001",
+                "description": "The kramdown gem before 2.3.0 for Ruby processes the template option inside Kramdown documents by default, which allows unintended read access (such as template=\"/etc/passwd\") or unintended embedded Ruby code execution (such as a string that begins with template=\"string://\u0026lt;%= `). NOTE: kramdown is used in Jekyll, GitLab Pages, GitHub Pages, and Thredded Forum."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4599-2: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4599-2",
         "cves": [
