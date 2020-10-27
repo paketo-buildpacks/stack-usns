@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4605-1: Blueman vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4605-1",
+        "cves": [
+            {
+                "title": "CVE-2020-15238",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15238",
+                "description": ""
+            }
+        ],
+        "affected_packages": [
+            "blueman"
+        ]
+    },
+    {
         "title": "USN-4604-1: MySQL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4604-1",
         "cves": [
