@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-4600-2: Netty vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4600-2",
+        "cves": [
+            {
+                "title": "CVE-2019-20444",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20444",
+                "description": "HttpObjectDecoder.java in Netty before 4.1.44 allows an HTTP header that lacks a colon, which might be interpreted as a separate header with an incorrect syntax, or might be interpreted as an \"invalid fold.\""
+            },
+            {
+                "title": "CVE-2020-11612",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11612",
+                "description": "The ZlibDecoders in Netty 4.1.x before 4.1.46 allow for unbounded memory allocation while decoding a ZlibEncoded byte stream. An attacker could send a large ZlibEncoded byte stream to the Netty server, forcing the server to allocate all of its free memory to a single decoder."
+            },
+            {
+                "title": "CVE-2019-20445",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20445",
+                "description": "HttpObjectDecoder.java in Netty before 4.1.44 allows a Content-Length header to be accompanied by a second Content-Length header, or by a Transfer-Encoding header."
+            }
+        ],
+        "affected_packages": [
+            "libnetty-java"
+        ]
+    },
+    {
         "title": "USN-4602-2: Perl vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4602-2",
         "cves": [
