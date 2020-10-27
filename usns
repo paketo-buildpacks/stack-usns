@@ -1,5 +1,56 @@
 [
     {
+        "title": "USN-3081-2: Tomcat vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-3081-2",
+        "cves": [
+            {
+                "title": "CVE-2016-1240",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-1240",
+                "description": "The Tomcat init script in the tomcat7 package before 7.0.56-3+deb8u4 and tomcat8 package before 8.0.14-1+deb8u3 on Debian jessie and the tomcat6 and libtomcat6-java packages before 6.0.35-1ubuntu3.8 on Ubuntu 12.04 LTS, the tomcat7 and libtomcat7-java packages before 7.0.52-1ubuntu0.7 on Ubuntu 14.04 LTS, and tomcat8 and libtomcat8-java packages before 8.0.32-1ubuntu1.2 on Ubuntu 16.04 LTS allows local users with access to the tomcat account to gain root privileges via a symlink attack on the Catalina log file, as demonstrated by /var/log/tomcat7/catalina.out."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4603-1: MariaDB vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4603-1",
+        "cves": [
+            {
+                "title": "CVE-2020-2760",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2760",
+                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.29 and prior and 8.0.19 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.0 Base Score 5.5 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H)."
+            },
+            {
+                "title": "CVE-2020-13249",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13249",
+                "description": "libmariadb/mariadb_lib.c in MariaDB Connector/C before 3.1.8 does not properly validate the content of an OK packet received from a server. NOTE: although mariadb_lib.c was originally based on code shipped for MySQL, this issue does not affect any MySQL components supported by Oracle."
+            },
+            {
+                "title": "CVE-2020-2752",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2752",
+                "description": "Vulnerability in the MySQL Client product of Oracle MySQL (component: C API). Supported versions that are affected are 5.6.47 and prior, 5.7.27 and prior and 8.0.17 and prior. Difficult to exploit vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Client. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Client. CVSS 3.0 Base Score 5.3 (Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H)."
+            },
+            {
+                "title": "CVE-2020-15180",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15180",
+                "description": ""
+            },
+            {
+                "title": "CVE-2020-2814",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2814",
+                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.6.47 and prior, 5.7.28 and prior and 8.0.18 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.0 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
+            },
+            {
+                "title": "CVE-2020-2812",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2812",
+                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Stored Procedure). Supported versions that are affected are 5.6.47 and prior, 5.7.29 and prior and 8.0.19 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.0 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
+            }
+        ],
+        "affected_packages": [
+            "mariadb-server"
+        ]
+    },
+    {
         "title": "USN-4600-2: Netty vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4600-2",
         "cves": [
