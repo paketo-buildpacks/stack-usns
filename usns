@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4608-1: ca-certificates update",
+        "link": "https://ubuntu.com/security/notices/USN-4608-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1900727",
+                "link": "https://launchpad.net/bugs/1900727",
+                "description": "Update ca-certificates with latest NSS roots"
+            }
+        ],
+        "affected_packages": [
+            "ca-certificates"
+        ]
+    },
+    {
         "title": "USN-4607-1: OpenJDK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4607-1",
         "cves": [
