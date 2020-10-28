@@ -1,5 +1,27 @@
 [
     {
+        "title": "USN-4609-1: GOsa vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4609-1",
+        "cves": [
+            {
+                "title": "CVE-2019-11187",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11187",
+                "description": "Incorrect Access Control in the LDAP class of GONICUS GOsa through 2019-04-11 allows an attacker to log into any account with a username containing the case-insensitive substring \"success\" when an arbitrary password is provided."
+            },
+            {
+                "title": "CVE-2018-1000528",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000528",
+                "description": "GONICUS GOsa version before commit 56070d6289d47ba3f5918885954dcceb75606001 contains a Cross Site Scripting (XSS) vulnerability in change password form (html/password.php, #308) that can result in injection of arbitrary web script or HTML. This attack appear to be exploitable via the victim must open a specially crafted web page. This vulnerability appears to have been fixed in after commit 56070d6289d47ba3f5918885954dcceb75606001."
+            },
+            {
+                "title": "CVE-2019-14466",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14466",
+                "description": "The GOsa_Filter_Settings cookie in GONICUS GOsa 2.7.5.2 is vulnerable to PHP objection injection, which allows a remote authenticated attacker to perform file deletions (in the context of the user account that runs the web server) via a crafted cookie value, because unserialize is used to restore filter settings from a cookie."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4552-3: Pam-python regression",
         "link": "https://ubuntu.com/security/notices/USN-4552-3",
         "cves": [
