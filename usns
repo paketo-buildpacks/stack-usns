@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4610-1: fastd vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4610-1",
+        "cves": [
+            {
+                "title": "CVE-2020-27638",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27638",
+                "description": "receive.c in fastd before v21 allows denial of service (assertion failure) when receiving packets with an invalid type code."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4609-1: GOsa vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4609-1",
         "cves": [
