@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-4611-1: Samba vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4611-1",
+        "cves": [
+            {
+                "title": "CVE-2020-14383",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14383",
+                "description": "An authenticated non-admin user can crash the DNS server by adding invalid records."
+            },
+            {
+                "title": "CVE-2020-14318",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14318",
+                "description": "Missing handle permissions check in SMB1/2/3 ChangeNotify."
+            },
+            {
+                "title": "CVE-2020-14323",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14323",
+                "description": "Unprivileged user can crash winbind"
+            }
+        ],
+        "affected_packages": [
+            "samba"
+        ]
+    },
+    {
         "title": "USN-4610-1: fastd vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4610-1",
         "cves": [
