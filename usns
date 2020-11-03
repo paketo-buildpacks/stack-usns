@@ -1,5 +1,59 @@
 [
     {
+        "title": "USN-4616-1: AccountsService vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4616-1",
+        "cves": [
+            {
+                "title": "CVE-2020-16126",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16126",
+                "description": ""
+            },
+            {
+                "title": "CVE-2018-14036",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14036",
+                "description": "Directory Traversal with ../ sequences occurs in AccountsService before 0.6.50 because of an insufficient path check in user_change_icon_file_authorized_cb() in user.c."
+            },
+            {
+                "title": "CVE-2020-16127",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16127",
+                "description": ""
+            }
+        ],
+        "affected_packages": [
+            "accountsservice",
+            "libaccountsservice0"
+        ]
+    },
+    {
+        "title": "USN-4614-1: GDM vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4614-1",
+        "cves": [
+            {
+                "title": "CVE-2020-16125",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16125",
+                "description": ""
+            }
+        ],
+        "affected_packages": [
+            "gdm3"
+        ]
+    },
+    {
+        "title": "USN-4613-1: python-cryptography vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4613-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25659",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25659",
+                "description": "bleichenbacher timing oracle attack against RSA decryption"
+            }
+        ],
+        "affected_packages": [
+            "python-cryptography",
+            "python3-cryptography"
+        ]
+    },
+    {
         "title": "USN-4605-2: Blueman update",
         "link": "https://ubuntu.com/security/notices/USN-4605-2",
         "cves": [
