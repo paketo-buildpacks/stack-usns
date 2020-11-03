@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4605-2: Blueman update",
+        "link": "https://ubuntu.com/security/notices/USN-4605-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1897287",
+                "link": "https://launchpad.net/bugs/1897287",
+                "description": "Argument Injection leads to Local Privilege Escalation"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4611-1: Samba vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4611-1",
         "cves": [
