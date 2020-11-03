@@ -1,5 +1,72 @@
 [
     {
+        "title": "USN-4615-1: Yerase's TNEF vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4615-1",
+        "cves": [
+            {
+                "title": "CVE-2017-6301",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6301",
+                "description": "An issue was discovered in ytnef before 1.9.1. This is related to a patch described as \"4 of 9. Out of Bounds Reads.\""
+            },
+            {
+                "title": "CVE-2017-6299",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6299",
+                "description": "An issue was discovered in ytnef before 1.9.1. This is related to a patch described as \"2 of 9. Infinite Loop / DoS in the TNEFFillMapi function in lib/ytnef.c.\""
+            },
+            {
+                "title": "CVE-2017-6305",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6305",
+                "description": "An issue was discovered in ytnef before 1.9.1. This is related to a patch described as \"8 of 9. Out of Bounds read and write.\""
+            },
+            {
+                "title": "CVE-2017-6306",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6306",
+                "description": "An issue was discovered in ytnef before 1.9.1. This is related to a patch described as \"9 of 9. Directory Traversal using the filename; SanitizeFilename function in settings.c.\""
+            },
+            {
+                "title": "CVE-2017-6302",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6302",
+                "description": "An issue was discovered in ytnef before 1.9.1. This is related to a patch described as \"5 of 9. Integer Overflow.\""
+            },
+            {
+                "title": "CVE-2017-6303",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6303",
+                "description": "An issue was discovered in ytnef before 1.9.1. This is related to a patch described as \"6 of 9. Invalid Write and Integer Overflow.\""
+            },
+            {
+                "title": "CVE-2017-6802",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6802",
+                "description": "An issue was discovered in ytnef before 1.9.2. There is a potential heap-based buffer over-read on incoming Compressed RTF Streams, related to DecompressRTF() in libytnef."
+            },
+            {
+                "title": "CVE-2017-6304",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6304",
+                "description": "An issue was discovered in ytnef before 1.9.1. This is related to a patch described as \"7 of 9. Out of Bounds read.\""
+            },
+            {
+                "title": "CVE-2017-6800",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6800",
+                "description": "An issue was discovered in ytnef before 1.9.2. An invalid memory access (heap-based buffer over-read) can occur during handling of LONG data types, related to MAPIPrint() in libytnef."
+            },
+            {
+                "title": "CVE-2017-6801",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6801",
+                "description": "An issue was discovered in ytnef before 1.9.2. There is a potential out-of-bounds access with fields of Size 0 in TNEFParse() in libytnef."
+            },
+            {
+                "title": "CVE-2017-6298",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6298",
+                "description": "An issue was discovered in ytnef before 1.9.1. This is related to a patch described as \"1 of 9. Null Pointer Deref / calloc return value not checked.\""
+            },
+            {
+                "title": "CVE-2017-6300",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6300",
+                "description": "An issue was discovered in ytnef before 1.9.1. This is related to a patch described as \"3 of 9. Buffer Overflow in version field in lib/tnef-types.h.\""
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4616-1: AccountsService vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4616-1",
         "cves": [
