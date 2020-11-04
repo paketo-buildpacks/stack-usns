@@ -1,5 +1,34 @@
 [
     {
+        "title": "USN-4617-1: SPICE vdagent vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4617-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25652",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25652",
+                "description": ""
+            },
+            {
+                "title": "CVE-2020-25650",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25650",
+                "description": ""
+            },
+            {
+                "title": "CVE-2020-25653",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25653",
+                "description": ""
+            },
+            {
+                "title": "CVE-2020-25651",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25651",
+                "description": ""
+            }
+        ],
+        "affected_packages": [
+            "spice-vdagent"
+        ]
+    },
+    {
         "title": "USN-4615-1: Yerase's TNEF vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4615-1",
         "cves": [
