@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-4616-2: AccountsService vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4616-2",
+        "cves": [
+            {
+                "title": "CVE-2020-16126",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16126",
+                "description": "accountsservice drop privileges SIGSTOP denial of service (GHSL-2020-187)"
+            },
+            {
+                "title": "CVE-2018-14036",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14036",
+                "description": "Directory Traversal with ../ sequences occurs in AccountsService before 0.6.50 because of an insufficient path check in user_change_icon_file_authorized_cb() in user.c."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4617-1: SPICE vdagent vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4617-1",
         "cves": [
