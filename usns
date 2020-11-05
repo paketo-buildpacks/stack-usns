@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4620-1: phpLDAPadmin vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4620-1",
+        "cves": [
+            {
+                "title": "CVE-2017-11107",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-11107",
+                "description": "phpLDAPadmin through 1.2.3 has XSS in htdocs/entry_chooser.php via the form, element, rdn, or container parameter."
+            }
+        ],
+        "affected_packages": [
+            "phpldapadmin"
+        ]
+    },
+    {
         "title": "USN-4599-3: Firefox regressions",
         "link": "https://ubuntu.com/security/notices/USN-4599-3",
         "cves": [
