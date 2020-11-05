@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4599-3: Firefox regressions",
+        "link": "https://ubuntu.com/security/notices/USN-4599-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1903197",
+                "link": "https://launchpad.net/bugs/1903197",
+                "description": "Update to 82.0.2"
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-4619-1: dom4j vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4619-1",
         "cves": [
