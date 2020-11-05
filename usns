@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4618-1: tmux vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4618-1",
+        "cves": [
+            {
+                "title": "CVE-2020-27347",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27347",
+                "description": "An attacker can crash or execute arbitrary code inside tmux server process by writing a special escape sequence to the pane's pseudo tty. Code execution is proved practical only if tmux address space isn't fully randomized. So ASLR with PIE will mitigiate this issue but more complex exploits may be theoretically created."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4616-2: AccountsService vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4616-2",
         "cves": [
