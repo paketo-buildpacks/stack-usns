@@ -1,5 +1,39 @@
 [
     {
+        "title": "USN-4621-1: netqmail vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4621-1",
+        "cves": [
+            {
+                "title": "CVE-2005-1514",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2005-1514",
+                "description": "commands.c in qmail, when running on 64 bit platforms with a large amount of virtual memory, allows remote attackers to cause a denial of service and possibly execute arbitrary code via a long SMTP command without a space character, which causes an array to be referenced with a negative index."
+            },
+            {
+                "title": "CVE-2005-1513",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2005-1513",
+                "description": "Integer overflow in the stralloc_readyplus function in qmail, when running on 64 bit platforms with a large amount of virtual memory, allows remote attackers to cause a denial of service and possibly execute arbitrary code via a large SMTP request."
+            },
+            {
+                "title": "CVE-2020-3811",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3811",
+                "description": "qmail-verify as used in netqmail 1.06 is prone to a mail-address verification bypass vulnerability."
+            },
+            {
+                "title": "CVE-2005-1515",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2005-1515",
+                "description": "Integer signedness error in the qmail_put and substdio_put functions in qmail, when running on 64 bit platforms with a large amount of virtual memory, allows remote attackers to cause a denial of service and possibly execute arbitrary code via a large number of SMTP RCPT TO commands."
+            },
+            {
+                "title": "CVE-2020-3812",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3812",
+                "description": "qmail-verify as used in netqmail 1.06 is prone to an information disclosure vulnerability. A local attacker can test for the existence of files and directories anywhere in the filesystem because qmail-verify runs as root and tests for the existence of files in the attacker's home directory, without dropping its privileges first."
+            }
+        ],
+        "affected_packages": [
+            "qmail"
+        ]
+    },
+    {
         "title": "USN-4620-1: phpLDAPadmin vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4620-1",
         "cves": [
