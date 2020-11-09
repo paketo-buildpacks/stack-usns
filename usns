@@ -1,5 +1,33 @@
 [
     {
+        "title": "USN-4623-1: Pacemaker vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4623-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25654",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25654",
+                "description": "ACL restrictions bypass"
+            }
+        ],
+        "affected_packages": [
+            "pacemaker"
+        ]
+    },
+    {
+        "title": "USN-4622-1: OpenLDAP vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4622-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25692",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25692",
+                "description": "null-ptr dereference for unauthenticated packet in OpenLDAP slapd"
+            }
+        ],
+        "affected_packages": [
+            "slapd"
+        ]
+    },
+    {
         "title": "USN-4621-1: netqmail vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4621-1",
         "cves": [
