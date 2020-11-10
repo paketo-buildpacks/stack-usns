@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4625-1: Firefox vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4625-1",
+        "cves": [
+            {
+                "title": "CVE-2020-26950",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26950",
+                "description": ""
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-4624-1: libexif vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4624-1",
         "cves": [
