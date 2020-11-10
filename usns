@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4624-1: libexif vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4624-1",
+        "cves": [
+            {
+                "title": "CVE-2020-0452",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0452",
+                "description": "libexif overflow check could be optimized away"
+            }
+        ],
+        "affected_packages": [
+            "libexif12"
+        ]
+    },
+    {
         "title": "USN-4623-1: Pacemaker vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4623-1",
         "cves": [
