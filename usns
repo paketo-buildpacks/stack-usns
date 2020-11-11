@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4629-1: MoinMoin vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4629-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25074",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25074",
+                "description": "[remote code execution via cache action]"
+            },
+            {
+                "title": "CVE-2020-15275",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15275",
+                "description": "[malicious SVG attachment causing stored XSS vulnerability]"
+            }
+        ],
+        "affected_packages": [
+            "python-moinmoin"
+        ]
+    },
+    {
         "title": "USN-4628-1: Intel Microcode vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4628-1",
         "cves": [
