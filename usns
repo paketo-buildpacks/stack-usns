@@ -1,5 +1,34 @@
 [
     {
+        "title": "USN-4627-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4627-1",
+        "cves": [
+            {
+                "title": "CVE-2020-8694",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8694",
+                "description": "Insufficient access control in the Linux kernel driver for some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-4.15.0-1058-oracle",
+            "linux-image-4.15.0-1073-gke",
+            "linux-image-4.15.0-1087-gcp",
+            "linux-image-4.15.0-1101-oem",
+            "linux-image-4.15.0-123-generic",
+            "linux-image-4.15.0-123-generic-lpae",
+            "linux-image-4.15.0-123-lowlatency",
+            "linux-image-5.0.0-1071-oem-osp1",
+            "linux-image-5.3.0-1039-gke",
+            "linux-image-5.3.0-69-generic",
+            "linux-image-5.3.0-69-lowlatency",
+            "linux-image-5.4.0-1029-gcp",
+            "linux-image-5.4.0-1029-oracle",
+            "linux-image-5.4.0-53-generic",
+            "linux-image-5.4.0-53-generic-lpae",
+            "linux-image-5.4.0-53-lowlatency"
+        ]
+    },
+    {
         "title": "USN-4626-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4626-1",
         "cves": [
