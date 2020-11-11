@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4622-2: OpenLDAP vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4622-2",
+        "cves": [
+            {
+                "title": "CVE-2020-25692",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25692",
+                "description": "null-ptr dereference for unauthenticated packet in OpenLDAP slapd"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4630-1: Raptor vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4630-1",
         "cves": [
