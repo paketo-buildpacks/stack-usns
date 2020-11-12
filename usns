@@ -1,5 +1,33 @@
 [
     {
+        "title": "USN-4631-1: libmaxminddb vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4631-1",
+        "cves": [
+            {
+                "title": "CVE-2020-28241",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28241",
+                "description": "libmaxminddb before 1.4.3 has a heap-based buffer over-read in dump_entry_data_list in maxminddb.c."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4171-6: Apport regression",
+        "link": "https://ubuntu.com/security/notices/USN-4171-6",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1903332",
+                "link": "https://launchpad.net/bugs/1903332",
+                "description": "Apport get_config incorrectly drops privileges"
+            }
+        ],
+        "affected_packages": [
+            "apport",
+            "python-apport",
+            "python3-apport"
+        ]
+    },
+    {
         "title": "USN-4628-2: Intel Microcode regression",
         "link": "https://ubuntu.com/security/notices/USN-4628-2",
         "cves": [
