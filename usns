@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4628-2: Intel Microcode regression",
+        "link": "https://ubuntu.com/security/notices/USN-4628-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1903883",
+                "link": "https://launchpad.net/bugs/1903883",
+                "description": "XPS 13 9310 Tiger Lake Unable to boot 20.10 after intel-microcode update 3.20201110.0ubuntu0.20.10.1"
+            }
+        ],
+        "affected_packages": [
+            "intel-microcode"
+        ]
+    },
+    {
         "title": "USN-4622-2: OpenLDAP vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4622-2",
         "cves": [
