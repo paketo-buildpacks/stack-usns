@@ -5,6 +5,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/mmcdole/gofeed"
+	"html"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -143,7 +144,8 @@ func get(url string) (string, error) {
 		return "", err
 	}
 
-	body := strings.ReplaceAll(string(respBody), "\n", " ")
+	body := html.UnescapeString(string(respBody))
+	body = strings.ReplaceAll(body, "\n", " ")
 	body = strings.ReplaceAll(body, "<br />", " ")
 	body = strings.ReplaceAll(body, "<br>", " ")
 	body = strings.ReplaceAll(body, "</br>", " ")
@@ -212,10 +214,11 @@ func getCVEDescription(url string) (string, error) {
 		return "", err
 	}
 
-	re := regexp.MustCompile(`>Description.*?<div>(.*?)</div>`)
+	re := regexp.MustCompile(`Published: <strong.*?<p>(.*?)</p>`)
 	desc := re.FindStringSubmatch(body)
 	if len(desc) >= 2 {
-		return strings.TrimSpace(desc[1]), nil
+		description := desc[1]
+		return strings.TrimSpace(description), nil
 	}
 
 	return "", nil

@@ -151,12 +151,12 @@ arbitrary code.
 					{
 						Title:       "CVE-2018-1000178",
 						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000178",
-						Description: "A heap corruption of type CWE-120 exists in quassel version 0.12.4 in quasselcore in void DataStreamPeer::processMessage(const QByteArray &amp;msg) datastreampeer.cpp line 62 that allows an attacker to execute code remotely.",
+						Description: "A heap corruption of type CWE-120 exists in quassel version 0.12.4 in quasselcore in void DataStreamPeer::processMessage(const QByteArray &msg) datastreampeer.cpp line 62 that allows an attacker to execute code remotely.",
 					},
 					{
 						Title:       "CVE-2018-1000179",
 						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000179",
-						Description: "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login &amp;msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service.",
+						Description: "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login &msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service.",
 					},
 				},
 				AffectedPackages: []string{"quassel", "quassel-core"},
@@ -164,43 +164,43 @@ arbitrary code.
 			{
 			Title: "USN-4599-1: Firefox vulnerabilities",
 			Link:  "https://ubuntu.com/security/notices/USN-4599-1",
-			CveArray: []CVE{
-				{
-					Title:       "CVE-2020-15680",
-					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15680",
-					Description: "",
+				CveArray: []CVE{
+					{
+						Title:       "CVE-2020-15680",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15680",
+						Description: "If a valid external protocol handler was referenced in an image tag, the resulting broken image size could be distinguished from a broken image size of a non-existent protocol handler. This allowed an attacker to successfully probe whether an external protocol handler was registered. This vulnerability affects Firefox < 82.",
+					},
+					{
+						Title:       "CVE-2020-15682",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15682",
+						Description: "When a link to an external protocol was clicked, a prompt was presented that allowed the user to choose what application to open it in. An attacker could induce that prompt to be associated with an origin they didn't control, resulting in a spoofing attack. This was fixed by changing external protocol prompts to be tab-modal while also ensuring they could not be incorrectly associated with a different origin. This vulnerability affects Firefox < 82.",
+					},
+					{
+						Title:       "CVE-2020-15681",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15681",
+						Description: "When multiple WASM threads had a reference to a module, and were looking up exported functions, one WASM thread could have overwritten another's entry in a shared stub table, resulting in a potentially exploitable crash. This vulnerability affects Firefox < 82.",
+					},
+					{
+						Title:       "CVE-2020-15683",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15683",
+						Description: "Mozilla developers and community members reported memory safety bugs present in Firefox 81 and Firefox ESR 78.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR < 78.4, Firefox < 82, and Thunderbird < 78.4.",
+					},
+					{
+						Title:       "CVE-2020-15684",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15684",
+						Description: "Mozilla developers reported memory safety bugs present in Firefox 81. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 82.",
+					},
+					{
+						Title:       "CVE-2020-15254",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15254",
+						Description: "Crossbeam is a set of tools for concurrent programming. In crossbeam-channel before version 0.4.4, the bounded channel incorrectly assumes that `Vec::from_iter` has allocated capacity that same as the number of iterator elements. `Vec::from_iter` does not actually guarantee that and may allocate extra memory. The destructor of the `bounded` channel reconstructs `Vec` from the raw pointer based on the incorrect assumes described above. This is unsound and causing deallocation with the incorrect capacity when `Vec::from_iter` has allocated different sizes with the number of iterator elements. This has been fixed in crossbeam-channel 0.4.4.",
+					},
+					{
+						Title:       "CVE-2020-15969",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15969",
+						Description: "Use after free in WebRTC in Google Chrome prior to 86.0.4240.75 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+					},
 				},
-				{
-					Title:       "CVE-2020-15682",
-					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15682",
-					Description: "",
-				},
-				{
-					Title:       "CVE-2020-15681",
-					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15681",
-					Description: "",
-				},
-				{
-					Title:       "CVE-2020-15683",
-					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15683",
-					Description: "",
-				},
-				{
-					Title:       "CVE-2020-15684",
-					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15684",
-					Description: "",
-				},
-				{
-					Title:       "CVE-2020-15254",
-					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15254",
-					Description: "",
-				},
-				{
-					Title:       "CVE-2020-15969",
-					Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15969",
-					Description: "",
-				},
-			},
 			AffectedPackages: []string{"firefox"},
 		},
 		}
@@ -224,12 +224,12 @@ arbitrary code.
 					{
 						Title:       "CVE-2018-1000178",
 						Link:        "https://people.canonical.com/~ubuntu-security/cve/2018/CVE-2018-1000178.html",
-						Description: "A heap corruption of type CWE-120 exists in quassel version 0.12.4 in quasselcore in void DataStreamPeer::processMessage(const QByteArray &amp;msg) datastreampeer.cpp line 62 that allows an attacker to execute code remotely.",
+						Description: "A heap corruption of type CWE-120 exists in quassel version 0.12.4 in quasselcore in void DataStreamPeer::processMessage(const QByteArray &msg) datastreampeer.cpp line 62 that allows an attacker to execute code remotely.",
 					},
 					{
 						Title:       "CVE-2018-1000179",
 						Link:        "https://people.canonical.com/~ubuntu-security/cve/2018/CVE-2018-1000179",
-						Description: "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login &amp;msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service.",
+						Description: "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login &msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service.",
 					},
 				},
 				AffectedPackages: []string{"quassel", "quassel-core"},
@@ -303,37 +303,37 @@ arbitrary code.
 					{
 						Title:       "CVE-2020-15680",
 						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15680",
-						Description: "",
+						Description: "If a valid external protocol handler was referenced in an image tag, the resulting broken image size could be distinguished from a broken image size of a non-existent protocol handler. This allowed an attacker to successfully probe whether an external protocol handler was registered. This vulnerability affects Firefox < 82.",
 					},
 					{
 						Title:       "CVE-2020-15682",
 						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15682",
-						Description: "",
+						Description: "When a link to an external protocol was clicked, a prompt was presented that allowed the user to choose what application to open it in. An attacker could induce that prompt to be associated with an origin they didn't control, resulting in a spoofing attack. This was fixed by changing external protocol prompts to be tab-modal while also ensuring they could not be incorrectly associated with a different origin. This vulnerability affects Firefox < 82.",
 					},
 					{
 						Title:       "CVE-2020-15681",
 						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15681",
-						Description: "",
+						Description: "When multiple WASM threads had a reference to a module, and were looking up exported functions, one WASM thread could have overwritten another's entry in a shared stub table, resulting in a potentially exploitable crash. This vulnerability affects Firefox < 82.",
 					},
 					{
 						Title:       "CVE-2020-15683",
 						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15683",
-						Description: "",
+						Description: "Mozilla developers and community members reported memory safety bugs present in Firefox 81 and Firefox ESR 78.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR < 78.4, Firefox < 82, and Thunderbird < 78.4.",
 					},
 					{
 						Title:       "CVE-2020-15684",
 						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15684",
-						Description: "",
+						Description: "Mozilla developers reported memory safety bugs present in Firefox 81. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 82.",
 					},
 					{
 						Title:       "CVE-2020-15254",
 						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15254",
-						Description: "",
+						Description: "Crossbeam is a set of tools for concurrent programming. In crossbeam-channel before version 0.4.4, the bounded channel incorrectly assumes that `Vec::from_iter` has allocated capacity that same as the number of iterator elements. `Vec::from_iter` does not actually guarantee that and may allocate extra memory. The destructor of the `bounded` channel reconstructs `Vec` from the raw pointer based on the incorrect assumes described above. This is unsound and causing deallocation with the incorrect capacity when `Vec::from_iter` has allocated different sizes with the number of iterator elements. This has been fixed in crossbeam-channel 0.4.4.",
 					},
 					{
 						Title:       "CVE-2020-15969",
 						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15969",
-						Description: "",
+						Description: "Use after free in WebRTC in Google Chrome prior to 86.0.4240.75 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
 					},
 				},
 				AffectedPackages: []string{"firefox"},
