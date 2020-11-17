@@ -42,27 +42,44 @@ func main() {
 		os.Exit(1)
 	}
 
-	newUSNs, err := findNewUSNs(usnListPath, rssURL)
+	err := updateUSNs(usnListPath, rssURL)
+	if err != nil {
+		_, _ = fmt.Fprintf(os.Stderr, "Error updating USNs: %s\n", err.Error())
+		os.Exit(1)
+	}
+}
+
+func updateUSNs(usnListPath, rssURL string) error {
+	feedUSNs, err := getUSNsFromFeed(rssURL)
 	if err != nil {
 		_, _ = fmt.Fprintf(os.Stderr, "Error finding new USNs: %s\n", err.Error())
 		os.Exit(1)
 	}
 
-	err = recordNewUSNs(newUSNs, usnListPath)
+	usnListBytes, err := ioutil.ReadFile(usnListPath)
 	if err != nil {
-		_, _ = fmt.Fprintf(os.Stderr, "Error recording new USNs: %s\n", err.Error())
-		os.Exit(1)
+		return fmt.Errorf("error reading USN file: %w", err)
 	}
+
+	var existingUSNs []USN
+	err = json.Unmarshal(usnListBytes, &existingUSNs)
+	if err != nil {
+		return fmt.Errorf("error unmarshalling existing USN list: %w", err)
+	}
+
+	updatedUSNs := resolveUSNs(feedUSNs, existingUSNs)
+
+	return writeUSNFile(usnListPath, updatedUSNs)
 }
 
-func findNewUSNs(usnListPath, rssURL string) ([]USN, error) {
+func getUSNsFromFeed(rssURL string) ([]USN, error) {
 	fp := gofeed.NewParser()
 	feed, err := fp.ParseURL(rssURL)
 	if err != nil {
 		return nil, fmt.Errorf("error parsing rss feed: %w", err)
 	}
 
-	var usns []USN
+	var feedUSNs []USN
 	for _, item := range feed.Items {
 		usnBody, err := get(item.Link)
 		if err != nil {
@@ -74,7 +91,7 @@ func findNewUSNs(usnListPath, rssURL string) ([]USN, error) {
 			return nil, fmt.Errorf("error extracting CVEs from USN %s: %w", item.Title, err)
 		}
 
-		usns = append(usns, USN{
+		feedUSNs = append(feedUSNs, USN{
 			Title:            item.Title,
 			Link:             item.Link,
 			CveArray:         cves,
@@ -82,53 +99,24 @@ func findNewUSNs(usnListPath, rssURL string) ([]USN, error) {
 		})
 	}
 
-	usnListBytes, err := ioutil.ReadFile(usnListPath)
-	if err != nil {
-		return nil, fmt.Errorf("error reading USN file: %w", err)
+	return feedUSNs, nil
+}
+
+func resolveUSNs(feedUSNs, recordedUSNs []USN) []USN {
+	existingUSNMap := make(map[string]int, 0)
+	for i, usn := range recordedUSNs {
+		existingUSNMap[strings.Split(usn.Title, ":")[0]] = i
 	}
 
 	var newUSNs []USN
-	for _, usn := range usns {
-		if !strings.Contains(string(usnListBytes), usn.Title) {
+	for _, usn := range feedUSNs {
+		if i, ok := existingUSNMap[strings.Split(usn.Title, ":")[0]]; ok {
+			recordedUSNs[i] = usn
+		} else {
 			newUSNs = append(newUSNs, usn)
 		}
 	}
-
-	return newUSNs, nil
-}
-
-func recordNewUSNs(newUSNs []USN, usnListPath string) error {
-	contents, err := ioutil.ReadFile(usnListPath)
-	if err != nil {
-		return fmt.Errorf("error reading USN file: %w", err)
-	}
-
-	var usns []USN
-	err = json.Unmarshal(contents, &usns)
-	if err != nil {
-		return fmt.Errorf("error unmarshalling USN file: %w", err)
-	}
-
-	for i := len(newUSNs) - 1; i >= 0; i-- {
-		usns = append([]USN{newUSNs[i]}, usns...)
-	}
-
-	usnBytes, err := json.MarshalIndent(usns, "", "    ")
-	if err != nil {
-		return fmt.Errorf("error marshalling USN array: %w", err)
-	}
-
-	newUSNFile, err := os.Create(usnListPath)
-	if err != nil {
-		return fmt.Errorf("error creating new USN file: %w", err)
-	}
-	defer newUSNFile.Close()
-
-	_, err = newUSNFile.Write(usnBytes)
-	if err != nil {
-		return fmt.Errorf("error writing USN file: %w", err)
-	}
-	return nil
+	return append(newUSNs, recordedUSNs...)
 }
 
 func get(url string) (string, error) {
@@ -163,7 +151,7 @@ func getAffectedPackages(usnBody string) []string {
 	re = regexp.MustCompile(`(__item">)(.*?>)(.*?)</a>`)
 	packageMatches := re.FindAllStringSubmatch(bioinicPackages, -1)
 
-	packages := []string{}
+	packages := make([]string, 0)
 	for _, p := range packageMatches {
 		packages = append(packages, p[3])
 	}
@@ -230,7 +218,27 @@ func getLPDescription(url string) (string, error) {
 		return "", err
 	}
 
-	re := regexp.MustCompile(`"edit-title">.*?<span.*?>(.*?)<\/span>`)
+	re := regexp.MustCompile(`"edit-title">.*?<span.*?>(.*?)</span>`)
 	title := re.FindStringSubmatch(body)
 	return strings.TrimSpace(title[1]), nil
+}
+
+func writeUSNFile(usnListPath string, usns []USN) error {
+	usnBytes, err := json.MarshalIndent(usns, "", "    ")
+	if err != nil {
+		return fmt.Errorf("error marshalling USN array: %w", err)
+	}
+
+	newUSNFile, err := os.Create(usnListPath)
+	if err != nil {
+		return fmt.Errorf("error creating new USN file: %w", err)
+	}
+	defer newUSNFile.Close()
+
+	_, err = newUSNFile.Write(usnBytes)
+	if err != nil {
+		return fmt.Errorf("error writing USN file: %w", err)
+	}
+
+	return nil
 }

@@ -162,8 +162,8 @@ arbitrary code.
 				AffectedPackages: []string{"quassel", "quassel-core"},
 			},
 			{
-			Title: "USN-4599-1: Firefox vulnerabilities",
-			Link:  "https://ubuntu.com/security/notices/USN-4599-1",
+				Title: "USN-4599-1: Firefox vulnerabilities",
+				Link:  "https://ubuntu.com/security/notices/USN-4599-1",
 				CveArray: []CVE{
 					{
 						Title:       "CVE-2020-15680",
@@ -201,8 +201,8 @@ arbitrary code.
 						Description: "Use after free in WebRTC in Google Chrome prior to 86.0.4240.75 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
 					},
 				},
-			AffectedPackages: []string{"firefox"},
-		},
+				AffectedPackages: []string{"firefox"},
+			},
 		}
 
 		contents, err := ioutil.ReadFile(usnList.Name())
@@ -223,12 +223,12 @@ arbitrary code.
 				CveArray: []CVE{
 					{
 						Title:       "CVE-2018-1000178",
-						Link:        "https://people.canonical.com/~ubuntu-security/cve/2018/CVE-2018-1000178.html",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000178",
 						Description: "A heap corruption of type CWE-120 exists in quassel version 0.12.4 in quasselcore in void DataStreamPeer::processMessage(const QByteArray &msg) datastreampeer.cpp line 62 that allows an attacker to execute code remotely.",
 					},
 					{
 						Title:       "CVE-2018-1000179",
-						Link:        "https://people.canonical.com/~ubuntu-security/cve/2018/CVE-2018-1000179",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000179",
 						Description: "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login &msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service.",
 					},
 				},
@@ -254,7 +254,7 @@ arbitrary code.
 						Description: "ModuleEditor::convertInstrument in tracker/ModuleEditor.cpp in MilkyTracker 1.02.00 has a heap-based buffer overflow.",
 					},
 				},
-				AffectedPackages: []string{"milkytracker"},
+				AffectedPackages: []string{},
 			},
 			{
 				Title: "USN-4504-1: OpenSSL vulnerabilities",
@@ -283,7 +283,6 @@ arbitrary code.
 				},
 				AffectedPackages: []string{"libssl1.0.0"},
 			},
-
 		}
 
 		jsonUSNArray, err := json.Marshal(oldUSNArray)
@@ -350,5 +349,66 @@ arbitrary code.
 		assert.NoError(err)
 
 		assert.Equal(expectedUSNArray, actualUSNArray)
+	})
+
+	when("an existing USN is updated", func() {
+		it("updates the existing recorded USN", func() {
+			oldUSNArray := []USN{
+				{
+					Title: "USN-4594-1: Quassel Vulnerability vulnerabilities",
+					Link:  "https://ubuntu.com/security/notices/USN-4594-1",
+					CveArray: []CVE{
+						{
+							Title:       "CVE-2018-1000178",
+							Link:        "https://people.canonical.com/~ubuntu-security/cve/2018/CVE-2018-1000178.html",
+							Description: "A heap corruption of type CWE-120 exists in quassel version 0.12.4 in quasselcore in void DataStreamPeer::processMessage(const QByteArray &msg) datastreampeer.cpp line 62 that allows an attacker to execute code remotely.",
+						},
+						{
+							Title:       "CVE-2018-1000179",
+							Link:        "https://people.canonical.com/~ubuntu-security/cve/2018/CVE-2018-1000179",
+							Description: "",
+						},
+					},
+					AffectedPackages: []string{"quassel", "quassel-core"},
+				},
+			}
+
+			jsonUSNArray, err := json.Marshal(oldUSNArray)
+			require.NoError(err)
+			_, err = usnList.Write(jsonUSNArray)
+			require.NoError(err)
+
+			cmd := exec.Command(cliPath, "--usn-path", usnList.Name(), "--rss-url", testRSSFeed.URL)
+			output, err := cmd.CombinedOutput()
+			require.NoError(err, string(output))
+
+			updatedUSN := USN{
+				Title: "USN-4594-1: Quassel vulnerabilities",
+				Link:  "https://ubuntu.com/security/notices/USN-4594-1",
+				CveArray: []CVE{
+					{
+						Title:       "CVE-2018-1000178",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000178",
+						Description: "A heap corruption of type CWE-120 exists in quassel version 0.12.4 in quasselcore in void DataStreamPeer::processMessage(const QByteArray &msg) datastreampeer.cpp line 62 that allows an attacker to execute code remotely.",
+					},
+					{
+						Title:       "CVE-2018-1000179",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000179",
+						Description: "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login &msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service.",
+					},
+				},
+				AffectedPackages: []string{"quassel", "quassel-core"},
+			}
+
+			content, err := ioutil.ReadFile(usnList.Name())
+			require.NoError(err)
+
+			var actualUSNArray []USN
+			err = json.Unmarshal(content, &actualUSNArray)
+			assert.NoError(err)
+
+			assert.Contains(actualUSNArray, updatedUSN)
+			assert.NotContains(actualUSNArray, oldUSNArray[0])
+		})
 	})
 }
