@@ -1,5 +1,21 @@
 [
     {
+        "title": "USN-4636-1: LibVNCServer, Vino vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4636-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25708",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25708",
+                "description": ""
+            }
+        ],
+        "affected_packages": [
+            "libvncclient1",
+            "libvncserver1",
+            "vino"
+        ]
+    },
+    {
         "title": "USN-4635-1: Kerberos vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4635-1",
         "cves": [
