@@ -1,5 +1,48 @@
 [
     {
+        "title": "USN-4634-1: OpenLDAP vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4634-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25709",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25709",
+                "description": "assertion failure in Certificate List syntax validation"
+            },
+            {
+                "title": "CVE-2020-25710",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25710",
+                "description": "assertion failure in CSN normalization with invalid input"
+            }
+        ],
+        "affected_packages": [
+            "slapd"
+        ]
+    },
+    {
+        "title": "USN-4633-1: PostgreSQL vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4633-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25694",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25694",
+                "description": "Reconnection can downgrade connection security settings"
+            },
+            {
+                "title": "CVE-2020-25695",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25695",
+                "description": "Multiple features escape security restricted operation sandbox"
+            },
+            {
+                "title": "CVE-2020-25696",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25696",
+                "description": "psql's \\gset allows overwriting specially treated variables"
+            }
+        ],
+        "affected_packages": [
+            "postgresql-10"
+        ]
+    },
+    {
         "title": "USN-4607-2: OpenJDK regressions",
         "link": "https://ubuntu.com/security/notices/USN-4607-2",
         "cves": [
