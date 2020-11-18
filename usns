@@ -1,5 +1,89 @@
 [
     {
+        "title": "USN-4637-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4637-1",
+        "cves": [
+            {
+                "title": "CVE-2020-26952",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26952",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26959",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26959",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26969",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26969",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26960",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26960",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26961",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26961",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26958",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26958",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26967",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26967",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26965",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26965",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26968",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26968",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26953",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26953",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26962",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26962",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26951",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26951",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26956",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26956",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26963",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26963",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-16012",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16012",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-4636-1: LibVNCServer, Vino vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4636-1",
         "cves": [
