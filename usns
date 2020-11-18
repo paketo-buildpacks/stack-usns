@@ -90,7 +90,7 @@
             {
                 "title": "CVE-2020-25708",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25708",
-                "description": ""
+                "description": "[libvncserver/rfbserver.c has a divide by zero which could result in DoS]"
             }
         ],
         "affected_packages": [
@@ -131,7 +131,7 @@
         ]
     },
     {
-        "title": "USN-4635-1: Kerberos Vulnerabilities vulnerability",
+        "title": "USN-4635-1: Kerberos vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4635-1",
         "cves": [
             {
