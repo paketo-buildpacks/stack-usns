@@ -106,37 +106,6 @@
             {
                 "title": "CVE-2020-28196",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28196",
-                "description": ""
-            }
-        ],
-        "affected_packages": [
-            "krb5-admin-server",
-            "krb5-k5tls",
-            "krb5-kdc",
-            "krb5-kdc-ldap",
-            "krb5-kpropd",
-            "krb5-locales",
-            "krb5-otp",
-            "krb5-pkinit",
-            "krb5-user",
-            "libgssapi-krb5-2",
-            "libgssrpc4",
-            "libk5crypto3",
-            "libkadm5clnt-mit11",
-            "libkadm5srv-mit11",
-            "libkdb5-9",
-            "libkrad0",
-            "libkrb5-3",
-            "libkrb5support0"
-        ]
-    },
-    {
-        "title": "USN-4635-1: Kerberos vulnerability",
-        "link": "https://ubuntu.com/security/notices/USN-4635-1",
-        "cves": [
-            {
-                "title": "CVE-2020-28196",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28196",
                 "description": "MIT Kerberos 5 (aka krb5) before 1.17.2 and 1.18.x before 1.18.3 allows unbounded recursion via an ASN.1-encoded Kerberos message because the lib/krb5/asn.1/asn1_encode.c support for BER indefinite lengths lacks a recursion limit."
             }
         ],
