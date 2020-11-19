@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4638-1: c-ares vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4638-1",
+        "cves": [
+            {
+                "title": "CVE-2020-8277",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8277",
+                "description": "[Denial of Service through DNS request]"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4637-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4637-1",
         "cves": [
