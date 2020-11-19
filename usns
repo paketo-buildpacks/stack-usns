@@ -1,5 +1,79 @@
 [
     {
+        "title": "USN-4639-1: phpMyAdmin vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4639-1",
+        "cves": [
+            {
+                "title": "CVE-2020-5504",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-5504",
+                "description": "In phpMyAdmin 4 before 4.9.4 and 5 before 5.0.1, SQL injection exists in the user accounts page. A malicious user could inject custom SQL in place of their own username when creating queries to this page. An attacker must have a valid MySQL account to access the server."
+            },
+            {
+                "title": "CVE-2019-11768",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11768",
+                "description": "An issue was discovered in phpMyAdmin before 4.9.0.1. A vulnerability was reported where a specially crafted database name can be used to trigger an SQL injection attack through the designer feature."
+            },
+            {
+                "title": "CVE-2020-26934",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26934",
+                "description": "phpMyAdmin before 4.9.6 and 5.x before 5.0.3 allows XSS through the transformation feature via a crafted link."
+            },
+            {
+                "title": "CVE-2018-7260",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7260",
+                "description": "Cross-site scripting (XSS) vulnerability in db_central_columns.php in phpMyAdmin before 4.7.8 allows remote authenticated users to inject arbitrary web script or HTML via a crafted URL."
+            },
+            {
+                "title": "CVE-2019-6798",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-6798",
+                "description": "An issue was discovered in phpMyAdmin before 4.8.5. A vulnerability was reported where a specially crafted username can be used to trigger a SQL injection attack through the designer feature."
+            },
+            {
+                "title": "CVE-2018-19970",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19970",
+                "description": "In phpMyAdmin before 4.8.4, an XSS vulnerability was found in the navigation tree, where an attacker can deliver a payload to a user through a crafted database/table name."
+            },
+            {
+                "title": "CVE-2019-12616",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12616",
+                "description": "An issue was discovered in phpMyAdmin before 4.9.0. A vulnerability was found that allows an attacker to trigger a CSRF attack against a phpMyAdmin user. The attacker can trick the user, for instance through a broken \u003cimg\u003e tag pointing at the victim's phpMyAdmin database, and the attacker can potentially deliver a payload (such as a specific INSERT or DELETE statement) to the victim."
+            },
+            {
+                "title": "CVE-2020-10802",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10802",
+                "description": "In phpMyAdmin 4.x before 4.9.5 and 5.x before 5.0.2, a SQL injection vulnerability has been discovered where certain parameters are not properly escaped when generating certain queries for search actions in libraries/classes/Controllers/Table/TableSearchController.php. An attacker can generate a crafted database or table name. The attack can be performed if a user attempts certain search operations on the malicious database or table."
+            },
+            {
+                "title": "CVE-2020-10803",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10803",
+                "description": "In phpMyAdmin 4.x before 4.9.5 and 5.x before 5.0.2, a SQL injection vulnerability was discovered where malicious code could be used to trigger an XSS attack through retrieving and displaying results (in tbl_get_field.php and libraries/classes/Display/Results.php). The attacker must be able to insert crafted data into certain database tables, which when retrieved (for instance, through the Browse tab) can trigger the XSS attack."
+            },
+            {
+                "title": "CVE-2019-6799",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-6799",
+                "description": "An issue was discovered in phpMyAdmin before 4.8.5. When the AllowArbitraryServer configuration setting is set to true, with the use of a rogue MySQL server, an attacker can read any file on the server that the web server's user can access. This is related to the mysql.allow_local_infile PHP configuration, and the inadvertent ignoring of \"options(MYSQLI_OPT_LOCAL_INFILE\" calls."
+            },
+            {
+                "title": "CVE-2018-19968",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19968",
+                "description": "An attacker can exploit phpMyAdmin before 4.8.4 to leak the contents of a local file because of an error in the transformation feature. The attacker must have access to the phpMyAdmin Configuration Storage tables, although these can easily be created in any database to which the attacker has access. An attacker must have valid credentials to log in to phpMyAdmin; this vulnerability does not allow an attacker to circumvent the login system."
+            },
+            {
+                "title": "CVE-2020-10804",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10804",
+                "description": "In phpMyAdmin 4.x before 4.9.5 and 5.x before 5.0.2, a SQL injection vulnerability was found in retrieval of the current username (in libraries/classes/Server/Privileges.php and libraries/classes/UserPassword.php). A malicious user with access to the server could create a crafted username, and then trick the victim into performing specific actions with that user account (such as editing its privileges)."
+            },
+            {
+                "title": "CVE-2020-26935",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26935",
+                "description": "An issue was discovered in SearchController in phpMyAdmin before 4.9.6 and 5.x before 5.0.3. A SQL injection vulnerability was discovered in how phpMyAdmin processes SQL statements in the search feature. An attacker could use this flaw to inject malicious SQL in to a query."
+            }
+        ],
+        "affected_packages": [
+            "phpmyadmin"
+        ]
+    },
+    {
         "title": "USN-4638-1: c-ares vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4638-1",
         "cves": [
