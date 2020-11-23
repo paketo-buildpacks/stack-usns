@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-4634-2: OpenLDAP vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4634-2",
+        "cves": [
+            {
+                "title": "CVE-2020-25709",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25709",
+                "description": "assertion failure in Certificate List syntax validation"
+            },
+            {
+                "title": "CVE-2020-25710",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25710",
+                "description": "assertion failure in CSN normalization with invalid input"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4637-2: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4637-2",
         "cves": [
