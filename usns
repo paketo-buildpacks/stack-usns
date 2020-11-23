@@ -1,5 +1,31 @@
 [
     {
+        "title": "USN-4640-1: PulseAudio vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4640-1",
+        "cves": [
+            {
+                "title": "CVE-2020-16123",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16123",
+                "description": ""
+            }
+        ],
+        "affected_packages": [
+            "libpulse-mainloop-glib0",
+            "libpulse0",
+            "libpulsedsp",
+            "pulseaudio",
+            "pulseaudio-equalizer",
+            "pulseaudio-esound-compat",
+            "pulseaudio-module-bluetooth",
+            "pulseaudio-module-gconf",
+            "pulseaudio-module-jack",
+            "pulseaudio-module-lirc",
+            "pulseaudio-module-raop",
+            "pulseaudio-module-zeroconf",
+            "pulseaudio-utils"
+        ]
+    },
+    {
         "title": "USN-4634-2: OpenLDAP vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4634-2",
         "cves": [
