@@ -1,5 +1,72 @@
 [
     {
+        "title": "USN-4641-1: libextractor vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4641-1",
+        "cves": [
+            {
+                "title": "CVE-2018-14346",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14346",
+                "description": "GNU Libextractor before 1.7 has a stack-based buffer overflow in ec_read_file_func (unzip.c)."
+            },
+            {
+                "title": "CVE-2018-16430",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-16430",
+                "description": "GNU Libextractor through 1.7 has an out-of-bounds read vulnerability in EXTRACTOR_zip_extract_method() in zip_extractor.c."
+            },
+            {
+                "title": "CVE-2017-15266",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15266",
+                "description": "In GNU Libextractor 1.4, there is a Divide-By-Zero in EXTRACTOR_wav_extract_method in wav_extractor.c via a zero sample rate."
+            },
+            {
+                "title": "CVE-2017-15601",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15601",
+                "description": "In GNU Libextractor 1.4, there is a heap-based buffer overflow in the EXTRACTOR_png_extract_method function in plugins/png_extractor.c, related to processiTXt and stndup."
+            },
+            {
+                "title": "CVE-2017-15602",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15602",
+                "description": "In GNU Libextractor 1.4, there is an integer signedness error for the chunk size in the EXTRACTOR_nsfe_extract_method function in plugins/nsfe_extractor.c, leading to an infinite loop for a crafted size."
+            },
+            {
+                "title": "CVE-2018-14347",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14347",
+                "description": "GNU Libextractor before 1.7 contains an infinite loop vulnerability in EXTRACTOR_mpeg_extract_method (mpeg_extractor.c)."
+            },
+            {
+                "title": "CVE-2017-15922",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15922",
+                "description": "In GNU Libextractor 1.4, there is an out-of-bounds read in the EXTRACTOR_dvi_extract_method function in plugins/dvi_extractor.c."
+            },
+            {
+                "title": "CVE-2018-20431",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20431",
+                "description": "GNU Libextractor through 1.8 has a NULL Pointer Dereference vulnerability in the function process_metadata() in plugins/ole2_extractor.c."
+            },
+            {
+                "title": "CVE-2017-15600",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15600",
+                "description": "In GNU Libextractor 1.4, there is a NULL Pointer Dereference in the EXTRACTOR_nsf_extract_method function of plugins/nsf_extractor.c."
+            },
+            {
+                "title": "CVE-2017-17440",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17440",
+                "description": "GNU Libextractor 1.6 allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted GIF, IT (Impulse Tracker), NSFE, S3M (Scream Tracker 3), SID, or XM (eXtended Module) file, as demonstrated by the EXTRACTOR_xm_extract_method function in plugins/xm_extractor.c."
+            },
+            {
+                "title": "CVE-2017-15267",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15267",
+                "description": "In GNU Libextractor 1.4, there is a NULL Pointer Dereference in flac_metadata in flac_extractor.c."
+            },
+            {
+                "title": "CVE-2018-20430",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20430",
+                "description": "GNU Libextractor through 1.8 has an out-of-bounds read vulnerability in the function history_extract() in plugins/ole2_extractor.c, related to EXTRACTOR_common_convert_to_utf8 in common/convert.c."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4640-1: PulseAudio vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4640-1",
         "cves": [
