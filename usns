@@ -85,7 +85,7 @@
             {
                 "title": "CVE-2020-16123",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16123",
-                "description": ""
+                "description": "[Race condition in snap policy module could allow bypass of snapd pulseaudio restrictions.]"
             }
         ],
         "affected_packages": [
