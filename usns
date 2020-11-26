@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4649-1: xdg-utils vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4649-1",
+        "cves": [
+            {
+                "title": "CVE-2020-27748",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27748",
+                "description": "local file inclusion vulnerability"
+            }
+        ],
+        "affected_packages": [
+            "xdg-utils"
+        ]
+    },
+    {
         "title": "USN-4648-1: WebKitGTK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4648-1",
         "cves": [
