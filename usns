@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4646-2: poppler regression",
+        "link": "https://ubuntu.com/security/notices/USN-4646-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1905741",
+                "link": "https://launchpad.net/bugs/1905741",
+                "description": "poppler 0.62.0-2ubuntu2.11 and 0.41.0-0ubuntu1.15 security updates break Splash output"
+            }
+        ],
+        "affected_packages": [
+            "libpoppler73",
+            "poppler-utils"
+        ]
+    },
+    {
         "title": "USN-4649-1: xdg-utils vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4649-1",
         "cves": [
