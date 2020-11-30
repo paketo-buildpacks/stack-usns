@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4652-1: SniffIt vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4652-1",
+        "cves": [
+            {
+                "title": "CVE-2014-5439",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2014-5439",
+                "description": "Multiple Stack-based Buffer Overflow vulnerabilities exists in Sniffit prior to 0.3.7 via a crafted configuration file that will bypass Non-eXecutable bit NX, stack smashing protector SSP, and address space layout randomization ASLR protection mechanisms, which could let a malicious user execute arbitrary code."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4651-1: MySQL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4651-1",
         "cves": [
