@@ -1,5 +1,73 @@
 [
     {
+        "title": "USN-4651-1: MySQL vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4651-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1857584",
+                "link": "https://launchpad.net/bugs/1857584",
+                "description": "MySQL X protocol port 33060 listening on network by default"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4650-1: QEMU vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4650-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25624",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25624",
+                "description": "hcd-ohci: out-of-bound access issue while processing transfer descriptors"
+            },
+            {
+                "title": "CVE-2020-27616",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27616",
+                "description": "ati_2d_blt in hw/display/ati_2d.c in QEMU 4.2.1 can encounter an outside-limits situation in a calculation. A guest can crash the QEMU process."
+            },
+            {
+                "title": "CVE-2020-25723",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25723",
+                "description": "QEMU: assertion failure through usb_packet_unmap() in hw/usb/hcd-ehci.c"
+            },
+            {
+                "title": "CVE-2020-25625",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25625",
+                "description": "hw/usb/hcd-ohci.c in QEMU 5.0.0 has an infinite loop when a TD list has a loop."
+            },
+            {
+                "title": "CVE-2020-17380",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-17380",
+                "description": "heap buffer overflow in sdhci_sdma_transfer_multi_blocks() in hw/sd/sdhci.c"
+            },
+            {
+                "title": "CVE-2020-27617",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27617",
+                "description": "eth_get_gso_type in net/eth.c in QEMU 4.2.1 allows guest OS users to trigger an assertion failure. A guest can crash the QEMU process via packet data that lacks a valid Layer 3 protocol."
+            },
+            {
+                "title": "CVE-2020-25085",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25085",
+                "description": "QEMU 5.0.0 has a heap-based Buffer Overflow in flatview_read_continue in exec.c because hw/sd/sdhci.c mishandles a write operation in the SDHC_BLKSIZE case."
+            },
+            {
+                "title": "CVE-2020-25084",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25084",
+                "description": "QEMU 5.0.0 has a use-after-free in hw/usb/hcd-xhci.c because the usb_packet_map return value is not checked."
+            }
+        ],
+        "affected_packages": [
+            "qemu-system",
+            "qemu-system-arm",
+            "qemu-system-mips",
+            "qemu-system-misc",
+            "qemu-system-ppc",
+            "qemu-system-s390x",
+            "qemu-system-sparc",
+            "qemu-system-x86"
+        ]
+    },
+    {
         "title": "USN-4382-2: FreeRDP vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4382-2",
         "cves": [
