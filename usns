@@ -6,7 +6,7 @@
             {
                 "title": "CVE-2020-15257",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15257",
-                "description": ""
+                "description": "Access controls for the shim’s API socket verified that the connecting process had an effective UID of 0, but did not otherwise restrict access to the abstract Unix domain socket. This would allow malicious containers running in the same network namespace as the shim, with an effective UID of 0 but otherwise reduced privileges, to cause new processes to be run with elevated privileges."
             }
         ],
         "affected_packages": [
