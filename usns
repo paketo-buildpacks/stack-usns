@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4654-1: PEAR vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4654-1",
+        "cves": [
+            {
+                "title": "CVE-2020-28948",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28948",
+                "description": "Archive_Tar through 1.4.10 allows an unserialization attack because phar: is blocked but PHAR: is not blocked."
+            },
+            {
+                "title": "CVE-2020-28949",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28949",
+                "description": "Archive_Tar through 1.4.10 has :// filename sanitization only to address phar attacks, and thus any other stream-wrapper attack (such as file:// to overwrite files) can still succeed."
+            }
+        ],
+        "affected_packages": [
+            "php-pear"
+        ]
+    },
+    {
         "title": "USN-4653-1: containerd vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4653-1",
         "cves": [
