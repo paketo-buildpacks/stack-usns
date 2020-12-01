@@ -1,5 +1,45 @@
 [
     {
+        "title": "USN-4656-1: X.Org X Server vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4656-1",
+        "cves": [
+            {
+                "title": "CVE-2020-14360",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14360",
+                "description": "XkbSetMap Out-Of-Bounds Access Privilege Escalation Vulnerability"
+            },
+            {
+                "title": "CVE-2020-25712",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25712",
+                "description": "[X.Org Server XkbSetDeviceInfo Heap-based Buffer Overflow Privilege  Escalation Vulnerability]"
+            }
+        ],
+        "affected_packages": [
+            "xserver-xorg-core",
+            "xserver-xorg-core-hwe-18.04"
+        ]
+    },
+    {
+        "title": "USN-4655-1: Werkzeug vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4655-1",
+        "cves": [
+            {
+                "title": "CVE-2020-28724",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28724",
+                "description": "Open redirect vulnerability in werkzeug before 0.11.6 via a double slash in the URL."
+            },
+            {
+                "title": "CVE-2019-14806",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14806",
+                "description": "Pallets Werkzeug before 0.15.3, when used with Docker, has insufficient debugger PIN randomness because Docker containers share the same machine id."
+            }
+        ],
+        "affected_packages": [
+            "python-werkzeug",
+            "python3-werkzeug"
+        ]
+    },
+    {
         "title": "USN-4654-1: PEAR vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4654-1",
         "cves": [
