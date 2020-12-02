@@ -1,5 +1,184 @@
 [
     {
+        "title": "USN-4659-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4659-1",
+        "cves": [
+            {
+                "title": "CVE-2020-28915",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28915",
+                "description": "A buffer over-read (at the framebuffer layer) in the fbcon code in the Linux kernel before 5.8.15 could be used by local attackers to read kernel memory, aka CID-6735b4632def."
+            },
+            {
+                "title": "CVE-2020-4788",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-4788",
+                "description": "IBM Power9 (AIX 7.1, 7.2, and VIOS 3.1) processors could allow a local user to obtain sensitive information from the data in the L1 cache under extenuating circumstances. IBM X-Force ID: 189296."
+            },
+            {
+                "title": "CVE-2020-10135",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10135",
+                "description": "Legacy pairing and secure-connections pairing authentication in Bluetooth BR/EDR Core Specification v5.2 and earlier may allow an unauthenticated user to complete authentication without pairing credentials via adjacent access. An unauthenticated, adjacent attacker could impersonate a Bluetooth BR/EDR master or slave to pair with a previously paired remote device to successfully complete the authentication procedure without knowing the link key."
+            },
+            {
+                "title": "CVE-2020-25705",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25705",
+                "description": "A flaw in the way reply ICMP packets are limited in the Linux kernel functionality was found that allows to quickly scan open UDP ports. This flaw allows an off-path remote user to effectively bypassing source port UDP randomization. The highest threat from this vulnerability is to confidentiality and possibly integrity, because software that relies on UDP source port randomization are indirectly affected as well. Kernel versions before 5.10 may be vulnerable to this issue."
+            },
+            {
+                "title": "CVE-2020-27152",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27152",
+                "description": "An issue was discovered in ioapic_lazy_update_eoi in arch/x86/kvm/ioapic.c in the Linux kernel before 5.9.2. It has an infinite loop related to improper interaction between a resampler and edge triggering, aka CID-77377064c3a9."
+            },
+            {
+                "title": "CVE-2020-0423",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0423",
+                "description": "In binder_release_work of binder.c, there is a possible use-after-free due to improper locking. This could lead to local escalation of privilege in the kernel with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-161151868References: N/A"
+            },
+            {
+                "title": "CVE-2020-14351",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14351",
+                "description": "[perf: Fix race in perf_mmap_close function]"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4657-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4657-1",
+        "cves": [
+            {
+                "title": "CVE-2020-14351",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14351",
+                "description": "[perf: Fix race in perf_mmap_close function]"
+            },
+            {
+                "title": "CVE-2020-25284",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25284",
+                "description": "The rbd block device driver in drivers/block/rbd.c in the Linux kernel through 5.8.9 used incomplete permission checking for access to rbd devices, which could be leveraged by local attackers to map or unmap rbd block devices, aka CID-f44d04e696fe."
+            },
+            {
+                "title": "CVE-2020-25211",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25211",
+                "description": "In the Linux kernel through 5.8.7, local attackers able to inject conntrack netlink configuration could overflow a local buffer, causing crashes or triggering use of incorrect protocol numbers in ctnetlink_parse_tuple_filter in net/netfilter/nf_conntrack_netlink.c, aka CID-1cc5ef91d2ff."
+            },
+            {
+                "title": "CVE-2020-25705",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25705",
+                "description": "A flaw in the way reply ICMP packets are limited in the Linux kernel functionality was found that allows to quickly scan open UDP ports. This flaw allows an off-path remote user to effectively bypassing source port UDP randomization. The highest threat from this vulnerability is to confidentiality and possibly integrity, because software that relies on UDP source port randomization are indirectly affected as well. Kernel versions before 5.10 may be vulnerable to this issue."
+            },
+            {
+                "title": "CVE-2020-10135",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10135",
+                "description": "Legacy pairing and secure-connections pairing authentication in Bluetooth BR/EDR Core Specification v5.2 and earlier may allow an unauthenticated user to complete authentication without pairing credentials via adjacent access. An unauthenticated, adjacent attacker could impersonate a Bluetooth BR/EDR master or slave to pair with a previously paired remote device to successfully complete the authentication procedure without knowing the link key."
+            },
+            {
+                "title": "CVE-2020-0427",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0427",
+                "description": "In create_pinctrl of core.c, there is a possible out of bounds read due to a use after free. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-140550171"
+            },
+            {
+                "title": "CVE-2020-25645",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25645",
+                "description": "A flaw was found in the Linux kernel in versions before 5.9-rc7. Traffic between two Geneve endpoints may be unencrypted when IPsec is configured to encrypt traffic for the specific UDP port used by the GENEVE tunnel allowing anyone between the two endpoints to read the traffic unencrypted. The main threat from this vulnerability is to data confidentiality."
+            },
+            {
+                "title": "CVE-2020-28915",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28915",
+                "description": "A buffer over-read (at the framebuffer layer) in the fbcon code in the Linux kernel before 5.8.15 could be used by local attackers to read kernel memory, aka CID-6735b4632def."
+            },
+            {
+                "title": "CVE-2020-4788",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-4788",
+                "description": "IBM Power9 (AIX 7.1, 7.2, and VIOS 3.1) processors could allow a local user to obtain sensitive information from the data in the L1 cache under extenuating circumstances. IBM X-Force ID: 189296."
+            },
+            {
+                "title": "CVE-2020-12352",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12352",
+                "description": "Improper access control in BlueZ may allow an unauthenticated user to potentially enable information disclosure via adjacent access."
+            },
+            {
+                "title": "CVE-2020-25643",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25643",
+                "description": "A flaw was found in the HDLC_PPP module of the Linux kernel in versions before 5.9-rc7. Memory corruption and a read overflow is caused by improper input validation in the ppp_cp_parse_cr function which can cause the system to crash or cause a denial of service. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+            },
+            {
+                "title": "CVE-2020-14390",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14390",
+                "description": "A flaw was found in the Linux kernel in versions before 5.9-rc6. When changing screen size, an out-of-bounds memory write can occur leading to memory corruption or a denial of service. Due to the nature of the flaw, privilege escalation cannot be fully ruled out."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4658-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4658-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25643",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25643",
+                "description": "A flaw was found in the HDLC_PPP module of the Linux kernel in versions before 5.9-rc7. Memory corruption and a read overflow is caused by improper input validation in the ppp_cp_parse_cr function which can cause the system to crash or cause a denial of service. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+            },
+            {
+                "title": "CVE-2020-14390",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14390",
+                "description": "A flaw was found in the Linux kernel in versions before 5.9-rc6. When changing screen size, an out-of-bounds memory write can occur leading to memory corruption or a denial of service. Due to the nature of the flaw, privilege escalation cannot be fully ruled out."
+            },
+            {
+                "title": "CVE-2020-10135",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10135",
+                "description": "Legacy pairing and secure-connections pairing authentication in Bluetooth BR/EDR Core Specification v5.2 and earlier may allow an unauthenticated user to complete authentication without pairing credentials via adjacent access. An unauthenticated, adjacent attacker could impersonate a Bluetooth BR/EDR master or slave to pair with a previously paired remote device to successfully complete the authentication procedure without knowing the link key."
+            },
+            {
+                "title": "CVE-2020-25284",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25284",
+                "description": "The rbd block device driver in drivers/block/rbd.c in the Linux kernel through 5.8.9 used incomplete permission checking for access to rbd devices, which could be leveraged by local attackers to map or unmap rbd block devices, aka CID-f44d04e696fe."
+            },
+            {
+                "title": "CVE-2020-28915",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28915",
+                "description": "A buffer over-read (at the framebuffer layer) in the fbcon code in the Linux kernel before 5.8.15 could be used by local attackers to read kernel memory, aka CID-6735b4632def."
+            },
+            {
+                "title": "CVE-2020-4788",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-4788",
+                "description": "IBM Power9 (AIX 7.1, 7.2, and VIOS 3.1) processors could allow a local user to obtain sensitive information from the data in the L1 cache under extenuating circumstances. IBM X-Force ID: 189296."
+            },
+            {
+                "title": "CVE-2020-25211",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25211",
+                "description": "In the Linux kernel through 5.8.7, local attackers able to inject conntrack netlink configuration could overflow a local buffer, causing crashes or triggering use of incorrect protocol numbers in ctnetlink_parse_tuple_filter in net/netfilter/nf_conntrack_netlink.c, aka CID-1cc5ef91d2ff."
+            },
+            {
+                "title": "CVE-2020-0423",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0423",
+                "description": "In binder_release_work of binder.c, there is a possible use-after-free due to improper locking. This could lead to local escalation of privilege in the kernel with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-161151868References: N/A"
+            },
+            {
+                "title": "CVE-2020-14351",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14351",
+                "description": "[perf: Fix race in perf_mmap_close function]"
+            },
+            {
+                "title": "CVE-2020-25645",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25645",
+                "description": "A flaw was found in the Linux kernel in versions before 5.9-rc7. Traffic between two Geneve endpoints may be unencrypted when IPsec is configured to encrypt traffic for the specific UDP port used by the GENEVE tunnel allowing anyone between the two endpoints to read the traffic unencrypted. The main threat from this vulnerability is to data confidentiality."
+            },
+            {
+                "title": "CVE-2020-25705",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25705",
+                "description": "A flaw in the way reply ICMP packets are limited in the Linux kernel functionality was found that allows to quickly scan open UDP ports. This flaw allows an off-path remote user to effectively bypassing source port UDP randomization. The highest threat from this vulnerability is to confidentiality and possibly integrity, because software that relies on UDP source port randomization are indirectly affected as well. Kernel versions before 5.10 may be vulnerable to this issue."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-5.4.0-1030-aws",
+            "linux-image-5.4.0-1030-gcp",
+            "linux-image-5.4.0-1030-oracle",
+            "linux-image-5.4.0-1032-azure",
+            "linux-image-5.4.0-56-generic",
+            "linux-image-5.4.0-56-generic-lpae",
+            "linux-image-5.4.0-56-lowlatency"
+        ]
+    },
+    {
         "title": "USN-4656-1: X.Org X Server vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4656-1",
         "cves": [
