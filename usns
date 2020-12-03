@@ -1,5 +1,75 @@
 [
     {
+        "title": "USN-4660-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4660-1",
+        "cves": [
+            {
+                "title": "CVE-2020-14351",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14351",
+                "description": "[perf: Fix race in perf_mmap_close function]"
+            },
+            {
+                "title": "CVE-2020-25643",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25643",
+                "description": "A flaw was found in the HDLC_PPP module of the Linux kernel in versions before 5.9-rc7. Memory corruption and a read overflow is caused by improper input validation in the ppp_cp_parse_cr function which can cause the system to crash or cause a denial of service. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+            },
+            {
+                "title": "CVE-2020-25284",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25284",
+                "description": "The rbd block device driver in drivers/block/rbd.c in the Linux kernel through 5.8.9 used incomplete permission checking for access to rbd devices, which could be leveraged by local attackers to map or unmap rbd block devices, aka CID-f44d04e696fe."
+            },
+            {
+                "title": "CVE-2020-25285",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25285",
+                "description": "A race condition between hugetlb sysctl handlers in mm/hugetlb.c in the Linux kernel before 5.8.8 could be used by local attackers to corrupt memory, cause a NULL pointer dereference, or possibly have unspecified other impact, aka CID-17743798d812."
+            },
+            {
+                "title": "CVE-2020-25645",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25645",
+                "description": "A flaw was found in the Linux kernel in versions before 5.9-rc7. Traffic between two Geneve endpoints may be unencrypted when IPsec is configured to encrypt traffic for the specific UDP port used by the GENEVE tunnel allowing anyone between the two endpoints to read the traffic unencrypted. The main threat from this vulnerability is to data confidentiality."
+            },
+            {
+                "title": "CVE-2020-28915",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28915",
+                "description": "A buffer over-read (at the framebuffer layer) in the fbcon code in the Linux kernel before 5.8.15 could be used by local attackers to read kernel memory, aka CID-6735b4632def."
+            },
+            {
+                "title": "CVE-2020-4788",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-4788",
+                "description": "IBM Power9 (AIX 7.1, 7.2, and VIOS 3.1) processors could allow a local user to obtain sensitive information from the data in the L1 cache under extenuating circumstances. IBM X-Force ID: 189296."
+            },
+            {
+                "title": "CVE-2020-25211",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25211",
+                "description": "In the Linux kernel through 5.8.7, local attackers able to inject conntrack netlink configuration could overflow a local buffer, causing crashes or triggering use of incorrect protocol numbers in ctnetlink_parse_tuple_filter in net/netfilter/nf_conntrack_netlink.c, aka CID-1cc5ef91d2ff."
+            },
+            {
+                "title": "CVE-2020-14390",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14390",
+                "description": "A flaw was found in the Linux kernel in versions before 5.9-rc6. When changing screen size, an out-of-bounds memory write can occur leading to memory corruption or a denial of service. Due to the nature of the flaw, privilege escalation cannot be fully ruled out."
+            },
+            {
+                "title": "CVE-2020-25641",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25641",
+                "description": "A flaw was found in the Linux kernel's implementation of biovecs in versions before 5.9-rc7. A zero-length biovec request issued by the block subsystem could cause the kernel to enter an infinite loop, causing a denial of service. This flaw allows a local attacker with basic privileges to issue requests to a block device, resulting in a denial of service. The highest threat from this vulnerability is to system availability."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-4.15.0-1059-oracle",
+            "linux-image-4.15.0-1074-gke",
+            "linux-image-4.15.0-1074-raspi2",
+            "linux-image-4.15.0-1079-kvm",
+            "linux-image-4.15.0-1088-aws",
+            "linux-image-4.15.0-1088-gcp",
+            "linux-image-4.15.0-1091-snapdragon",
+            "linux-image-4.15.0-1100-azure",
+            "linux-image-4.15.0-1103-oem",
+            "linux-image-4.15.0-126-generic",
+            "linux-image-4.15.0-126-generic-lpae",
+            "linux-image-4.15.0-126-lowlatency"
+        ]
+    },
+    {
         "title": "USN-4659-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4659-1",
         "cves": [
