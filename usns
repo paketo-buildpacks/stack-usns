@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4661-1: Snapcraft vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4661-1",
+        "cves": [
+            {
+                "title": "CVE-2020-27348",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27348",
+                "description": "[snapcraft includes the current directory in LD_LIBRARY_PATH, allowing a  malicious snap to gain code execution within the context of another snap if  both plug the home interface or similar.]"
+            },
+            {
+                "title": "https://launchpad.net/bugs/1901572",
+                "link": "https://launchpad.net/bugs/1901572",
+                "description": "snapd vulnerable to Library Injection from CWD"
+            }
+        ],
+        "affected_packages": [
+            "snapcraft"
+        ]
+    },
+    {
         "title": "USN-4660-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4660-1",
         "cves": [
@@ -239,6 +258,7 @@
             }
         ],
         "affected_packages": [
+            "linux-image-5.4.0-1023-raspi",
             "linux-image-5.4.0-1030-aws",
             "linux-image-5.4.0-1030-gcp",
             "linux-image-5.4.0-1030-oracle",
