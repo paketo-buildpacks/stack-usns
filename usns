@@ -1,5 +1,51 @@
 [
     {
+        "title": "USN-4664-1: Aptdaemon vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4664-1",
+        "cves": [
+            {
+                "title": "CVE-2020-27349",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27349",
+                "description": "policykit checks are too late"
+            },
+            {
+                "title": "CVE-2020-16128",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16128",
+                "description": ""
+            }
+        ],
+        "affected_packages": [
+            "aptdaemon"
+        ]
+    },
+    {
+        "title": "USN-4663-1: GDK-PixBuf vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4663-1",
+        "cves": [
+            {
+                "title": "CVE-2020-29385",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29385",
+                "description": "infinite loop in write_indexes function in gdk-pixbuf/lzw.c"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4662-1: OpenSSL vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4662-1",
+        "cves": [
+            {
+                "title": "CVE-2020-1971",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1971",
+                "description": "EDIPARTYNAME NULL pointer de-reference"
+            }
+        ],
+        "affected_packages": [
+            "libssl1.0.0",
+            "libssl1.1"
+        ]
+    },
+    {
         "title": "USN-4656-2: X.Org X Server vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4656-2",
         "cves": [
