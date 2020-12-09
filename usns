@@ -11,7 +11,7 @@
             {
                 "title": "CVE-2020-16128",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16128",
-                "description": ""
+                "description": "[file existence disclosure by setting of Terminal/DebconfSocket properties in aptdaemon DBus interface (GHSL-2020-192 and GHSL-2020-196)]"
             }
         ],
         "affected_packages": [
