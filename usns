@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4668-2: python-apt regression",
+        "link": "https://ubuntu.com/security/notices/USN-4668-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1907496",
+                "link": "https://launchpad.net/bugs/1907496",
+                "description": "python-apt-common 2.1.3ubuntu1.1 Ubuntu.info doesn't have 'groovy'"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4665-2: curl vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4665-2",
         "cves": [
