@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4669-1: SquirrelMail vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4669-1",
+        "cves": [
+            {
+                "title": "CVE-2019-12970",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12970",
+                "description": "XSS was discovered in SquirrelMail through 1.4.22 and 1.5.x through 1.5.2. Due to improper handling of RCDATA and RAWTEXT type elements, the built-in sanitization mechanism can be bypassed. Malicious script content from HTML e-mail can be executed within the application context via crafted use of (for example) a NOEMBED, NOFRAMES, NOSCRIPT, or TEXTAREA element."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4668-2: python-apt regression",
         "link": "https://ubuntu.com/security/notices/USN-4668-2",
         "cves": [
