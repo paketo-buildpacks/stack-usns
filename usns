@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4666-2: lxml vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4666-2",
+        "cves": [
+            {
+                "title": "CVE-2020-27783",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27783",
+                "description": "A XSS vulnerability was discovered in python-lxml's clean module. The module's parser didn't properly imitate browsers, which caused different behaviors between the sanitizer and the user's page. A remote attacker could exploit this flaw to run arbitrary HTML/JS code."
+            }
+        ],
+        "affected_packages": [
+            "python-lxml",
+            "python3-lxml"
+        ]
+    },
+    {
         "title": "USN-4669-1: SquirrelMail vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4669-1",
         "cves": [
