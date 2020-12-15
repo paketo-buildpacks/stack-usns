@@ -1,5 +1,69 @@
 [
     {
+        "title": "USN-4671-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4671-1",
+        "cves": [
+            {
+                "title": "CVE-2020-26971",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26971",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26973",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26973",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26978",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26978",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26979",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26979",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-35111",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35111",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26972",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26972",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26976",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26976",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-35113",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35113",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-35114",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35114",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26974",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26974",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-16042",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16042",
+                "description": "[Unknown description]"
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-4670-1: ImageMagick vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4670-1",
         "cves": [
