@@ -1,5 +1,39 @@
 [
     {
+        "title": "USN-4672-1: unzip vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4672-1",
+        "cves": [
+            {
+                "title": "CVE-2018-1000035",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000035",
+                "description": "A heap-based buffer overflow exists in Info-Zip UnZip version \u003c= 6.00 in the processing of password-protected archives that allows an attacker to perform a denial of service or to possibly achieve code execution."
+            },
+            {
+                "title": "CVE-2018-18384",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18384",
+                "description": "Info-ZIP UnZip 6.0 has a buffer overflow in list.c, when a ZIP archive has a crafted relationship between the compressed-size value and the uncompressed-size value, because a buffer size is 10 and is supposed to be 12."
+            },
+            {
+                "title": "CVE-2014-9913",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2014-9913",
+                "description": "Buffer overflow in the list_files function in list.c in Info-Zip UnZip 6.0 allows remote attackers to cause a denial of service (crash) via vectors related to the compression method."
+            },
+            {
+                "title": "CVE-2016-9844",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9844",
+                "description": "Buffer overflow in the zi_short function in zipinfo.c in Info-Zip UnZip 6.0 allows remote attackers to cause a denial of service (crash) via a large compression method value in the central directory file header."
+            },
+            {
+                "title": "CVE-2019-13232",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13232",
+                "description": "Info-ZIP UnZip 6.0 mishandles the overlapping of files inside a ZIP container, leading to denial of service (resource consumption), aka a \"better zip bomb\" issue."
+            }
+        ],
+        "affected_packages": [
+            "unzip"
+        ]
+    },
+    {
         "title": "USN-4671-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4671-1",
         "cves": [
