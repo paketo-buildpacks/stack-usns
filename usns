@@ -233,12 +233,12 @@
             {
                 "title": "CVE-2020-8285",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8285",
-                "description": "FTP wildcard stack buffer overflow in libcurl"
+                "description": "curl 7.21.0 to and including 7.73.0 is vulnerable to uncontrolled recursion due to a stack overflow issue in FTP wildcard match parsing."
             },
             {
                 "title": "CVE-2020-8284",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8284",
-                "description": "malicious server can redirect FTP to malicious host via PASV reponse"
+                "description": "A malicious server can use the FTP PASV response to trick curl 7.73.0 and earlier into connecting back to a given IP address and port, and this way potentially make curl extract information about services that are otherwise private and not disclosed, for example doing port scanning and service banner extractions."
             }
         ],
         "affected_packages": []
