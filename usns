@@ -1,5 +1,39 @@
 [
     {
+        "title": "USN-4674-1: Dovecot vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4674-1",
+        "cves": [
+            {
+                "title": "CVE-2020-24386",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24386",
+                "description": "When imap hibernation is active, an attacker can cause Dovecot to discover file system directory structure and access other users' emails using specially crafted command. The attacker must have valid credentials to access the mail server."
+            },
+            {
+                "title": "CVE-2020-25275",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25275",
+                "description": "Mail delivery / parsing crashed when the 10 000th MIME part was message/rfc822 (or if parent was multipart/digest). This happened due to earlier MIME parsing changes for CVE-2020-12100."
+            }
+        ],
+        "affected_packages": [
+            "dovecot-core"
+        ]
+    },
+    {
+        "title": "USN-4668-3: python-apt regression",
+        "link": "https://ubuntu.com/security/notices/USN-4668-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1907676",
+                "link": "https://launchpad.net/bugs/1907676",
+                "description": "segmentation fault when opening fd"
+            }
+        ],
+        "affected_packages": [
+            "python-apt",
+            "python3-apt"
+        ]
+    },
+    {
         "title": "USN-4673-1: libproxy vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4673-1",
         "cves": [
