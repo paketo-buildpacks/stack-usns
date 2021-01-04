@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4673-1: libproxy vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4673-1",
+        "cves": [
+            {
+                "title": "CVE-2020-26154",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26154",
+                "description": "url.cpp in libproxy through 0.4.15 is prone to a buffer overflow when PAC is enabled, as demonstrated by a large PAC file that is delivered without a Content-length header."
+            }
+        ],
+        "affected_packages": [
+            "libproxy1v5"
+        ]
+    },
+    {
         "title": "USN-4672-1: unzip vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4672-1",
         "cves": [
