@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4674-2: Dovecot vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4674-2",
+        "cves": [
+            {
+                "title": "CVE-2020-25275",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25275",
+                "description": "Mail delivery / parsing crashed when the 10 000th MIME part was message/rfc822 (or if parent was multipart/digest). This happened due to earlier MIME parsing changes for CVE-2020-12100."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4674-1: Dovecot vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4674-1",
         "cves": [
