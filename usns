@@ -1,5 +1,44 @@
 [
     {
+        "title": "USN-4676-1: OpenEXR vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4676-1",
+        "cves": [
+            {
+                "title": "CVE-2020-16588",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16588",
+                "description": "A Null Pointer Deference issue exists in Academy Software Foundation OpenEXR 2.3.0 in generatePreview in makePreview.cpp that can cause a denial of service via a crafted EXR file."
+            },
+            {
+                "title": "CVE-2020-16587",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16587",
+                "description": "A heap-based buffer overflow vulnerability exists in Academy Software Foundation OpenEXR 2.3.0 in chunkOffsetReconstruction in ImfMultiPartInputFile.cpp that can cause a denial of service via a crafted EXR file."
+            },
+            {
+                "title": "CVE-2020-16589",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16589",
+                "description": "A head-based buffer overflow exists in Academy Software Foundation OpenEXR 2.3.0 in writeTileData in ImfTiledOutputFile.cpp that can cause a denial of service via a crafted EXR file."
+            }
+        ],
+        "affected_packages": [
+            "libopenexr22",
+            "openexr"
+        ]
+    },
+    {
+        "title": "USN-4675-1: OpenStack Horizon vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4675-1",
+        "cves": [
+            {
+                "title": "CVE-2020-29565",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29565",
+                "description": "An issue was discovered in OpenStack Horizon before 15.3.2, 16.x before 16.2.1, 17.x and 18.x before 18.3.3, 18.4.x, and 18.5.x. There is a lack of validation of the \"next\" parameter, which would allow someone to supply a malicious URL in Horizon that can cause an automatic redirect to the provided malicious URL."
+            }
+        ],
+        "affected_packages": [
+            "openstack-dashboard"
+        ]
+    },
+    {
         "title": "USN-4674-2: Dovecot vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4674-2",
         "cves": [
