@@ -1,5 +1,31 @@
 [
     {
+        "title": "USN-4677-1: p11-kit vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4677-1",
+        "cves": [
+            {
+                "title": "CVE-2020-29362",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29362",
+                "description": "An issue was discovered in p11-kit 0.21.1 through 0.23.21. A heap-based buffer over-read has been discovered in the RPC protocol used by thep11-kit server/remote commands and the client library. When the remote entity supplies a byte array through a serialized PKCS#11 function call, the receiving entity may allow the reading of up to 4 bytes of memory past the heap allocation."
+            },
+            {
+                "title": "CVE-2020-29363",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29363",
+                "description": "An issue was discovered in p11-kit 0.23.6 through 0.23.21. A heap-based buffer overflow has been discovered in the RPC protocol used by p11-kit server/remote commands and the client library. When the remote entity supplies a serialized byte array in a CK_ATTRIBUTE, the receiving entity may not allocate sufficient length for the buffer to store the deserialized value."
+            },
+            {
+                "title": "CVE-2020-29361",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29361",
+                "description": "An issue was discovered in p11-kit 0.21.1 through 0.23.21. Multiple integer overflows have been discovered in the array allocations in the p11-kit library and the p11-kit list command, where overflow checks are missing before calling realloc or calloc."
+            }
+        ],
+        "affected_packages": [
+            "libp11-kit0",
+            "p11-kit",
+            "p11-kit-modules"
+        ]
+    },
+    {
         "title": "USN-4676-1: OpenEXR vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4676-1",
         "cves": [
