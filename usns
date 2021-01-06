@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4677-2: p11-kit vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4677-2",
+        "cves": [
+            {
+                "title": "CVE-2020-29361",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29361",
+                "description": "An issue was discovered in p11-kit 0.21.1 through 0.23.21. Multiple integer overflows have been discovered in the array allocations in the p11-kit library and the p11-kit list command, where overflow checks are missing before calling realloc or calloc."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4682-1: WavPack vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4682-1",
         "cves": [
