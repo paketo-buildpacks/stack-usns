@@ -1,5 +1,170 @@
 [
     {
+        "title": "USN-4678-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4678-1",
+        "cves": [
+            {
+                "title": "CVE-2020-12912",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12912",
+                "description": "A potential vulnerability in the AMD extension to Linux \"hwmon\" service may allow an attacker to use the Linux-based Running Average Power Limit (RAPL) interface to show various side channel attacks. In line with industry partners, AMD has updated the RAPL interface to require privileged access."
+            },
+            {
+                "title": "CVE-2020-29534",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29534",
+                "description": "An issue was discovered in the Linux kernel before 5.9.3. io_uring takes a non-refcounted reference to the files_struct of the process that submitted a request, causing execve() to incorrectly optimize unshare_fd(), aka CID-0f2122045b94."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4680-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4680-1",
+        "cves": [
+            {
+                "title": "CVE-2020-0423",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0423",
+                "description": "In binder_release_work of binder.c, there is a possible use-after-free due to improper locking. This could lead to local escalation of privilege in the kernel with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-161151868References: N/A"
+            },
+            {
+                "title": "CVE-2020-28974",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28974",
+                "description": "A slab-out-of-bounds read in fbcon in the Linux kernel before 5.9.7 could be used by local attackers to read privileged information or potentially crash the kernel, aka CID-3c4e0dff2095. This occurs because KD_FONT_OP_COPY in drivers/tty/vt/vt.c can be used for manipulations such as font height."
+            },
+            {
+                "title": "CVE-2020-25656",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25656",
+                "description": "A flaw was found in the Linux kernel. A use-after-free was found in the way the console subsystem was using ioctls KDGKBSENT and KDSKBSENT. A local user could use this flaw to get read memory access out of bounds. The highest threat from this vulnerability is to data confidentiality."
+            },
+            {
+                "title": "CVE-2020-10135",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10135",
+                "description": "Legacy pairing and secure-connections pairing authentication in Bluetooth BR/EDR Core Specification v5.2 and earlier may allow an unauthenticated user to complete authentication without pairing credentials via adjacent access. An unauthenticated, adjacent attacker could impersonate a Bluetooth BR/EDR master or slave to pair with a previously paired remote device to successfully complete the authentication procedure without knowing the link key."
+            },
+            {
+                "title": "CVE-2020-27675",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27675",
+                "description": "An issue was discovered in the Linux kernel through 5.9.1, as used with Xen through 4.14.x. drivers/xen/events/events_base.c allows event-channel removal during the event-handling loop (a race condition). This can cause a use-after-free or NULL pointer dereference, as demonstrated by a dom0 crash via events for an in-reconfiguration paravirtualized device, aka CID-073d0552ead5."
+            },
+            {
+                "title": "CVE-2020-27777",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27777",
+                "description": "A flaw was found in the way RTAS handled memory accesses in userspace to kernel communication. On a locked down (usually due to Secure Boot) guest system running on top of PowerVM or KVM hypervisors (pseries platform) a root like local user could use this flaw to further increase their privileges to that of a running kernel."
+            },
+            {
+                "title": "CVE-2020-25705",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25705",
+                "description": "A flaw in the way reply ICMP packets are limited in the Linux kernel functionality was found that allows to quickly scan open UDP ports. This flaw allows an off-path remote user to effectively bypassing source port UDP randomization. The highest threat from this vulnerability is to confidentiality and possibly integrity, because software that relies on UDP source port randomization are indirectly affected as well. Kernel versions before 5.10 may be vulnerable to this issue."
+            },
+            {
+                "title": "CVE-2019-19770",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19770",
+                "description": "** DISPUTED ** In the Linux kernel 4.19.83, there is a use-after-free (read) in the debugfs_remove function in fs/debugfs/inode.c (which is used to remove a file or directory in debugfs that was previously created with a call to another debugfs function such as debugfs_create_file). NOTE: Linux kernel developers dispute this issue as not being an issue with debugfs, instead this is an issue with misuse of debugfs within blktrace."
+            },
+            {
+                "title": "CVE-2020-25668",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25668",
+                "description": "[concurrency use-after-free in vt]"
+            }
+        ],
+        "affected_packages": [
+            "linux-image-4.15.0-1062-oracle",
+            "linux-image-4.15.0-1077-gke",
+            "linux-image-4.15.0-1077-raspi2",
+            "linux-image-4.15.0-1082-kvm",
+            "linux-image-4.15.0-1091-aws",
+            "linux-image-4.15.0-1091-gcp",
+            "linux-image-4.15.0-1094-snapdragon",
+            "linux-image-4.15.0-1103-azure",
+            "linux-image-4.15.0-129-generic",
+            "linux-image-4.15.0-129-generic-lpae",
+            "linux-image-4.15.0-129-lowlatency"
+        ]
+    },
+    {
+        "title": "USN-4681-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4681-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25668",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25668",
+                "description": "[concurrency use-after-free in vt]"
+            },
+            {
+                "title": "CVE-2020-4788",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-4788",
+                "description": "IBM Power9 (AIX 7.1, 7.2, and VIOS 3.1) processors could allow a local user to obtain sensitive information from the data in the L1 cache under extenuating circumstances. IBM X-Force ID: 189296."
+            },
+            {
+                "title": "CVE-2019-0148",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0148",
+                "description": "Resource leak in i40e driver for Intel(R) Ethernet 700 Series Controllers versions before 7.0 may allow an authenticated user to potentially enable a denial of service via local access."
+            },
+            {
+                "title": "CVE-2020-28974",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28974",
+                "description": "A slab-out-of-bounds read in fbcon in the Linux kernel before 5.9.7 could be used by local attackers to read privileged information or potentially crash the kernel, aka CID-3c4e0dff2095. This occurs because KD_FONT_OP_COPY in drivers/tty/vt/vt.c can be used for manipulations such as font height."
+            },
+            {
+                "title": "CVE-2020-27675",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27675",
+                "description": "An issue was discovered in the Linux kernel through 5.9.1, as used with Xen through 4.14.x. drivers/xen/events/events_base.c allows event-channel removal during the event-handling loop (a race condition). This can cause a use-after-free or NULL pointer dereference, as demonstrated by a dom0 crash via events for an in-reconfiguration paravirtualized device, aka CID-073d0552ead5."
+            },
+            {
+                "title": "CVE-2020-25656",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25656",
+                "description": "A flaw was found in the Linux kernel. A use-after-free was found in the way the console subsystem was using ioctls KDGKBSENT and KDSKBSENT. A local user could use this flaw to get read memory access out of bounds. The highest threat from this vulnerability is to data confidentiality."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4679-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4679-1",
+        "cves": [
+            {
+                "title": "CVE-2020-28974",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28974",
+                "description": "A slab-out-of-bounds read in fbcon in the Linux kernel before 5.9.7 could be used by local attackers to read privileged information or potentially crash the kernel, aka CID-3c4e0dff2095. This occurs because KD_FONT_OP_COPY in drivers/tty/vt/vt.c can be used for manipulations such as font height."
+            },
+            {
+                "title": "CVE-2020-25656",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25656",
+                "description": "A flaw was found in the Linux kernel. A use-after-free was found in the way the console subsystem was using ioctls KDGKBSENT and KDSKBSENT. A local user could use this flaw to get read memory access out of bounds. The highest threat from this vulnerability is to data confidentiality."
+            },
+            {
+                "title": "CVE-2020-25704",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25704",
+                "description": "A flaw memory leak in the Linux kernel performance monitoring subsystem was found in the way if using PERF_EVENT_IOC_SET_FILTER. A local user could use this flaw to starve the resources causing denial of service."
+            },
+            {
+                "title": "CVE-2020-27675",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27675",
+                "description": "An issue was discovered in the Linux kernel through 5.9.1, as used with Xen through 4.14.x. drivers/xen/events/events_base.c allows event-channel removal during the event-handling loop (a race condition). This can cause a use-after-free or NULL pointer dereference, as demonstrated by a dom0 crash via events for an in-reconfiguration paravirtualized device, aka CID-073d0552ead5."
+            },
+            {
+                "title": "CVE-2020-27777",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27777",
+                "description": "A flaw was found in the way RTAS handled memory accesses in userspace to kernel communication. On a locked down (usually due to Secure Boot) guest system running on top of PowerVM or KVM hypervisors (pseries platform) a root like local user could use this flaw to further increase their privileges to that of a running kernel."
+            },
+            {
+                "title": "CVE-2020-25668",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25668",
+                "description": "[concurrency use-after-free in vt]"
+            }
+        ],
+        "affected_packages": [
+            "linux-image-5.4.0-1026-raspi",
+            "linux-image-5.4.0-1033-gcp",
+            "linux-image-5.4.0-1033-gke",
+            "linux-image-5.4.0-1034-aws",
+            "linux-image-5.4.0-1034-oracle",
+            "linux-image-5.4.0-1035-azure",
+            "linux-image-5.4.0-59-generic",
+            "linux-image-5.4.0-59-generic-lpae",
+            "linux-image-5.4.0-59-lowlatency"
+        ]
+    },
+    {
         "title": "USN-4677-1: p11-kit vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4677-1",
         "cves": [
