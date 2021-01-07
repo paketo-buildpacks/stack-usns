@@ -1,5 +1,129 @@
 [
     {
+        "title": "USN-4686-1: Ghostscript vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4686-1",
+        "cves": [
+            {
+                "title": "CVE-2020-27842",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27842",
+                "description": "There's a flaw in openjpeg's t2 encoder in versions prior to 2.4.0. An attacker who is able to provide crafted input to be processed by openjpeg could cause a null pointer dereference. The highest impact of this flaw is to application availability."
+            },
+            {
+                "title": "CVE-2020-27845",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27845",
+                "description": "There's a flaw in src/lib/openjp2/pi.c of openjpeg in versions prior to 2.4.0. If an attacker is able to provide untrusted input to openjpeg's conversion/encoding functionality, they could cause an out-of-bounds read. The highest impact of this flaw is to application availability."
+            },
+            {
+                "title": "CVE-2020-27814",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27814",
+                "description": "Heap-buffer-overflow in lib/openjp2/mqc.c"
+            },
+            {
+                "title": "CVE-2020-27841",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27841",
+                "description": "There's a flaw in openjpeg in versions prior to 2.4.0 in src/lib/openjp2/pi.c. When an attacker is able to provide crafted input to be processed by the openjpeg encoder, this could cause an out-of-bounds read. The greatest impact from this flaw is to application availability."
+            },
+            {
+                "title": "CVE-2020-6851",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6851",
+                "description": "OpenJPEG through 2.3.1 has a heap-based buffer overflow in opj_t1_clbl_decode_processor in openjp2/t1.c because of lack of opj_j2k_update_image_dimensions validation."
+            },
+            {
+                "title": "CVE-2020-27824",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27824",
+                "description": "Global-buffer-overflow in lib/openjp2/dwt.c"
+            },
+            {
+                "title": "CVE-2020-27843",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27843",
+                "description": "A flaw was found in OpenJPEG in versions prior to 2.4.0. This flaw allows an attacker to provide specially crafted input to the conversion or encoding functionality, causing an out-of-bounds read. The highest threat from this vulnerability is system availability."
+            },
+            {
+                "title": "CVE-2020-8112",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8112",
+                "description": "opj_t1_clbl_decode_processor in openjp2/t1.c in OpenJPEG 2.3.1 through 2020-01-28 has a heap-based buffer overflow in the qmfbid==1 case, a different issue than CVE-2020-6851."
+            },
+            {
+                "title": "CVE-2018-5727",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-5727",
+                "description": "In OpenJPEG 2.3.0, there is an integer overflow vulnerability in the opj_t1_encode_cblks function (openjp2/t1.c). Remote attackers could leverage this vulnerability to cause a denial of service via a crafted bmp file."
+            }
+        ],
+        "affected_packages": [
+            "ghostscript",
+            "libgs9"
+        ]
+    },
+    {
+        "title": "USN-4685-1: OpenJPEG vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4685-1",
+        "cves": [
+            {
+                "title": "CVE-2020-27842",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27842",
+                "description": "There's a flaw in openjpeg's t2 encoder in versions prior to 2.4.0. An attacker who is able to provide crafted input to be processed by openjpeg could cause a null pointer dereference. The highest impact of this flaw is to application availability."
+            },
+            {
+                "title": "CVE-2020-27841",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27841",
+                "description": "There's a flaw in openjpeg in versions prior to 2.4.0 in src/lib/openjp2/pi.c. When an attacker is able to provide crafted input to be processed by the openjpeg encoder, this could cause an out-of-bounds read. The greatest impact from this flaw is to application availability."
+            },
+            {
+                "title": "CVE-2020-27824",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27824",
+                "description": "Global-buffer-overflow in lib/openjp2/dwt.c"
+            },
+            {
+                "title": "CVE-2020-15389",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15389",
+                "description": "jp2/opj_decompress.c in OpenJPEG through 2.3.1 has a use-after-free that can be triggered if there is a mix of valid and invalid files in a directory operated on by the decompressor. Triggering a double-free may also be possible. This is related to calling opj_image_destroy twice."
+            },
+            {
+                "title": "CVE-2020-27823",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27823",
+                "description": "Heap-buffer-overflow write in lib-openjp2"
+            },
+            {
+                "title": "CVE-2020-27845",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27845",
+                "description": "There's a flaw in src/lib/openjp2/pi.c of openjpeg in versions prior to 2.4.0. If an attacker is able to provide untrusted input to openjpeg's conversion/encoding functionality, they could cause an out-of-bounds read. The highest impact of this flaw is to application availability."
+            },
+            {
+                "title": "CVE-2020-27843",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27843",
+                "description": "A flaw was found in OpenJPEG in versions prior to 2.4.0. This flaw allows an attacker to provide specially crafted input to the conversion or encoding functionality, causing an out-of-bounds read. The highest threat from this vulnerability is system availability."
+            },
+            {
+                "title": "CVE-2020-27814",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27814",
+                "description": "Heap-buffer-overflow in lib/openjp2/mqc.c"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4684-1: EDK II vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4684-1",
+        "cves": [
+            {
+                "title": "CVE-2019-14584",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14584",
+                "description": "NULL pointer dereference in AuthenticodeVerify()"
+            },
+            {
+                "title": "CVE-2019-14562",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14562",
+                "description": "Integer overflow in DxeImageVerificationHandler() EDK II may allow an authenticated user to potentially enable denial of service via local access."
+            }
+        ],
+        "affected_packages": [
+            "ovmf",
+            "qemu-efi",
+            "qemu-efi-aarch64",
+            "qemu-efi-arm"
+        ]
+    },
+    {
         "title": "USN-4683-1: Linux kernel (OEM) vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4683-1",
         "cves": [
