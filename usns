@@ -1,5 +1,32 @@
 [
     {
+        "title": "USN-4688-1: JasPer vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4688-1",
+        "cves": [
+            {
+                "title": "CVE-2017-9782",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9782",
+                "description": "JasPer 2.0.12 allows remote attackers to cause a denial of service (heap-based buffer over-read and application crash) via a crafted image, related to the jp2_decode function in libjasper/jp2/jp2_dec.c."
+            },
+            {
+                "title": "CVE-2018-18873",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18873",
+                "description": "An issue was discovered in JasPer 2.0.14. There is a NULL pointer dereference in the function ras_putdatastd in ras/ras_enc.c."
+            },
+            {
+                "title": "CVE-2018-19542",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19542",
+                "description": "An issue was discovered in JasPer 2.0.14. There is a NULL pointer dereference in the function jp2_decode in libjasper/jp2/jp2_dec.c, leading to a denial of service."
+            },
+            {
+                "title": "CVE-2020-27828",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27828",
+                "description": "There's a flaw in jasper's jpc encoder in versions prior to 2.0.23. Crafted input provided to jasper by an attacker could cause an arbitrary out-of-bounds write. This could potentially affect data confidentiality, integrity, or application availability."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4687-1: Firefox vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4687-1",
         "cves": [
