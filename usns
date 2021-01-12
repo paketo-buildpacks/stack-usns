@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4690-1: coTURN vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4690-1",
+        "cves": [
+            {
+                "title": "CVE-2020-26262",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26262",
+                "description": "By default coturn does not allow peers to connect and relay packets to loopback addresses in the range of `127.x.x.x`. However, it was observed that when sending a `CONNECT` request with the `XOR-PEER-ADDRESS` value of `0.0.0.0`, a successful response was received and subsequently, `CONNECTIONBIND` also received a successful response. Coturn then is able to relay packets to the loopback interface. Additionally, when coturn is listening on IPv6, which is default, the loopback interface can also be reached by making use of either `[::1]` or `[::]` as the peer address."
+            }
+        ],
+        "affected_packages": [
+            "coturn"
+        ]
+    },
+    {
         "title": "USN-4649-2: xdg-utils regression",
         "link": "https://ubuntu.com/security/notices/USN-4649-2",
         "cves": [
