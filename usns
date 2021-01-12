@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4649-2: xdg-utils regression",
+        "link": "https://ubuntu.com/security/notices/USN-4649-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1909941",
+                "link": "https://launchpad.net/bugs/1909941",
+                "description": "xdg-email changes break simple-scan email functionality"
+            }
+        ],
+        "affected_packages": [
+            "xdg-utils"
+        ]
+    },
+    {
         "title": "USN-4689-2: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4689-2",
         "cves": [
