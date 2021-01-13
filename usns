@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4692-1: tar vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4692-1",
+        "cves": [
+            {
+                "title": "CVE-2018-20482",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20482",
+                "description": "GNU Tar through 1.30, when --sparse is used, mishandles file shrinkage during read access, which allows local users to cause a denial of service (infinite read loop in sparse_dump_region in sparse.c) by modifying a file that is supposed to be archived by a different user's process (e.g., a system backup running as root)."
+            },
+            {
+                "title": "CVE-2019-9923",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9923",
+                "description": "pax_decode_header in sparse.c in GNU Tar before 1.32 had a NULL pointer dereference when parsing certain archives that have malformed extended headers."
+            }
+        ],
+        "affected_packages": [
+            "tar"
+        ]
+    },
+    {
         "title": "USN-4691-1: Open vSwitch vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4691-1",
         "cves": [
