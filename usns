@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4691-1: Open vSwitch vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4691-1",
+        "cves": [
+            {
+                "title": "CVE-2015-8011",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2015-8011",
+                "description": "Buffer overflow in the lldp_decode function in daemon/protocols/lldp.c in lldpd before 0.8.0 allows remote attackers to cause a denial of service (daemon crash) and possibly execute arbitrary code via vectors involving large management addresses and TLV boundaries."
+            },
+            {
+                "title": "CVE-2020-27827",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27827",
+                "description": "lldp: Externally triggered memory leak"
+            }
+        ],
+        "affected_packages": [
+            "openvswitch-common"
+        ]
+    },
+    {
         "title": "USN-4690-1: coTURN vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4690-1",
         "cves": [
