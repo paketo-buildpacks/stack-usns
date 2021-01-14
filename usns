@@ -1,22 +1,15 @@
 [
     {
+        "title": "USN-4653-2: containerd vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4653-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-4692-1: tar vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4692-1",
-        "cves": [
-            {
-                "title": "CVE-2018-20482",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20482",
-                "description": "GNU Tar through 1.30, when --sparse is used, mishandles file shrinkage during read access, which allows local users to cause a denial of service (infinite read loop in sparse_dump_region in sparse.c) by modifying a file that is supposed to be archived by a different user's process (e.g., a system backup running as root)."
-            },
-            {
-                "title": "CVE-2019-9923",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9923",
-                "description": "pax_decode_header in sparse.c in GNU Tar before 1.32 had a NULL pointer dereference when parsing certain archives that have malformed extended headers."
-            }
-        ],
-        "affected_packages": [
-            "tar"
-        ]
+        "cves": null,
+        "affected_packages": []
     },
     {
         "title": "USN-4691-1: Open vSwitch vulnerabilities",
@@ -30,7 +23,7 @@
             {
                 "title": "CVE-2020-27827",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27827",
-                "description": "lldp: Externally triggered memory leak"
+                "description": ""
             }
         ],
         "affected_packages": [
@@ -40,142 +33,43 @@
     {
         "title": "USN-4690-1: coTURN vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4690-1",
-        "cves": [
-            {
-                "title": "CVE-2020-26262",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26262",
-                "description": "By default coturn does not allow peers to connect and relay packets to loopback addresses in the range of `127.x.x.x`. However, it was observed that when sending a `CONNECT` request with the `XOR-PEER-ADDRESS` value of `0.0.0.0`, a successful response was received and subsequently, `CONNECTIONBIND` also received a successful response. Coturn then is able to relay packets to the loopback interface. Additionally, when coturn is listening on IPv6, which is default, the loopback interface can also be reached by making use of either `[::1]` or `[::]` as the peer address."
-            }
-        ],
-        "affected_packages": [
-            "coturn"
-        ]
+        "cves": null,
+        "affected_packages": []
     },
     {
         "title": "USN-4649-2: xdg-utils regression",
         "link": "https://ubuntu.com/security/notices/USN-4649-2",
-        "cves": [
-            {
-                "title": "https://launchpad.net/bugs/1909941",
-                "link": "https://launchpad.net/bugs/1909941",
-                "description": "xdg-email changes break simple-scan email functionality"
-            }
-        ],
-        "affected_packages": [
-            "xdg-utils"
-        ]
+        "cves": null,
+        "affected_packages": []
     },
     {
         "title": "USN-4689-2: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4689-2",
-        "cves": [
-            {
-                "title": "CVE-2021-1052",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1052",
-                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which user-mode clients can access legacy privileged APIs, which may lead to denial of service, escalation of privileges, and information disclosure."
-            },
-            {
-                "title": "CVE-2021-1053",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1053",
-                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which improper validation of a user pointer may lead to denial of service."
-            },
-            {
-                "title": "CVE-2021-1056",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1056",
-                "description": "NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko) in which it does not completely honor operating system file system permissions to provide GPU device-level isolation, which may lead to denial of service or information disclosure."
-            }
-        ],
-        "affected_packages": [
-            "linux-image-4.15.0-1063-oracle",
-            "linux-image-4.15.0-1092-aws",
-            "linux-image-4.15.0-1104-azure",
-            "linux-image-4.15.0-130-generic",
-            "linux-image-4.15.0-130-lowlatency",
-            "linux-image-5.4.0-1034-gcp",
-            "linux-image-5.4.0-1035-aws",
-            "linux-image-5.4.0-1035-oracle",
-            "linux-image-5.4.0-1036-azure",
-            "linux-image-5.4.0-60-generic",
-            "linux-image-5.4.0-60-lowlatency"
-        ]
+        "cves": null,
+        "affected_packages": []
     },
     {
         "title": "USN-4689-1: NVIDIA graphics drivers vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4689-1",
-        "cves": [
-            {
-                "title": "CVE-2021-1052",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1052",
-                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which user-mode clients can access legacy privileged APIs, which may lead to denial of service, escalation of privileges, and information disclosure."
-            },
-            {
-                "title": "CVE-2021-1053",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1053",
-                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which improper validation of a user pointer may lead to denial of service."
-            },
-            {
-                "title": "CVE-2021-1056",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1056",
-                "description": "NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko) in which it does not completely honor operating system file system permissions to provide GPU device-level isolation, which may lead to denial of service or information disclosure."
-            }
-        ],
-        "affected_packages": [
-            "xserver-xorg-video-nvidia-390",
-            "xserver-xorg-video-nvidia-440",
-            "xserver-xorg-video-nvidia-450",
-            "xserver-xorg-video-nvidia-455",
-            "xserver-xorg-video-nvidia-460"
-        ]
+        "cves": null,
+        "affected_packages": []
     },
     {
         "title": "USN-4668-4: python-apt vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4668-4",
-        "cves": [
-            {
-                "title": "CVE-2020-27351",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27351",
-                "description": "Various memory and file descriptor leaks were found in apt-python files python/arfile.cc, python/tag.cc, python/tarfile.cc, aka GHSL-2020-170. This issue affects: python-apt 1.1.0~beta1 versions prior to 1.1.0~beta1ubuntu0.16.04.10; 1.6.5ubuntu0 versions prior to 1.6.5ubuntu0.4; 2.0.0ubuntu0 versions prior to 2.0.0ubuntu0.20.04.2; 2.1.3ubuntu1 versions prior to 2.1.3ubuntu1.1;"
-            }
-        ],
+        "cves": null,
         "affected_packages": []
     },
     {
         "title": "USN-4667-2: APT vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4667-2",
-        "cves": [
-            {
-                "title": "CVE-2020-27350",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27350",
-                "description": "APT had several integer overflows and underflows while parsing .deb packages, aka GHSL-2020-168 GHSL-2020-169, in files apt-pkg/contrib/extracttar.cc, apt-pkg/deb/debfile.cc, and apt-pkg/contrib/arfile.cc. This issue affects: apt 1.2.32ubuntu0 versions prior to 1.2.32ubuntu0.2; 1.6.12ubuntu0 versions prior to 1.6.12ubuntu0.2; 2.0.2ubuntu0 versions prior to 2.0.2ubuntu0.2; 2.1.10ubuntu0 versions prior to 2.1.10ubuntu0.1;"
-            }
-        ],
+        "cves": null,
         "affected_packages": []
     },
     {
         "title": "USN-4688-1: JasPer vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4688-1",
-        "cves": [
-            {
-                "title": "CVE-2017-9782",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9782",
-                "description": "JasPer 2.0.12 allows remote attackers to cause a denial of service (heap-based buffer over-read and application crash) via a crafted image, related to the jp2_decode function in libjasper/jp2/jp2_dec.c."
-            },
-            {
-                "title": "CVE-2018-18873",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18873",
-                "description": "An issue was discovered in JasPer 2.0.14. There is a NULL pointer dereference in the function ras_putdatastd in ras/ras_enc.c."
-            },
-            {
-                "title": "CVE-2018-19542",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19542",
-                "description": "An issue was discovered in JasPer 2.0.14. There is a NULL pointer dereference in the function jp2_decode in libjasper/jp2/jp2_dec.c, leading to a denial of service."
-            },
-            {
-                "title": "CVE-2020-27828",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27828",
-                "description": "There's a flaw in jasper's jpc encoder in versions prior to 2.0.23. Crafted input provided to jasper by an attacker could cause an arbitrary out-of-bounds write. This could potentially affect data confidentiality, integrity, or application availability."
-            }
-        ],
+        "cves": null,
         "affected_packages": []
     },
     {
