@@ -81,8 +81,8 @@ func getUSNsFromFeed(rssURL string) ([]USN, error) {
 
 	var feedUSNs []USN
 	for _, item := range feed.Items {
-		usnBody, err := get(item.Link)
-		if err != nil {
+		usnBody, code, err := get(item.Link)
+		if err != nil || code != http.StatusOK {
 			return nil, fmt.Errorf("error getting USN: %w", err)
 		}
 
@@ -119,17 +119,17 @@ func resolveUSNs(feedUSNs, recordedUSNs []USN) []USN {
 	return append(newUSNs, recordedUSNs...)
 }
 
-func get(url string) (string, error) {
+func get(url string) (string, int, error) {
 	resp, err := http.Get(url)
 	if err != nil {
-		return "", err
+		return "", 0, err
 	}
 
 	defer resp.Body.Close()
 
 	respBody, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		return "", err
+		return "", 0, err
 	}
 
 	body := html.UnescapeString(string(respBody))
@@ -138,7 +138,7 @@ func get(url string) (string, error) {
 	body = strings.ReplaceAll(body, "<br>", " ")
 	body = strings.ReplaceAll(body, "</br>", " ")
 
-	return body, nil
+	return body, resp.StatusCode, nil
 }
 
 func getAffectedPackages(usnBody string) []string {
@@ -197,9 +197,13 @@ func extractCVEs(usnBody string) ([]CVE, error) {
 }
 
 func getCVEDescription(url string) (string, error) {
-	body, err := get(url)
+	body, code, err := get(url)
 	if err != nil {
 		return "", err
+	}
+
+	if code != http.StatusOK {
+		return "", nil
 	}
 
 	re := regexp.MustCompile(`Published: <strong.*?<p>(.*?)</p>`)
@@ -213,9 +217,13 @@ func getCVEDescription(url string) (string, error) {
 }
 
 func getLPDescription(url string) (string, error) {
-	body, err := get(url)
+	body, code, err := get(url)
 	if err != nil {
 		return "", err
+	}
+
+	if code != http.StatusOK {
+		return "", nil
 	}
 
 	re := regexp.MustCompile(`"edit-title">.*?<span.*?>(.*?)</span>`)
