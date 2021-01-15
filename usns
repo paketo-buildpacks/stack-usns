@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4694-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4694-1",
+        "cves": [
+            {
+                "title": "CVE-2020-28374",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28374",
+                "description": "SCSI \"EXTENDED COPY\" (XCOPY) requests sent to a Linux SCSI target (LIO) allow an attacker to read or write anywhere on any LIO backstore configured on the host, provided the attacker has access to one LUN and knowledge of the victim backstore's vpd_unit_serial (AKA \"wwn\"). This is possible regardless of the transport/HBA settings for the victim backstore."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-4.15.0-132-generic",
+            "linux-image-4.15.0-132-generic-lpae",
+            "linux-image-4.15.0-132-lowlatency",
+            "linux-image-5.4.0-62-generic",
+            "linux-image-5.4.0-62-generic-lpae",
+            "linux-image-5.4.0-62-lowlatency"
+        ]
+    },
+    {
         "title": "USN-4653-2: containerd vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4653-2",
         "cves": [
