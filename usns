@@ -1,5 +1,30 @@
 [
     {
+        "title": "USN-4697-1: Pillow vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4697-1",
+        "cves": [
+            {
+                "title": "CVE-2020-35655",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35655",
+                "description": "In Pillow before 8.1.0, SGIRleDecode has a 4-byte buffer over-read when decoding crafted SGI RLE image files because offsets and length tables are mishandled."
+            },
+            {
+                "title": "CVE-2020-35654",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35654",
+                "description": "In Pillow before 8.1.0, TiffDecode has a heap-based buffer overflow when decoding crafted YCbCr files because of certain interpretation conflicts with LibTIFF in RGBA mode."
+            },
+            {
+                "title": "CVE-2020-35653",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35653",
+                "description": "In Pillow before 8.1.0, PcxDecode has a buffer over-read when decoding a crafted PCX file because the user-supplied stride value is trusted for buffer calculations."
+            }
+        ],
+        "affected_packages": [
+            "python-pil",
+            "python3-pil"
+        ]
+    },
+    {
         "title": "USN-4696-1: HTMLDOC vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4696-1",
         "cves": [
