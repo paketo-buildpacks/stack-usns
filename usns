@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4696-1: HTMLDOC vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4696-1",
+        "cves": [
+            {
+                "title": "CVE-2019-19630",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19630",
+                "description": "HTMLDOC 1.9.7 allows a stack-based buffer overflow in the hd_strlcpy() function in string.c (when called from render_contents in ps-pdf.cxx) via a crafted HTML document."
+            }
+        ],
+        "affected_packages": [
+            "htmldoc"
+        ]
+    },
+    {
         "title": "USN-4695-1: icoutils vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4695-1",
         "cves": [
