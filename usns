@@ -1,5 +1,47 @@
 [
     {
+        "title": "USN-4695-1: icoutils vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4695-1",
+        "cves": [
+            {
+                "title": "CVE-2017-5332",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-5332",
+                "description": "The extract_group_icon_cursor_resource in wrestool/extract.c in icoutils before 0.31.1 can access unallocated memory, which allows local users to cause a denial of service (process crash) and execute arbitrary code via a crafted executable."
+            },
+            {
+                "title": "CVE-2017-6011",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6011",
+                "description": "An issue was discovered in icoutils 0.31.1. An out-of-bounds read leading to a buffer overflow was observed in the \"simple_vec\" function in the \"extract.c\" source file. This affects icotool."
+            },
+            {
+                "title": "CVE-2017-6009",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6009",
+                "description": "An issue was discovered in icoutils 0.31.1. A buffer overflow was observed in the \"decode_ne_resource_id\" function in the \"restable.c\" source file. This is happening because the \"len\" parameter for memcpy is not checked for size and thus becomes a negative integer in the process, resulting in a failed memcpy. This affects wrestool."
+            },
+            {
+                "title": "CVE-2017-5331",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-5331",
+                "description": "Integer overflow in the check_offset function in b/wrestool/fileread.c in icoutils before 0.31.1 allows local users to cause a denial of service (process crash) and execute arbitrary code via a crafted executable."
+            },
+            {
+                "title": "CVE-2017-6010",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6010",
+                "description": "An issue was discovered in icoutils 0.31.1. A buffer overflow was observed in the \"extract_icons\" function in the \"extract.c\" source file. This issue can be triggered by processing a corrupted ico file and will result in an icotool crash."
+            },
+            {
+                "title": "CVE-2017-5208",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-5208",
+                "description": "Integer overflow in the wrestool program in icoutils before 0.31.1 allows remote attackers to cause a denial of service (memory corruption) via a crafted executable, which triggers a denial of service (application crash) or the possibility of execution of arbitrary code."
+            },
+            {
+                "title": "CVE-2017-5333",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-5333",
+                "description": "Integer overflow in the extract_group_icon_cursor_resource function in b/wrestool/extract.c in icoutils before 0.31.1 allows local users to cause a denial of service (process crash) or execute arbitrary code via a crafted executable file."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4693-1: Ampache vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4693-1",
         "cves": [
