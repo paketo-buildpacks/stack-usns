@@ -1,5 +1,70 @@
 [
     {
+        "title": "USN-4699-1: Apache Log4net vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4699-1",
+        "cves": [
+            {
+                "title": "CVE-2018-1285",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1285",
+                "description": "Apache log4net versions before 2.0.10 do not disable XML external entities when parsing log4net configuration files. This allows for XXE-based attacks in applications that accept attacker-controlled log4net configuration files."
+            }
+        ],
+        "affected_packages": [
+            "liblog4net1.2-cil"
+        ]
+    },
+    {
+        "title": "USN-4698-1: Dnsmasq vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4698-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25684",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25684",
+                "description": "A lack of proper address/port check implemented in Dnsmasq version \u003c 2.83 reply_query function makes forging replies easier to an off-path attacker."
+            },
+            {
+                "title": "CVE-2020-25683",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25683",
+                "description": "Dnsmasq version before 2.83 is susceptible to a heap-based buffer overflow when DNSSEC is enabled. A remote attacker, who can create valid DNS replies, could use this flaw to cause an overflow in a heap-allocated memory. This flaw is caused by the lack of length checks in rtc1035.c:extract_name(), which could be abused to make the code execute memcpy() with a negative size in get_rdata() and cause a crash in Dnsmasq, resulting in a Denial of Service."
+            },
+            {
+                "title": "CVE-2020-25686",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25686",
+                "description": "Multiple DNS query requests for the same resource name (RRNAME) by Dnsmasq versions before 2.83 allows for remote attackers to spoof DNS traffic, using a birthday attack (RFC 5452), that can lead to DNS cache poisoning."
+            },
+            {
+                "title": "CVE-2020-25687",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25687",
+                "description": "Dnsmasq versions before 2.83 is vulnerable to a heap-based buffer overflow with large memcpy in sort_rrset() when DNSSEC is enabled. A remote attacker, who can create valid DNS replies, could use this flaw to cause an overflow in a heap-allocated memory. This flaw is caused by the lack of length checks in rtc1035.c:extract_name(), which could be abused to make the code execute memcpy() with a negative size in sort_rrset() and cause a crash in dnsmasq, resulting in a Denial of Service."
+            },
+            {
+                "title": "CVE-2020-25681",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25681",
+                "description": "Dnsmasq versions before 2.83 is susceptible to a heap-based buffer overflow in sort_rrset() when DNSSEC is used. This can allow a remote attacker to write arbitrary data into target device's memory that can lead to memory corruption and other unexpected behaviors on the target device."
+            },
+            {
+                "title": "CVE-2019-14834",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14834",
+                "description": "A vulnerability was found in dnsmasq before version 2.81, where the memory leak allows remote attackers to cause a denial of service (memory consumption) via vectors involving DHCP response creation."
+            },
+            {
+                "title": "CVE-2020-25682",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25682",
+                "description": "Dnsmasq versions before 2.83 is susceptible to buffer overflow in extract_name() function due to missing length check, when DNSSEC is enabled. This can allow a remote attacker to cause memory corruption on the target device."
+            },
+            {
+                "title": "CVE-2020-25685",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25685",
+                "description": "A lack of query resource name (RRNAME) checks implemented in Dnsmasq's versions before 2.83 reply_query function allows remote attackers to spoof DNS traffic that can lead to DNS cache poisoning."
+            }
+        ],
+        "affected_packages": [
+            "dnsmasq",
+            "dnsmasq-base",
+            "dnsmasq-utils"
+        ]
+    },
+    {
         "title": "USN-4697-1: Pillow vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4697-1",
         "cves": [
