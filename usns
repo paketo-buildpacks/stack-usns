@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4700-1: PyXDG vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4700-1",
+        "cves": [
+            {
+                "title": "CVE-2019-12761",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12761",
+                "description": "A code injection issue was discovered in PyXDG before 0.26 via crafted Python code in a Category element of a Menu XML document in a .menu file. XDG_CONFIG_DIRS must be set up to trigger xdg.Menu.parse parsing within the directory containing this file. This is due to a lack of sanitization in xdg/Menu.py before an eval call."
+            }
+        ],
+        "affected_packages": [
+            "python-xdg",
+            "python3-xdg"
+        ]
+    },
+    {
         "title": "USN-4699-1: Apache Log4net vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4699-1",
         "cves": [
