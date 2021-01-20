@@ -1,5 +1,38 @@
 [
     {
+        "title": "USN-4689-3: NVIDIA graphics drivers vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4689-3",
+        "cves": [
+            {
+                "title": "CVE-2021-1053",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1053",
+                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which improper validation of a user pointer may lead to denial of service."
+            },
+            {
+                "title": "CVE-2021-1052",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1052",
+                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which user-mode clients can access legacy privileged APIs, which may lead to denial of service, escalation of privileges, and information disclosure."
+            }
+        ],
+        "affected_packages": [
+            "nvidia-dkms-418-server",
+            "nvidia-dkms-440-server",
+            "nvidia-dkms-450-server",
+            "nvidia-kernel-common-418-server",
+            "nvidia-kernel-common-440-server",
+            "nvidia-kernel-common-450-server",
+            "nvidia-kernel-source-418-server",
+            "nvidia-kernel-source-440-server",
+            "nvidia-kernel-source-450-server",
+            "nvidia-utils-418-server",
+            "nvidia-utils-440-server",
+            "nvidia-utils-450-server",
+            "xserver-xorg-video-nvidia-418-server",
+            "xserver-xorg-video-nvidia-440-server",
+            "xserver-xorg-video-nvidia-450-server"
+        ]
+    },
+    {
         "title": "USN-4701-1: Thunderbird vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4701-1",
         "cves": [
