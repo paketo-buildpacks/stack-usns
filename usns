@@ -1,5 +1,57 @@
 [
     {
+        "title": "USN-4701-1: Thunderbird vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4701-1",
+        "cves": [
+            {
+                "title": "CVE-2020-16042",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16042",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2020-26974",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26974",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26973",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26973",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-35113",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35113",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26970",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26970",
+                "description": "When reading SMTP server status codes, Thunderbird writes an integer value to a position on the stack that is intended to contain just one byte. Depending on processor architecture and stack layout, this leads to stack corruption that may be exploitable. This vulnerability affects Thunderbird \u003c 78.5.1."
+            },
+            {
+                "title": "CVE-2020-16044",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16044",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26971",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26971",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-35111",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35111",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2020-26978",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26978",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4700-1: PyXDG vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4700-1",
         "cves": [
