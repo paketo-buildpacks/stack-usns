@@ -1,5 +1,27 @@
 [
     {
+        "title": "USN-4689-4: Linux kernel update",
+        "link": "https://ubuntu.com/security/notices/USN-4689-4",
+        "cves": [
+            {
+                "title": "CVE-2021-1053",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1053",
+                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which improper validation of a user pointer may lead to denial of service."
+            },
+            {
+                "title": "CVE-2021-1052",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1052",
+                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which user-mode clients can access legacy privileged APIs, which may lead to denial of service, escalation of privileges, and information disclosure."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-4.15.0-134-generic",
+            "linux-image-4.15.0-134-lowlatency",
+            "linux-image-5.4.0-64-generic",
+            "linux-image-5.4.0-64-lowlatency"
+        ]
+    },
+    {
         "title": "USN-4697-2: Pillow vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4697-2",
         "cves": [
