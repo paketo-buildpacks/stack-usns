@@ -6,12 +6,12 @@
             {
                 "title": "CVE-2021-1053",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1053",
-                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which improper validation of a user pointer may lead to denial of service."
+                "description": "NVIDIA GPU Display Driver for Windows and Linux, all versions, contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which improper validation of a user pointer may lead to denial of service."
             },
             {
                 "title": "CVE-2021-1052",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1052",
-                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which user-mode clients can access legacy privileged APIs, which may lead to denial of service, escalation of privileges, and information disclosure."
+                "description": "NVIDIA GPU Display Driver for Windows and Linux, all versions, contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which user-mode clients can access legacy privileged APIs, which may lead to denial of service, escalation of privileges, and information disclosure."
             }
         ],
         "affected_packages": [
@@ -45,12 +45,12 @@
             {
                 "title": "CVE-2021-1053",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1053",
-                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which improper validation of a user pointer may lead to denial of service."
+                "description": "NVIDIA GPU Display Driver for Windows and Linux, all versions, contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which improper validation of a user pointer may lead to denial of service."
             },
             {
                 "title": "CVE-2021-1052",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1052",
-                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which user-mode clients can access legacy privileged APIs, which may lead to denial of service, escalation of privileges, and information disclosure."
+                "description": "NVIDIA GPU Display Driver for Windows and Linux, all versions, contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape or IOCTL in which user-mode clients can access legacy privileged APIs, which may lead to denial of service, escalation of privileges, and information disclosure."
             }
         ],
         "affected_packages": [
@@ -78,22 +78,22 @@
             {
                 "title": "CVE-2020-16042",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16042",
-                "description": "[Unknown description]"
+                "description": "Uninitialized Use in V8 in Google Chrome prior to 87.0.4280.88 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page."
             },
             {
                 "title": "CVE-2020-26974",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26974",
-                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+                "description": "When flex-basis was used on a table wrapper, a StyleGenericFlexBasis object could have been incorrectly cast to the wrong type. This resulted in a heap user-after-free, memory corruption, and a potentially exploitable crash. This vulnerability affects Firefox \u003c 84, Thunderbird \u003c 78.6, and Firefox ESR \u003c 78.6."
             },
             {
                 "title": "CVE-2020-26973",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26973",
-                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+                "description": "Certain input to the CSS Sanitizer confused it, resulting in incorrect components being removed. This could have been used as a sanitizer bypass. This vulnerability affects Firefox \u003c 84, Thunderbird \u003c 78.6, and Firefox ESR \u003c 78.6."
             },
             {
                 "title": "CVE-2020-35113",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35113",
-                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+                "description": "Mozilla developers reported memory safety bugs present in Firefox 83 and Firefox ESR 78.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox \u003c 84, Thunderbird \u003c 78.6, and Firefox ESR \u003c 78.6."
             },
             {
                 "title": "CVE-2020-26970",
@@ -108,17 +108,17 @@
             {
                 "title": "CVE-2020-26971",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26971",
-                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+                "description": "Certain blit values provided by the user were not properly constrained leading to a heap buffer overflow on some video drivers. This vulnerability affects Firefox \u003c 84, Thunderbird \u003c 78.6, and Firefox ESR \u003c 78.6."
             },
             {
                 "title": "CVE-2020-35111",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35111",
-                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+                "description": "When an extension with the proxy permission registered to receive \u003call_urls\u003e, the proxy.onRequest callback was not triggered for view-source URLs. While web content cannot navigate to such URLs, a user opening View Source could have inadvertently leaked their IP address. This vulnerability affects Firefox \u003c 84, Thunderbird \u003c 78.6, and Firefox ESR \u003c 78.6."
             },
             {
                 "title": "CVE-2020-26978",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26978",
-                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+                "description": "Using techniques that built on the slipstream research, a malicious webpage could have exposed both an internal network's hosts as well as services running on the user's local machine. This vulnerability affects Firefox \u003c 84, Thunderbird \u003c 78.6, and Firefox ESR \u003c 78.6."
             }
         ],
         "affected_packages": []
@@ -159,27 +159,27 @@
             {
                 "title": "CVE-2020-25684",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25684",
-                "description": "A lack of proper address/port check implemented in Dnsmasq version \u003c 2.83 reply_query function makes forging replies easier to an off-path attacker."
+                "description": "A flaw was found in dnsmasq before version 2.83. When getting a reply from a forwarded query, dnsmasq checks in the forward.c:reply_query() if the reply destination address/port is used by the pending forwarded queries. However, it does not use the address/port to retrieve the exact forwarded query, substantially reducing the number of attempts an attacker on the network would have to perform to forge a reply and get it accepted by dnsmasq. This issue contrasts with RFC5452, which specifies a query's attributes that all must be used to match a reply. This flaw allows an attacker to perform a DNS Cache Poisoning attack. If chained with CVE-2020-25685 or CVE-2020-25686, the attack complexity of a successful attack is reduced. The highest threat from this vulnerability is to data integrity."
             },
             {
                 "title": "CVE-2020-25683",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25683",
-                "description": "Dnsmasq version before 2.83 is susceptible to a heap-based buffer overflow when DNSSEC is enabled. A remote attacker, who can create valid DNS replies, could use this flaw to cause an overflow in a heap-allocated memory. This flaw is caused by the lack of length checks in rtc1035.c:extract_name(), which could be abused to make the code execute memcpy() with a negative size in get_rdata() and cause a crash in Dnsmasq, resulting in a Denial of Service."
+                "description": "A flaw was found in dnsmasq before version 2.83. A heap-based buffer overflow was discovered in dnsmasq when DNSSEC is enabled and before it validates the received DNS entries. A remote attacker, who can create valid DNS replies, could use this flaw to cause an overflow in a heap-allocated memory. This flaw is caused by the lack of length checks in rfc1035.c:extract_name(), which could be abused to make the code execute memcpy() with a negative size in get_rdata() and cause a crash in dnsmasq, resulting in a denial of service. The highest threat from this vulnerability is to system availability."
             },
             {
                 "title": "CVE-2020-25686",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25686",
-                "description": "Multiple DNS query requests for the same resource name (RRNAME) by Dnsmasq versions before 2.83 allows for remote attackers to spoof DNS traffic, using a birthday attack (RFC 5452), that can lead to DNS cache poisoning."
+                "description": "A flaw was found in dnsmasq before version 2.83. When receiving a query, dnsmasq does not check for an existing pending request for the same name and forwards a new request. By default, a maximum of 150 pending queries can be sent to upstream servers, so there can be at most 150 queries for the same name. This flaw allows an off-path attacker on the network to substantially reduce the number of attempts that it would have to perform to forge a reply and have it accepted by dnsmasq. This issue is mentioned in the \"Birthday Attacks\" section of RFC5452. If chained with CVE-2020-25684, the attack complexity of a successful attack is reduced. The highest threat from this vulnerability is to data integrity."
             },
             {
                 "title": "CVE-2020-25687",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25687",
-                "description": "Dnsmasq versions before 2.83 is vulnerable to a heap-based buffer overflow with large memcpy in sort_rrset() when DNSSEC is enabled. A remote attacker, who can create valid DNS replies, could use this flaw to cause an overflow in a heap-allocated memory. This flaw is caused by the lack of length checks in rtc1035.c:extract_name(), which could be abused to make the code execute memcpy() with a negative size in sort_rrset() and cause a crash in dnsmasq, resulting in a Denial of Service."
+                "description": "A flaw was found in dnsmasq before version 2.83. A heap-based buffer overflow was discovered in dnsmasq when DNSSEC is enabled and before it validates the received DNS entries. This flaw allows a remote attacker, who can create valid DNS replies, to cause an overflow in a heap-allocated memory. This flaw is caused by the lack of length checks in rfc1035.c:extract_name(), which could be abused to make the code execute memcpy() with a negative size in sort_rrset() and cause a crash in dnsmasq, resulting in a denial of service. The highest threat from this vulnerability is to system availability."
             },
             {
                 "title": "CVE-2020-25681",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25681",
-                "description": "Dnsmasq versions before 2.83 is susceptible to a heap-based buffer overflow in sort_rrset() when DNSSEC is used. This can allow a remote attacker to write arbitrary data into target device's memory that can lead to memory corruption and other unexpected behaviors on the target device."
+                "description": "A flaw was found in dnsmasq before version 2.83. A heap-based buffer overflow was discovered in the way RRSets are sorted before validating with DNSSEC data. An attacker on the network, who can forge DNS replies such as that they are accepted as valid, could use this flaw to cause a buffer overflow with arbitrary data in a heap memory segment, possibly executing code on the machine. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
             },
             {
                 "title": "CVE-2019-14834",
@@ -189,12 +189,12 @@
             {
                 "title": "CVE-2020-25682",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25682",
-                "description": "Dnsmasq versions before 2.83 is susceptible to buffer overflow in extract_name() function due to missing length check, when DNSSEC is enabled. This can allow a remote attacker to cause memory corruption on the target device."
+                "description": "A flaw was found in dnsmasq before 2.83. A buffer overflow vulnerability was discovered in the way dnsmasq extract names from DNS packets before validating them with DNSSEC data. An attacker on the network, who can create valid DNS replies, could use this flaw to cause an overflow with arbitrary data in a heap-allocated memory, possibly executing code on the machine. The flaw is in the rfc1035.c:extract_name() function, which writes data to the memory pointed by name assuming MAXDNAME*2 bytes are available in the buffer. However, in some code execution paths, it is possible extract_name() gets passed an offset from the base buffer, thus reducing, in practice, the number of available bytes that can be written in the buffer. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
             },
             {
                 "title": "CVE-2020-25685",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25685",
-                "description": "A lack of query resource name (RRNAME) checks implemented in Dnsmasq's versions before 2.83 reply_query function allows remote attackers to spoof DNS traffic that can lead to DNS cache poisoning."
+                "description": "A flaw was found in dnsmasq before version 2.83. When getting a reply from a forwarded query, dnsmasq checks in forward.c:reply_query(), which is the forwarded query that matches the reply, by only using a weak hash of the query name. Due to the weak hash (CRC32 when dnsmasq is compiled without DNSSEC, SHA-1 when it is) this flaw allows an off-path attacker to find several different domains all having the same hash, substantially reducing the number of attempts they would have to perform to forge a reply and get it accepted by dnsmasq. This is in contrast with RFC5452, which specifies that the query name is one of the attributes of a query that must be used to match a reply. This flaw could be abused to perform a DNS Cache Poisoning attack. If chained with CVE-2020-25684 the attack complexity of a successful attack is reduced. The highest threat from this vulnerability is to data integrity."
             }
         ],
         "affected_packages": [
