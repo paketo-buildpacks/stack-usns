@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-4702-1: Pound vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4702-1",
+        "cves": [
+            {
+                "title": "CVE-2018-21245",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-21245",
+                "description": "Pound before 2.8 allows HTTP request smuggling, a related issue to CVE-2016-10711."
+            },
+            {
+                "title": "CVE-2016-10711",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-10711",
+                "description": "Apsis Pound before 2.8a allows request smuggling via crafted headers, a different vulnerability than CVE-2005-3751."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4689-4: Linux kernel update",
         "link": "https://ubuntu.com/security/notices/USN-4689-4",
         "cves": [
