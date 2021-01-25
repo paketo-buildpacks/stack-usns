@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4703-1: Mutt vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4703-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3181",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3181",
+                "description": "rfc822.c in Mutt through 2.0.4 allows remote attackers to cause a denial of service (mailbox unavailability) by sending email messages with sequences of semicolon characters in RFC822 address fields (aka terminators of empty groups). A small email message from the attacker can cause large memory consumption, and the victim may then be unable to see email messages from other persons."
+            }
+        ],
+        "affected_packages": [
+            "mutt"
+        ]
+    },
+    {
         "title": "USN-4702-1: Pound vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4702-1",
         "cves": [
