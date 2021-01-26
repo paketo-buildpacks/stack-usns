@@ -1,5 +1,25 @@
 [
     {
+        "title": "USN-4705-1: Sudo vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4705-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3156",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3156",
+                "description": "heap-based buffer overflow"
+            },
+            {
+                "title": "CVE-2021-23239",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23239",
+                "description": "The sudoedit personality of Sudo before 1.9.5 may allow a local unprivileged user to perform arbitrary directory-existence tests by winning a sudo_edit.c race condition in replacing a user-controlled directory by a symlink to an arbitrary path."
+            }
+        ],
+        "affected_packages": [
+            "sudo",
+            "sudo-ldap"
+        ]
+    },
+    {
         "title": "USN-4704-1: libsndfile vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4704-1",
         "cves": [
