@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4705-2: Sudo vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4705-2",
+        "cves": [
+            {
+                "title": "CVE-2021-3156",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3156",
+                "description": "heap-based buffer overflow"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4705-1: Sudo vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4705-1",
         "cves": [
