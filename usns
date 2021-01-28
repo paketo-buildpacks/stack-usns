@@ -1,5 +1,27 @@
 [
     {
+        "title": "USN-4706-1: Ceph vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4706-1",
+        "cves": [
+            {
+                "title": "CVE-2020-10753",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10753",
+                "description": "A flaw was found in the Red Hat Ceph Storage RadosGW (Ceph Object Gateway). The vulnerability is related to the injection of HTTP headers via a CORS ExposeHeader tag. The newline character in the ExposeHeader tag in the CORS configuration file generates a header injection in the response when the CORS request is made. Ceph versions 3.x and 4.x are vulnerable to this issue."
+            },
+            {
+                "title": "CVE-2020-10736",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10736",
+                "description": "An authorization bypass vulnerability was found in Ceph versions 15.2.0 before 15.2.2, where the ceph-mon and ceph-mgr daemons do not properly restrict access, resulting in gaining access to unauthorized resources. This flaw allows an authenticated client to modify the configuration and possibly conduct further attacks."
+            },
+            {
+                "title": "CVE-2020-25660",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25660",
+                "description": "A flaw was found in the Cephx authentication protocol in versions before 15.2.6 and before 14.2.14, where it does not verify Ceph clients correctly and is then vulnerable to replay attacks in Nautilus. This flaw allows an attacker with access to the Ceph cluster network to authenticate with the Ceph service via a packet sniffer and perform actions allowed by the Ceph service. This issue is a reintroduction of CVE-2018-1128, affecting the msgr2 protocol. The msgr 2 protocol is used for all communication except older clients that do not support the msgr2 protocol. The msgr1 protocol is not affected. The highest threat from this vulnerability is to confidentiality, integrity, and system availability."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4709-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4709-1",
         "cves": [
