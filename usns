@@ -1,5 +1,143 @@
 [
     {
+        "title": "USN-4709-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4709-1",
+        "cves": [
+            {
+                "title": "CVE-2020-28374",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28374",
+                "description": "In drivers/target/target_core_xcopy.c in the Linux kernel before 5.10.7, insufficient identifier checking in the LIO SCSI target code can be used by remote attackers to read or write files via directory traversal in an XCOPY request, aka CID-2896c93811e3. For example, an attack can occur over a network if the attacker has access to one iSCSI LUN. The attacker gains control over file access because I/O operations are proxied via an attacker-selected backstore."
+            },
+            {
+                "title": "CVE-2019-19816",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19816",
+                "description": "In the Linux kernel 5.0.21, mounting a crafted btrfs filesystem image and performing some operations can cause slab-out-of-bounds write access in __btrfs_map_block in fs/btrfs/volumes.c, because a value of 1 for the number of data stripes is mishandled."
+            },
+            {
+                "title": "CVE-2020-25669",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25669",
+                "description": "[use-after-free in sunkbd_reinit]"
+            },
+            {
+                "title": "CVE-2019-19813",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19813",
+                "description": "In the Linux kernel 5.0.21, mounting a crafted btrfs filesystem image, performing some operations, and then making a syncfs system call can lead to a use-after-free in __mutex_lock in kernel/locking/mutex.c. This is related to mutex_can_spin_on_owner in kernel/locking/mutex.c, __btrfs_qgroup_free_meta in fs/btrfs/qgroup.c, and btrfs_insert_delayed_items in fs/btrfs/delayed-inode.c."
+            },
+            {
+                "title": "CVE-2018-13093",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-13093",
+                "description": "An issue was discovered in fs/xfs/xfs_icache.c in the Linux kernel through 4.17.3. There is a NULL pointer dereference and panic in lookup_slow() on a NULL inode-\u003ei_ops pointer when doing pathwalks on a corrupted xfs image. This occurs because of a lack of proper validation that cached inodes are free during allocation."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4708-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4708-1",
+        "cves": [
+            {
+                "title": "CVE-2020-27777",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27777",
+                "description": "A flaw was found in the way RTAS handled memory accesses in userspace to kernel communication. On a locked down (usually due to Secure Boot) guest system running on top of PowerVM or KVM hypervisors (pseries platform) a root like local user could use this flaw to further increase their privileges to that of a running kernel."
+            },
+            {
+                "title": "CVE-2018-13093",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-13093",
+                "description": "An issue was discovered in fs/xfs/xfs_icache.c in the Linux kernel through 4.17.3. There is a NULL pointer dereference and panic in lookup_slow() on a NULL inode-\u003ei_ops pointer when doing pathwalks on a corrupted xfs image. This occurs because of a lack of proper validation that cached inodes are free during allocation."
+            },
+            {
+                "title": "CVE-2019-19816",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19816",
+                "description": "In the Linux kernel 5.0.21, mounting a crafted btrfs filesystem image and performing some operations can cause slab-out-of-bounds write access in __btrfs_map_block in fs/btrfs/volumes.c, because a value of 1 for the number of data stripes is mishandled."
+            },
+            {
+                "title": "CVE-2020-25669",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25669",
+                "description": "[use-after-free in sunkbd_reinit]"
+            },
+            {
+                "title": "CVE-2019-19813",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19813",
+                "description": "In the Linux kernel 5.0.21, mounting a crafted btrfs filesystem image, performing some operations, and then making a syncfs system call can lead to a use-after-free in __mutex_lock in kernel/locking/mutex.c. This is related to mutex_can_spin_on_owner in kernel/locking/mutex.c, __btrfs_qgroup_free_meta in fs/btrfs/qgroup.c, and btrfs_insert_delayed_items in fs/btrfs/delayed-inode.c."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4713-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4713-1",
+        "cves": [
+            {
+                "title": "CVE-2020-28374",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28374",
+                "description": "In drivers/target/target_core_xcopy.c in the Linux kernel before 5.10.7, insufficient identifier checking in the LIO SCSI target code can be used by remote attackers to read or write files via directory traversal in an XCOPY request, aka CID-2896c93811e3. For example, an attack can occur over a network if the attacker has access to one iSCSI LUN. The attacker gains control over file access because I/O operations are proxied via an attacker-selected backstore."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-5.4.0-1037-aws",
+            "linux-image-aws"
+        ]
+    },
+    {
+        "title": "USN-4712-1: Linux kernel regression",
+        "link": "https://ubuntu.com/security/notices/USN-4712-1",
+        "cves": [
+            {
+                "title": "https://bugs.launchpad.net/bugs/1900141",
+                "link": "https://bugs.launchpad.net/bugs/1900141",
+                "description": "overlay: permission regression in 5.4.0-51.56 due to patches related to CVE-2020-16120"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4711-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4711-1",
+        "cves": [
+            {
+                "title": "CVE-2020-28374",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28374",
+                "description": "In drivers/target/target_core_xcopy.c in the Linux kernel before 5.10.7, insufficient identifier checking in the LIO SCSI target code can be used by remote attackers to read or write files via directory traversal in an XCOPY request, aka CID-2896c93811e3. For example, an attack can occur over a network if the attacker has access to one iSCSI LUN. The attacker gains control over file access because I/O operations are proxied via an attacker-selected backstore."
+            },
+            {
+                "title": "CVE-2020-25704",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25704",
+                "description": "A flaw memory leak in the Linux kernel performance monitoring subsystem was found in the way if using PERF_EVENT_IOC_SET_FILTER. A local user could use this flaw to starve the resources causing denial of service."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-4.15.0-1064-oracle",
+            "linux-image-4.15.0-1078-raspi2",
+            "linux-image-4.15.0-1084-kvm",
+            "linux-image-4.15.0-1093-aws",
+            "linux-image-4.15.0-1095-snapdragon"
+        ]
+    },
+    {
+        "title": "USN-4710-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4710-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25704",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25704",
+                "description": "A flaw memory leak in the Linux kernel performance monitoring subsystem was found in the way if using PERF_EVENT_IOC_SET_FILTER. A local user could use this flaw to starve the resources causing denial of service."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-4.15.0-135-generic",
+            "linux-image-4.15.0-135-generic-lpae",
+            "linux-image-4.15.0-135-lowlatency",
+            "linux-image-generic",
+            "linux-image-generic-lpae",
+            "linux-image-lowlatency",
+            "linux-image-powerpc-e500mc",
+            "linux-image-powerpc-smp",
+            "linux-image-powerpc64-emb",
+            "linux-image-powerpc64-smp",
+            "linux-image-virtual"
+        ]
+    },
+    {
         "title": "USN-4705-2: Sudo vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4705-2",
         "cves": [
