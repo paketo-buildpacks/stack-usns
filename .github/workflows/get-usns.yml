@@ -14,7 +14,7 @@ jobs:
     - name: USN Monitor
       uses: paketo-buildpacks/stack-usns/actions/usn-monitor@main
       with:
-        usn_list_path: "usns"
+        usn_list_path: "${{ github.workspace }}/usns"
 
     - name: Commit USNS
       id: commit

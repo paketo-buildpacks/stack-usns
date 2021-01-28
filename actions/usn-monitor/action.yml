@@ -8,8 +8,16 @@ inputs:
     required: true
 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-  - "--usn-path"
-  - ${{ inputs.usn_list_path }}
+  using: 'composite'
+  steps:
+  - shell: bash
+    run: |
+      #!/usr/bin/env bash
+      set -euo pipefail
+
+      cd "${{ github.action_path }}/entrypoint"
+      go build -o ./entrypoint
+
+      ./entrypoint --usn-path "${{ inputs.usn_list_path }}"
+
+      rm -f ./entrypoint
