@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4715-1: Django vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4715-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3281",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3281",
+                "description": "Potential directory-traversal via archive.extract()"
+            }
+        ],
+        "affected_packages": [
+            "python-django",
+            "python3-django"
+        ]
+    },
+    {
         "title": "USN-4714-1: XStream vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4714-1",
         "cves": [
