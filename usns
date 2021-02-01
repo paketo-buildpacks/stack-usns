@@ -1,5 +1,69 @@
 [
     {
+        "title": "USN-4717-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4717-1",
+        "cves": [
+            {
+                "title": "CVE-2021-23954",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23954",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23964",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23964",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23958",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23958",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23960",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23960",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23963",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23963",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23955",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23955",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23961",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23961",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23962",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23962",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23953",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23953",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23956",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23956",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23965",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23965",
+                "description": "[Unknown description]"
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-4715-2: Django vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4715-2",
         "cves": [
