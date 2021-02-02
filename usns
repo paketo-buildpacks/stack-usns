@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4718-1: fastd vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4718-1",
+        "cves": [
+            {
+                "title": "CVE-2020-27638",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27638",
+                "description": "receive.c in fastd before v21 allows denial of service (assertion failure) when receiving packets with an invalid type code."
+            }
+        ],
+        "affected_packages": [
+            "fastd"
+        ]
+    },
+    {
         "title": "USN-4467-2: QEMU vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4467-2",
         "cves": [
