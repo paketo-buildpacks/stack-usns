@@ -357,8 +357,13 @@
             }
         ],
         "affected_packages": [
+            "linux-image-5.4.0-1009-gkeop",
+            "linux-image-5.4.0-1028-raspi",
+            "linux-image-5.4.0-1035-gke",
+            "linux-image-5.4.0-1036-gcp",
             "linux-image-5.4.0-1037-aws",
-            "linux-image-aws"
+            "linux-image-5.4.0-1037-oracle",
+            "linux-image-5.4.0-1039-azure"
         ]
     },
     {
