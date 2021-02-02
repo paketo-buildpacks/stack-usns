@@ -1,5 +1,45 @@
 [
     {
+        "title": "USN-4720-1: Apport vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4720-1",
+        "cves": [
+            {
+                "title": "CVE-2021-25683",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25683",
+                "description": "error parsing /proc/pid/stat"
+            },
+            {
+                "title": "CVE-2021-25682",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25682",
+                "description": "error parsing /proc/pid/status"
+            },
+            {
+                "title": "CVE-2021-25684",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25684",
+                "description": "stuck reading fifo"
+            }
+        ],
+        "affected_packages": [
+            "apport",
+            "python-apport",
+            "python3-apport"
+        ]
+    },
+    {
+        "title": "USN-4719-1: ca-certificates update",
+        "link": "https://ubuntu.com/security/notices/USN-4719-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1914064",
+                "link": "https://launchpad.net/bugs/1914064",
+                "description": "ca-certificates update to 2.46 bundle"
+            }
+        ],
+        "affected_packages": [
+            "ca-certificates"
+        ]
+    },
+    {
         "title": "USN-4718-1: fastd vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4718-1",
         "cves": [
