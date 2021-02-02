@@ -376,7 +376,18 @@
                 "description": "overlay: permission regression in 5.4.0-51.56 due to patches related to CVE-2020-16120"
             }
         ],
-        "affected_packages": []
+        "affected_packages": [
+            "linux-image-5.4.0-65-generic",
+            "linux-image-5.4.0-65-generic-lpae",
+            "linux-image-5.4.0-65-lowlatency",
+            "linux-image-generic-hwe-18.04",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-oem",
+            "linux-image-oem-osp1",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-virtual-hwe-18.04"
+        ]
     },
     {
         "title": "USN-4711-1: Linux kernel vulnerabilities",
@@ -397,8 +408,10 @@
             "linux-image-4.15.0-1064-oracle",
             "linux-image-4.15.0-1078-raspi2",
             "linux-image-4.15.0-1084-kvm",
+            "linux-image-4.15.0-1092-gcp",
             "linux-image-4.15.0-1093-aws",
-            "linux-image-4.15.0-1095-snapdragon"
+            "linux-image-4.15.0-1095-snapdragon",
+            "linux-image-4.15.0-1106-azure"
         ]
     },
     {
