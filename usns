@@ -1,5 +1,27 @@
 [
     {
+        "title": "USN-4720-2: Apport vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4720-2",
+        "cves": [
+            {
+                "title": "CVE-2021-25684",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25684",
+                "description": "stuck reading fifo"
+            },
+            {
+                "title": "CVE-2021-25683",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25683",
+                "description": "error parsing /proc/pid/stat"
+            },
+            {
+                "title": "CVE-2021-25682",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25682",
+                "description": "error parsing /proc/pid/status"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4720-1: Apport vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4720-1",
         "cves": [
