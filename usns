@@ -553,6 +553,7 @@
         ],
         "affected_packages": [
             "linux-image-4.15.0-1064-oracle",
+            "linux-image-4.15.0-1078-gke",
             "linux-image-4.15.0-1078-raspi2",
             "linux-image-4.15.0-1084-kvm",
             "linux-image-4.15.0-1092-gcp",
