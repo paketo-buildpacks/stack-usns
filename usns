@@ -1,5 +1,124 @@
 [
     {
+        "title": "USN-4725-1: QEMU vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4725-1",
+        "cves": [
+            {
+                "title": "CVE-2020-15859",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15859",
+                "description": "QEMU 4.2.0 has a use-after-free in hw/net/e1000e_core.c because a guest OS user can trigger an e1000e packet with the data's address set to the e1000e's MMIO address."
+            },
+            {
+                "title": "CVE-2020-27821",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27821",
+                "description": "A flaw was found in the memory management API of QEMU during the initialization of a memory region cache. This issue could lead to an out-of-bounds write access to the MSI-X table while performing MMIO operations. A guest user may abuse this flaw to crash the QEMU process on the host, resulting in a denial of service. This flaw affects QEMU versions prior to 5.2.0."
+            },
+            {
+                "title": "CVE-2020-28916",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28916",
+                "description": "hw/net/e1000e_core.c in QEMU 5.0.0 has an infinite loop via an RX descriptor with a NULL buffer address."
+            },
+            {
+                "title": "CVE-2020-29443",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29443",
+                "description": "ide_atapi_cmd_reply_end in hw/ide/atapi.c in QEMU 5.1.0 allows out-of-bounds read access because a buffer index is not validated."
+            },
+            {
+                "title": "CVE-2020-11947",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11947",
+                "description": "iscsi_aio_ioctl_cb in block/iscsi.c in QEMU 4.1.0 has a heap-based buffer over-read that may disclose unrelated information from process memory to an attacker."
+            },
+            {
+                "title": "CVE-2021-20181",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20181",
+                "description": "9pfs: Fully restart unreclaim loop"
+            }
+        ],
+        "affected_packages": [
+            "qemu-system",
+            "qemu-system-arm",
+            "qemu-system-mips",
+            "qemu-system-misc",
+            "qemu-system-ppc",
+            "qemu-system-s390x",
+            "qemu-system-sparc",
+            "qemu-system-x86"
+        ]
+    },
+    {
+        "title": "USN-4724-1: OpenLDAP vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4724-1",
+        "cves": [
+            {
+                "title": "CVE-2020-36223",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36223",
+                "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to a slapd crash in the Values Return Filter control handling, resulting in denial of service (double free and out-of-bounds read)."
+            },
+            {
+                "title": "CVE-2020-36226",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36226",
+                "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to a memch-\u003ebv_len miscalculation and slapd crash in the saslAuthzTo processing, resulting in denial of service."
+            },
+            {
+                "title": "CVE-2020-36227",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36227",
+                "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to an infinite loop in slapd with the cancel_extop Cancel operation, resulting in denial of service."
+            },
+            {
+                "title": "CVE-2020-36230",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36230",
+                "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading in an assertion failure in slapd in the X.509 DN parsing in decode.c ber_next_element, resulting in denial of service."
+            },
+            {
+                "title": "CVE-2020-36221",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36221",
+                "description": "An integer underflow was discovered in OpenLDAP before 2.4.57 leading to slapd crashes in the Certificate Exact Assertion processing, resulting in denial of service (schema_init.c serialNumberAndIssuerCheck)."
+            },
+            {
+                "title": "CVE-2020-36229",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36229",
+                "description": "A flaw was discovered in ldap_X509dn2bv in OpenLDAP before 2.4.57 leading to a slapd crash in the X.509 DN parsing in ad_keystring, resulting in denial of service."
+            },
+            {
+                "title": "CVE-2020-36224",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36224",
+                "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to an invalid pointer free and slapd crash in the saslAuthzTo processing, resulting in denial of service."
+            },
+            {
+                "title": "CVE-2020-36225",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36225",
+                "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to a double free and slapd crash in the saslAuthzTo processing, resulting in denial of service."
+            },
+            {
+                "title": "CVE-2020-36228",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36228",
+                "description": "An integer underflow was discovered in OpenLDAP before 2.4.57 leading to a slapd crash in the Certificate List Exact Assertion processing, resulting in denial of service."
+            },
+            {
+                "title": "CVE-2020-36222",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36222",
+                "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to an assertion failure in slapd in the saslAuthzTo validation, resulting in denial of service."
+            }
+        ],
+        "affected_packages": [
+            "slapd"
+        ]
+    },
+    {
+        "title": "USN-4723-1: PEAR vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4723-1",
+        "cves": [
+            {
+                "title": "CVE-2020-36193",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36193",
+                "description": "Tar.php in Archive_Tar through 1.4.11 allows write operations with Directory Traversal due to inadequate checking of symbolic links, a related issue to CVE-2020-28948."
+            }
+        ],
+        "affected_packages": [
+            "php-pear"
+        ]
+    },
+    {
         "title": "USN-4721-1: Flatpak vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4721-1",
         "cves": [
