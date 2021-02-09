@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4717-2: Firefox regression",
+        "link": "https://ubuntu.com/security/notices/USN-4717-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1914147",
+                "link": "https://launchpad.net/bugs/1914147",
+                "description": "[upstream] Firefox 85 hangs at startup"
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-4725-1: QEMU vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4725-1",
         "cves": [
