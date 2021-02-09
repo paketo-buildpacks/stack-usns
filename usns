@@ -1,5 +1,26 @@
 [
     {
+        "title": "USN-4726-1: OpenJDK vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4726-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1914824",
+                "link": "https://launchpad.net/bugs/1914824",
+                "description": "Improve Direct Buffering of Characters"
+            }
+        ],
+        "affected_packages": [
+            "openjdk-11-jdk",
+            "openjdk-11-jre",
+            "openjdk-11-jre-headless",
+            "openjdk-11-jre-zero",
+            "openjdk-8-jdk",
+            "openjdk-8-jre",
+            "openjdk-8-jre-headless",
+            "openjdk-8-jre-zero"
+        ]
+    },
+    {
         "title": "USN-4717-2: Firefox regression",
         "link": "https://ubuntu.com/security/notices/USN-4717-2",
         "cves": [
