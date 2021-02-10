@@ -1,5 +1,34 @@
 [
     {
+        "title": "USN-4730-1: PostSRSd vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4730-1",
+        "cves": [
+            {
+                "title": "CVE-2020-35573",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35573",
+                "description": "srs2.c in PostSRSd before 1.10 allows remote attackers to cause a denial of service (CPU consumption) via a long timestamp tag in an SRS address."
+            }
+        ],
+        "affected_packages": [
+            "postsrsd"
+        ]
+    },
+    {
+        "title": "USN-4731-1: JUnit 4 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4731-1",
+        "cves": [
+            {
+                "title": "CVE-2020-15250",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15250",
+                "description": "In JUnit4 from version 4.7 and before 4.13.1, the test rule TemporaryFolder contains a local information disclosure vulnerability. On Unix like systems, the system's temporary directory is shared between all users on that system. Because of this, when files and directories are written into this directory they are, by default, readable by other users on that same system. This vulnerability does not allow other users to overwrite the contents of these directories or files. This is purely an information disclosure vulnerability. This vulnerability impacts you if the JUnit tests write sensitive information, like API keys or passwords, into the temporary folder, and the JUnit tests execute in an environment where the OS has other untrusted users. Because certain JDK file system APIs were only added in JDK 1.7, this this fix is dependent upon the version of the JDK you are using. For Java 1.7 and higher users: this vulnerability is fixed in 4.13.1. For Java 1.6 and lower users: no patch is available, you must use the workaround below. If you are unable to patch, or are stuck running on Java 1.6, specifying the `java.io.tmpdir` system environment variable to a directory that is exclusively owned by the executing user will fix this vulnerability. For more information, including an example of vulnerable code, see the referenced GitHub Security Advisory."
+            }
+        ],
+        "affected_packages": [
+            "junit4",
+            "junit4-doc"
+        ]
+    },
+    {
         "title": "USN-4729-1: Open vSwitch vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4729-1",
         "cves": [
