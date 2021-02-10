@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4729-1: Open vSwitch vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4729-1",
+        "cves": [
+            {
+                "title": "CVE-2020-35498",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35498",
+                "description": "Packet parsing vulnerability"
+            }
+        ],
+        "affected_packages": [
+            "openvswitch-common"
+        ]
+    },
+    {
         "title": "USN-4713-2: Linux kernel vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4713-2",
         "cves": [
