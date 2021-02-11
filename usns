@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4732-1: SQLite vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4732-1",
+        "cves": [
+            {
+                "title": "CVE-2021-20227",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20227",
+                "description": "Fix a problem handling sub-queries with both a correlated WHERE clause and a \"HAVING 0\" clause where the parent query is itself an aggregate. The problem was apparently introduced by check-in [6e6b3729e0549de0]"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4730-1: PostSRSd vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4730-1",
         "cves": [
