@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4733-1: GNOME Autoar vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4733-1",
+        "cves": [
+            {
+                "title": "CVE-2020-36241",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36241",
+                "description": "autoar-extractor.c in GNOME gnome-autoar through 0.2.4, as used by GNOME Shell, Nautilus, and other software, allows Directory Traversal during extraction because it lacks a check of whether a file's parent is a symlink to a directory outside of the intended extraction location."
+            }
+        ],
+        "affected_packages": [
+            "libgnome-autoar-0-0",
+            "libgnome-autoar-gtk-0-0"
+        ]
+    },
+    {
         "title": "USN-4732-1: SQLite vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4732-1",
         "cves": [
