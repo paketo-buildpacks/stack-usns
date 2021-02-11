@@ -1,5 +1,25 @@
 [
     {
+        "title": "USN-4734-1: wpa_supplicant and hostapd vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4734-1",
+        "cves": [
+            {
+                "title": "CVE-2021-0326",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-0326",
+                "description": "[wpa_supplicant P2P group information processing vulnerability]"
+            },
+            {
+                "title": "CVE-2020-12695",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12695",
+                "description": "The Open Connectivity Foundation UPnP specification before 2020-04-17 does not forbid the acceptance of a subscription request with a delivery URL on a different network segment than the fully qualified event-subscription URL, aka the CallStranger issue."
+            }
+        ],
+        "affected_packages": [
+            "hostapd",
+            "wpasupplicant"
+        ]
+    },
+    {
         "title": "USN-4733-1: GNOME Autoar vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4733-1",
         "cves": [
