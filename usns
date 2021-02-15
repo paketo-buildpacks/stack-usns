@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4735-1: PostgreSQL vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4735-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3393",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3393",
+                "description": "Partition constraint violation errors leak values of denied columns"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4734-1: wpa_supplicant and hostapd vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4734-1",
         "cves": [
