@@ -33,10 +33,10 @@ jobs:
       if: steps.commit.outputs.UPDATED
       uses: paketo-buildpacks/github-config/actions/dispatch@main
       with:
-        repos: > 
+        repos: >
           paketo-buildpacks/tiny-release,
           paketo-buildpacks/base-release,
-          paketo-buildpacks/full-release 
-        token: ${{ secrets.CORE_DEPS_CI_BOT_GITHUB_TOKEN }}
+          paketo-buildpacks/full-release
+        token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
         event: new-usn
         payload: '{}'
