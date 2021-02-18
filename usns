@@ -1,5 +1,54 @@
 [
     {
+        "title": "USN-4739-1: WebKitGTK vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4739-1",
+        "cves": [
+            {
+                "title": "CVE-2020-13558",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13558",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            }
+        ],
+        "affected_packages": [
+            "libjavascriptcoregtk-4.0-18",
+            "libwebkit2gtk-4.0-37"
+        ]
+    },
+    {
+        "title": "USN-4738-1: OpenSSL vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4738-1",
+        "cves": [
+            {
+                "title": "CVE-2021-23841",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23841",
+                "description": "Calls to EVP_CipherUpdate, EVP_EncryptUpdate and EVP_DecryptUpdate may overflow the output length argument in some cases where the input length is close to the maximum permissable length for an integer on the platform. In such cases the return value from the function call will be 1 (indicating success), but the output length value will be negative. This could cause applications to behave incorrectly or crash. OpenSSL versions 1.1.1i and below are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1j. OpenSSL versions 1.0.2x and below are affected by this issue. However OpenSSL 1.0.2 is out of support and no longer receiving public updates. Premium support customers of OpenSSL 1.0.2 should upgrade to 1.0.2y. Other users should upgrade to 1.1.1j. Fixed in OpenSSL 1.1.1j (Affected 1.1.1-1.1.1i). Fixed in OpenSSL 1.0.2y (Affected 1.0.2-1.0.2x)."
+            },
+            {
+                "title": "CVE-2021-23840",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23840",
+                "description": "Calls to EVP_CipherUpdate, EVP_EncryptUpdate and EVP_DecryptUpdate may overflow the output length argument in some cases where the input length is close to the maximum permissable length for an integer on the platform. In such cases the return value from the function call will be 1 (indicating success), but the output length value will be negative. This could cause applications to behave incorrectly or crash. OpenSSL versions 1.1.1i and below are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1j. OpenSSL versions 1.0.2x and below are affected by this issue. However OpenSSL 1.0.2 is out of support and no longer receiving public updates. Premium support customers of OpenSSL 1.0.2 should upgrade to 1.0.2y. Other users should upgrade to 1.1.1j. Fixed in OpenSSL 1.1.1j (Affected 1.1.1-1.1.1i). Fixed in OpenSSL 1.0.2y (Affected 1.0.2-1.0.2x)."
+            }
+        ],
+        "affected_packages": [
+            "libssl1.0.0",
+            "libssl1.1"
+        ]
+    },
+    {
+        "title": "USN-4737-1: Bind vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4737-1",
+        "cves": [
+            {
+                "title": "CVE-2020-8625",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8625",
+                "description": "A vulnerability in BIND's GSSAPI security policy negotiation can be targeted by a buffer overflow attack"
+            }
+        ],
+        "affected_packages": [
+            "bind9"
+        ]
+    },
+    {
         "title": "USN-4734-2: wpa_supplicant and hostapd vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4734-2",
         "cves": [
