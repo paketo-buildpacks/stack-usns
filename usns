@@ -1,5 +1,27 @@
 [
     {
+        "title": "USN-4741-1: Jackson vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4741-1",
+        "cves": [
+            {
+                "title": "CVE-2017-15095",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15095",
+                "description": "A deserialization flaw was discovered in the jackson-databind in versions before 2.8.10 and 2.9.1, which could allow an unauthenticated user to perform code execution by sending the maliciously crafted input to the readValue method of the ObjectMapper. This issue extends the previous flaw CVE-2017-7525 by blacklisting more classes that could be used maliciously."
+            },
+            {
+                "title": "CVE-2017-7525",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-7525",
+                "description": "A deserialization flaw was discovered in the jackson-databind, versions before 2.6.7.1, 2.7.9.1 and 2.8.9, which could allow an unauthenticated user to perform code execution by sending the maliciously crafted input to the readValue method of the ObjectMapper."
+            },
+            {
+                "title": "CVE-2019-10172",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-10172",
+                "description": "A flaw was found in org.codehaus.jackson:jackson-mapper-asl:1.9.x libraries. XML external entity vulnerabilities similar CVE-2016-3720 also affects codehaus jackson-mapper-asl libraries but in different classes."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4740-1: Apache Shiro vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4740-1",
         "cves": [
