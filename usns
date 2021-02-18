@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4740-1: Apache Shiro vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4740-1",
+        "cves": [
+            {
+                "title": "CVE-2020-1957",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1957",
+                "description": "Apache Shiro before 1.5.2, when using Apache Shiro with Spring dynamic controllers, a specially crafted request may cause an authentication bypass."
+            },
+            {
+                "title": "CVE-2020-11989",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11989",
+                "description": "Apache Shiro before 1.5.3, when using Apache Shiro with Spring dynamic controllers, a specially crafted request may cause an authentication bypass."
+            }
+        ],
+        "affected_packages": [
+            "libshiro-java"
+        ]
+    },
+    {
         "title": "USN-4739-1: WebKitGTK vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4739-1",
         "cves": [
