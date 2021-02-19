@@ -34,9 +34,9 @@ jobs:
       uses: paketo-buildpacks/github-config/actions/dispatch@main
       with:
         repos: >
-          paketo-buildpacks/tiny-release,
-          paketo-buildpacks/base-release,
-          paketo-buildpacks/full-release
+          paketo-buildpacks/tiny-stack-release,
+          paketo-buildpacks/base-stack-release,
+          paketo-buildpacks/full-stack-release
         token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
         event: new-usn
         payload: '{}'
