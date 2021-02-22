@@ -11,6 +11,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Checkout Branch
+      uses: paketo-buildpacks/github-config/actions/pull-request/checkout-branch@main
+      with:
+        branch: automation/usns/update
+
     - name: USN Monitor
       uses: paketo-buildpacks/stack-usns/actions/usn-monitor@main
       with:
