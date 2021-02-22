@@ -1,5 +1,46 @@
 [
     {
+        "title": "USN-4744-1: OpenLDAP vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4744-1",
+        "cves": [
+            {
+                "title": "CVE-2021-27212",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27212",
+                "description": "In OpenLDAP through 2.4.57 and 2.5.x through 2.5.1alpha, an assertion failure in slapd can occur in the issuerAndThisUpdateCheck function via a crafted packet, resulting in a denial of service (daemon exit) via a short timestamp. This is related to schema_init.c and checkTime."
+            }
+        ],
+        "affected_packages": [
+            "slapd"
+        ]
+    },
+    {
+        "title": "USN-4743-1: GDK-PixBuf vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4743-1",
+        "cves": [
+            {
+                "title": "CVE-2021-20240",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20240",
+                "description": "integer underflow in the GIF loader of gdk-pixbuf via crafted input leads to segmentation fault"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4742-1: Django vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4742-1",
+        "cves": [
+            {
+                "title": "CVE-2021-23336",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23336",
+                "description": "The package python/cpython from 0 and before 3.6.13, from 3.7.0 and before 3.7.10, from 3.8.0 and before 3.8.8, from 3.9.0 and before 3.9.2 are vulnerable to Web Cache Poisoning via urllib.parse.parse_qsl and urllib.parse.parse_qs by using a vector called parameter cloaking. When the attacker can separate query parameters using a semicolon (;), they can cause a difference in the interpretation of the request between the proxy (running with default configuration) and the server. This can result in malicious requests being cached as completely safe ones, as the proxy would usually not see the semicolon as a separator, and therefore would not include it in a cache key of an unkeyed parameter."
+            }
+        ],
+        "affected_packages": [
+            "python-django",
+            "python3-django"
+        ]
+    },
+    {
         "title": "USN-4741-1: Jackson vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4741-1",
         "cves": [
