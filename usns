@@ -1,5 +1,27 @@
 [
     {
+        "title": "USN-4467-3: QEMU regression",
+        "link": "https://ubuntu.com/security/notices/USN-4467-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1914883",
+                "link": "https://launchpad.net/bugs/1914883",
+                "description": "hart0: trap handler failed (error -2) (Needs cherry-pick ab3d207f)"
+            }
+        ],
+        "affected_packages": [
+            "qemu",
+            "qemu-system",
+            "qemu-system-arm",
+            "qemu-system-mips",
+            "qemu-system-misc",
+            "qemu-system-ppc",
+            "qemu-system-s390x",
+            "qemu-system-sparc",
+            "qemu-system-x86"
+        ]
+    },
+    {
         "title": "USN-4744-1: OpenLDAP vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4744-1",
         "cves": [
