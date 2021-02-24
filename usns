@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4747-2: GNU Screen vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4747-2",
+        "cves": [
+            {
+                "title": "CVE-2021-26937",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-26937",
+                "description": "encoding.c in GNU Screen through 4.8.0 allows remote attackers to cause a denial of service (invalid write access and application crash) or possibly have unspecified other impact via a crafted UTF-8 character sequence."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4747-1: GNU Screen vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4747-1",
         "cves": [
