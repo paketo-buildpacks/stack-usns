@@ -1,5 +1,49 @@
 [
     {
+        "title": "USN-4747-1: GNU Screen vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4747-1",
+        "cves": [
+            {
+                "title": "CVE-2021-26937",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-26937",
+                "description": "encoding.c in GNU Screen through 4.8.0 allows remote attackers to cause a denial of service (invalid write access and application crash) or possibly have unspecified other impact via a crafted UTF-8 character sequence."
+            }
+        ],
+        "affected_packages": [
+            "screen"
+        ]
+    },
+    {
+        "title": "USN-4746-1: xterm vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4746-1",
+        "cves": [
+            {
+                "title": "CVE-2021-27135",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27135",
+                "description": "xterm through Patch #365 allows remote attackers to cause a denial of service (segmentation fault) or possibly have unspecified other impact via a crafted UTF-8 character sequence."
+            }
+        ],
+        "affected_packages": [
+            "xterm"
+        ]
+    },
+    {
+        "title": "USN-4698-2: Dnsmasq regression",
+        "link": "https://ubuntu.com/security/notices/USN-4698-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1916462",
+                "link": "https://launchpad.net/bugs/1916462",
+                "description": "dnsmasq failed to send packet: Network is unreachable"
+            }
+        ],
+        "affected_packages": [
+            "dnsmasq",
+            "dnsmasq-base",
+            "dnsmasq-utils"
+        ]
+    },
+    {
         "title": "USN-4745-1: OpenSSL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4745-1",
         "cves": [
