@@ -1,5 +1,27 @@
 [
     {
+        "title": "USN-4754-1: Python vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4754-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3177",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3177",
+                "description": "Python 3.x through 3.9.1 has a buffer overflow in PyCArg_repr in _ctypes/callproc.c, which may lead to remote code execution in certain Python applications that accept floating-point numbers as untrusted input, as demonstrated by a 1e300 argument to c_double.from_param. This occurs because sprintf is used unsafely."
+            },
+            {
+                "title": "CVE-2020-27619",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27619",
+                "description": "In Python 3 through 3.9.0, the Lib/test/multibytecodec_support.py CJK codec tests call eval() on content retrieved via HTTP."
+            }
+        ],
+        "affected_packages": [
+            "python2.7",
+            "python2.7-minimal",
+            "python3.6",
+            "python3.6-minimal"
+        ]
+    },
+    {
         "title": "USN-4749-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4749-1",
         "cves": [
