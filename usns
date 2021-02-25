@@ -1,5 +1,391 @@
 [
     {
+        "title": "USN-4749-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4749-1",
+        "cves": [
+            {
+                "title": "CVE-2020-27815",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27815",
+                "description": "jfs: array-index-out-of-bounds in dbAdjTree"
+            },
+            {
+                "title": "CVE-2020-29660",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29660",
+                "description": "A locking inconsistency issue was discovered in the tty subsystem of the Linux kernel through 5.9.13. drivers/tty/tty_io.c and drivers/tty/tty_jobctrl.c may allow a read-after-free attack against TIOCGSID, aka CID-c8bcd9c5be24."
+            },
+            {
+                "title": "CVE-2020-27830",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27830",
+                "description": "NULL-ptr deref in the spk_ttyio_receive_buf2() function in spk_ttyio.c"
+            },
+            {
+                "title": "CVE-2020-29568",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29568",
+                "description": "An issue was discovered in Xen through 4.14.x. Some OSes (such as Linux, FreeBSD, and NetBSD) are processing watch events using a single thread. If the events are received faster than the thread is able to handle, they will get queued. As the queue is unbounded, a guest may be able to trigger an OOM in the backend. All systems with a FreeBSD, Linux, or NetBSD (any version) dom0 are vulnerable."
+            },
+            {
+                "title": "CVE-2020-29374",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29374",
+                "description": "An issue was discovered in the Linux kernel before 5.7.3, related to mm/gup.c and mm/huge_memory.c. The get_user_pages (aka gup) implementation, when used for a copy-on-write page, does not properly consider the semantics of read operations and therefore can grant unintended write access, aka CID-17839856fd58."
+            },
+            {
+                "title": "CVE-2020-29569",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29569",
+                "description": "An issue was discovered in the Linux kernel through 5.10.1, as used with Xen through 4.14.x. The Linux kernel PV block backend expects the kernel thread handler to reset ring-\u003exenblkd to NULL when stopped. However, the handler may not have time to run if the frontend quickly toggles between the states connect and disconnect. As a consequence, the block backend may re-use a pointer after it was freed. A misbehaving guest can trigger a dom0 crash by continuously connecting / disconnecting a block frontend. Privilege escalation and information leaks cannot be ruled out. This only affects systems with a Linux blkback."
+            },
+            {
+                "title": "CVE-2020-29661",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29661",
+                "description": "A locking issue was discovered in the tty subsystem of the Linux kernel through 5.9.13. drivers/tty/tty_jobctrl.c allows a use-after-free attack against TIOCSPGRP, aka CID-54ffccbf053b."
+            },
+            {
+                "title": "CVE-2020-25669",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25669",
+                "description": "[use-after-free in sunkbd_reinit]"
+            },
+            {
+                "title": "CVE-2020-28941",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28941",
+                "description": "An issue was discovered in drivers/accessibility/speakup/spk_ttyio.c in the Linux kernel through 5.9.9. Local attackers on systems with the speakup driver could cause a local denial of service attack, aka CID-d41227544427. This occurs because of an invalid free when the line discipline is used more than once."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-4.15.0-1012-dell300x",
+            "linux-image-4.15.0-1065-oracle",
+            "linux-image-4.15.0-1079-gke",
+            "linux-image-4.15.0-1079-raspi2",
+            "linux-image-4.15.0-1085-kvm",
+            "linux-image-4.15.0-1093-gcp",
+            "linux-image-4.15.0-1094-aws",
+            "linux-image-4.15.0-1096-snapdragon",
+            "linux-image-4.15.0-1108-azure",
+            "linux-image-4.15.0-136-generic",
+            "linux-image-4.15.0-136-generic-lpae",
+            "linux-image-4.15.0-136-lowlatency"
+        ]
+    },
+    {
+        "title": "USN-4753-1: Linux kernel (OEM) vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4753-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3178",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3178",
+                "description": "** DISPUTED ** fs/nfsd/nfs3xdr.c in the Linux kernel through 5.10.8, when there is an NFS export of a subdirectory of a filesystem, allows remote attackers to traverse to other parts of the filesystem via READDIRPLUS. NOTE: some parties argue that such a subdirectory export is not intended to prevent this attack; see also the exports(5) no_subtree_check default behavior."
+            },
+            {
+                "title": "CVE-2020-28374",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28374",
+                "description": "In drivers/target/target_core_xcopy.c in the Linux kernel before 5.10.7, insufficient identifier checking in the LIO SCSI target code can be used by remote attackers to read or write files via directory traversal in an XCOPY request, aka CID-2896c93811e3. For example, an attack can occur over a network if the attacker has access to one iSCSI LUN. The attacker gains control over file access because I/O operations are proxied via an attacker-selected backstore."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4752-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4752-1",
+        "cves": [
+            {
+                "title": "CVE-2020-27152",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27152",
+                "description": "An issue was discovered in ioapic_lazy_update_eoi in arch/x86/kvm/ioapic.c in the Linux kernel before 5.9.2. It has an infinite loop related to improper interaction between a resampler and edge triggering, aka CID-77377064c3a9."
+            },
+            {
+                "title": "CVE-2020-28915",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28915",
+                "description": "A buffer over-read (at the framebuffer layer) in the fbcon code in the Linux kernel before 5.8.15 could be used by local attackers to read kernel memory, aka CID-6735b4632def."
+            },
+            {
+                "title": "CVE-2020-24490",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24490",
+                "description": "Improper buffer restrictions in BlueZ may allow an unauthenticated user to potentially enable denial of service via adjacent access. This affects all Linux kernel versions that support BlueZ."
+            },
+            {
+                "title": "CVE-2020-25643",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25643",
+                "description": "A flaw was found in the HDLC_PPP module of the Linux kernel in versions before 5.9-rc7. Memory corruption and a read overflow is caused by improper input validation in the ppp_cp_parse_cr function which can cause the system to crash or cause a denial of service. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+            },
+            {
+                "title": "CVE-2020-29661",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29661",
+                "description": "A locking issue was discovered in the tty subsystem of the Linux kernel through 5.9.13. drivers/tty/tty_jobctrl.c allows a use-after-free attack against TIOCSPGRP, aka CID-54ffccbf053b."
+            },
+            {
+                "title": "CVE-2020-25641",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25641",
+                "description": "A flaw was found in the Linux kernel's implementation of biovecs in versions before 5.9-rc7. A zero-length biovec request issued by the block subsystem could cause the kernel to enter an infinite loop, causing a denial of service. This flaw allows a local attacker with basic privileges to issue requests to a block device, resulting in a denial of service. The highest threat from this vulnerability is to system availability."
+            },
+            {
+                "title": "CVE-2020-28588",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28588",
+                "description": "[lib/syscall: fix syscall registers retrieval on 32-bit platforms]"
+            },
+            {
+                "title": "CVE-2020-29368",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29368",
+                "description": "An issue was discovered in __split_huge_pmd in mm/huge_memory.c in the Linux kernel before 5.7.5. The copy-on-write implementation can grant unintended write access because of a race condition in a THP mapcount check, aka CID-c444eb564fb1."
+            },
+            {
+                "title": "CVE-2020-25212",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25212",
+                "description": "A TOCTOU mismatch in the NFS client code in the Linux kernel before 5.8.3 could be used by local attackers to corrupt memory or possibly have unspecified other impact because a size check is in fs/nfs/nfs4proc.c instead of fs/nfs/nfs4xdr.c, aka CID-b4487b935452."
+            },
+            {
+                "title": "CVE-2020-25284",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25284",
+                "description": "The rbd block device driver in drivers/block/rbd.c in the Linux kernel through 5.8.9 used incomplete permission checking for access to rbd devices, which could be leveraged by local attackers to map or unmap rbd block devices, aka CID-f44d04e696fe."
+            },
+            {
+                "title": "CVE-2020-27815",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27815",
+                "description": "jfs: array-index-out-of-bounds in dbAdjTree"
+            },
+            {
+                "title": "CVE-2020-29371",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29371",
+                "description": "An issue was discovered in romfs_dev_read in fs/romfs/storage.c in the Linux kernel before 5.8.4. Uninitialized memory leaks to userspace, aka CID-bcf85fcedfdd."
+            },
+            {
+                "title": "CVE-2020-15436",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15436",
+                "description": "Use-after-free vulnerability in fs/block_dev.c in the Linux kernel before 5.8 allows local users to gain privileges or cause a denial of service by leveraging improper access to a certain error field."
+            },
+            {
+                "title": "CVE-2020-25704",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25704",
+                "description": "A flaw memory leak in the Linux kernel performance monitoring subsystem was found in the way if using PERF_EVENT_IOC_SET_FILTER. A local user could use this flaw to starve the resources causing denial of service."
+            },
+            {
+                "title": "CVE-2020-29369",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29369",
+                "description": "An issue was discovered in mm/mmap.c in the Linux kernel before 5.7.11. There is a race condition between certain expand functions (expand_downwards and expand_upwards) and page-table free operations from an munmap call, aka CID-246c320a8cfe."
+            },
+            {
+                "title": "CVE-2020-10135",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10135",
+                "description": "Legacy pairing and secure-connections pairing authentication in Bluetooth BR/EDR Core Specification v5.2 and earlier may allow an unauthenticated user to complete authentication without pairing credentials via adjacent access. An unauthenticated, adjacent attacker could impersonate a Bluetooth BR/EDR master or slave to pair with a previously paired remote device to successfully complete the authentication procedure without knowing the link key."
+            },
+            {
+                "title": "CVE-2020-35508",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35508",
+                "description": "fix copy_process(CLONE_PARENT) race with the exiting -\u003ereal_parent"
+            },
+            {
+                "title": "CVE-2020-14314",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14314",
+                "description": "A memory out-of-bounds read flaw was found in the Linux kernel before 5.9-rc2 with the ext3/ext4 file system, in the way it accesses a directory with broken indexing. This flaw allows a local user to crash the system if the directory exists. The highest threat from this vulnerability is to system availability."
+            },
+            {
+                "title": "CVE-2020-29660",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29660",
+                "description": "A locking inconsistency issue was discovered in the tty subsystem of the Linux kernel through 5.9.13. drivers/tty/tty_io.c and drivers/tty/tty_jobctrl.c may allow a read-after-free attack against TIOCGSID, aka CID-c8bcd9c5be24."
+            },
+            {
+                "title": "CVE-2020-15437",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15437",
+                "description": "The Linux kernel before version 5.8 is vulnerable to a NULL pointer dereference in drivers/tty/serial/8250/8250_core.c:serial8250_isa_init_ports() that allows local users to cause a denial of service by using the p-\u003eserial_in pointer which uninitialized."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4751-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4751-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25704",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25704",
+                "description": "A flaw memory leak in the Linux kernel performance monitoring subsystem was found in the way if using PERF_EVENT_IOC_SET_FILTER. A local user could use this flaw to starve the resources causing denial of service."
+            },
+            {
+                "title": "CVE-2020-28588",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28588",
+                "description": "[lib/syscall: fix syscall registers retrieval on 32-bit platforms]"
+            },
+            {
+                "title": "CVE-2020-29660",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29660",
+                "description": "A locking inconsistency issue was discovered in the tty subsystem of the Linux kernel through 5.9.13. drivers/tty/tty_io.c and drivers/tty/tty_jobctrl.c may allow a read-after-free attack against TIOCGSID, aka CID-c8bcd9c5be24."
+            },
+            {
+                "title": "CVE-2020-25656",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25656",
+                "description": "A flaw was found in the Linux kernel. A use-after-free was found in the way the console subsystem was using ioctls KDGKBSENT and KDSKBSENT. A local user could use this flaw to get read memory access out of bounds. The highest threat from this vulnerability is to data confidentiality."
+            },
+            {
+                "title": "CVE-2020-35508",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35508",
+                "description": "fix copy_process(CLONE_PARENT) race with the exiting -\u003ereal_parent"
+            },
+            {
+                "title": "CVE-2020-27675",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27675",
+                "description": "An issue was discovered in the Linux kernel through 5.9.1, as used with Xen through 4.14.x. drivers/xen/events/events_base.c allows event-channel removal during the event-handling loop (a race condition). This can cause a use-after-free or NULL pointer dereference, as demonstrated by a dom0 crash via events for an in-reconfiguration paravirtualized device, aka CID-073d0552ead5."
+            },
+            {
+                "title": "CVE-2020-27835",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27835",
+                "description": "A use after free in the Linux kernel infiniband hfi1 driver in versions prior to 5.10-rc6 was found in the way user calls Ioctl after open dev file and fork. A local user could use this flaw to crash the system."
+            },
+            {
+                "title": "CVE-2020-27673",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27673",
+                "description": "An issue was discovered in the Linux kernel through 5.9.1, as used with Xen through 4.14.x. Guest OS users can cause a denial of service (host OS hang) via a high rate of events to dom0, aka CID-e99502f76271."
+            },
+            {
+                "title": "CVE-2020-28941",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28941",
+                "description": "An issue was discovered in drivers/accessibility/speakup/spk_ttyio.c in the Linux kernel through 5.9.9. Local attackers on systems with the speakup driver could cause a local denial of service attack, aka CID-d41227544427. This occurs because of an invalid free when the line discipline is used more than once."
+            },
+            {
+                "title": "CVE-2020-29569",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29569",
+                "description": "An issue was discovered in the Linux kernel through 5.10.1, as used with Xen through 4.14.x. The Linux kernel PV block backend expects the kernel thread handler to reset ring-\u003exenblkd to NULL when stopped. However, the handler may not have time to run if the frontend quickly toggles between the states connect and disconnect. As a consequence, the block backend may re-use a pointer after it was freed. A misbehaving guest can trigger a dom0 crash by continuously connecting / disconnecting a block frontend. Privilege escalation and information leaks cannot be ruled out. This only affects systems with a Linux blkback."
+            },
+            {
+                "title": "CVE-2020-29661",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29661",
+                "description": "A locking issue was discovered in the tty subsystem of the Linux kernel through 5.9.13. drivers/tty/tty_jobctrl.c allows a use-after-free attack against TIOCSPGRP, aka CID-54ffccbf053b."
+            },
+            {
+                "title": "CVE-2020-27830",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27830",
+                "description": "NULL-ptr deref in the spk_ttyio_receive_buf2() function in spk_ttyio.c"
+            },
+            {
+                "title": "CVE-2020-29568",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29568",
+                "description": "An issue was discovered in Xen through 4.14.x. Some OSes (such as Linux, FreeBSD, and NetBSD) are processing watch events using a single thread. If the events are received faster than the thread is able to handle, they will get queued. As the queue is unbounded, a guest may be able to trigger an OOM in the backend. All systems with a FreeBSD, Linux, or NetBSD (any version) dom0 are vulnerable."
+            },
+            {
+                "title": "CVE-2020-28974",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28974",
+                "description": "A slab-out-of-bounds read in fbcon in the Linux kernel before 5.9.7 could be used by local attackers to read privileged information or potentially crash the kernel, aka CID-3c4e0dff2095. This occurs because KD_FONT_OP_COPY in drivers/tty/vt/vt.c can be used for manipulations such as font height."
+            },
+            {
+                "title": "CVE-2020-27815",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27815",
+                "description": "jfs: array-index-out-of-bounds in dbAdjTree"
+            },
+            {
+                "title": "CVE-2020-25668",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25668",
+                "description": "[concurrency use-after-free in vt]"
+            },
+            {
+                "title": "CVE-2020-27777",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27777",
+                "description": "A flaw was found in the way RTAS handled memory accesses in userspace to kernel communication. On a locked down (usually due to Secure Boot) guest system running on top of PowerVM or KVM hypervisors (pseries platform) a root like local user could use this flaw to further increase their privileges to that of a running kernel."
+            },
+            {
+                "title": "CVE-2020-25669",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25669",
+                "description": "[use-after-free in sunkbd_reinit]"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4750-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4750-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25669",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25669",
+                "description": "[use-after-free in sunkbd_reinit]"
+            },
+            {
+                "title": "CVE-2020-28588",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28588",
+                "description": "[lib/syscall: fix syscall registers retrieval on 32-bit platforms]"
+            },
+            {
+                "title": "CVE-2020-27815",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27815",
+                "description": "jfs: array-index-out-of-bounds in dbAdjTree"
+            },
+            {
+                "title": "CVE-2020-29568",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29568",
+                "description": "An issue was discovered in Xen through 4.14.x. Some OSes (such as Linux, FreeBSD, and NetBSD) are processing watch events using a single thread. If the events are received faster than the thread is able to handle, they will get queued. As the queue is unbounded, a guest may be able to trigger an OOM in the backend. All systems with a FreeBSD, Linux, or NetBSD (any version) dom0 are vulnerable."
+            },
+            {
+                "title": "CVE-2020-29660",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29660",
+                "description": "A locking inconsistency issue was discovered in the tty subsystem of the Linux kernel through 5.9.13. drivers/tty/tty_io.c and drivers/tty/tty_jobctrl.c may allow a read-after-free attack against TIOCGSID, aka CID-c8bcd9c5be24."
+            },
+            {
+                "title": "CVE-2020-29569",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29569",
+                "description": "An issue was discovered in the Linux kernel through 5.10.1, as used with Xen through 4.14.x. The Linux kernel PV block backend expects the kernel thread handler to reset ring-\u003exenblkd to NULL when stopped. However, the handler may not have time to run if the frontend quickly toggles between the states connect and disconnect. As a consequence, the block backend may re-use a pointer after it was freed. A misbehaving guest can trigger a dom0 crash by continuously connecting / disconnecting a block frontend. Privilege escalation and information leaks cannot be ruled out. This only affects systems with a Linux blkback."
+            },
+            {
+                "title": "CVE-2020-29661",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29661",
+                "description": "A locking issue was discovered in the tty subsystem of the Linux kernel through 5.9.13. drivers/tty/tty_jobctrl.c allows a use-after-free attack against TIOCSPGRP, aka CID-54ffccbf053b."
+            },
+            {
+                "title": "CVE-2021-20177",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20177",
+                "description": "system panic on 5.4 release since commit d18d22ce8f62839365c984b1df474d3975ed4eb2"
+            },
+            {
+                "title": "CVE-2020-28941",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28941",
+                "description": "An issue was discovered in drivers/accessibility/speakup/spk_ttyio.c in the Linux kernel through 5.9.9. Local attackers on systems with the speakup driver could cause a local denial of service attack, aka CID-d41227544427. This occurs because of an invalid free when the line discipline is used more than once."
+            },
+            {
+                "title": "CVE-2020-27830",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27830",
+                "description": "NULL-ptr deref in the spk_ttyio_receive_buf2() function in spk_ttyio.c"
+            }
+        ],
+        "affected_packages": [
+            "linux-image-5.4.0-1010-gkeop",
+            "linux-image-5.4.0-1029-raspi",
+            "linux-image-5.4.0-1036-gke",
+            "linux-image-5.4.0-1037-gcp",
+            "linux-image-5.4.0-1038-aws",
+            "linux-image-5.4.0-1038-oracle",
+            "linux-image-5.4.0-1040-azure",
+            "linux-image-5.4.0-66-generic",
+            "linux-image-5.4.0-66-generic-lpae",
+            "linux-image-5.4.0-66-lowlatency"
+        ]
+    },
+    {
+        "title": "USN-4748-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4748-1",
+        "cves": [
+            {
+                "title": "CVE-2020-29660",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29660",
+                "description": "A locking inconsistency issue was discovered in the tty subsystem of the Linux kernel through 5.9.13. drivers/tty/tty_io.c and drivers/tty/tty_jobctrl.c may allow a read-after-free attack against TIOCGSID, aka CID-c8bcd9c5be24."
+            },
+            {
+                "title": "CVE-2020-29374",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29374",
+                "description": "An issue was discovered in the Linux kernel before 5.7.3, related to mm/gup.c and mm/huge_memory.c. The get_user_pages (aka gup) implementation, when used for a copy-on-write page, does not properly consider the semantics of read operations and therefore can grant unintended write access, aka CID-17839856fd58."
+            },
+            {
+                "title": "CVE-2020-29661",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29661",
+                "description": "A locking issue was discovered in the tty subsystem of the Linux kernel through 5.9.13. drivers/tty/tty_jobctrl.c allows a use-after-free attack against TIOCSPGRP, aka CID-54ffccbf053b."
+            },
+            {
+                "title": "CVE-2020-29568",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29568",
+                "description": "An issue was discovered in Xen through 4.14.x. Some OSes (such as Linux, FreeBSD, and NetBSD) are processing watch events using a single thread. If the events are received faster than the thread is able to handle, they will get queued. As the queue is unbounded, a guest may be able to trigger an OOM in the backend. All systems with a FreeBSD, Linux, or NetBSD (any version) dom0 are vulnerable."
+            },
+            {
+                "title": "CVE-2020-27815",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27815",
+                "description": "jfs: array-index-out-of-bounds in dbAdjTree"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4747-2: GNU Screen vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4747-2",
         "cves": [
