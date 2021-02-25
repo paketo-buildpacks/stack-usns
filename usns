@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4754-2: Python regression",
+        "link": "https://ubuntu.com/security/notices/USN-4754-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1916893",
+                "link": "https://launchpad.net/bugs/1916893",
+                "description": "Regression - upate python2.7 for cover CVE-2021-3177 modifying unicode parts cause serious regressions"
+            }
+        ],
+        "affected_packages": [
+            "python2.7",
+            "python2.7-minimal"
+        ]
+    },
+    {
         "title": "USN-4755-1: LibTIFF vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4755-1",
         "cves": [
