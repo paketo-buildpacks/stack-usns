@@ -69,11 +69,6 @@
         "link": "https://ubuntu.com/security/notices/USN-4753-1",
         "cves": [
             {
-                "title": "CVE-2021-3178",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3178",
-                "description": "** DISPUTED ** fs/nfsd/nfs3xdr.c in the Linux kernel through 5.10.8, when there is an NFS export of a subdirectory of a filesystem, allows remote attackers to traverse to other parts of the filesystem via READDIRPLUS. NOTE: some parties argue that such a subdirectory export is not intended to prevent this attack; see also the exports(5) no_subtree_check default behavior."
-            },
-            {
                 "title": "CVE-2020-28374",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28374",
                 "description": "In drivers/target/target_core_xcopy.c in the Linux kernel before 5.10.7, insufficient identifier checking in the LIO SCSI target code can be used by remote attackers to read or write files via directory traversal in an XCOPY request, aka CID-2896c93811e3. For example, an attack can occur over a network if the attacker has access to one iSCSI LUN. The attacker gains control over file access because I/O operations are proxied via an attacker-selected backstore."
