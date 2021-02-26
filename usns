@@ -1,5 +1,64 @@
 [
     {
+        "title": "USN-4756-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4756-1",
+        "cves": [
+            {
+                "title": "CVE-2021-23971",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23971",
+                "description": "When processing a redirect with a conflicting Referrer-Policy, Firefox would have adopted the redirect's Referrer-Policy. This would have potentially resulted in more information than intended by the original origin being provided to the destination of the redirect. This vulnerability affects Firefox \u003c 86."
+            },
+            {
+                "title": "CVE-2021-23973",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23973",
+                "description": "When trying to load a cross-origin resource in an audio/video context a decoding error may have resulted, and the content of that error may have revealed information about the resource. This vulnerability affects Firefox \u003c 86, Thunderbird \u003c 78.8, and Firefox ESR \u003c 78.8."
+            },
+            {
+                "title": "CVE-2021-23970",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23970",
+                "description": "Context-specific code was included in a shared jump table; resulting in assertions being triggered in multithreaded wasm code. This vulnerability affects Firefox \u003c 86."
+            },
+            {
+                "title": "CVE-2021-23972",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23972",
+                "description": "One phishing tactic on the web is to provide a link with HTTP Auth. For example 'https://www.phishingtarget.com@evil.com'. To mitigate this type of attack, Firefox will display a warning dialog; however, this warning dialog would not have been displayed if evil.com used a redirect that was cached by the browser. This vulnerability affects Firefox \u003c 86."
+            },
+            {
+                "title": "CVE-2021-23969",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23969",
+                "description": "As specified in the W3C Content Security Policy draft, when creating a violation report, \"User agents need to ensure that the source file is the URL requested by the page, pre-redirects. If that’s not possible, user agents need to strip the URL down to an origin to avoid unintentional leakage.\" Under certain types of redirects, Firefox incorrectly set the source file to be the destination of the redirects. This was fixed to be the redirect destination's origin. This vulnerability affects Firefox \u003c 86, Thunderbird \u003c 78.8, and Firefox ESR \u003c 78.8."
+            },
+            {
+                "title": "CVE-2021-23968",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23968",
+                "description": "If Content Security Policy blocked frame navigation, the full destination of a redirect served in the frame was reported in the violation report; as opposed to the original frame URI. This could be used to leak sensitive information contained in such URIs. This vulnerability affects Firefox \u003c 86, Thunderbird \u003c 78.8, and Firefox ESR \u003c 78.8."
+            },
+            {
+                "title": "CVE-2021-23974",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23974",
+                "description": "The DOMParser API did not properly process '\u003cnoscript\u003e' elements for escaping. This could be used as an mXSS vector to bypass an HTML Sanitizer. This vulnerability affects Firefox \u003c 86."
+            },
+            {
+                "title": "CVE-2021-23975",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23975",
+                "description": "The developer page about:memory has a Measure function for exploring what object types the browser has allocated and their sizes. When this function was invoked we incorrectly called the sizeof function, instead of using the API method that checks for invalid pointers. This vulnerability affects Firefox \u003c 86."
+            },
+            {
+                "title": "CVE-2021-23978",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23978",
+                "description": "Mozilla developers reported memory safety bugs present in Firefox 85 and Firefox ESR 78.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox \u003c 86, Thunderbird \u003c 78.8, and Firefox ESR \u003c 78.8."
+            },
+            {
+                "title": "CVE-2021-23979",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23979",
+                "description": "Mozilla developers reported memory safety bugs present in Firefox 85. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox \u003c 86."
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-4754-2: Python regression",
         "link": "https://ubuntu.com/security/notices/USN-4754-2",
         "cves": [
