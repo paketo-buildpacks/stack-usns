@@ -1,5 +1,34 @@
 [
     {
+        "title": "USN-4757-1: wpa_supplicant and hostapd vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4757-1",
+        "cves": [
+            {
+                "title": "CVE-2021-27803",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27803",
+                "description": "A vulnerability was discovered in how p2p/p2p_pd.c in wpa_supplicant before 2.10 processes P2P (Wi-Fi Direct) provision discovery requests. It could result in denial of service or other impact (potentially execution of arbitrary code), for an attacker within radio range."
+            }
+        ],
+        "affected_packages": [
+            "wpasupplicant"
+        ]
+    },
+    {
+        "title": "USN-4754-4: Python 2.7 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4754-4",
+        "cves": [
+            {
+                "title": "CVE-2021-3177",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3177",
+                "description": "Python 3.x through 3.9.1 has a buffer overflow in PyCArg_repr in _ctypes/callproc.c, which may lead to remote code execution in certain Python applications that accept floating-point numbers as untrusted input, as demonstrated by a 1e300 argument to c_double.from_param. This occurs because sprintf is used unsafely."
+            }
+        ],
+        "affected_packages": [
+            "python2.7",
+            "python2.7-minimal"
+        ]
+    },
+    {
         "title": "USN-4737-2: Bind vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4737-2",
         "cves": [
