@@ -300,7 +300,7 @@
             {
                 "title": "CVE-2020-15436",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15436",
-                "description": ""
+                "description": "Use-after-free vulnerability in fs/block_dev.c in the Linux kernel before 5.8 allows local users to gain privileges or cause a denial of service by leveraging improper access to a certain error field."
             },
             {
                 "title": "CVE-2020-25704",
