@@ -1,5 +1,59 @@
 [
     {
+        "title": "USN-4760-1: libzstd vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4760-1",
+        "cves": [
+            {
+                "title": "CVE-2021-24031",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24031",
+                "description": "zstd adds read permissions to files while being compressed or uncompressed"
+            },
+            {
+                "title": "CVE-2021-24032",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24032",
+                "description": "Race condition allows attacker to access world-readable destination file"
+            }
+        ],
+        "affected_packages": [
+            "zstd",
+            "libzstd1"
+        ]
+    },
+    {
+        "title": "USN-4759-1: GLib vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4759-1",
+        "cves": [
+            {
+                "title": "CVE-2021-27218",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27218",
+                "description": "An issue was discovered in GNOME GLib before 2.66.7 and 2.67.x before 2.67.4. If g_byte_array_new_take() was called with a buffer of 4GB or more on a 64-bit platform, the length would be truncated modulo 2**32, causing unintended length truncation."
+            },
+            {
+                "title": "CVE-2021-27219",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27219",
+                "description": "An issue was discovered in GNOME GLib before 2.66.6 and 2.67.x before 2.67.3. The function g_bytes_new has an integer overflow on 64-bit platforms due to an implicit cast from 64 bits to 32 bits. The overflow could potentially lead to memory corruption."
+            }
+        ],
+        "affected_packages": [
+            "libglib2.0-0"
+        ]
+    },
+    {
+        "title": "USN-4733-2: GNOME Autoar regression",
+        "link": "https://ubuntu.com/security/notices/USN-4733-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1917812",
+                "link": "https://launchpad.net/bugs/1917812",
+                "description": "extracting archives from within nautilus omits subfolders"
+            }
+        ],
+        "affected_packages": [
+            "libgnome-autoar-gtk-0-0",
+            "libgnome-autoar-0-0"
+        ]
+    },
+    {
         "title": "USN-4757-2: wpa_supplicant and hostapd vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4757-2",
         "cves": [
