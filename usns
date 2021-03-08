@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4758-1: Go vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4758-1",
+        "cves": [
+            {
+                "title": "CVE-2020-24553",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24553",
+                "description": "Go before 1.14.8 and 1.15.x before 1.15.1 allows XSS because text/html is the default for CGI/FCGI handlers that lack a Content-Type header."
+            }
+        ],
+        "affected_packages": [
+            "golang-1.10-go",
+            "golang-1.10"
+        ]
+    },
+    {
         "title": "USN-4760-1: libzstd vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4760-1",
         "cves": [
