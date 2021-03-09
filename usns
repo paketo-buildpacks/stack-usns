@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4761-1: Git vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4761-1",
+        "cves": [
+            {
+                "title": "CVE-2021-21300",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21300",
+                "description": "On case-insensitive filesystems, with support for symbolic links, if Git is configured globally to apply delay-capable clean/smudge filters (such as Git LFS), Git could be fooled into running remote code during a clone."
+            }
+        ],
+        "affected_packages": [
+            "git"
+        ]
+    },
+    {
         "title": "USN-4758-1: Go vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4758-1",
         "cves": [
