@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4762-1: OpenSSH vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4762-1",
+        "cves": [
+            {
+                "title": "CVE-2021-28041",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28041",
+                "description": "ssh-agent in OpenSSH before 8.5 has a double free that may be relevant in a few less-common scenarios, such as unconstrained agent-socket access on a legacy operating system, or the forwarding of an agent to an attacker-controlled host."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4761-1: Git vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4761-1",
         "cves": [
