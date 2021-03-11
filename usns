@@ -1,5 +1,55 @@
 [
     {
+        "title": "USN-4763-1: Pillow vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4763-1",
+        "cves": [
+            {
+                "title": "CVE-2021-27922",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27922",
+                "description": "Pillow before 8.1.1 allows attackers to cause a denial of service (memory consumption) because the reported size of a contained image is not properly checked for an ICNS container, and thus an attempted memory allocation can be very large."
+            },
+            {
+                "title": "CVE-2021-25291",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25291",
+                "description": "In TiffDecode.c, invalid tile boundaries could lead to an OOB Read in TiffReadRGBATile"
+            },
+            {
+                "title": "CVE-2021-27921",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27921",
+                "description": "Pillow before 8.1.1 allows attackers to cause a denial of service (memory consumption) because the reported size of a contained image is not properly checked for a BLP container, and thus an attempted memory allocation can be very large."
+            },
+            {
+                "title": "CVE-2021-25293",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25293",
+                "description": "There is an Out of Bounds Read in SGIRleDecode.c, since pillow 4.3.0."
+            },
+            {
+                "title": "CVE-2021-27923",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27923",
+                "description": "Pillow before 8.1.1 allows attackers to cause a denial of service (memory consumption) because the reported size of a contained image is not properly checked for an ICO container, and thus an attempted memory allocation can be very large."
+            },
+            {
+                "title": "CVE-2021-25290",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25290",
+                "description": "In TiffDecode.c, there is a negative-offset memcpy with an invalid size"
+            },
+            {
+                "title": "CVE-2021-25292",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25292",
+                "description": "The PDF parser has a catastrophic backtracking regex that could be used as a DOS attack."
+            },
+            {
+                "title": "CVE-2021-25289",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25289",
+                "description": "The previous fix for CVE-2020-35654 was insufficent due to incorrect error checking in TiffDecode.c."
+            }
+        ],
+        "affected_packages": [
+            "python3-pil",
+            "python-pil"
+        ]
+    },
+    {
         "title": "USN-4762-1: OpenSSH vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4762-1",
         "cves": [
