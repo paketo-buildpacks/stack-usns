@@ -1,5 +1,52 @@
 [
     {
+        "title": "USN-4754-3: Python vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4754-3",
+        "cves": [
+            {
+                "title": "CVE-2020-8492",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8492",
+                "description": "Python 2.7 through 2.7.17, 3.5 through 3.5.9, 3.6 through 3.6.10, 3.7 through 3.7.6, and 3.8 through 3.8.1 allows an HTTP server to conduct Regular Expression Denial of Service (ReDoS) attacks against a client because of urllib.request.AbstractBasicAuthHandler catastrophic backtracking."
+            },
+            {
+                "title": "CVE-2019-17514",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17514",
+                "description": "library/glob.html in the Python 2 and 3 documentation before 2016 has potentially misleading information about whether sorting occurs, as demonstrated by irreproducible cancer-research results. NOTE: the effects of this documentation cross application domains, and thus it is likely that security-relevant code elsewhere is affected. This issue is not a Python implementation bug, and there are no reports that NMR researchers were specifically relying on library/glob.html. In other words, because the older documentation stated \"finds all the pathnames matching a specified pattern according to the rules used by the Unix shell,\" one might have incorrectly inferred that the sorting that occurs in a Unix shell also occurred for glob.glob. There is a workaround in newer versions of Willoughby nmr-data_compilation-p2.py and nmr-data_compilation-p3.py, which call sort() directly."
+            },
+            {
+                "title": "CVE-2019-9674",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9674",
+                "description": "Lib/zipfile.py in Python through 3.7.2 allows remote attackers to cause a denial of service (resource consumption) via a ZIP bomb."
+            },
+            {
+                "title": "CVE-2021-3177",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3177",
+                "description": "Python 3.x through 3.9.1 has a buffer overflow in PyCArg_repr in _ctypes/callproc.c, which may lead to remote code execution in certain Python applications that accept floating-point numbers as untrusted input, as demonstrated by a 1e300 argument to c_double.from_param. This occurs because sprintf is used unsafely."
+            },
+            {
+                "title": "CVE-2019-20907",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20907",
+                "description": "In Lib/tarfile.py in Python through 3.8.3, an attacker is able to craft a TAR archive leading to an infinite loop when opened by tarfile.open, because _proc_pax lacks header validation."
+            },
+            {
+                "title": "CVE-2020-26116",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26116",
+                "description": "http.client in Python 3.x before 3.5.10, 3.6.x before 3.6.12, 3.7.x before 3.7.9, and 3.8.x before 3.8.5 allows CRLF injection if the attacker controls the HTTP request method, as demonstrated by inserting CR and LF control characters in the first argument of HTTPConnection.request."
+            },
+            {
+                "title": "CVE-2020-27619",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27619",
+                "description": "In Python 3 through 3.9.0, the Lib/test/multibytecodec_support.py CJK codec tests call eval() on content retrieved via HTTP."
+            }
+        ],
+        "affected_packages": [
+            "python3.8-minimal",
+            "python3.7",
+            "python3.8",
+            "python3.7-minimal"
+        ]
+    },
+    {
         "title": "USN-4763-1: Pillow vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4763-1",
         "cves": [
