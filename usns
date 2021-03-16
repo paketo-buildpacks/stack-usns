@@ -1,5 +1,37 @@
 [
     {
+        "title": "USN-4880-1: OpenJPEG vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4880-1",
+        "cves": [
+            {
+                "title": "CVE-2020-27841",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27841",
+                "description": "There's a flaw in openjpeg in versions prior to 2.4.0 in src/lib/openjp2/pi.c. When an attacker is able to provide crafted input to be processed by the openjpeg encoder, this could cause an out-of-bounds read. The greatest impact from this flaw is to application availability."
+            },
+            {
+                "title": "CVE-2020-27824",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27824",
+                "description": "Global-buffer-overflow in lib/openjp2/dwt.c"
+            },
+            {
+                "title": "CVE-2020-27814",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27814",
+                "description": "A heap-buffer overflow was found in the way openjpeg2 handled certain PNG format files. An attacker could use this flaw to cause an application crash or in some cases execute arbitrary code with the permission of the user running such an application."
+            },
+            {
+                "title": "CVE-2020-27823",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27823",
+                "description": "Heap-buffer-overflow write in lib-openjp2"
+            },
+            {
+                "title": "CVE-2020-27845",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27845",
+                "description": "There's a flaw in src/lib/openjp2/pi.c of openjpeg in versions prior to 2.4.0. If an attacker is able to provide untrusted input to openjpeg's conversion/encoding functionality, they could cause an out-of-bounds read. The highest impact of this flaw is to application availability."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4879-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4879-1",
         "cves": [
