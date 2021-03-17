@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4881-1: containerd vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4881-1",
+        "cves": [
+            {
+                "title": "CVE-2021-21334",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21334",
+                "description": "environment variables can leak between containers"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4880-1: OpenJPEG vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4880-1",
         "cves": [
