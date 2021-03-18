@@ -1,5 +1,30 @@
 [
     {
+        "title": "USN-4882-1: Ruby vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4882-1",
+        "cves": [
+            {
+                "title": "CVE-2020-10663",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10663",
+                "description": "The JSON gem through 2.2.0 for Ruby, as used in Ruby 2.4 through 2.4.9, 2.5 through 2.5.7, and 2.6 through 2.6.5, has an Unsafe Object Creation Vulnerability. This is quite similar to CVE-2013-0269, but does not rely on poor garbage-collection behavior within Ruby. Specifically, use of JSON parsing methods can lead to creation of a malicious object within the interpreter, with adverse effects that are application-dependent."
+            },
+            {
+                "title": "CVE-2020-10933",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10933",
+                "description": "An issue was discovered in Ruby 2.5.x through 2.5.7, 2.6.x through 2.6.5, and 2.7.0. If a victim calls BasicSocket#read_nonblock(requested_size, buffer, exception: false), the method resizes the buffer to fit the requested size, but no data is copied. Thus, the buffer string provides the previous value of the heap. This may expose possibly sensitive data from the interpreter."
+            },
+            {
+                "title": "CVE-2020-25613",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25613",
+                "description": "An issue was discovered in Ruby through 2.5.8, 2.6.x through 2.6.6, and 2.7.x through 2.7.1. WEBrick, a simple HTTP server bundled with Ruby, had not checked the transfer-encoding header value rigorously. An attacker may potentially exploit this issue to bypass a reverse proxy (which also has a poor header check), which may lead to an HTTP Request Smuggling attack."
+            }
+        ],
+        "affected_packages": [
+            "ruby2.5",
+            "libruby2.5"
+        ]
+    },
+    {
         "title": "USN-4881-1: containerd vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4881-1",
         "cves": [
