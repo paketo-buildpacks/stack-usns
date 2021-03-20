@@ -1,5 +1,37 @@
 [
     {
+        "title": "USN-4883-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4883-1",
+        "cves": [
+            {
+                "title": "CVE-2021-27365",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27365",
+                "description": "An issue was discovered in the Linux kernel through 5.11.3. Certain iSCSI data structures do not have appropriate length constraints or checks, and can exceed the PAGE_SIZE value. An unprivileged user can send a Netlink message that is associated with iSCSI, and has a length up to the maximum length of a Netlink message."
+            },
+            {
+                "title": "CVE-2021-27363",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27363",
+                "description": "An issue was discovered in the Linux kernel through 5.11.3. A kernel pointer leak can be used to determine the address of the iscsi_transport structure. When an iSCSI transport is registered with the iSCSI subsystem, the transport's handle is available to unprivileged users via the sysfs file system, at /sys/class/iscsi_transport/$TRANSPORT_NAME/handle. When read, the show_transport_handle function (in drivers/scsi/scsi_transport_iscsi.c) is called, which leaks the handle. This handle is actually the pointer to an iscsi_transport struct in the kernel module's global variables."
+            },
+            {
+                "title": "CVE-2021-27364",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27364",
+                "description": "An issue was discovered in the Linux kernel through 5.11.3. drivers/scsi/scsi_transport_iscsi.c is adversely affected by the ability of an unprivileged user to craft Netlink messages."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-4.15.0-1081-raspi2",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux-aws\"\u003elinux-image-4.15.0-1096-aws",
+            "linux-image-4.15.0-139-lowlatency",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux-kvm\"\u003elinux-image-4.15.0-1087-kvm",
+            "linux-image-4.15.0-1095-gcp",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux\"\u003elinux-image-4.15.0-139-generic-lpae",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-powerpc64-emb                              -                                4.15.0.139.126                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-aws-lts-18.04                              -                                4.15.0.1096.99                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux-azure-4.15\"\u003elinux-image-4.15.0-1110-azure",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux-snapdragon\"\u003elinux-image-4.15.0-1098-snapdragon",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-raspi2                              -                                4.15.0.1081.78                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-azure-lts-18.04                              -                                4.15.0.1110.83                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-powerpc-smp                              -                                4.15.0.139.126                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-generic-lpae                              -                                4.15.0.139.126                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux\"\u003elinux-image-4.15.0-139-generic"
+        ]
+    },
+    {
         "title": "USN-4882-1: Ruby vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4882-1",
         "cves": [
