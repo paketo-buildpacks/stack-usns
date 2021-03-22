@@ -1,5 +1,84 @@
 [
     {
+        "title": "USN-4886-1: Privoxy vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4886-1",
+        "cves": [
+            {
+                "title": "CVE-2021-20213",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20213",
+                "description": "Prevent an unlikely dereference of a NULL-pointer that could result in a crash if accept-intercepted-requests was enabled, Privoxy failed to get the request destination from the Host header and a memory allocation failed."
+            },
+            {
+                "title": "CVE-2021-20215",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20215",
+                "description": "Fixed memory leaks in the show-status CGI handler when memory allocations fail."
+            },
+            {
+                "title": "CVE-2021-20212",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20212",
+                "description": "Fixed a memory leak if multiple filters are executed and the last one is skipped due to a pcre error."
+            },
+            {
+                "title": "CVE-2021-20211",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20211",
+                "description": "Fixes a memory leak when client tags are active."
+            },
+            {
+                "title": "CVE-2021-20276",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20276",
+                "description": "A flaw was found in privoxy before 3.0.32. Invalid memory access with an invalid pattern passed to pcre_compile() may lead to denial of service."
+            },
+            {
+                "title": "CVE-2020-35502",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35502",
+                "description": "Fixed memory leaks when a response is buffered and the buffer limit is reached or Privoxy is running out of memory."
+            },
+            {
+                "title": "CVE-2021-20216",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20216",
+                "description": "Fixed a memory leak when decompression fails \"unexpectedly\"."
+            },
+            {
+                "title": "CVE-2021-20210",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20210",
+                "description": "Fixed a memory leak in the show-status CGI handler when no filter files are configured."
+            },
+            {
+                "title": "CVE-2021-20209",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20209",
+                "description": "Fixed a memory leak in the show-status CGI handler when no action files are configured."
+            },
+            {
+                "title": "CVE-2021-20217",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20217",
+                "description": "Prevent an assertion from getting triggered by a crafted CGI request."
+            },
+            {
+                "title": "CVE-2021-20273",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20273",
+                "description": "A flaw was found in privoxy before 3.0.32. A crash can occur via a crafted CGI request if Privoxy is toggled off."
+            },
+            {
+                "title": "CVE-2021-20275",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20275",
+                "description": "A flaw was found in privoxy before 3.0.32. A invalid read of size two may occur in chunked_body_is_complete() leading to denial of service."
+            },
+            {
+                "title": "CVE-2021-20272",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20272",
+                "description": "A flaw was found in privoxy before 3.0.32. An assertion failure could be triggered with a crafted CGI request leading to server crash."
+            },
+            {
+                "title": "CVE-2021-20214",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20214",
+                "description": "Fixed memory leaks in the client-tags CGI handler when client tags are configured and memory allocations fail."
+            }
+        ],
+        "affected_packages": [
+            "privoxy"
+        ]
+    },
+    {
         "title": "USN-4885-1: Pygments vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4885-1",
         "cves": [
