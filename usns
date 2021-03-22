@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4885-1: Pygments vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4885-1",
+        "cves": [
+            {
+                "title": "CVE-2021-20270",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20270",
+                "description": "Infinite loop in SMLLexer leads to denial of service"
+            }
+        ],
+        "affected_packages": [
+            "python3-pygments",
+            "python-pygments"
+        ]
+    },
+    {
         "title": "USN-4884-1: Linux kernel (OEM) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4884-1",
         "cves": [
