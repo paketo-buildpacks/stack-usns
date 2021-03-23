@@ -1,5 +1,57 @@
 [
     {
+        "title": "USN-4887-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4887-1",
+        "cves": [
+            {
+                "title": "CVE-2020-27170",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27170",
+                "description": "Speculation on pointer arithmetic against bpf_context pointer allows unprivileged local users to leak content of kernel memory"
+            },
+            {
+                "title": "CVE-2021-27364",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27364",
+                "description": "An issue was discovered in the Linux kernel through 5.11.3. drivers/scsi/scsi_transport_iscsi.c is adversely affected by the ability of an unprivileged user to craft Netlink messages."
+            },
+            {
+                "title": "CVE-2020-27171",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27171",
+                "description": "Integer underflow when restricting speculative pointer arithmetic allows unprivileged local users to leak content of kernel memory"
+            },
+            {
+                "title": "CVE-2021-27363",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27363",
+                "description": "An issue was discovered in the Linux kernel through 5.11.3. A kernel pointer leak can be used to determine the address of the iscsi_transport structure. When an iSCSI transport is registered with the iSCSI subsystem, the transport's handle is available to unprivileged users via the sysfs file system, at /sys/class/iscsi_transport/$TRANSPORT_NAME/handle. When read, the show_transport_handle function (in drivers/scsi/scsi_transport_iscsi.c) is called, which leaks the handle. This handle is actually the pointer to an iscsi_transport struct in the kernel module's global variables."
+            },
+            {
+                "title": "CVE-2021-3444",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3444",
+                "description": "The bpf verifier in the Linux kernel did not properly handle mod32 destination register truncation when the source register was known to be 0. A local attacker with the ability to load bpf programs could use this gain out-of-bounds reads in kernel memory leading to information disclosure (kernel memory), and possibly out-of-bounds writes that could potentially lead to code execution."
+            },
+            {
+                "title": "CVE-2021-27365",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27365",
+                "description": "An issue was discovered in the Linux kernel through 5.11.3. Certain iSCSI data structures do not have appropriate length constraints or checks, and can exceed the PAGE_SIZE value. An unprivileged user can send a Netlink message that is associated with iSCSI, and has a length up to the maximum length of a Netlink message."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-5.4.0-70-generic-lpae",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-gcp                              -                                5.4.0.1040.27                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-gkeop-5.4                              -                                5.4.0.1012.13~18.04.13                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-oem-osp1                              -                                5.4.0.70.78~18.04.63                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-oracle                              -                                5.4.0.1041.44~18.04.23                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-generic-hwe-18.04                              -                                5.4.0.70.78~18.04.63                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-azure                              -                                5.4.0.1043.23                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-snapdragon-hwe-18.04                              -                                5.4.0.70.78~18.04.63                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux-gke-5.4\"\u003elinux-image-5.4.0-1039-gke",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux-hwe\"\u003elinux-image-5.3.0-72-lowlatency",
+            "linux-image-5.4.0-70-lowlatency",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux-raspi-5.4\"\u003elinux-image-5.4.0-1032-raspi",
+            "linux-image-5.3.0-72-generic",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux-raspi2-5.3\"\u003elinux-image-5.3.0-1038-raspi2",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-gke-5.4                              -                                5.4.0.1039.41~18.04.6                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-oem                              -                                5.4.0.70.78~18.04.63                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux-gke-5.3\"\u003elinux-image-5.3.0-1041-gke",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux-aws-5.4\"\u003elinux-image-5.4.0-1041-aws",
+            "linux-image-5.4.0-1040-gcp",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux-hwe-5.4\"\u003elinux-image-5.4.0-70-generic",
+            "linux-image-5.4.0-1041-oracle",
+            "linux-image-5.4.0-1012-gkeop",
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux-azure-5.4\"\u003elinux-image-5.4.0-1043-azure"
+        ]
+    },
+    {
         "title": "USN-4886-1: Privoxy vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4886-1",
         "cves": [
