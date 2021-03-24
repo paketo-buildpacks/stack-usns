@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4888-1: ldb vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4888-1",
+        "cves": [
+            {
+                "title": "CVE-2021-20277",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20277",
+                "description": "User-controlled LDAP filter strings against the AD DC LDAP server may crash the LDAP server."
+            },
+            {
+                "title": "CVE-2020-27840",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27840",
+                "description": "An anonymous attacker can crash the Samba AD DC LDAP server by sending easily crafted DNs as part of a bind request. More serious heap corruption is likely also possible."
+            }
+        ],
+        "affected_packages": [
+            "libldb1"
+        ]
+    },
+    {
         "title": "USN-4887-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4887-1",
         "cves": [
