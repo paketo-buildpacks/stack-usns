@@ -2,8 +2,8 @@ package main
 
 import (
 	"encoding/json"
-	"flag"
 	"fmt"
+	"github.com/jessevdk/go-flags"
 	"github.com/mmcdole/gofeed"
 	"html"
 	"io/ioutil"
@@ -27,22 +27,17 @@ type CVE struct {
 }
 
 func main() {
-	var (
-		usnListPath string
-		rssURL      string
-	)
+	var opts struct {
+		USNListPath string `short:"u" long:"usn-path" description:"Path to USN list" required:"true"`
+		RSSURL      string `short:"r" long:"rss-url" description:"URL of RSS feed" default:"https://ubuntu.com/security/notices/rss.xml"`
+	}
 
-	flag.StringVar(&usnListPath, "usn-path", "", "Path to USN list")
-	flag.StringVar(&rssURL, "rss-url", "https://ubuntu.com/security/notices/rss.xml", "URL of RSS feed")
-
-	flag.Parse()
-
-	if usnListPath == "" {
-		flag.Usage()
+	_, err := flags.Parse(&opts)
+	if err != nil {
 		os.Exit(1)
 	}
 
-	err := updateUSNs(usnListPath, rssURL)
+	err = updateUSNs(opts.USNListPath, opts.RSSURL)
 	if err != nil {
 		_, _ = fmt.Fprintf(os.Stderr, "Error updating USNs: %s\n", err.Error())
 		os.Exit(1)
