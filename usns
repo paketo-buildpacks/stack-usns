@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-3685-2: Ruby regression",
+        "link": "https://ubuntu.com/security/notices/USN-3685-2",
+        "cves": [
+            {
+                "title": "CVE-2017-0903",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-0903",
+                "description": "RubyGems versions between 2.0.0 and 2.6.13 are vulnerable to a possible remote code execution vulnerability. YAML deserialization of gem specifications can bypass class white lists. Specially crafted serialized objects can possibly be used to escalate to remote code execution."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4891-1: OpenSSL vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4891-1",
         "cves": [
