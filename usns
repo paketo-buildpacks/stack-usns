@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4891-1: OpenSSL vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4891-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3449",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3449",
+                "description": "NULL pointer deref in signature_algorithms processing"
+            }
+        ],
+        "affected_packages": [
+            "libssl1.1"
+        ]
+    },
+    {
         "title": "USN-4889-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4889-1",
         "cves": [
