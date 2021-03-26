@@ -6,7 +6,7 @@
             {
                 "title": "CVE-2021-23987",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23987",
-                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+                "description": "security update"
             },
             {
                 "title": "CVE-2021-23986",
@@ -26,7 +26,7 @@
             {
                 "title": "CVE-2021-23984",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23984",
-                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+                "description": "security update"
             },
             {
                 "title": "CVE-2021-23981",
