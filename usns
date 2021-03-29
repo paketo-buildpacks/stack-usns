@@ -1,5 +1,69 @@
 [
     {
+        "title": "USN-4895-1: Squid vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4895-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25097",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25097",
+                "description": "An issue was discovered in Squid through 4.13 and 5.x through 5.0.4. Due to improper input validation, it allows a trusted client to perform HTTP Request Smuggling and access services otherwise forbidden by the security controls. This occurs for certain uri_whitespace configuration settings."
+            },
+            {
+                "title": "CVE-2020-15049",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15049",
+                "description": "An issue was discovered in http/ContentLengthInterpreter.cc in Squid before 4.12 and 5.x before 5.0.3. A Request Smuggling and Poisoning attack can succeed against the HTTP cache. The client sends an HTTP request with a Content-Length header containing \"+\\ \"-\" or an uncommon shell whitespace character prefix to the length field-value."
+            }
+        ],
+        "affected_packages": [
+            "squid"
+        ]
+    },
+    {
+        "title": "USN-4894-1: WebKitGTK vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4894-1",
+        "cves": [
+            {
+                "title": "CVE-2021-1765",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1765",
+                "description": "Maliciously crafted web content may violate iframe sandboxing policy. This issue was addressed with improved iframe sandbox enforcement."
+            },
+            {
+                "title": "CVE-2020-27918",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27918",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-1870",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1870",
+                "description": "A remote attacker may be able to cause arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited. A logic issue was addressed with improved restrictions."
+            },
+            {
+                "title": "CVE-2021-1801",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1801",
+                "description": "Maliciously crafted web content may violate iframe sandboxing policy. This issue was addressed with improved iframe sandbox enforcement."
+            },
+            {
+                "title": "CVE-2020-29623",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29623",
+                "description": "“Clear History and Website Data” did not clear the history in some circumstances. The issue was addressed with improved data deletion."
+            },
+            {
+                "title": "CVE-2021-1789",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1789",
+                "description": "Processing maliciously crafted web content may lead to arbitrary code execution. A type confusion issue was addressed with improved state handling."
+            },
+            {
+                "title": "CVE-2021-1799",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1799",
+                "description": "A malicious website may be able to access restricted ports on arbitrary servers, A port redirection issue was addressed with additional port validation."
+            }
+        ],
+        "affected_packages": [
+            "libwebkit2gtk-4.0-37",
+            "libjavascriptcoregtk-4.0-18"
+        ]
+    },
+    {
         "title": "USN-4893-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4893-1",
         "cves": [
