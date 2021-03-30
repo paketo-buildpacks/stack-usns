@@ -1,5 +1,35 @@
 [
     {
+        "title": "USN-4897-1: Pygments vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4897-1",
+        "cves": [
+            {
+                "title": "CVE-2021-27291",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27291",
+                "description": "In pygments 1.1+, fixed in 2.7.4, the lexers used to parse programming languages rely heavily on regular expressions. Some of the regular expressions have exponential or cubic worst-case complexity and are vulnerable to ReDoS. By crafting malicious input, an attacker can cause a denial of service."
+            }
+        ],
+        "affected_packages": [
+            "python3-pygments",
+            "python-pygments"
+        ]
+    },
+    {
+        "title": "USN-4896-1: lxml vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4896-1",
+        "cves": [
+            {
+                "title": "CVE-2021-28957",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28957",
+                "description": "lxml 4.6.2 allows XSS. It places the HTML action attribute into defs.link_attrs (in html/defs.py) for later use in input sanitization, but does not do the same for the HTML5 formaction attribute."
+            }
+        ],
+        "affected_packages": [
+            "python3-lxml",
+            "python-lxml"
+        ]
+    },
+    {
         "title": "USN-4895-1: Squid vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4895-1",
         "cves": [
