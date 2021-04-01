@@ -1,5 +1,45 @@
 [
     {
+        "title": "USN-4900-1: OpenEXR vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4900-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3476",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3476",
+                "description": "A flaw was found in OpenEXR's B44 uncompression functionality in versions before 3.0.0-beta. An attacker who is able to submit a crafted file to OpenEXR could trigger shift overflows, potentially affecting application availability."
+            },
+            {
+                "title": "CVE-2021-3475",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3475",
+                "description": "There is a flaw in OpenEXR in versions before 3.0.0-beta. An attacker who can submit a crafted file to be processed by OpenEXR could cause an integer overflow, potentially leading to problems with application availability."
+            },
+            {
+                "title": "CVE-2021-3474",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3474",
+                "description": "There's a flaw in OpenEXR in versions before 3.0.0-beta. A crafted input file that is processed by OpenEXR could cause a shift overflow in the FastHufDecoder, potentially leading to problems with application availability."
+            },
+            {
+                "title": "CVE-2021-3477",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3477",
+                "description": "There's a flaw in OpenEXR's deep tile sample size calculations in versions before 3.0.0-beta. An attacker who is able to submit a crafted file to be processed by OpenEXR could trigger an integer overflow, subsequently leading to an out-of-bounds read. The greatest risk of this flaw is to application availability."
+            },
+            {
+                "title": "CVE-2021-3478",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3478",
+                "description": "There's a flaw in OpenEXR's scanline input file functionality in versions before 3.0.0-beta. An attacker able to submit a crafted file to be processed by OpenEXR could consume excessive system memory. The greatest impact of this flaw is to system availability."
+            },
+            {
+                "title": "CVE-2021-3479",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3479",
+                "description": "There's a flaw in OpenEXR's Scanline API functionality in versions before 3.0.0-beta. An attacker who is able to submit a crafted file to be processed by OpenEXR could trigger excessive consumption of memory, resulting in an impact to system availability."
+            }
+        ],
+        "affected_packages": [
+            "openexr",
+            "libopenexr22"
+        ]
+    },
+    {
         "title": "USN-4899-1: SpamAssassin vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4899-1",
         "cves": [
