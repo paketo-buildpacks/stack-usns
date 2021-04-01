@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4899-1: SpamAssassin vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4899-1",
+        "cves": [
+            {
+                "title": "CVE-2020-1946",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1946",
+                "description": "OS Command Injection in cf file parsing"
+            }
+        ],
+        "affected_packages": [
+            "spamassassin"
+        ]
+    },
+    {
         "title": "USN-4898-1: curl vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4898-1",
         "cves": [
