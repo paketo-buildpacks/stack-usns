@@ -1,5 +1,32 @@
 [
     {
+        "title": "USN-4901-1: Linux kernel (Trusty HWE) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4901-1",
+        "cves": [
+            {
+                "title": "CVE-2021-27365",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27365",
+                "description": "An issue was discovered in the Linux kernel through 5.11.3. Certain iSCSI data structures do not have appropriate length constraints or checks, and can exceed the PAGE_SIZE value. An unprivileged user can send a Netlink message that is associated with iSCSI, and has a length up to the maximum length of a Netlink message."
+            },
+            {
+                "title": "CVE-2021-27363",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27363",
+                "description": "An issue was discovered in the Linux kernel through 5.11.3. A kernel pointer leak can be used to determine the address of the iscsi_transport structure. When an iSCSI transport is registered with the iSCSI subsystem, the transport's handle is available to unprivileged users via the sysfs file system, at /sys/class/iscsi_transport/$TRANSPORT_NAME/handle. When read, the show_transport_handle function (in drivers/scsi/scsi_transport_iscsi.c) is called, which leaks the handle. This handle is actually the pointer to an iscsi_transport struct in the kernel module's global variables."
+            },
+            {
+                "title": "CVE-2021-27364",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27364",
+                "description": "An issue was discovered in the Linux kernel through 5.11.3. drivers/scsi/scsi_transport_iscsi.c is adversely affected by the ability of an unprivileged user to craft Netlink messages."
+            },
+            {
+                "title": "CVE-2020-28374",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28374",
+                "description": "In drivers/target/target_core_xcopy.c in the Linux kernel before 5.10.7, insufficient identifier checking in the LIO SCSI target code can be used by remote attackers to read or write files via directory traversal in an XCOPY request, aka CID-2896c93811e3. For example, an attack can occur over a network if the attacker has access to one iSCSI LUN. The attacker gains control over file access because I/O operations are proxied via an attacker-selected backstore."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4900-1: OpenEXR vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4900-1",
         "cves": [
