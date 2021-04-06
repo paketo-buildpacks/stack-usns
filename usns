@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-4561-2: Rack vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4561-2",
+        "cves": [
+            {
+                "title": "CVE-2020-8161",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8161",
+                "description": "A directory traversal vulnerability exists in rack \u003c 2.2.0 that allows an attacker perform directory traversal vulnerability in the Rack::Directory app that is bundled with Rack which could result in information disclosure."
+            },
+            {
+                "title": "CVE-2020-8184",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8184",
+                "description": "A reliance on cookies without validation/integrity check security vulnerability exists in rack \u003c 2.2.3, rack \u003c 2.1.4 that makes it is possible for an attacker to forge a secure or host-only cookie prefix."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4901-1: Linux kernel (Trusty HWE) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4901-1",
         "cves": [
