@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4902-1: Django vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4902-1",
+        "cves": [
+            {
+                "title": "CVE-2021-28658",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28658",
+                "description": "Potential directory-traversal via uploaded files"
+            }
+        ],
+        "affected_packages": [
+            "python3-django",
+            "python-django"
+        ]
+    },
+    {
         "title": "USN-4561-2: Rack vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4561-2",
         "cves": [
