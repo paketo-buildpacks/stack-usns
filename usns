@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4903-1: curl vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4903-1",
+        "cves": [
+            {
+                "title": "CVE-2021-22876",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22876",
+                "description": "libcurl does not strip off user credentials from the URL when automatically populating the `Referer:` HTTP request header field in outgoing HTTP requests, and therefore risks leaking sensitive data to the server that is the target of the second HTTP request."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4902-1: Django vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4902-1",
         "cves": [
