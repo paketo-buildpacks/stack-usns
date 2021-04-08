@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4896-2: lxml vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4896-2",
+        "cves": [
+            {
+                "title": "CVE-2021-28957",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28957",
+                "description": "lxml 4.6.2 allows XSS. It places the HTML action attribute into defs.link_attrs (in html/defs.py) for later use in input sanitization, but does not do the same for the HTML5 formaction attribute."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4903-1: curl vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4903-1",
         "cves": [
