@@ -8,7 +8,7 @@ on:
 jobs:
   approve:
     name: Auto Approve
-    if: ${{ github.event.pull_request.user.login == 'paketo-bot' }}
+    if: ${{ github.event.pull_request.user.login == 'paketo-bot' || github.event.pull_request.user.login == 'dependabot[bot]' }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
