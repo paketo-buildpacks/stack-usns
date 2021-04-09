@@ -3,7 +3,6 @@ name: Auto Approve paketo-bot PR
 on:
   pull_request:
     branches: [ main ]
-    paths: [ usns ]
 
 jobs:
   approve:
