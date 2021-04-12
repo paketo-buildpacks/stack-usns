@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4899-2: SpamAssassin vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4899-2",
+        "cves": [
+            {
+                "title": "CVE-2020-1946",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1946",
+                "description": "In Apache SpamAssassin before 3.4.5, malicious rule configuration (.cf) files can be configured to run system commands without any output or errors. With this, exploits can be injected in a number of scenarios. In addition to upgrading to SA version 3.4.5, users should only use update channels or 3rd party .cf files from trusted places."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4896-2: lxml vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4896-2",
         "cves": [
