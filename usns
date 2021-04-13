@@ -1,5 +1,37 @@
 [
     {
+        "title": "USN-4910-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4910-1",
+        "cves": [
+            {
+                "title": "CVE-2021-20268",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20268",
+                "description": "An out-of-bounds access flaw was found in the Linux kernel's implementation of the eBPF code verifier in the way a user running the eBPF script calls dev_map_init_map or sock_map_alloc. This flaw allows a local user to crash the system or possibly escalate their privileges. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability."
+            },
+            {
+                "title": "CVE-2021-3178",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3178",
+                "description": "** DISPUTED ** fs/nfsd/nfs3xdr.c in the Linux kernel through 5.10.8, when there is an NFS export of a subdirectory of a filesystem, allows remote attackers to traverse to other parts of the filesystem via READDIRPLUS. NOTE: some parties argue that such a subdirectory export is not intended to prevent this attack; see also the exports(5) no_subtree_check default behavior."
+            },
+            {
+                "title": "CVE-2021-3347",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3347",
+                "description": "An issue was discovered in the Linux kernel through 5.10.11. PI futexes have a kernel stack use-after-free during fault handling, allowing local users to execute code in the kernel, aka CID-34b1a1ce1458."
+            },
+            {
+                "title": "CVE-2021-3348",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3348",
+                "description": "nbd_add_socket in drivers/block/nbd.c in the Linux kernel through 5.10.12 has an ndb_queue_rq use-after-free that could be triggered by local attackers (with access to the nbd device) via an I/O request at a certain point during device setup, aka CID-b98e762e3d71."
+            },
+            {
+                "title": "CVE-2021-20239",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20239",
+                "description": "[Untrusted Pointer Dereference in setsockopt system call]"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4909-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4909-1",
         "cves": [
