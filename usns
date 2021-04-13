@@ -1,5 +1,67 @@
 [
     {
+        "title": "USN-4904-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4904-1",
+        "cves": [
+            {
+                "title": "CVE-2017-16644",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-16644",
+                "description": "The hdpvr_probe function in drivers/media/usb/hdpvr/hdpvr-core.c in the Linux kernel through 4.13.11 allows local users to cause a denial of service (improper error handling and system crash) or possibly have unspecified other impact via a crafted USB device."
+            },
+            {
+                "title": "CVE-2019-16231",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16231",
+                "description": "drivers/net/fjes/fjes_main.c in the Linux kernel 5.2.14 does not check the alloc_workqueue return value, leading to a NULL pointer dereference."
+            },
+            {
+                "title": "CVE-2021-26930",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-26930",
+                "description": "An issue was discovered in the Linux kernel 3.11 through 5.10.16, as used by Xen. To service requests to the PV backend, the driver maps grant references provided by the frontend. In this process, errors may be encountered. In one case, an error encountered earlier might be discarded by later processing, resulting in the caller assuming successful mapping, and hence subsequent operations trying to access space that wasn't mapped. In another case, internal state would be insufficiently updated, preventing safe recovery from the error. This affects drivers/block/xen-blkback/blkback.c."
+            },
+            {
+                "title": "CVE-2021-28038",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28038",
+                "description": "An issue was discovered in the Linux kernel through 5.11.3, as used with Xen PV. A certain part of the netback driver lacks necessary treatment of errors such as failed memory allocations (as a result of changes to the handling of grant mapping errors). A host OS denial of service may occur during misbehavior of a networking frontend driver. NOTE: this issue exists because of an incomplete fix for CVE-2021-26931."
+            },
+            {
+                "title": "CVE-2019-19061",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19061",
+                "description": "A memory leak in the adis_update_scan_mode_burst() function in drivers/iio/imu/adis_buffer.c in the Linux kernel before 5.3.9 allows attackers to cause a denial of service (memory consumption), aka CID-9c0530e898f3."
+            },
+            {
+                "title": "CVE-2021-26931",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-26931",
+                "description": "An issue was discovered in the Linux kernel 2.6.39 through 5.10.16, as used in Xen. Block, net, and SCSI backends consider certain errors a plain bug, deliberately causing a kernel crash. For errors potentially being at least under the influence of guests (such as out of memory conditions), it isn't correct to assume a plain bug. Memory allocations potentially causing such crashes occur only when Linux is running in PV mode, though. This affects drivers/block/xen-blkback/blkback.c and drivers/xen/xen-scsiback.c."
+            },
+            {
+                "title": "CVE-2017-5967",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-5967",
+                "description": "The time subsystem in the Linux kernel through 4.9.9, when CONFIG_TIMER_STATS is enabled, allows local users to discover real PID values (as distinguished from PID values inside a PID namespace) by reading the /proc/timer_list file, related to the print_timer function in kernel/time/timer_list.c and the __timer_stats_timer_set_start_info function in kernel/time/timer.c."
+            },
+            {
+                "title": "CVE-2015-1350",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2015-1350",
+                "description": "The VFS subsystem in the Linux kernel 3.x provides an incomplete set of requirements for setattr operations that underspecifies removing extended privilege attributes, which allows local users to cause a denial of service (capability stripping) via a failed invocation of a system call, as demonstrated by using chown to remove a capability from the ping or Wireshark dumpcap program."
+            },
+            {
+                "title": "CVE-2019-16232",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16232",
+                "description": "drivers/net/wireless/marvell/libertas/if_sdio.c in the Linux kernel 5.2.14 does not check the alloc_workqueue return value, leading to a NULL pointer dereference."
+            },
+            {
+                "title": "CVE-2021-20261",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20261",
+                "description": "A race condition was found in the Linux kernels implementation of the floppy disk drive controller driver software. The impact of this issue is lessened by the fact that the default permissions on the floppy device (/dev/fd0) are restricted to root. If the permissions on the device have changed the impact changes greatly. In the default configuration root (or equivalent) permissions are required to attack this flaw."
+            },
+            {
+                "title": "CVE-2018-13095",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-13095",
+                "description": "An issue was discovered in fs/xfs/libxfs/xfs_inode_buf.c in the Linux kernel through 4.17.3. A denial of service (memory corruption and BUG) can occur for a corrupted xfs image upon encountering an inode that is in extent format, but has more extents than fit in the inode fork."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4906-1: Nettle vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4906-1",
         "cves": [
