@@ -1,5 +1,109 @@
 [
     {
+        "title": "USN-4911-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4911-1",
+        "cves": [
+            {
+                "title": "CVE-2021-28950",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28950",
+                "description": "An issue was discovered in fs/fuse/fuse_i.h in the Linux kernel before 5.11.8. A \"stall on CPU\" can occur because a retry loop continually finds the same bad inode, aka CID-775c5033a0d1."
+            },
+            {
+                "title": "CVE-2020-25639",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25639",
+                "description": "A NULL pointer dereference flaw was found in the Linux kernel's GPU Nouveau driver functionality in versions prior to 5.12-rc1 in the way the user calls ioctl DRM_IOCTL_NOUVEAU_CHANNEL_ALLOC. This flaw allows a local user to crash the system."
+            },
+            {
+                "title": "CVE-2021-28038",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28038",
+                "description": "An issue was discovered in the Linux kernel through 5.11.3, as used with Xen PV. A certain part of the netback driver lacks necessary treatment of errors such as failed memory allocations (as a result of changes to the handling of grant mapping errors). A host OS denial of service may occur during misbehavior of a networking frontend driver. NOTE: this issue exists because of an incomplete fix for CVE-2021-26931."
+            },
+            {
+                "title": "CVE-2021-28375",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28375",
+                "description": "An issue was discovered in the Linux kernel through 5.11.6. fastrpc_internal_invoke in drivers/misc/fastrpc.c does not prevent user applications from sending kernel RPC messages, aka CID-20c40794eb85. This is a related issue to CVE-2019-2308."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4912-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4912-1",
+        "cves": [
+            {
+                "title": "CVE-2020-14351",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14351",
+                "description": "A flaw was found in the Linux kernel. A use-after-free memory flaw was found in the perf subsystem allowing a local attacker with permission to monitor perf events to corrupt memory and possibly escalate privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+            },
+            {
+                "title": "CVE-2021-29154",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29154",
+                "description": "[BPF JIT branch displacement leading to code execution]"
+            },
+            {
+                "title": "CVE-2020-0466",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0466",
+                "description": "In do_epoll_ctl and ep_loop_check_proc of eventpoll.c, there is a possible use after free due to a logic error. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-147802478References: Upstream kernel"
+            },
+            {
+                "title": "CVE-2020-25669",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25669",
+                "description": "[use-after-free in sunkbd_reinit]"
+            },
+            {
+                "title": "CVE-2021-3178",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3178",
+                "description": "** DISPUTED ** fs/nfsd/nfs3xdr.c in the Linux kernel through 5.10.8, when there is an NFS export of a subdirectory of a filesystem, allows remote attackers to traverse to other parts of the filesystem via READDIRPLUS. NOTE: some parties argue that such a subdirectory export is not intended to prevent this attack; see also the exports(5) no_subtree_check default behavior."
+            },
+            {
+                "title": "CVE-2020-0465",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0465",
+                "description": "In various methods of hid-multitouch.c, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-162844689References: Upstream kernel"
+            },
+            {
+                "title": "CVE-2020-27830",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27830",
+                "description": "NULL-ptr deref in the spk_ttyio_receive_buf2() function in spk_ttyio.c"
+            },
+            {
+                "title": "CVE-2020-36158",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36158",
+                "description": "mwifiex_cmd_802_11_ad_hoc_start in drivers/net/wireless/marvell/mwifiex/join.c in the Linux kernel through 5.10.4 might allow remote attackers to execute arbitrary code via a long SSID value, aka CID-5c455c5ab332."
+            },
+            {
+                "title": "CVE-2021-20194",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20194",
+                "description": "There is a vulnerability in the linux kernel versions higher than 5.2 (if kernel compiled with config params CONFIG_BPF_SYSCALL=y , CONFIG_BPF=y , CONFIG_CGROUPS=y , CONFIG_CGROUP_BPF=y , CONFIG_HARDENED_USERCOPY not set, and BPF hook to getsockopt is registered). As result of BPF execution, the local user can trigger bug in __cgroup_bpf_run_filter_getsockopt() function that can lead to heap overflow (because of non-hardened usercopy). The impact of attack could be deny of service or possibly privileges escalation."
+            },
+            {
+                "title": "CVE-2021-3411",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3411",
+                "description": "A flaw was found in the Linux kernel in versions prior to 5.10. A violation of memory access was found while detecting a padding of int3 in the linking state. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+            },
+            {
+                "title": "CVE-2020-0423",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0423",
+                "description": "In binder_release_work of binder.c, there is a possible use-after-free due to improper locking. This could lead to local escalation of privilege in the kernel with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-161151868References: N/A"
+            },
+            {
+                "title": "CVE-2020-25645",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25645",
+                "description": "A flaw was found in the Linux kernel in versions before 5.9-rc7. Traffic between two Geneve endpoints may be unencrypted when IPsec is configured to encrypt traffic for the specific UDP port used by the GENEVE tunnel allowing anyone between the two endpoints to read the traffic unencrypted. The main threat from this vulnerability is to data confidentiality."
+            },
+            {
+                "title": "CVE-2020-14390",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14390",
+                "description": "A flaw was found in the Linux kernel in versions before 5.9-rc6. When changing screen size, an out-of-bounds memory write can occur leading to memory corruption or a denial of service. Due to the nature of the flaw, privilege escalation cannot be fully ruled out."
+            },
+            {
+                "title": "CVE-2020-25285",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25285",
+                "description": "A race condition between hugetlb sysctl handlers in mm/hugetlb.c in the Linux kernel before 5.8.8 could be used by local attackers to corrupt memory, cause a NULL pointer dereference, or possibly have unspecified other impact, aka CID-17743798d812."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4910-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4910-1",
         "cves": [
