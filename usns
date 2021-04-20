@@ -1,5 +1,37 @@
 [
     {
+        "title": "USN-4923-1: EDK II vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4923-1",
+        "cves": [
+            {
+                "title": "CVE-2021-28211",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28211",
+                "description": "possible heap corruption with LzmaUefiDecompressGetInfo"
+            },
+            {
+                "title": "CVE-2021-28210",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28210",
+                "description": "unlimited FV recursion, round 2"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4922-1: Ruby vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4922-1",
+        "cves": [
+            {
+                "title": "CVE-2021-28965",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28965",
+                "description": "XML round-trip vulnerability in REXML"
+            }
+        ],
+        "affected_packages": [
+            "ruby2.5",
+            "libruby2.5"
+        ]
+    },
+    {
         "title": "USN-4921-1: libcaca vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4921-1",
         "cves": [
