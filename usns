@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4921-1: libcaca vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4921-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3410",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3410",
+                "description": "A flaw was found in libcaca v0.99.beta19. A buffer overflow issue in caca_resize function in libcaca/caca/canvas.c may lead to local execution of arbitrary code in the user context."
+            }
+        ],
+        "affected_packages": [
+            "caca-utils",
+            "libcaca0"
+        ]
+    },
+    {
         "title": "USN-4563-2: NTP vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4563-2",
         "cves": [
