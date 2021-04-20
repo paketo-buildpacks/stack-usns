@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4563-2: NTP vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4563-2",
+        "cves": [
+            {
+                "title": "CVE-2019-8936",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-8936",
+                "description": "NTP through 4.2.8p12 has a NULL Pointer Dereference."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4918-2: ClamAV vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4918-2",
         "cves": [
