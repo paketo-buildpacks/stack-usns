@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-4916-2: Linux kernel regression",
+        "link": "https://ubuntu.com/security/notices/USN-4916-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1924611",
+                "link": "https://launchpad.net/bugs/1924611",
+                "description": "setting extended attribute may cause memory leak"
+            }
+        ],
+        "affected_packages": [
+            "                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                linux-image-gke-5.3                              -                                5.3.0.1043.26                              \u003cdiv\u003e                 \u003csmall\u003e                                                       \u003c/small\u003e               \u003c/div\u003e             \u003c/li\u003e                        \u003cli class=\"p-list__item\"\u003e                                \u003ca href=\"https://launchpad.net/ubuntu/+source/linux-hwe\"\u003elinux-image-5.3.0-74-lowlatency",
+            "linux-image-5.3.0-1040-raspi2",
+            "linux-image-5.3.0-74-generic",
+            "linux-image-5.3.0-1043-gke"
+        ]
+    },
+    {
         "title": "USN-4923-1: EDK II vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4923-1",
         "cves": [
