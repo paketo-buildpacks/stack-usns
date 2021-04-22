@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-4924-1: Dnsmasq vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4924-1",
+        "cves": [
+            {
+                "title": "CVE-2019-14513",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14513",
+                "description": "Improper bounds checking in Dnsmasq before 2.76 allows an attacker controlled DNS server to send large DNS packets that result in a read operation beyond the buffer allocated for the packet, a different vulnerability than CVE-2017-14491."
+            },
+            {
+                "title": "CVE-2017-15107",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15107",
+                "description": "A vulnerability was found in the implementation of DNSSEC in Dnsmasq up to and including 2.78. Wildcard synthesized NSEC records could be improperly interpreted to prove the non-existence of hostnames that actually exist."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4916-2: Linux kernel regression",
         "link": "https://ubuntu.com/security/notices/USN-4916-2",
         "cves": [
