@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4925-1: Shibboleth vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4925-1",
+        "cves": [
+            {
+                "title": "CVE-2021-28963",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28963",
+                "description": "Shibboleth Service Provider before 3.2.1 allows content injection because template generation uses attacker-controlled parameters."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4924-1: Dnsmasq vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4924-1",
         "cves": [
