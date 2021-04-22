@@ -40,7 +40,7 @@
             {
                 "title": "CVE-2021-28965",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28965",
-                "description": "XML round-trip vulnerability in REXML"
+                "description": "The REXML gem before 3.2.5 in Ruby before 2.6.7, 2.7.x before 2.7.3, and 3.x before 3.0.1 does not properly address XML round-trip issues. An incorrect document can be produced after parsing and serializing."
             }
         ],
         "affected_packages": [
@@ -140,12 +140,12 @@
             {
                 "title": "CVE-2021-3492",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3492",
-                "description": "ZDI-CAN-13562: Ubuntu specific linux kernel shiftfs ioctl passthrough double free vulnerability."
+                "description": "Shiftfs, an out-of-tree stacking file system included in Ubuntu Linux kernels, did not properly handle faults occurring during copy_from_user() correctly. These could lead to either a double-free situation or memory not being freed at all. An attacker could use this to cause a denial of service (kernel memory exhaustion) or gain privileges via executing arbitrary code. AKA ZDI-CAN-13562."
             },
             {
                 "title": "CVE-2021-3493",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3493",
-                "description": "Ubuntu specific issue in the overlayfs file system in the Linux kernel where it did not properly validate the application of file system capabilities with respect to user namespaces. A local attacker could use this to gain elevated privileges, due to a patch carried in Ubuntu to allow unprivileged overlayfs mounts."
+                "description": "The overlayfs implementation in the linux kernel did not properly validate with respect to user namespaces the setting of file capabilities on files in an underlying file system. Due to the combination of unprivileged user namespaces along with a patch carried in the Ubuntu kernel to allow unprivileged overlay mounts, an attacker could use this to gain elevated privileges."
             },
             {
                 "title": "CVE-2021-29154",
@@ -177,7 +177,7 @@
             {
                 "title": "CVE-2021-3493",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3493",
-                "description": "Ubuntu specific issue in the overlayfs file system in the Linux kernel where it did not properly validate the application of file system capabilities with respect to user namespaces. A local attacker could use this to gain elevated privileges, due to a patch carried in Ubuntu to allow unprivileged overlayfs mounts."
+                "description": "The overlayfs implementation in the linux kernel did not properly validate with respect to user namespaces the setting of file capabilities on files in an underlying file system. Due to the combination of unprivileged user namespaces along with a patch carried in the Ubuntu kernel to allow unprivileged overlay mounts, an attacker could use this to gain elevated privileges."
             },
             {
                 "title": "CVE-2021-29154",
