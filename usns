@@ -1,5 +1,74 @@
 [
     {
+        "title": "USN-4926-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4926-1",
+        "cves": [
+            {
+                "title": "CVE-2021-24000",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24000",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23996",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23996",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23997",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23997",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23995",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23995",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29946",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29946",
+                "description": "Mozilla: Port blocking could be bypassed"
+            },
+            {
+                "title": "CVE-2021-23999",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23999",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23994",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23994",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23998",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23998",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29945",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29945",
+                "description": "Mozilla: Incorrect size computation in WebAssembly JIT could lead to null-reads"
+            },
+            {
+                "title": "CVE-2021-24001",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24001",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-24002",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24002",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29947",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29947",
+                "description": "[Unknown description]"
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-4922-2: Ruby vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4922-2",
         "cves": [
