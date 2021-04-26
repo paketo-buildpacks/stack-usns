@@ -1,5 +1,31 @@
 [
     {
+        "title": "USN-4922-2: Ruby vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4922-2",
+        "cves": [
+            {
+                "title": "CVE-2021-28965",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28965",
+                "description": "The REXML gem before 3.2.5 in Ruby before 2.6.7, 2.7.x before 2.7.3, and 3.x before 3.0.1 does not properly address XML round-trip issues. An incorrect document can be produced after parsing and serializing."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4927-1: File Roller vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4927-1",
+        "cves": [
+            {
+                "title": "CVE-2020-36314",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36314",
+                "description": "fr-archive-libarchive.c in GNOME file-roller through 3.38.0, as used by GNOME Shell and other software, allows Directory Traversal during extraction because it lacks a check of whether a file's parent is a symlink in certain complex situations. NOTE: this issue exists because of an incomplete fix for CVE-2020-11736."
+            }
+        ],
+        "affected_packages": [
+            "file-roller"
+        ]
+    },
+    {
         "title": "USN-4925-1: Shibboleth vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4925-1",
         "cves": [
