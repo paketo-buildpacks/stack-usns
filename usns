@@ -1,5 +1,26 @@
 [
     {
+        "title": "USN-4892-1: OpenJDK vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4892-1",
+        "cves": [
+            {
+                "title": "CVE-2021-2163",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2163",
+                "description": "ML-Date: 2021-04-20 17:34:22, ML-Subject: [RHSA-2021:1301-01] Moderate: java-1.8.0-openjdk security update"
+            }
+        ],
+        "affected_packages": [
+            "openjdk-8-jdk",
+            "openjdk-8-jre-headless",
+            "openjdk-11-jre-zero",
+            "openjdk-8-jre",
+            "openjdk-11-jre-headless",
+            "openjdk-11-jdk",
+            "openjdk-8-jre-zero",
+            "openjdk-11-jre"
+        ]
+    },
+    {
         "title": "USN-4926-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4926-1",
         "cves": [
