@@ -32,7 +32,10 @@ func testEntrypoint(t *testing.T, when spec.G, it spec.S) {
 	it.Before(func() {
 		testRSSFeed = httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			_, _ = fmt.Fprintln(w, `<?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Ubuntu security notices</title><link>https://ubuntu.com/security/notices/rss.xml</link><description>Recent content on Ubuntu security notices</description><atom:link href="https://ubuntu.com/security/notices/rss.xml" rel="self"/><copyright>2020 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>Feedgen</generator><lastBuildDate>Wed, 16 Sep 2020 15:54:06 +0000</lastBuildDate><item><title>USN-4504-1: OpenSSL vulnerabilities</title><link>https://ubuntu.com/security/notices/USN-4504-1</link><description>Robert Merget, Marcus Brinkmann, Nimrod Aviram, and Juraj Somorovsky
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Ubuntu security notices</title><link>https://ubuntu.com/security/notices/rss.xml</link><description>Recent content on Ubuntu security notices</description><atom:link href="https://ubuntu.com/security/notices/rss.xml" rel="self"/><copyright>2020 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>Feedgen</generator><lastBuildDate>Wed, 16 Sep 2020 15:54:06 +0000</lastBuildDate>
+
+<item><title>USN-4504-1: OpenSSL vulnerabilities</title><link>https://ubuntu.com/security/notices/USN-4504-1</link>
+<description>Robert Merget, Marcus Brinkmann, Nimrod Aviram, and Juraj Somorovsky
 discovered that certain Diffie-Hellman ciphersuites in the TLS
 specification and implemented by OpenSSL contained a flaw. A remote
 attacker could possibly use this issue to eavesdrop on encrypted
@@ -54,17 +57,32 @@ Bernd Edlinger discovered that OpenSSL incorrectly handled certain
 decryption functions. In certain scenarios, a remote attacker could
 possibly use this issue to perform a padding oracle attack and decrypt
 traffic. This issue only affected Ubuntu 18.04 LTS. (CVE-2019-1563)
-
-</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4504-1</guid><pubDate>Wed, 16 Sep 2020 13:58:04 +0000</pubDate></item><item><title>USN-4499-1: MilkyTracker vulnerabilities</title><link>https://ubuntu.com/security/notices/USN-4499-1</link><description>It was discovered that MilkyTracker did not properly handle certain input. If
+</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4504-1</guid><pubDate>Wed, 16 Sep 2020 13:58:04 +0000</pubDate>
+</item>
+<item><title>USN-4499-1: MilkyTracker vulnerabilities</title><link>https://ubuntu.com/security/notices/USN-4499-1</link>
+<description>It was discovered that MilkyTracker did not properly handle certain input. If
 a user were tricked into opening a malicious file, an attacker could cause
 MilkyTracker to crash or potentially execute arbitrary code.
-</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4499-1</guid><pubDate>Tue, 15 Sep 2020 19:00:53 +0000</pubDate></item><item><title>USN-4594-1: Quassel vulnerabilities</title> <link>https://ubuntu.com/security/notices/USN-4594-1</link> <description>It was discovered that Quassel incorrectly handled Qdatastream protocol.
-(CVE-2018-1000179) </description> <guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4594-1</guid> <pubDate>Tue, 20 Oct 2020 18:56:12 +0000</pubDate> </item><item><title>USN-4599-1: Firefox vulnerabilities</title><link>https://ubuntu.com/security/notices/USN-4599-1</link><description>Multiple security issues were discovered in Firefox. If a user were
+</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4499-1</guid><pubDate>Tue, 15 Sep 2020 19:00:53 +0000</pubDate>
+</item>
+<item><title>USN-4594-1: Quassel vulnerabilities</title> <link>https://ubuntu.com/security/notices/USN-4594-1</link>
+<description>It was discovered that Quassel incorrectly handled Qdatastream protocol.
+(CVE-2018-1000179) </description> <guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4594-1</guid> <pubDate>Tue, 20 Oct 2020 18:56:12 +0000</pubDate>
+</item>
+<item><title>USN-4599-1: Firefox vulnerabilities</title><link>https://ubuntu.com/security/notices/USN-4599-1</link>
+<description>Multiple security issues were discovered in Firefox. If a user were
 tricked in to opening a specially crafted website, an attacker could
 potentially exploit these to cause a denial of service, spoof the prompt
 for opening an external application, obtain sensitive information, or execute
 arbitrary code.
-</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4599-1</guid><pubDate>Fri, 23 Oct 2020 10:29:55 +0000</pubDate></item></channel></rss>`)
+</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4599-1</guid><pubDate>Fri, 23 Oct 2020 10:29:55 +0000</pubDate>
+</item>
+<item><title>USN-4916-2: Linux kernel regression</title>
+<link>https://ubuntu.com/security/notices/USN-4916-2</link>
+<description>USN-4916-1 fixed vulnerabilities in the Linux kernel. Unfortunately, the fix for CVE-2021-3493 introduced a memory leak in some situations. This update fixes the problem. We apologize for the inconvenience. Original advisory details: It was discovered that the overlayfs implementation in the Linux kernel did not properly validate the application of file system capabilities with respect to user namespaces. A local attacker could use this to gain elevated privileges. (CVE-2021-3493) Piotr Krysiuk discovered that the BPF JIT compiler for x86 in the Linux kernel did not properly validate computation of branch displacements in some situations. A local attacker could use this to cause a denial of service (system crash) or possibly execute arbitrary code. (CVE-2021-29154) </description>
+<guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4916-2</guid>
+<pubDate>Thu, 22 Apr 2021 03:59:34 +0000</pubDate>
+</item></channel></rss>`)
 		}))
 
 		tempFile, err := ioutil.TempFile("", "entrypoint")
@@ -203,6 +221,26 @@ arbitrary code.
 				},
 				AffectedPackages: []string{"firefox"},
 			},
+			{
+				Title: "USN-4916-2: Linux kernel regression",
+				Link:  "https://ubuntu.com/security/notices/USN-4916-2",
+				CveArray: []CVE{
+					{
+						Title:       "https://launchpad.net/bugs/1924611",
+						Link:        "https://launchpad.net/bugs/1924611",
+						Description: "setting extended attribute may cause memory leak",
+					},
+				},
+				AffectedPackages: []string{
+					"linux-image-gkeop-5.3",
+					"linux-image-gke-5.3",
+					"linux-image-5.3.0-74-lowlatency",
+					"linux-image-5.3.0-1040-raspi2",
+					"linux-image-5.3.0-74-generic",
+					"linux-image-5.3.0-1043-gke",
+					"linux-image-raspi2-hwe-18.04",
+				},
+			},
 		}
 
 		contents, err := ioutil.ReadFile(usnList.Name())
@@ -282,6 +320,26 @@ arbitrary code.
 					},
 				},
 				AffectedPackages: []string{"libssl1.0.0"},
+			},
+			{
+				Title: "USN-4916-2: Linux kernel regression",
+				Link:  "https://ubuntu.com/security/notices/USN-4916-2",
+				CveArray: []CVE{
+					{
+						Title:       "https://launchpad.net/bugs/1924611",
+						Link:        "https://launchpad.net/bugs/1924611",
+						Description: "setting extended attribute may cause memory leak",
+					},
+				},
+				AffectedPackages: []string{
+					"linux-image-gkeop-5.3",
+					"linux-image-gke-5.3",
+					"linux-image-5.3.0-74-lowlatency",
+					"linux-image-5.3.0-1040-raspi2",
+					"linux-image-5.3.0-74-generic",
+					"linux-image-5.3.0-1043-gke",
+					"linux-image-raspi2-hwe-18.04",
+				},
 			},
 		}
 

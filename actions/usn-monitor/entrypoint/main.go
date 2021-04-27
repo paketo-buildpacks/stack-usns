@@ -143,15 +143,25 @@ func getAffectedPackages(usnBody string) []string {
 	re = regexp.MustCompile("18\\.04.*?</ul>")
 	bioinicPackages := re.FindString(packagesList)
 
-	re = regexp.MustCompile(`(__item">)(.*?>)(.*?)</a>`)
-	packageMatches := re.FindAllStringSubmatch(bioinicPackages, -1)
+	re = regexp.MustCompile(`<li class="p-list__item">(.*?)</li>`)
+	listMatches := re.FindAllStringSubmatch(bioinicPackages, -1)
 
 	packages := make([]string, 0)
-	for _, p := range packageMatches {
-		packages = append(packages, p[3])
+	for _, listItem := range listMatches {
+		packages = append(packages, getPackageNameFromHTML(strings.TrimSpace(listItem[1])))
 	}
 
 	return packages
+}
+
+func getPackageNameFromHTML(listItem string) string {
+	if strings.HasPrefix(listItem, "<a href=") {
+		re := regexp.MustCompile(`<a href=".*?">(.*?)</a>`)
+		packageMatch := re.FindStringSubmatch(listItem)
+		return packageMatch[1]
+	} else {
+		return strings.Split(listItem, " ")[0]
+	}
 }
 
 func extractCVEs(usnBody string) ([]CVE, error) {
