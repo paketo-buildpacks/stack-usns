@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4930-1: Samba vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4930-1",
+        "cves": [
+            {
+                "title": "CVE-2021-20254",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20254",
+                "description": "Negative idmap cache entries can cause incorrect group entries in the Samba file server process token"
+            }
+        ],
+        "affected_packages": [
+            "samba"
+        ]
+    },
+    {
         "title": "USN-4929-1: Bind vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4929-1",
         "cves": [
