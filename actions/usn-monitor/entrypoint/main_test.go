@@ -3,17 +3,18 @@ package main_test
 import (
 	"encoding/json"
 	"fmt"
-	. "github.com/paketo-buildpacks/stack-usns/actions/usn-monitor/entrypoint"
-	"github.com/sclevine/spec"
-	"github.com/sclevine/spec/report"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
 	"os"
 	"os/exec"
 	"testing"
+
+	. "github.com/paketo-buildpacks/stack-usns/actions/usn-monitor/entrypoint"
+	"github.com/sclevine/spec"
+	"github.com/sclevine/spec/report"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestEntrypoint(t *testing.T) {
@@ -79,10 +80,15 @@ arbitrary code.
 </item>
 <item><title>USN-4916-2: Linux kernel regression</title>
 <link>https://ubuntu.com/security/notices/USN-4916-2</link>
-<description>USN-4916-1 fixed vulnerabilities in the Linux kernel. Unfortunately, the fix for CVE-2021-3493 introduced a memory leak in some situations. This update fixes the problem. We apologize for the inconvenience. Original advisory details: It was discovered that the overlayfs implementation in the Linux kernel did not properly validate the application of file system capabilities with respect to user namespaces. A local attacker could use this to gain elevated privileges. (CVE-2021-3493) Piotr Krysiuk discovered that the BPF JIT compiler for x86 in the Linux kernel did not properly validate computation of branch displacements in some situations. A local attacker could use this to cause a denial of service (system crash) or possibly execute arbitrary code. (CVE-2021-29154) </description>
-<guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4916-2</guid>
-<pubDate>Thu, 22 Apr 2021 03:59:34 +0000</pubDate>
-</item></channel></rss>`)
+<description>USN-4916-1 fixed vulnerabilities in the Linux kernel. Unfortunately, the fix for CVE-2021-3493 introduced a memory leak in some situations. This update fixes the problem. We apologize for the inconvenience. Original advisory details: It was discovered that the overlayfs implementation in the Linux kernel did not properly validate the application of file system capabilities with respect to user namespaces. A local attacker could use this to gain elevated privileges. (CVE-2021-3493) Piotr Krysiuk discovered that the BPF JIT compiler for x86 in the Linux kernel did not properly validate computation of branch displacements in some situations. A local attacker could use this to cause a denial of service (system crash) or possibly execute arbitrary code. (CVE-2021-29154)
+</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4916-2</guid><pubDate>Thu, 22 Apr 2021 03:59:34 +0000</pubDate>
+</item>
+<item><title>USN-4906-1: Nettle vulnerability</title>
+<link>https://ubuntu.com/security/notices/USN-4906-1</link>
+<description>Nettle could be made to crash or bypass signature verification if it opened a specially crafted certificate.
+</description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4906-1</guid><pubDate>Tue, 13 Apr 2021 03:59:34 +0000</pubDate>
+</item>
+</channel></rss>`)
 		}))
 
 		tempFile, err := ioutil.TempFile("", "entrypoint")
@@ -241,10 +247,28 @@ arbitrary code.
 					"linux-image-raspi2-hwe-18.04",
 				},
 			},
+			{
+				Title: "USN-4906-1: Nettle vulnerability",
+				Link:  "https://ubuntu.com/security/notices/USN-4906-1",
+				CveArray: []CVE{
+					{
+						Title:       "CVE-2021-20305",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20305",
+						Description: "A flaw was found in Nettle in versions before 3.7.2, where several Nettle signature verification functions (GOST DSA, EDDSA & ECDSA) result in the Elliptic Curve Cryptography point (ECC) multiply function being called with out-of-range scalers, possibly resulting in incorrect results. This flaw allows an attacker to force an invalid signature, causing an assertion failure or possible validation. The highest threat to this vulnerability is to confidentiality, integrity, as well as system availability.",
+					},
+				},
+				AffectedPackages: []string{
+					"libnettle6",
+				},
+			},
 		}
 
 		contents, err := ioutil.ReadFile(usnList.Name())
 		require.NoError(err)
+
+		assert.NotContains(string(contents), "\\u003c")
+		assert.NotContains(string(contents), "\\u003e")
+		assert.NotContains(string(contents), "\\u0026")
 
 		var actualUSNArray []USN
 		err = json.Unmarshal(contents, &actualUSNArray)
@@ -339,6 +363,20 @@ arbitrary code.
 					"linux-image-5.3.0-74-generic",
 					"linux-image-5.3.0-1043-gke",
 					"linux-image-raspi2-hwe-18.04",
+				},
+			},
+			{
+				Title: "USN-4906-1: Nettle vulnerability",
+				Link:  "https://ubuntu.com/security/notices/USN-4906-1",
+				CveArray: []CVE{
+					{
+						Title:       "CVE-2021-20305",
+						Link:        "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20305",
+						Description: "A flaw was found in Nettle in versions before 3.7.2, where several Nettle signature verification functions (GOST DSA, EDDSA & ECDSA) result in the Elliptic Curve Cryptography point (ECC) multiply function being called with out-of-range scalers, possibly resulting in incorrect results. This flaw allows an attacker to force an invalid signature, causing an assertion failure or possible validation. The highest threat to this vulnerability is to confidentiality, integrity, as well as system availability.",
+					},
+				},
+				AffectedPackages: []string{
+					"libnettle6",
 				},
 			},
 		}

@@ -3,14 +3,15 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/jessevdk/go-flags"
-	"github.com/mmcdole/gofeed"
 	"html"
 	"io/ioutil"
 	"net/http"
 	"os"
 	"regexp"
 	"strings"
+
+	"github.com/jessevdk/go-flags"
+	"github.com/mmcdole/gofeed"
 )
 
 type USN struct {
@@ -237,20 +238,19 @@ func getLPDescription(url string) (string, error) {
 }
 
 func writeUSNFile(usnListPath string, usns []USN) error {
-	usnBytes, err := json.MarshalIndent(usns, "", "    ")
-	if err != nil {
-		return fmt.Errorf("error marshalling USN array: %w", err)
-	}
-
 	newUSNFile, err := os.Create(usnListPath)
 	if err != nil {
 		return fmt.Errorf("error creating new USN file: %w", err)
 	}
 	defer newUSNFile.Close()
 
-	_, err = newUSNFile.Write(usnBytes)
+	enc := json.NewEncoder(newUSNFile)
+	enc.SetIndent("", "    ")
+	enc.SetEscapeHTML(false)
+
+	err = enc.Encode(usns)
 	if err != nil {
-		return fmt.Errorf("error writing USN file: %w", err)
+		return fmt.Errorf("error encoding USN array to file: %w", err)
 	}
 
 	return nil

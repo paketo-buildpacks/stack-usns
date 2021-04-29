@@ -786,7 +786,7 @@
             {
                 "title": "CVE-2021-20305",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20305",
-                "description": "A flaw was found in Nettle in versions before 3.7.2, where several Nettle signature verification functions (GOST DSA, EDDSA \u0026 ECDSA) result in the Elliptic Curve Cryptography point (ECC) multiply function being called with out-of-range scalers, possibly resulting in incorrect results. This flaw allows an attacker to force an invalid signature, causing an assertion failure or possible validation. The highest threat to this vulnerability is to confidentiality, integrity, as well as system availability."
+                "description": "A flaw was found in Nettle in versions before 3.7.2, where several Nettle signature verification functions (GOST DSA, EDDSA & ECDSA) result in the Elliptic Curve Cryptography point (ECC) multiply function being called with out-of-range scalers, possibly resulting in incorrect results. This flaw allows an attacker to force an invalid signature, causing an assertion failure or possible validation. The highest threat to this vulnerability is to confidentiality, integrity, as well as system availability."
             }
         ],
         "affected_packages": [
@@ -866,12 +866,12 @@
             {
                 "title": "CVE-2020-8161",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8161",
-                "description": "A directory traversal vulnerability exists in rack \u003c 2.2.0 that allows an attacker perform directory traversal vulnerability in the Rack::Directory app that is bundled with Rack which could result in information disclosure."
+                "description": "A directory traversal vulnerability exists in rack < 2.2.0 that allows an attacker perform directory traversal vulnerability in the Rack::Directory app that is bundled with Rack which could result in information disclosure."
             },
             {
                 "title": "CVE-2020-8184",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8184",
-                "description": "A reliance on cookies without validation/integrity check security vulnerability exists in rack \u003c 2.2.3, rack \u003c 2.1.4 that makes it is possible for an attacker to forge a secure or host-only cookie prefix."
+                "description": "A reliance on cookies without validation/integrity check security vulnerability exists in rack < 2.2.3, rack < 2.1.4 that makes it is possible for an attacker to forge a secure or host-only cookie prefix."
             }
         ],
         "affected_packages": []
@@ -1677,7 +1677,7 @@
             {
                 "title": "CVE-2020-29569",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29569",
-                "description": "An issue was discovered in the Linux kernel through 5.10.1, as used with Xen through 4.14.x. The Linux kernel PV block backend expects the kernel thread handler to reset ring-\u003exenblkd to NULL when stopped. However, the handler may not have time to run if the frontend quickly toggles between the states connect and disconnect. As a consequence, the block backend may re-use a pointer after it was freed. A misbehaving guest can trigger a dom0 crash by continuously connecting / disconnecting a block frontend. Privilege escalation and information leaks cannot be ruled out. This only affects systems with a Linux blkback."
+                "description": "An issue was discovered in the Linux kernel through 5.10.1, as used with Xen through 4.14.x. The Linux kernel PV block backend expects the kernel thread handler to reset ring->xenblkd to NULL when stopped. However, the handler may not have time to run if the frontend quickly toggles between the states connect and disconnect. As a consequence, the block backend may re-use a pointer after it was freed. A misbehaving guest can trigger a dom0 crash by continuously connecting / disconnecting a block frontend. Privilege escalation and information leaks cannot be ruled out. This only affects systems with a Linux blkback."
             },
             {
                 "title": "CVE-2021-3178",
@@ -1946,7 +1946,7 @@
             {
                 "title": "CVE-2020-8625",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8625",
-                "description": "BIND servers are vulnerable if they are running an affected version and are configured to use GSS-TSIG features. In a configuration which uses BIND's default settings the vulnerable code path is not exposed, but a server can be rendered vulnerable by explicitly setting valid values for the tkey-gssapi-keytab or tkey-gssapi-credentialconfiguration options. Although the default configuration is not vulnerable, GSS-TSIG is frequently used in networks where BIND is integrated with Samba, as well as in mixed-server environments that combine BIND servers with Active Directory domain controllers. The most likely outcome of a successful exploitation of the vulnerability is a crash of the named process. However, remote code execution, while unproven, is theoretically possible. Affects: BIND 9.5.0 -\u003e 9.11.27, 9.12.0 -\u003e 9.16.11, and versions BIND 9.11.3-S1 -\u003e 9.11.27-S1 and 9.16.8-S1 -\u003e 9.16.11-S1 of BIND Supported Preview Edition. Also release versions 9.17.0 -\u003e 9.17.1 of the BIND 9.17 development branch"
+                "description": "BIND servers are vulnerable if they are running an affected version and are configured to use GSS-TSIG features. In a configuration which uses BIND's default settings the vulnerable code path is not exposed, but a server can be rendered vulnerable by explicitly setting valid values for the tkey-gssapi-keytab or tkey-gssapi-credentialconfiguration options. Although the default configuration is not vulnerable, GSS-TSIG is frequently used in networks where BIND is integrated with Samba, as well as in mixed-server environments that combine BIND servers with Active Directory domain controllers. The most likely outcome of a successful exploitation of the vulnerability is a crash of the named process. However, remote code execution, while unproven, is theoretically possible. Affects: BIND 9.5.0 -> 9.11.27, 9.12.0 -> 9.16.11, and versions BIND 9.11.3-S1 -> 9.11.27-S1 and 9.16.8-S1 -> 9.16.11-S1 of BIND Supported Preview Edition. Also release versions 9.17.0 -> 9.17.1 of the BIND 9.17 development branch"
             }
         ],
         "affected_packages": []
@@ -1958,52 +1958,52 @@
             {
                 "title": "CVE-2021-23971",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23971",
-                "description": "When processing a redirect with a conflicting Referrer-Policy, Firefox would have adopted the redirect's Referrer-Policy. This would have potentially resulted in more information than intended by the original origin being provided to the destination of the redirect. This vulnerability affects Firefox \u003c 86."
+                "description": "When processing a redirect with a conflicting Referrer-Policy, Firefox would have adopted the redirect's Referrer-Policy. This would have potentially resulted in more information than intended by the original origin being provided to the destination of the redirect. This vulnerability affects Firefox < 86."
             },
             {
                 "title": "CVE-2021-23973",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23973",
-                "description": "When trying to load a cross-origin resource in an audio/video context a decoding error may have resulted, and the content of that error may have revealed information about the resource. This vulnerability affects Firefox \u003c 86, Thunderbird \u003c 78.8, and Firefox ESR \u003c 78.8."
+                "description": "When trying to load a cross-origin resource in an audio/video context a decoding error may have resulted, and the content of that error may have revealed information about the resource. This vulnerability affects Firefox < 86, Thunderbird < 78.8, and Firefox ESR < 78.8."
             },
             {
                 "title": "CVE-2021-23970",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23970",
-                "description": "Context-specific code was included in a shared jump table; resulting in assertions being triggered in multithreaded wasm code. This vulnerability affects Firefox \u003c 86."
+                "description": "Context-specific code was included in a shared jump table; resulting in assertions being triggered in multithreaded wasm code. This vulnerability affects Firefox < 86."
             },
             {
                 "title": "CVE-2021-23972",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23972",
-                "description": "One phishing tactic on the web is to provide a link with HTTP Auth. For example 'https://www.phishingtarget.com@evil.com'. To mitigate this type of attack, Firefox will display a warning dialog; however, this warning dialog would not have been displayed if evil.com used a redirect that was cached by the browser. This vulnerability affects Firefox \u003c 86."
+                "description": "One phishing tactic on the web is to provide a link with HTTP Auth. For example 'https://www.phishingtarget.com@evil.com'. To mitigate this type of attack, Firefox will display a warning dialog; however, this warning dialog would not have been displayed if evil.com used a redirect that was cached by the browser. This vulnerability affects Firefox < 86."
             },
             {
                 "title": "CVE-2021-23969",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23969",
-                "description": "As specified in the W3C Content Security Policy draft, when creating a violation report, \"User agents need to ensure that the source file is the URL requested by the page, pre-redirects. If that’s not possible, user agents need to strip the URL down to an origin to avoid unintentional leakage.\" Under certain types of redirects, Firefox incorrectly set the source file to be the destination of the redirects. This was fixed to be the redirect destination's origin. This vulnerability affects Firefox \u003c 86, Thunderbird \u003c 78.8, and Firefox ESR \u003c 78.8."
+                "description": "As specified in the W3C Content Security Policy draft, when creating a violation report, \"User agents need to ensure that the source file is the URL requested by the page, pre-redirects. If that’s not possible, user agents need to strip the URL down to an origin to avoid unintentional leakage.\" Under certain types of redirects, Firefox incorrectly set the source file to be the destination of the redirects. This was fixed to be the redirect destination's origin. This vulnerability affects Firefox < 86, Thunderbird < 78.8, and Firefox ESR < 78.8."
             },
             {
                 "title": "CVE-2021-23968",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23968",
-                "description": "If Content Security Policy blocked frame navigation, the full destination of a redirect served in the frame was reported in the violation report; as opposed to the original frame URI. This could be used to leak sensitive information contained in such URIs. This vulnerability affects Firefox \u003c 86, Thunderbird \u003c 78.8, and Firefox ESR \u003c 78.8."
+                "description": "If Content Security Policy blocked frame navigation, the full destination of a redirect served in the frame was reported in the violation report; as opposed to the original frame URI. This could be used to leak sensitive information contained in such URIs. This vulnerability affects Firefox < 86, Thunderbird < 78.8, and Firefox ESR < 78.8."
             },
             {
                 "title": "CVE-2021-23974",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23974",
-                "description": "The DOMParser API did not properly process '\u003cnoscript\u003e' elements for escaping. This could be used as an mXSS vector to bypass an HTML Sanitizer. This vulnerability affects Firefox \u003c 86."
+                "description": "The DOMParser API did not properly process '<noscript>' elements for escaping. This could be used as an mXSS vector to bypass an HTML Sanitizer. This vulnerability affects Firefox < 86."
             },
             {
                 "title": "CVE-2021-23975",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23975",
-                "description": "The developer page about:memory has a Measure function for exploring what object types the browser has allocated and their sizes. When this function was invoked we incorrectly called the sizeof function, instead of using the API method that checks for invalid pointers. This vulnerability affects Firefox \u003c 86."
+                "description": "The developer page about:memory has a Measure function for exploring what object types the browser has allocated and their sizes. When this function was invoked we incorrectly called the sizeof function, instead of using the API method that checks for invalid pointers. This vulnerability affects Firefox < 86."
             },
             {
                 "title": "CVE-2021-23978",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23978",
-                "description": "Mozilla developers reported memory safety bugs present in Firefox 85 and Firefox ESR 78.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox \u003c 86, Thunderbird \u003c 78.8, and Firefox ESR \u003c 78.8."
+                "description": "Mozilla developers reported memory safety bugs present in Firefox 85 and Firefox ESR 78.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 86, Thunderbird < 78.8, and Firefox ESR < 78.8."
             },
             {
                 "title": "CVE-2021-23979",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23979",
-                "description": "Mozilla developers reported memory safety bugs present in Firefox 85. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox \u003c 86."
+                "description": "Mozilla developers reported memory safety bugs present in Firefox 85. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 86."
             }
         ],
         "affected_packages": [
@@ -2099,7 +2099,7 @@
             {
                 "title": "CVE-2020-29569",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29569",
-                "description": "An issue was discovered in the Linux kernel through 5.10.1, as used with Xen through 4.14.x. The Linux kernel PV block backend expects the kernel thread handler to reset ring-\u003exenblkd to NULL when stopped. However, the handler may not have time to run if the frontend quickly toggles between the states connect and disconnect. As a consequence, the block backend may re-use a pointer after it was freed. A misbehaving guest can trigger a dom0 crash by continuously connecting / disconnecting a block frontend. Privilege escalation and information leaks cannot be ruled out. This only affects systems with a Linux blkback."
+                "description": "An issue was discovered in the Linux kernel through 5.10.1, as used with Xen through 4.14.x. The Linux kernel PV block backend expects the kernel thread handler to reset ring->xenblkd to NULL when stopped. However, the handler may not have time to run if the frontend quickly toggles between the states connect and disconnect. As a consequence, the block backend may re-use a pointer after it was freed. A misbehaving guest can trigger a dom0 crash by continuously connecting / disconnecting a block frontend. Privilege escalation and information leaks cannot be ruled out. This only affects systems with a Linux blkback."
             },
             {
                 "title": "CVE-2020-29661",
@@ -2249,7 +2249,7 @@
             {
                 "title": "CVE-2020-35508",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35508",
-                "description": "fix copy_process(CLONE_PARENT) race with the exiting -\u003ereal_parent"
+                "description": "fix copy_process(CLONE_PARENT) race with the exiting ->real_parent"
             },
             {
                 "title": "CVE-2020-14314",
@@ -2264,7 +2264,7 @@
             {
                 "title": "CVE-2020-15437",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15437",
-                "description": "The Linux kernel before version 5.8 is vulnerable to a NULL pointer dereference in drivers/tty/serial/8250/8250_core.c:serial8250_isa_init_ports() that allows local users to cause a denial of service by using the p-\u003eserial_in pointer which uninitialized."
+                "description": "The Linux kernel before version 5.8 is vulnerable to a NULL pointer dereference in drivers/tty/serial/8250/8250_core.c:serial8250_isa_init_ports() that allows local users to cause a denial of service by using the p->serial_in pointer which uninitialized."
             }
         ],
         "affected_packages": []
@@ -2296,7 +2296,7 @@
             {
                 "title": "CVE-2020-35508",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35508",
-                "description": "fix copy_process(CLONE_PARENT) race with the exiting -\u003ereal_parent"
+                "description": "fix copy_process(CLONE_PARENT) race with the exiting ->real_parent"
             },
             {
                 "title": "CVE-2020-27675",
@@ -2321,7 +2321,7 @@
             {
                 "title": "CVE-2020-29569",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29569",
-                "description": "An issue was discovered in the Linux kernel through 5.10.1, as used with Xen through 4.14.x. The Linux kernel PV block backend expects the kernel thread handler to reset ring-\u003exenblkd to NULL when stopped. However, the handler may not have time to run if the frontend quickly toggles between the states connect and disconnect. As a consequence, the block backend may re-use a pointer after it was freed. A misbehaving guest can trigger a dom0 crash by continuously connecting / disconnecting a block frontend. Privilege escalation and information leaks cannot be ruled out. This only affects systems with a Linux blkback."
+                "description": "An issue was discovered in the Linux kernel through 5.10.1, as used with Xen through 4.14.x. The Linux kernel PV block backend expects the kernel thread handler to reset ring->xenblkd to NULL when stopped. However, the handler may not have time to run if the frontend quickly toggles between the states connect and disconnect. As a consequence, the block backend may re-use a pointer after it was freed. A misbehaving guest can trigger a dom0 crash by continuously connecting / disconnecting a block frontend. Privilege escalation and information leaks cannot be ruled out. This only affects systems with a Linux blkback."
             },
             {
                 "title": "CVE-2020-29661",
@@ -2398,7 +2398,7 @@
             {
                 "title": "CVE-2020-29569",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29569",
-                "description": "An issue was discovered in the Linux kernel through 5.10.1, as used with Xen through 4.14.x. The Linux kernel PV block backend expects the kernel thread handler to reset ring-\u003exenblkd to NULL when stopped. However, the handler may not have time to run if the frontend quickly toggles between the states connect and disconnect. As a consequence, the block backend may re-use a pointer after it was freed. A misbehaving guest can trigger a dom0 crash by continuously connecting / disconnecting a block frontend. Privilege escalation and information leaks cannot be ruled out. This only affects systems with a Linux blkback."
+                "description": "An issue was discovered in the Linux kernel through 5.10.1, as used with Xen through 4.14.x. The Linux kernel PV block backend expects the kernel thread handler to reset ring->xenblkd to NULL when stopped. However, the handler may not have time to run if the frontend quickly toggles between the states connect and disconnect. As a consequence, the block backend may re-use a pointer after it was freed. A misbehaving guest can trigger a dom0 crash by continuously connecting / disconnecting a block frontend. Privilege escalation and information leaks cannot be ruled out. This only affects systems with a Linux blkback."
             },
             {
                 "title": "CVE-2020-29661",
@@ -2685,7 +2685,7 @@
             {
                 "title": "CVE-2020-8625",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8625",
-                "description": "BIND servers are vulnerable if they are running an affected version and are configured to use GSS-TSIG features. In a configuration which uses BIND's default settings the vulnerable code path is not exposed, but a server can be rendered vulnerable by explicitly setting valid values for the tkey-gssapi-keytab or tkey-gssapi-credentialconfiguration options. Although the default configuration is not vulnerable, GSS-TSIG is frequently used in networks where BIND is integrated with Samba, as well as in mixed-server environments that combine BIND servers with Active Directory domain controllers. The most likely outcome of a successful exploitation of the vulnerability is a crash of the named process. However, remote code execution, while unproven, is theoretically possible. Affects: BIND 9.5.0 -\u003e 9.11.27, 9.12.0 -\u003e 9.16.11, and versions BIND 9.11.3-S1 -\u003e 9.11.27-S1 and 9.16.8-S1 -\u003e 9.16.11-S1 of BIND Supported Preview Edition. Also release versions 9.17.0 -\u003e 9.17.1 of the BIND 9.17 development branch"
+                "description": "BIND servers are vulnerable if they are running an affected version and are configured to use GSS-TSIG features. In a configuration which uses BIND's default settings the vulnerable code path is not exposed, but a server can be rendered vulnerable by explicitly setting valid values for the tkey-gssapi-keytab or tkey-gssapi-credentialconfiguration options. Although the default configuration is not vulnerable, GSS-TSIG is frequently used in networks where BIND is integrated with Samba, as well as in mixed-server environments that combine BIND servers with Active Directory domain controllers. The most likely outcome of a successful exploitation of the vulnerability is a crash of the named process. However, remote code execution, while unproven, is theoretically possible. Affects: BIND 9.5.0 -> 9.11.27, 9.12.0 -> 9.16.11, and versions BIND 9.11.3-S1 -> 9.11.27-S1 and 9.16.8-S1 -> 9.16.11-S1 of BIND Supported Preview Edition. Also release versions 9.17.0 -> 9.17.1 of the BIND 9.17 development branch"
             }
         ],
         "affected_packages": [
@@ -2736,7 +2736,7 @@
             {
                 "title": "CVE-2020-26976",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26976",
-                "description": "When a HTTPS pages was embedded in a HTTP page, and there was a service worker registered for the former, the service worker could have intercepted the request for the secure page despite the iframe not being a secure context due to the (insecure) framing. This vulnerability affects Firefox \u003c 84."
+                "description": "When a HTTPS pages was embedded in a HTTP page, and there was a service worker registered for the former, the service worker could have intercepted the request for the secure page despite the iframe not being a secure context due to the (insecure) framing. This vulnerability affects Firefox < 84."
             },
             {
                 "title": "CVE-2021-23960",
@@ -2985,7 +2985,7 @@
             {
                 "title": "CVE-2020-36226",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36226",
-                "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to a memch-\u003ebv_len miscalculation and slapd crash in the saslAuthzTo processing, resulting in denial of service."
+                "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to a memch->bv_len miscalculation and slapd crash in the saslAuthzTo processing, resulting in denial of service."
             },
             {
                 "title": "CVE-2020-36227",
@@ -3503,7 +3503,7 @@
             {
                 "title": "CVE-2018-13093",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-13093",
-                "description": "An issue was discovered in fs/xfs/xfs_icache.c in the Linux kernel through 4.17.3. There is a NULL pointer dereference and panic in lookup_slow() on a NULL inode-\u003ei_ops pointer when doing pathwalks on a corrupted xfs image. This occurs because of a lack of proper validation that cached inodes are free during allocation."
+                "description": "An issue was discovered in fs/xfs/xfs_icache.c in the Linux kernel through 4.17.3. There is a NULL pointer dereference and panic in lookup_slow() on a NULL inode->i_ops pointer when doing pathwalks on a corrupted xfs image. This occurs because of a lack of proper validation that cached inodes are free during allocation."
             }
         ],
         "affected_packages": []
@@ -3520,7 +3520,7 @@
             {
                 "title": "CVE-2018-13093",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-13093",
-                "description": "An issue was discovered in fs/xfs/xfs_icache.c in the Linux kernel through 4.17.3. There is a NULL pointer dereference and panic in lookup_slow() on a NULL inode-\u003ei_ops pointer when doing pathwalks on a corrupted xfs image. This occurs because of a lack of proper validation that cached inodes are free during allocation."
+                "description": "An issue was discovered in fs/xfs/xfs_icache.c in the Linux kernel through 4.17.3. There is a NULL pointer dereference and panic in lookup_slow() on a NULL inode->i_ops pointer when doing pathwalks on a corrupted xfs image. This occurs because of a lack of proper validation that cached inodes are free during allocation."
             },
             {
                 "title": "CVE-2019-19816",
@@ -3847,22 +3847,22 @@
             {
                 "title": "CVE-2020-26974",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26974",
-                "description": "When flex-basis was used on a table wrapper, a StyleGenericFlexBasis object could have been incorrectly cast to the wrong type. This resulted in a heap user-after-free, memory corruption, and a potentially exploitable crash. This vulnerability affects Firefox \u003c 84, Thunderbird \u003c 78.6, and Firefox ESR \u003c 78.6."
+                "description": "When flex-basis was used on a table wrapper, a StyleGenericFlexBasis object could have been incorrectly cast to the wrong type. This resulted in a heap user-after-free, memory corruption, and a potentially exploitable crash. This vulnerability affects Firefox < 84, Thunderbird < 78.6, and Firefox ESR < 78.6."
             },
             {
                 "title": "CVE-2020-26973",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26973",
-                "description": "Certain input to the CSS Sanitizer confused it, resulting in incorrect components being removed. This could have been used as a sanitizer bypass. This vulnerability affects Firefox \u003c 84, Thunderbird \u003c 78.6, and Firefox ESR \u003c 78.6."
+                "description": "Certain input to the CSS Sanitizer confused it, resulting in incorrect components being removed. This could have been used as a sanitizer bypass. This vulnerability affects Firefox < 84, Thunderbird < 78.6, and Firefox ESR < 78.6."
             },
             {
                 "title": "CVE-2020-35113",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35113",
-                "description": "Mozilla developers reported memory safety bugs present in Firefox 83 and Firefox ESR 78.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox \u003c 84, Thunderbird \u003c 78.6, and Firefox ESR \u003c 78.6."
+                "description": "Mozilla developers reported memory safety bugs present in Firefox 83 and Firefox ESR 78.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 84, Thunderbird < 78.6, and Firefox ESR < 78.6."
             },
             {
                 "title": "CVE-2020-26970",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26970",
-                "description": "When reading SMTP server status codes, Thunderbird writes an integer value to a position on the stack that is intended to contain just one byte. Depending on processor architecture and stack layout, this leads to stack corruption that may be exploitable. This vulnerability affects Thunderbird \u003c 78.5.1."
+                "description": "When reading SMTP server status codes, Thunderbird writes an integer value to a position on the stack that is intended to contain just one byte. Depending on processor architecture and stack layout, this leads to stack corruption that may be exploitable. This vulnerability affects Thunderbird < 78.5.1."
             },
             {
                 "title": "CVE-2020-16044",
@@ -3872,17 +3872,17 @@
             {
                 "title": "CVE-2020-26971",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26971",
-                "description": "Certain blit values provided by the user were not properly constrained leading to a heap buffer overflow on some video drivers. This vulnerability affects Firefox \u003c 84, Thunderbird \u003c 78.6, and Firefox ESR \u003c 78.6."
+                "description": "Certain blit values provided by the user were not properly constrained leading to a heap buffer overflow on some video drivers. This vulnerability affects Firefox < 84, Thunderbird < 78.6, and Firefox ESR < 78.6."
             },
             {
                 "title": "CVE-2020-35111",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35111",
-                "description": "When an extension with the proxy permission registered to receive \u003call_urls\u003e, the proxy.onRequest callback was not triggered for view-source URLs. While web content cannot navigate to such URLs, a user opening View Source could have inadvertently leaked their IP address. This vulnerability affects Firefox \u003c 84, Thunderbird \u003c 78.6, and Firefox ESR \u003c 78.6."
+                "description": "When an extension with the proxy permission registered to receive <all_urls>, the proxy.onRequest callback was not triggered for view-source URLs. While web content cannot navigate to such URLs, a user opening View Source could have inadvertently leaked their IP address. This vulnerability affects Firefox < 84, Thunderbird < 78.6, and Firefox ESR < 78.6."
             },
             {
                 "title": "CVE-2020-26978",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26978",
-                "description": "Using techniques that built on the slipstream research, a malicious webpage could have exposed both an internal network's hosts as well as services running on the user's local machine. This vulnerability affects Firefox \u003c 84, Thunderbird \u003c 78.6, and Firefox ESR \u003c 78.6."
+                "description": "Using techniques that built on the slipstream research, a malicious webpage could have exposed both an internal network's hosts as well as services running on the user's local machine. This vulnerability affects Firefox < 84, Thunderbird < 78.6, and Firefox ESR < 78.6."
             }
         ],
         "affected_packages": []
@@ -4751,7 +4751,7 @@
             {
                 "title": "CVE-2018-1000035",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000035",
-                "description": "A heap-based buffer overflow exists in Info-Zip UnZip version \u003c= 6.00 in the processing of password-protected archives that allows an attacker to perform a denial of service or to possibly achieve code execution."
+                "description": "A heap-based buffer overflow exists in Info-Zip UnZip version <= 6.00 in the processing of password-protected archives that allows an attacker to perform a denial of service or to possibly achieve code execution."
             },
             {
                 "title": "CVE-2018-18384",
@@ -5561,12 +5561,12 @@
             {
                 "title": "CVE-2020-11526",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11526",
-                "description": "libfreerdp/core/update.c in FreeRDP versions \u003e 1.1 through 2.0.0-rc4 has an Out-of-bounds Read."
+                "description": "libfreerdp/core/update.c in FreeRDP versions > 1.1 through 2.0.0-rc4 has an Out-of-bounds Read."
             },
             {
                 "title": "CVE-2020-11522",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11522",
-                "description": "libfreerdp/gdi/gdi.c in FreeRDP \u003e 1.0 through 2.0.0-rc4 has an Out-of-bounds Read."
+                "description": "libfreerdp/gdi/gdi.c in FreeRDP > 1.0 through 2.0.0-rc4 has an Out-of-bounds Read."
             },
             {
                 "title": "CVE-2020-11058",
@@ -5586,7 +5586,7 @@
             {
                 "title": "CVE-2020-11042",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11042",
-                "description": "In FreeRDP greater than 1.1 and before 2.0.0, there is an out-of-bounds read in update_read_icon_info. It allows reading a attacker-defined amount of client memory (32bit unsigned -\u003e 4GB) to an intermediate buffer. This can be used to crash the client or store information for later retrieval. This has been patched in 2.0.0."
+                "description": "In FreeRDP greater than 1.1 and before 2.0.0, there is an out-of-bounds read in update_read_icon_info. It allows reading a attacker-defined amount of client memory (32bit unsigned -> 4GB) to an intermediate buffer. This can be used to crash the client or store information for later retrieval. This has been patched in 2.0.0."
             },
             {
                 "title": "CVE-2020-13396",
@@ -5601,12 +5601,12 @@
             {
                 "title": "CVE-2020-11523",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11523",
-                "description": "libfreerdp/gdi/region.c in FreeRDP versions \u003e 1.0 through 2.0.0-rc4 has an Integer Overflow."
+                "description": "libfreerdp/gdi/region.c in FreeRDP versions > 1.0 through 2.0.0-rc4 has an Integer Overflow."
             },
             {
                 "title": "CVE-2020-11521",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11521",
-                "description": "libfreerdp/codec/planar.c in FreeRDP version \u003e 1.0 through 2.0.0-rc4 has an Out-of-bounds Write."
+                "description": "libfreerdp/codec/planar.c in FreeRDP version > 1.0 through 2.0.0-rc4 has an Out-of-bounds Write."
             },
             {
                 "title": "CVE-2020-11048",
@@ -5616,7 +5616,7 @@
             {
                 "title": "CVE-2020-11525",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11525",
-                "description": "libfreerdp/cache/bitmap.c in FreeRDP versions \u003e 1.0 through 2.0.0-rc4 has an Out of bounds read."
+                "description": "libfreerdp/cache/bitmap.c in FreeRDP versions > 1.0 through 2.0.0-rc4 has an Out of bounds read."
             }
         ],
         "affected_packages": [
@@ -5716,7 +5716,7 @@
             {
                 "title": "CVE-2020-15683",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15683",
-                "description": "Mozilla developers and community members reported memory safety bugs present in Firefox 81 and Firefox ESR 78.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR \u003c 78.4, Firefox \u003c 82, and Thunderbird \u003c 78.4."
+                "description": "Mozilla developers and community members reported memory safety bugs present in Firefox 81 and Firefox ESR 78.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR < 78.4, Firefox < 82, and Thunderbird < 78.4."
             },
             {
                 "title": "CVE-2020-26960",
@@ -5831,7 +5831,7 @@
             {
                 "title": "CVE-2019-11366",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11366",
-                "description": "An issue was discovered in atftpd in atftp 0.7.1. It does not lock the thread_list_mutex mutex before assigning the current thread data structure. As a result, the daemon is vulnerable to a denial of service attack due to a NULL pointer dereference. If thread_data is NULL when assigned to current, and modified by another thread before a certain tftpd_list.c check, there is a crash when dereferencing current-\u003enext."
+                "description": "An issue was discovered in atftpd in atftp 0.7.1. It does not lock the thread_list_mutex mutex before assigning the current thread data structure. As a result, the daemon is vulnerable to a denial of service attack due to a NULL pointer dereference. If thread_data is NULL when assigned to current, and modified by another thread before a certain tftpd_list.c check, there is a crash when dereferencing current->next."
             },
             {
                 "title": "CVE-2019-11365",
@@ -6082,7 +6082,7 @@
             {
                 "title": "CVE-2019-12616",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12616",
-                "description": "An issue was discovered in phpMyAdmin before 4.9.0. A vulnerability was found that allows an attacker to trigger a CSRF attack against a phpMyAdmin user. The attacker can trick the user, for instance through a broken \u003cimg\u003e tag pointing at the victim's phpMyAdmin database, and the attacker can potentially deliver a payload (such as a specific INSERT or DELETE statement) to the victim."
+                "description": "An issue was discovered in phpMyAdmin before 4.9.0. A vulnerability was found that allows an attacker to trigger a CSRF attack against a phpMyAdmin user. The attacker can trick the user, for instance through a broken <img> tag pointing at the victim's phpMyAdmin database, and the attacker can potentially deliver a payload (such as a specific INSERT or DELETE statement) to the victim."
             },
             {
                 "title": "CVE-2020-10802",
@@ -7389,7 +7389,7 @@
             {
                 "title": "CVE-2020-14001",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14001",
-                "description": "The kramdown gem before 2.3.0 for Ruby processes the template option inside Kramdown documents by default, which allows unintended read access (such as template=\"/etc/passwd\") or unintended embedded Ruby code execution (such as a string that begins with template=\"string://\u0026lt;%= `). NOTE: kramdown is used in Jekyll, GitLab Pages, GitHub Pages, and Thredded Forum."
+                "description": "The kramdown gem before 2.3.0 for Ruby processes the template option inside Kramdown documents by default, which allows unintended read access (such as template=\"/etc/passwd\") or unintended embedded Ruby code execution (such as a string that begins with template=\"string://<%= `). NOTE: kramdown is used in Jekyll, GitLab Pages, GitHub Pages, and Thredded Forum."
             }
         ],
         "affected_packages": []
@@ -7652,12 +7652,12 @@
             {
                 "title": "CVE-2018-1000178",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000178",
-                "description": "A heap corruption of type CWE-120 exists in quassel version 0.12.4 in quasselcore in void DataStreamPeer::processMessage(const QByteArray \u0026amp;msg) datastreampeer.cpp line 62 that allows an attacker to execute code remotely."
+                "description": "A heap corruption of type CWE-120 exists in quassel version 0.12.4 in quasselcore in void DataStreamPeer::processMessage(const QByteArray &msg) datastreampeer.cpp line 62 that allows an attacker to execute code remotely."
             },
             {
                 "title": "CVE-2018-1000179",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000179",
-                "description": "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login \u0026amp;msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service."
+                "description": "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login &msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service."
             }
         ],
         "affected_packages": [
