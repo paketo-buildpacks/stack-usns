@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-4929-1: Bind vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4929-1",
+        "cves": [
+            {
+                "title": "CVE-2021-25215",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25215",
+                "description": "An assertion check can fail while answering queries for DNAME records that require the DNAME to be processed to resolve itself"
+            },
+            {
+                "title": "CVE-2021-25214",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25214",
+                "description": "A broken inbound incremental zone update (IXFR) can cause named to terminate unexpectedly"
+            },
+            {
+                "title": "CVE-2021-25216",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25216",
+                "description": "A second vulnerability in BIND's GSSAPI security policy negotiation can be targeted by a buffer overflow attack"
+            }
+        ],
+        "affected_packages": [
+            "bind9"
+        ]
+    },
+    {
         "title": "USN-4928-1: GStreamer Good Plugins vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4928-1",
         "cves": [
