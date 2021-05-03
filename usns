@@ -1,5 +1,32 @@
 [
     {
+        "title": "USN-4931-1: Samba vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4931-1",
+        "cves": [
+            {
+                "title": "CVE-2020-14318",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14318",
+                "description": "A flaw was found in the way samba handled file and directory permissions. An authenticated user could use this flaw to gain access to certain file and directory information which otherwise would be unavailable to the attacker."
+            },
+            {
+                "title": "CVE-2020-14323",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14323",
+                "description": "A null pointer dereference flaw was found in samba's Winbind service in versions before 4.11.15, before 4.12.9 and before 4.13.1. A local user could use this flaw to crash the winbind service causing denial of service."
+            },
+            {
+                "title": "CVE-2020-14383",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14383",
+                "description": "A flaw was found in samba's DNS server. An authenticated user could use this flaw to the RPC server to crash. This RPC server, which also serves protocols other than dnsserver, will be restarted after a short delay, but it is easy for an authenticated non administrative attacker to crash it again as soon as it returns. The Samba DNS server itself will continue to operate, but many RPC services will not."
+            },
+            {
+                "title": "CVE-2021-20254",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20254",
+                "description": "Negative idmap cache entries can cause incorrect group entries in the Samba file server process token"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4930-1: Samba vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4930-1",
         "cves": [
