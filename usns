@@ -1,5 +1,121 @@
 [
     {
+        "title": "USN-4934-1: Exim vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4934-1",
+        "cves": [
+            {
+                "title": "CVE-2020-28022",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28022",
+                "description": "Heap out-of-bounds read and write in extract_option()"
+            },
+            {
+                "title": "CVE-2020-28026",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28026",
+                "description": "Line truncation and injection in spool_read_header()"
+            },
+            {
+                "title": "CVE-2020-28009",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28009",
+                "description": "Integer overflow in get_stdinput()"
+            },
+            {
+                "title": "CVE-2020-28012",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28012",
+                "description": "Missing close-on-exec flag for privileged pipe"
+            },
+            {
+                "title": "CVE-2020-28018",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28018",
+                "description": "Use-after-free in tls-openssl.c"
+            },
+            {
+                "title": "CVE-2020-28014",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28014",
+                "description": "Arbitrary file creation and clobbering"
+            },
+            {
+                "title": "CVE-2020-28015",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28015",
+                "description": "New-line injection into spool header file (local)"
+            },
+            {
+                "title": "CVE-2020-28024",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28024",
+                "description": "Heap buffer underflow in smtp_ungetc()"
+            },
+            {
+                "title": "CVE-2020-28017",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28017",
+                "description": "Integer overflow in receive_add_recipient()"
+            },
+            {
+                "title": "CVE-2020-28025",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28025",
+                "description": "Heap out-of-bounds read in pdkim_finish_bodyhash()"
+            },
+            {
+                "title": "CVE-2020-28011",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28011",
+                "description": "Heap buffer overflow in queue_run()"
+            },
+            {
+                "title": "CVE-2020-28008",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28008",
+                "description": "Assorted attacks in Exim's spool directory"
+            },
+            {
+                "title": "CVE-2020-28013",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28013",
+                "description": "Heap buffer overflow in parse_fix_phrase()"
+            },
+            {
+                "title": "CVE-2020-28007",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28007",
+                "description": "Link attack in Exim's log directory"
+            },
+            {
+                "title": "CVE-2020-28010",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28010",
+                "description": "Heap out-of-bounds write in main()"
+            },
+            {
+                "title": "CVE-2020-28019",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28019",
+                "description": "Failure to reset function pointer after BDAT error"
+            },
+            {
+                "title": "CVE-2020-28016",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28016",
+                "description": "Heap out-of-bounds write in parse_fix_phrase()"
+            },
+            {
+                "title": "CVE-2020-28023",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28023",
+                "description": "Out-of-bounds read in smtp_setup_msg()"
+            },
+            {
+                "title": "CVE-2020-28020",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28020",
+                "description": "Integer overflow in receive_msg()"
+            },
+            {
+                "title": "CVE-2020-28021",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28021",
+                "description": "New-line injection into spool header file (remote)"
+            },
+            {
+                "title": "CVE-2021-27216",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27216",
+                "description": "Arbitrary file deletion"
+            }
+        ],
+        "affected_packages": [
+            "exim4-daemon-heavy",
+            "exim4-base",
+            "exim4-daemon-light"
+        ]
+    },
+    {
         "title": "USN-4932-1: Django vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4932-1",
         "cves": [
