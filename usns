@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4918-3: ClamAV vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4918-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1926300",
+                "link": "https://launchpad.net/bugs/1926300",
+                "description": "clamdscan - MULTISCAN  parameter causes Segmentation fault error"
+            }
+        ],
+        "affected_packages": [
+            "clamav",
+            "libclamav9"
+        ]
+    },
+    {
         "title": "USN-4931-1: Samba vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4931-1",
         "cves": [
