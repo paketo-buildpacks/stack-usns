@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-4935-1: NVIDIA graphics drivers vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4935-1",
+        "cves": [
+            {
+                "title": "CVE-2021-1076",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1076",
+                "description": "NVIDIA GPU Display Driver for Windows and Linux, all versions, contains a vulnerability in the kernel mode layer (nvlddmkm.sys or nvidia.ko) where improper access control may lead to denial of service, information disclosure, or data corruption."
+            },
+            {
+                "title": "CVE-2021-1077",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1077",
+                "description": "NVIDIA GPU Display Driver for Windows and Linux, R450 and R460 driver branch, contains a vulnerability where the software uses a reference count to manage a resource that is incorrectly updated, which may lead to denial of service."
+            }
+        ],
+        "affected_packages": [
+            "xserver-xorg-video-nvidia-450",
+            "xserver-xorg-video-nvidia-460",
+            "xserver-xorg-video-nvidia-450-server",
+            "xserver-xorg-video-nvidia-390",
+            "xserver-xorg-video-nvidia-460-server",
+            "xserver-xorg-video-nvidia-418-server"
+        ]
+    },
+    {
         "title": "USN-4934-1: Exim vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4934-1",
         "cves": [
