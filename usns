@@ -1,5 +1,39 @@
 [
     {
+        "title": "USN-4932-1: Django vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4932-1",
+        "cves": [
+            {
+                "title": "CVE-2021-31542",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31542",
+                "description": "Potential directory-traversal via uploaded files"
+            }
+        ],
+        "affected_packages": [
+            "python3-django",
+            "python-django"
+        ]
+    },
+    {
+        "title": "USN-4933-1: OpenVPN vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4933-1",
+        "cves": [
+            {
+                "title": "CVE-2020-15078",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15078",
+                "description": "OpenVPN 2.5.1 and earlier versions allows a remote attackers to bypass authentication and access control channel data on servers configured with deferred authentication, which can be used to potentially trigger further information leaks."
+            },
+            {
+                "title": "CVE-2020-11810",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11810",
+                "description": "An issue was discovered in OpenVPN 2.4.x before 2.4.9. An attacker can inject a data channel v2 (P_DATA_V2) packet using a victim's peer-id. Normally such packets are dropped, but if this packet arrives before the data channel crypto parameters have been initialized, the victim's connection will be dropped. This requires careful timing due to the small time window (usually within a few seconds) between the victim client connection starting and the server PUSH_REPLY response back to the client. This attack will only work if Negotiable Cipher Parameters (NCP) is in use."
+            }
+        ],
+        "affected_packages": [
+            "openvpn"
+        ]
+    },
+    {
         "title": "USN-4918-3: ClamAV regression",
         "link": "https://ubuntu.com/security/notices/USN-4918-3",
         "cves": [
