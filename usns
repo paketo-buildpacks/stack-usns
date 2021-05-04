@@ -1,6 +1,6 @@
 [
     {
-        "title": "USN-4918-3: ClamAV vulnerabilities",
+        "title": "USN-4918-3: ClamAV regression",
         "link": "https://ubuntu.com/security/notices/USN-4918-3",
         "cves": [
             {
