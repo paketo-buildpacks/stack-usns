@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4937-1: GNOME Autoar vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4937-1",
+        "cves": [
+            {
+                "title": "CVE-2021-28650",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28650",
+                "description": "autoar-extractor.c in GNOME gnome-autoar before 0.3.1, as used by GNOME Shell, Nautilus, and other software, allows Directory Traversal during extraction because it lacks a check of whether a file's parent is a symlink in certain complex situations. NOTE: this issue exists because of an incomplete fix for CVE-2020-36241."
+            }
+        ],
+        "affected_packages": [
+            "libgnome-autoar-gtk-0-0",
+            "libgnome-autoar-0-0"
+        ]
+    },
+    {
         "title": "USN-4934-2: Exim vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4934-2",
         "cves": [
