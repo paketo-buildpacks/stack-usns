@@ -1,5 +1,112 @@
 [
     {
+        "title": "USN-4936-1: Thunderbird vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4936-1",
+        "cves": [
+            {
+                "title": "CVE-2021-23969",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23969",
+                "description": "As specified in the W3C Content Security Policy draft, when creating a violation report, \"User agents need to ensure that the source file is the URL requested by the page, pre-redirects. If that’s not possible, user agents need to strip the URL down to an origin to avoid unintentional leakage.\" Under certain types of redirects, Firefox incorrectly set the source file to be the destination of the redirects. This was fixed to be the redirect destination's origin. This vulnerability affects Firefox < 86, Thunderbird < 78.8, and Firefox ESR < 78.8."
+            },
+            {
+                "title": "CVE-2021-23978",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23978",
+                "description": "Mozilla developers reported memory safety bugs present in Firefox 85 and Firefox ESR 78.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 86, Thunderbird < 78.8, and Firefox ESR < 78.8."
+            },
+            {
+                "title": "CVE-2021-23968",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23968",
+                "description": "If Content Security Policy blocked frame navigation, the full destination of a redirect served in the frame was reported in the violation report; as opposed to the original frame URI. This could be used to leak sensitive information contained in such URIs. This vulnerability affects Firefox < 86, Thunderbird < 78.8, and Firefox ESR < 78.8."
+            },
+            {
+                "title": "CVE-2021-23973",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23973",
+                "description": "When trying to load a cross-origin resource in an audio/video context a decoding error may have resulted, and the content of that error may have revealed information about the resource. This vulnerability affects Firefox < 86, Thunderbird < 78.8, and Firefox ESR < 78.8."
+            },
+            {
+                "title": "CVE-2021-29950",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29950",
+                "description": "components for: CVE-2021-29950 Mozilla: Logic issue potentially leaves key material unlocked"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4938-1: Unbound vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4938-1",
+        "cves": [
+            {
+                "title": "CVE-2019-25031",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-25031",
+                "description": "Unbound before 1.9.5 allows configuration injection in create_unbound_ad_servers.sh upon a successful man-in-the-middle attack against a cleartext HTTP session."
+            },
+            {
+                "title": "CVE-2019-25035",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-25035",
+                "description": "Unbound before 1.9.5 allows an out-of-bounds write in sldns_bget_token_par."
+            },
+            {
+                "title": "CVE-2019-25040",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-25040",
+                "description": "Unbound before 1.9.5 allows an infinite loop via a compressed name in dname_pkt_copy."
+            },
+            {
+                "title": "CVE-2019-25038",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-25038",
+                "description": "Unbound before 1.9.5 allows an integer overflow in a size calculation in dnscrypt/dnscrypt.c."
+            },
+            {
+                "title": "CVE-2019-25039",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-25039",
+                "description": "Unbound before 1.9.5 allows an integer overflow in a size calculation in respip/respip.c."
+            },
+            {
+                "title": "CVE-2019-25042",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-25042",
+                "description": "Unbound before 1.9.5 allows an out-of-bounds write via a compressed name in rdata_copy."
+            },
+            {
+                "title": "CVE-2019-25041",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-25041",
+                "description": "Unbound before 1.9.5 allows an assertion failure via a compressed name in dname_pkt_copy."
+            },
+            {
+                "title": "CVE-2020-28935",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28935",
+                "description": "NLnet Labs Unbound, up to and including version 1.12.0, and NLnet Labs NSD, up to and including version 4.3.3, contain a local vulnerability that would allow for a local symlink attack. When writing the PID file, Unbound and NSD create the file if it is not there, or open an existing file for writing. In case the file was already present, they would follow symlinks if the file happened to be a symlink instead of a regular file. An additional chown of the file would then take place after it was written, making the user Unbound/NSD is supposed to run as the new owner of the file. If an attacker has local access to the user Unbound/NSD runs as, she could create a symlink in place of the PID file pointing to a file that she would like to erase. If then Unbound/NSD is killed and the PID file is not cleared, upon restarting with root privileges, Unbound/NSD will rewrite any file pointed at by the symlink. This is a local vulnerability that could create a Denial of Service of the system Unbound/NSD is running on. It requires an attacker having access to the limited permission user Unbound/NSD runs as and point through the symlink to a critical file on the system."
+            },
+            {
+                "title": "CVE-2019-25034",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-25034",
+                "description": "Unbound before 1.9.5 allows an integer overflow in sldns_str2wire_dname_buf_origin, leading to an out-of-bounds write."
+            },
+            {
+                "title": "CVE-2019-25033",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-25033",
+                "description": "Unbound before 1.9.5 allows an integer overflow in the regional allocator via the ALIGN_UP macro."
+            },
+            {
+                "title": "CVE-2019-25037",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-25037",
+                "description": "Unbound before 1.9.5 allows an assertion failure and denial of service in dname_pkt_copy via an invalid packet."
+            },
+            {
+                "title": "CVE-2019-25036",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-25036",
+                "description": "Unbound before 1.9.5 allows an assertion failure and denial of service in synth_cname."
+            },
+            {
+                "title": "CVE-2019-25032",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-25032",
+                "description": "Unbound before 1.9.5 allows an integer overflow in the regional allocator via regional_alloc."
+            }
+        ],
+        "affected_packages": [
+            "libunbound2",
+            "unbound"
+        ]
+    },
+    {
         "title": "USN-4937-1: GNOME Autoar vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4937-1",
         "cves": [
