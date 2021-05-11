@@ -1,5 +1,384 @@
 [
     {
+        "title": "USN-4950-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4950-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3489",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3489",
+                "description": "ZDI-CAN-13586: linux kernel eBPF RINGBUF bad bounds checking"
+            },
+            {
+                "title": "CVE-2021-3490",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3490",
+                "description": "ZDI-CAN-13590: linux kernel eBPF bitwise logic verifier 32/64 bit mismatch"
+            },
+            {
+                "title": "CVE-2021-3491",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3491",
+                "description": ""
+            },
+            {
+                "title": "https://launchpad.net/bugs/1927409",
+                "link": "https://launchpad.net/bugs/1927409",
+                "description": "Race between two functions"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4949-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4949-1",
+        "cves": [
+            {
+                "title": "CVE-2021-29265",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29265",
+                "description": "An issue was discovered in the Linux kernel before 5.11.7. usbip_sockfd_store in drivers/usb/usbip/stub_dev.c allows attackers to cause a denial of service (GPF) because the stub-up sequence has race conditions during an update of the local and shared status, aka CID-9380afd6df70."
+            },
+            {
+                "title": "CVE-2021-29264",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29264",
+                "description": "An issue was discovered in the Linux kernel through 5.11.10. drivers/net/ethernet/freescale/gianfar.c in the Freescale Gianfar Ethernet driver allows attackers to cause a system crash because a negative fragment size is calculated in situations involving an rx queue overrun when jumbo packets are used and NAPI is enabled, aka CID-d8861bab48b6."
+            },
+            {
+                "title": "CVE-2021-3489",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3489",
+                "description": "ZDI-CAN-13586: linux kernel eBPF RINGBUF bad bounds checking"
+            },
+            {
+                "title": "CVE-2021-3490",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3490",
+                "description": "ZDI-CAN-13590: linux kernel eBPF bitwise logic verifier 32/64 bit mismatch"
+            },
+            {
+                "title": "CVE-2021-3491",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3491",
+                "description": ""
+            },
+            {
+                "title": "CVE-2021-29646",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29646",
+                "description": "An issue was discovered in the Linux kernel before 5.11.11. tipc_nl_retrieve_key in net/tipc/node.c does not properly validate certain data sizes, aka CID-0217ed2848e8."
+            },
+            {
+                "title": "CVE-2020-25639",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25639",
+                "description": "A NULL pointer dereference flaw was found in the Linux kernel's GPU Nouveau driver functionality in versions prior to 5.12-rc1 in the way the user calls ioctl DRM_IOCTL_NOUVEAU_CHANNEL_ALLOC. This flaw allows a local user to crash the system."
+            },
+            {
+                "title": "CVE-2021-29650",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29650",
+                "description": "An issue was discovered in the Linux kernel before 5.11.11. The netfilter subsystem allows attackers to cause a denial of service (panic) because net/netfilter/x_tables.c and include/linux/netfilter/x_tables.h lack a full memory barrier upon the assignment of a new table value, aka CID-175e476b8cdf."
+            },
+            {
+                "title": "CVE-2021-26930",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-26930",
+                "description": "An issue was discovered in the Linux kernel 3.11 through 5.10.16, as used by Xen. To service requests to the PV backend, the driver maps grant references provided by the frontend. In this process, errors may be encountered. In one case, an error encountered earlier might be discarded by later processing, resulting in the caller assuming successful mapping, and hence subsequent operations trying to access space that wasn't mapped. In another case, internal state would be insufficiently updated, preventing safe recovery from the error. This affects drivers/block/xen-blkback/blkback.c."
+            },
+            {
+                "title": "CVE-2021-28375",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28375",
+                "description": "An issue was discovered in the Linux kernel through 5.11.6. fastrpc_internal_invoke in drivers/misc/fastrpc.c does not prevent user applications from sending kernel RPC messages, aka CID-20c40794eb85. This is a related issue to CVE-2019-2308."
+            },
+            {
+                "title": "CVE-2021-26931",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-26931",
+                "description": "An issue was discovered in the Linux kernel 2.6.39 through 5.10.16, as used in Xen. Block, net, and SCSI backends consider certain errors a plain bug, deliberately causing a kernel crash. For errors potentially being at least under the influence of guests (such as out of memory conditions), it isn't correct to assume a plain bug. Memory allocations potentially causing such crashes occur only when Linux is running in PV mode, though. This affects drivers/block/xen-blkback/blkback.c and drivers/xen/xen-scsiback.c."
+            },
+            {
+                "title": "CVE-2021-29266",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29266",
+                "description": "An issue was discovered in the Linux kernel before 5.11.9. drivers/vhost/vdpa.c has a use-after-free because v->config_ctx has an invalid value upon re-opening a character device, aka CID-f6bbf0010ba0."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4948-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4948-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3489",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3489",
+                "description": "ZDI-CAN-13586: linux kernel eBPF RINGBUF bad bounds checking"
+            },
+            {
+                "title": "CVE-2021-29649",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29649",
+                "description": "An issue was discovered in the Linux kernel before 5.11.11. The user mode driver (UMD) has a copy_process() memory leak, related to a lack of cleanup steps in kernel/usermode_driver.c and kernel/bpf/preload/bpf_preload_kern.c, aka CID-f60a85cad677."
+            },
+            {
+                "title": "CVE-2021-28951",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28951",
+                "description": "An issue was discovered in fs/io_uring.c in the Linux kernel through 5.11.8. It allows attackers to cause a denial of service (deadlock) because exit may be waiting to park a SQPOLL thread, but concurrently that SQPOLL thread is waiting for a signal to start, aka CID-3ebba796fa25."
+            },
+            {
+                "title": "CVE-2021-28952",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28952",
+                "description": "An issue was discovered in the Linux kernel through 5.11.8. The sound/soc/qcom/sdm845.c soundwire device driver has a buffer overflow when an unexpected port ID number is encountered, aka CID-1c668e1c0a0f. (This has been fixed in 5.12-rc4.)"
+            },
+            {
+                "title": "CVE-2021-29264",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29264",
+                "description": "An issue was discovered in the Linux kernel through 5.11.10. drivers/net/ethernet/freescale/gianfar.c in the Freescale Gianfar Ethernet driver allows attackers to cause a system crash because a negative fragment size is calculated in situations involving an rx queue overrun when jumbo packets are used and NAPI is enabled, aka CID-d8861bab48b6."
+            },
+            {
+                "title": "CVE-2021-29650",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29650",
+                "description": "An issue was discovered in the Linux kernel before 5.11.11. The netfilter subsystem allows attackers to cause a denial of service (panic) because net/netfilter/x_tables.c and include/linux/netfilter/x_tables.h lack a full memory barrier upon the assignment of a new table value, aka CID-175e476b8cdf."
+            },
+            {
+                "title": "CVE-2021-3491",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3491",
+                "description": ""
+            },
+            {
+                "title": "CVE-2021-28964",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28964",
+                "description": "A race condition was discovered in get_old_root in fs/btrfs/ctree.c in the Linux kernel through 5.11.8. It allows attackers to cause a denial of service (BUG) because of a lack of locking on an extent buffer before a cloning operation, aka CID-dbcc7d57bffc."
+            },
+            {
+                "title": "CVE-2020-25672",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25672",
+                "description": "[memory leak in llcp_sock_connect()]"
+            },
+            {
+                "title": "CVE-2021-28972",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28972",
+                "description": "In drivers/pci/hotplug/rpadlpar_sysfs.c in the Linux kernel through 5.11.8, the RPA PCI Hotplug driver has a user-tolerable buffer overflow when writing a new device name to the driver from userspace, allowing userspace to write data to the kernel stack frame directly. This occurs because add_slot_store and remove_slot_store mishandle drc_name '\\0' termination, aka CID-cc7a0bb058b8."
+            },
+            {
+                "title": "CVE-2021-29647",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29647",
+                "description": "An issue was discovered in the Linux kernel before 5.11.11. qrtr_recvmsg in net/qrtr/qrtr.c allows attackers to obtain sensitive information from kernel memory because of a partially uninitialized data structure, aka CID-50535249f624."
+            },
+            {
+                "title": "CVE-2021-3483",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3483",
+                "description": "Linux kernel: a use-after-free bug in nosy driver"
+            },
+            {
+                "title": "CVE-2021-28971",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28971",
+                "description": "In intel_pmu_drain_pebs_nhm in arch/x86/events/intel/ds.c in the Linux kernel through 5.11.8 on some Haswell CPUs, userspace applications (such as perf-fuzzer) can cause a system crash because the PEBS status in a PEBS record is mishandled, aka CID-d88d05a9e0b6."
+            },
+            {
+                "title": "CVE-2020-25670",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25670",
+                "description": "[refcount leak in llcp_sock_bind()]"
+            },
+            {
+                "title": "CVE-2021-28688",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28688",
+                "description": "The fix for XSA-365 includes initialization of pointers such that subsequent cleanup code wouldn't use uninitialized or stale values. This initialization went too far and may under certain conditions also overwrite pointers which are in need of cleaning up. The lack of cleanup would result in leaking persistent grants. The leak in turn would prevent fully cleaning up after a respective guest has died, leaving around zombie domains. All Linux versions having the fix for XSA-365 applied are vulnerable. XSA-365 was classified to affect versions back to at least 3.11."
+            },
+            {
+                "title": "CVE-2021-29646",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29646",
+                "description": "An issue was discovered in the Linux kernel before 5.11.11. tipc_nl_retrieve_key in net/tipc/node.c does not properly validate certain data sizes, aka CID-0217ed2848e8."
+            },
+            {
+                "title": "CVE-2021-3490",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3490",
+                "description": "ZDI-CAN-13590: linux kernel eBPF bitwise logic verifier 32/64 bit mismatch"
+            },
+            {
+                "title": "CVE-2021-29657",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29657",
+                "description": "[KVM: SVM: load control fields from VMCB12 before checking them]"
+            },
+            {
+                "title": "CVE-2021-31916",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31916",
+                "description": "[out of bounds array access in drivers/md/dm-ioctl.c]"
+            },
+            {
+                "title": "CVE-2020-25671",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25671",
+                "description": "[refcount leak in llcp_sock_connect()]"
+            },
+            {
+                "title": "CVE-2021-29266",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29266",
+                "description": "An issue was discovered in the Linux kernel before 5.11.9. drivers/vhost/vdpa.c has a use-after-free because v->config_ctx has an invalid value upon re-opening a character device, aka CID-f6bbf0010ba0."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4946-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4946-1",
+        "cves": [
+            {
+                "title": "CVE-2021-20292",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20292",
+                "description": "[RM Memory Management Double Free Privilege Escalation Vulnerability]"
+            },
+            {
+                "title": "CVE-2021-26930",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-26930",
+                "description": "An issue was discovered in the Linux kernel 3.11 through 5.10.16, as used by Xen. To service requests to the PV backend, the driver maps grant references provided by the frontend. In this process, errors may be encountered. In one case, an error encountered earlier might be discarded by later processing, resulting in the caller assuming successful mapping, and hence subsequent operations trying to access space that wasn't mapped. In another case, internal state would be insufficiently updated, preventing safe recovery from the error. This affects drivers/block/xen-blkback/blkback.c."
+            },
+            {
+                "title": "CVE-2021-29264",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29264",
+                "description": "An issue was discovered in the Linux kernel through 5.11.10. drivers/net/ethernet/freescale/gianfar.c in the Freescale Gianfar Ethernet driver allows attackers to cause a system crash because a negative fragment size is calculated in situations involving an rx queue overrun when jumbo packets are used and NAPI is enabled, aka CID-d8861bab48b6."
+            },
+            {
+                "title": "CVE-2021-29265",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29265",
+                "description": "An issue was discovered in the Linux kernel before 5.11.7. usbip_sockfd_store in drivers/usb/usbip/stub_dev.c allows attackers to cause a denial of service (GPF) because the stub-up sequence has race conditions during an update of the local and shared status, aka CID-9380afd6df70."
+            },
+            {
+                "title": "CVE-2021-29650",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29650",
+                "description": "An issue was discovered in the Linux kernel before 5.11.11. The netfilter subsystem allows attackers to cause a denial of service (panic) because net/netfilter/x_tables.c and include/linux/netfilter/x_tables.h lack a full memory barrier upon the assignment of a new table value, aka CID-175e476b8cdf."
+            },
+            {
+                "title": "CVE-2021-28688",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28688",
+                "description": "The fix for XSA-365 includes initialization of pointers such that subsequent cleanup code wouldn't use uninitialized or stale values. This initialization went too far and may under certain conditions also overwrite pointers which are in need of cleaning up. The lack of cleanup would result in leaking persistent grants. The leak in turn would prevent fully cleaning up after a respective guest has died, leaving around zombie domains. All Linux versions having the fix for XSA-365 applied are vulnerable. XSA-365 was classified to affect versions back to at least 3.11."
+            },
+            {
+                "title": "CVE-2021-26931",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-26931",
+                "description": "An issue was discovered in the Linux kernel 2.6.39 through 5.10.16, as used in Xen. Block, net, and SCSI backends consider certain errors a plain bug, deliberately causing a kernel crash. For errors potentially being at least under the influence of guests (such as out of memory conditions), it isn't correct to assume a plain bug. Memory allocations potentially causing such crashes occur only when Linux is running in PV mode, though. This affects drivers/block/xen-blkback/blkback.c and drivers/xen/xen-scsiback.c."
+            },
+            {
+                "title": "CVE-2021-28038",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28038",
+                "description": "An issue was discovered in the Linux kernel through 5.11.3, as used with Xen PV. A certain part of the netback driver lacks necessary treatment of errors such as failed memory allocations (as a result of changes to the handling of grant mapping errors). A host OS denial of service may occur during misbehavior of a networking frontend driver. NOTE: this issue exists because of an incomplete fix for CVE-2021-26931."
+            },
+            {
+                "title": "CVE-2021-30002",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30002",
+                "description": "An issue was discovered in the Linux kernel before 5.11.3 when a webcam device exists. video_usercopy in drivers/media/v4l2-core/v4l2-ioctl.c has a memory leak for large arguments, aka CID-fb18802a338b."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-4.15.0-1099-gcp",
+            "linux-image-4.15.0-1091-kvm",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-4.15.0-1102-aws",
+            "linux-image-4.15.0-143-generic-lpae",
+            "linux-image-oracle-lts-18.04",
+            "linux-image-virtual",
+            "linux-image-4.15.0-143-generic",
+            "linux-image-4.15.0-1018-dell300x",
+            "linux-image-snapdragon",
+            "linux-image-4.15.0-143-lowlatency",
+            "linux-image-dell300x",
+            "linux-image-4.15.0-1085-raspi2",
+            "linux-image-aws-lts-18.04",
+            "linux-image-generic",
+            "linux-image-4.15.0-1102-snapdragon",
+            "linux-image-kvm",
+            "linux-image-raspi2",
+            "linux-image-azure-lts-18.04",
+            "linux-image-4.15.0-1114-azure",
+            "linux-image-generic-lpae",
+            "linux-image-lowlatency",
+            "linux-image-4.15.0-1071-oracle"
+        ]
+    },
+    {
+        "title": "USN-4947-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4947-1",
+        "cves": [
+            {
+                "title": "CVE-2020-35519",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35519",
+                "description": "net/x25: prevent a couple of overflows"
+            },
+            {
+                "title": "CVE-2021-29650",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29650",
+                "description": "An issue was discovered in the Linux kernel before 5.11.11. The netfilter subsystem allows attackers to cause a denial of service (panic) because net/netfilter/x_tables.c and include/linux/netfilter/x_tables.h lack a full memory barrier upon the assignment of a new table value, aka CID-175e476b8cdf."
+            },
+            {
+                "title": "CVE-2021-29646",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29646",
+                "description": "An issue was discovered in the Linux kernel before 5.11.11. tipc_nl_retrieve_key in net/tipc/node.c does not properly validate certain data sizes, aka CID-0217ed2848e8."
+            },
+            {
+                "title": "CVE-2021-28375",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28375",
+                "description": "An issue was discovered in the Linux kernel through 5.11.6. fastrpc_internal_invoke in drivers/misc/fastrpc.c does not prevent user applications from sending kernel RPC messages, aka CID-20c40794eb85. This is a related issue to CVE-2019-2308."
+            },
+            {
+                "title": "CVE-2021-30002",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30002",
+                "description": "An issue was discovered in the Linux kernel before 5.11.3 when a webcam device exists. video_usercopy in drivers/media/v4l2-core/v4l2-ioctl.c has a memory leak for large arguments, aka CID-fb18802a338b."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4945-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4945-1",
+        "cves": [
+            {
+                "title": "CVE-2021-29265",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29265",
+                "description": "An issue was discovered in the Linux kernel before 5.11.7. usbip_sockfd_store in drivers/usb/usbip/stub_dev.c allows attackers to cause a denial of service (GPF) because the stub-up sequence has race conditions during an update of the local and shared status, aka CID-9380afd6df70."
+            },
+            {
+                "title": "CVE-2021-28660",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28660",
+                "description": "rtw_wx_set_scan in drivers/staging/rtl8188eu/os_dep/ioctl_linux.c in the Linux kernel through 5.11.6 allows writing beyond the end of the ->ssid[] array. NOTE: from the perspective of kernel.org releases, CVE IDs are not normally used for drivers/staging/* (unfinished work); however, system integrators may have situations in which a drivers/staging issue is relevant to their own customer base."
+            },
+            {
+                "title": "CVE-2021-28375",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28375",
+                "description": "An issue was discovered in the Linux kernel through 5.11.6. fastrpc_internal_invoke in drivers/misc/fastrpc.c does not prevent user applications from sending kernel RPC messages, aka CID-20c40794eb85. This is a related issue to CVE-2019-2308."
+            },
+            {
+                "title": "CVE-2021-30002",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30002",
+                "description": "An issue was discovered in the Linux kernel before 5.11.3 when a webcam device exists. video_usercopy in drivers/media/v4l2-core/v4l2-ioctl.c has a memory leak for large arguments, aka CID-fb18802a338b."
+            },
+            {
+                "title": "CVE-2020-25639",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25639",
+                "description": "A NULL pointer dereference flaw was found in the Linux kernel's GPU Nouveau driver functionality in versions prior to 5.12-rc1 in the way the user calls ioctl DRM_IOCTL_NOUVEAU_CHANNEL_ALLOC. This flaw allows a local user to crash the system."
+            },
+            {
+                "title": "CVE-2021-28038",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28038",
+                "description": "An issue was discovered in the Linux kernel through 5.11.3, as used with Xen PV. A certain part of the netback driver lacks necessary treatment of errors such as failed memory allocations (as a result of changes to the handling of grant mapping errors). A host OS denial of service may occur during misbehavior of a networking frontend driver. NOTE: this issue exists because of an incomplete fix for CVE-2021-26931."
+            },
+            {
+                "title": "CVE-2021-29650",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29650",
+                "description": "An issue was discovered in the Linux kernel before 5.11.11. The netfilter subsystem allows attackers to cause a denial of service (panic) because net/netfilter/x_tables.c and include/linux/netfilter/x_tables.h lack a full memory barrier upon the assignment of a new table value, aka CID-175e476b8cdf."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-gkeop-5.4",
+            "linux-image-5.4.0-1015-gkeop",
+            "linux-image-oem-osp1",
+            "linux-image-oracle",
+            "linux-image-generic-hwe-18.04",
+            "linux-image-azure",
+            "linux-image-5.4.0-1043-gcp",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-5.4.0-73-lowlatency",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-5.4.0-73-generic-lpae",
+            "linux-image-5.4.0-1044-oracle",
+            "linux-image-5.4.0-73-generic",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-5.4.0-1047-azure",
+            "linux-image-gke-5.4",
+            "linux-image-5.4.0-1043-gke",
+            "linux-image-5.4.0-1048-aws",
+            "linux-image-aws",
+            "linux-image-oem",
+            "linux-image-gcp"
+        ]
+    },
+    {
         "title": "USN-4944-1: MariaDB vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4944-1",
         "cves": [
