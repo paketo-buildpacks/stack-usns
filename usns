@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4944-1: MariaDB vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4944-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1926926",
+                "link": "https://launchpad.net/bugs/1926926",
+                "description": "CVE-2021-27928 et al affects MariaDB in Ubuntu"
+            }
+        ],
+        "affected_packages": [
+            "mariadb-server"
+        ]
+    },
+    {
         "title": "USN-4943-1: XStream vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4943-1",
         "cves": [
