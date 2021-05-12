@@ -574,7 +574,7 @@
             {
                 "title": "https://launchpad.net/bugs/1926926",
                 "link": "https://launchpad.net/bugs/1926926",
-                "description": ""
+                "description": "CVE-2021-27928 et al affects MariaDB in Ubuntu"
             }
         ],
         "affected_packages": [
