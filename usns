@@ -21,7 +21,7 @@
             {
                 "title": "https://launchpad.net/bugs/1927409",
                 "link": "https://launchpad.net/bugs/1927409",
-                "description": "Race between two functions"
+                "description": "Race between isotp_bind and isotp_setsockopt"
             }
         ],
         "affected_packages": []
