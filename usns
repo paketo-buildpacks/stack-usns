@@ -16,7 +16,7 @@
             {
                 "title": "CVE-2021-3491",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3491",
-                "description": ""
+                "description": "ZDI-CAN-13546: linux kernel io_uring int overflow leading to heap overflow"
             },
             {
                 "title": "https://launchpad.net/bugs/1927409",
@@ -53,7 +53,7 @@
             {
                 "title": "CVE-2021-3491",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3491",
-                "description": ""
+                "description": "ZDI-CAN-13546: linux kernel io_uring int overflow leading to heap overflow"
             },
             {
                 "title": "CVE-2021-29646",
@@ -130,7 +130,7 @@
             {
                 "title": "CVE-2021-3491",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3491",
-                "description": ""
+                "description": "ZDI-CAN-13546: linux kernel io_uring int overflow leading to heap overflow"
             },
             {
                 "title": "CVE-2021-28964",
