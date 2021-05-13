@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-4953-1: AWStats vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4953-1",
+        "cves": [
+            {
+                "title": "CVE-2020-35176",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35176",
+                "description": "In AWStats through 7.8, cgi-bin/awstats.pl?config= accepts a partial absolute pathname (omitting the initial /etc), even though it was intended to only read a file in the /etc/awstats/awstats.conf format. NOTE: this issue exists because of an incomplete fix for CVE-2017-1000501 and CVE-2020-29600."
+            },
+            {
+                "title": "CVE-2017-1000501",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-1000501",
+                "description": "Awstats version 7.6 and earlier is vulnerable to a path traversal flaw in the handling of the \"config\" and \"migrate\" parameters resulting in unauthenticated remote code execution."
+            },
+            {
+                "title": "CVE-2020-29600",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29600",
+                "description": "In AWStats through 7.7, cgi-bin/awstats.pl?config= accepts an absolute pathname, even though it was intended to only read a file in the /etc/awstats/awstats.conf format. NOTE: this issue exists because of an incomplete fix for CVE-2017-1000501."
+            }
+        ],
+        "affected_packages": [
+            "awstats"
+        ]
+    },
+    {
         "title": "USN-4932-2: Django vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4932-2",
         "cves": [
