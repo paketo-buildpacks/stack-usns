@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-4954-1: GNU C Library vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4954-1",
+        "cves": [
+            {
+                "title": "CVE-2009-5155",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2009-5155",
+                "description": "In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match."
+            },
+            {
+                "title": "CVE-2020-6096",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6096",
+                "description": "An exploitable signed comparison vulnerability exists in the ARMv7 memcpy() implementation of GNU glibc 2.30.9000. Calling memcpy() (on ARMv7 targets that utilize the GNU glibc implementation) with a negative value for the 'num' parameter results in a signed comparison vulnerability. If an attacker underflows the 'num' parameter to memcpy(), this vulnerability could lead to undefined behavior such as writing to out-of-bounds memory and potentially remote code execution. Furthermore, this memcpy() implementation allows for program execution to continue in scenarios where a segmentation fault or crash should have occurred. The dangers occur in that subsequent execution and iterations of this code will be executed with this corrupted data."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4953-1: AWStats vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4953-1",
         "cves": [
