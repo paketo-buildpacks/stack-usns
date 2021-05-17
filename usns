@@ -1,5 +1,27 @@
 [
     {
+        "title": "USN-4955-1: Please vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4955-1",
+        "cves": [
+            {
+                "title": "CVE-2021-31155",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31155",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-31154",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31154",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-31153",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31153",
+                "description": "[Unknown description]"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4628-3: Intel Microcode vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4628-3",
         "cves": [
