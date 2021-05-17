@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4958-1: Caribou vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4958-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1912060",
+                "link": "https://launchpad.net/bugs/1912060",
+                "description": "[SRU] caribou: Segfault (as regression of xorg CVE-2020-25712 fix) cause security issue for cinnamon"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4957-1: DjVuLibre vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4957-1",
         "cves": [
