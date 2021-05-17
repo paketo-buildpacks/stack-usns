@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-4628-3: Intel Microcode vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4628-3",
+        "cves": [
+            {
+                "title": "CVE-2020-8698",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8698",
+                "description": "Improper isolation of shared resources in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access."
+            },
+            {
+                "title": "CVE-2020-8696",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8696",
+                "description": "Improper removal of sensitive information before storage or transfer in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access."
+            },
+            {
+                "title": "CVE-2020-8695",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8695",
+                "description": "Observable discrepancy in the RAPL interface for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access."
+            }
+        ],
+        "affected_packages": [
+            "intel-microcode"
+        ]
+    },
+    {
         "title": "USN-4954-1: GNU C Library vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4954-1",
         "cves": [
