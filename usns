@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4956-1: Eventlet vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4956-1",
+        "cves": [
+            {
+                "title": "CVE-2021-21419",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21419",
+                "description": "Eventlet is a concurrent networking library for Python. A websocket peer may exhaust memory on Eventlet side by sending very large websocket frames. Malicious peer may exhaust memory on Eventlet side by sending highly compressed data frame. A patch in version 0.31.0 restricts websocket frame to reasonable limits. As a workaround, restricting memory usage via OS limits would help against overall machine exhaustion, but there is no workaround to protect Eventlet process."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4955-1: Please vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4955-1",
         "cves": [
@@ -140,7 +152,7 @@
             {
                 "title": "CVE-2021-2217",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2217",
-                "description": ""
+                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Stored Procedure). Supported versions that are affected are 8.0.23 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
             },
             {
                 "title": "CVE-2021-2304",
