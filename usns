@@ -1,5 +1,37 @@
 [
     {
+        "title": "USN-4957-2: DjVuLibre vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4957-2",
+        "cves": [
+            {
+                "title": "CVE-2021-32491",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32491",
+                "description": "Integer overflow in function render() in tools/ddjvu via crafted djvu file"
+            },
+            {
+                "title": "CVE-2021-32492",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32492",
+                "description": "Out of bounds read in function DJVU::DataPool::has_data() via crafted djvu file"
+            },
+            {
+                "title": "CVE-2021-32493",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32493",
+                "description": "heap buffer overflow in function DJVU::GBitmap::decode() via crafted djvu file"
+            },
+            {
+                "title": "CVE-2021-32490",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32490",
+                "description": "out of bounds write in function DJVU::filter_bv() via crafted djvu file"
+            },
+            {
+                "title": "CVE-2021-3500",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3500",
+                "description": "Stack overflow in function DJVU::DjVuDocument::get_djvu_file() via crafted djvu file"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4958-1: Caribou vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4958-1",
         "cves": [
