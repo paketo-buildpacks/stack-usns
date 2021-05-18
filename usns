@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4959-1: GStreamer Base Plugins vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4959-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3522",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3522",
+                "description": "potential invalid reads"
+            }
+        ],
+        "affected_packages": [
+            "gstreamer1.0-plugins-base"
+        ]
+    },
+    {
         "title": "USN-4957-2: DjVuLibre vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4957-2",
         "cves": [
