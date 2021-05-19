@@ -1,5 +1,61 @@
 [
     {
+        "title": "USN-4962-1: Babel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4962-1",
+        "cves": [
+            {
+                "title": "CVE-2021-20095",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20095",
+                "description": "Relative Path Traversal in Babel 2.9.0 allows an attacker to load arbitrary locale files on disk and execute arbitrary code."
+            }
+        ],
+        "affected_packages": [
+            "python-babel-localedata",
+            "python3-babel",
+            "python-babel"
+        ]
+    },
+    {
+        "title": "USN-4963-1: Pillow vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4963-1",
+        "cves": [
+            {
+                "title": "CVE-2021-28677",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28677",
+                "description": "EPS DOS on _open"
+            },
+            {
+                "title": "CVE-2021-28675",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28675",
+                "description": "DOS in PsdImagePlugin"
+            },
+            {
+                "title": "CVE-2021-28678",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28678",
+                "description": "BLP DOS"
+            },
+            {
+                "title": "CVE-2021-25287",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25287",
+                "description": "OOB read in Jpeg2KDecode"
+            },
+            {
+                "title": "CVE-2021-25288",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25288",
+                "description": "OOB read in Jpeg2KDecode"
+            },
+            {
+                "title": "CVE-2021-28676",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28676",
+                "description": "FLI DOS"
+            }
+        ],
+        "affected_packages": [
+            "python3-pil",
+            "python-pil"
+        ]
+    },
+    {
         "title": "USN-4961-1: pip vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4961-1",
         "cves": [
