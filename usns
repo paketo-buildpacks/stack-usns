@@ -1,5 +1,31 @@
 [
     {
+        "title": "USN-4961-1: pip vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4961-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1926957",
+                "link": "https://launchpad.net/bugs/1926957",
+                "description": "security fix in pip 21.1: Don't split git references on unicode separators #9827"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4960-1: runC vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4960-1",
+        "cves": [
+            {
+                "title": "CVE-2021-30465",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30465",
+                "description": "runc 1.0.0-rc93 and earlier are vulnerable to a symlink exchange attack whereby an attacker can request a seemingly-innocuous container configuration that actually results in the host filesystem being bind-mounted into the container (allowing for a container escape)."
+            }
+        ],
+        "affected_packages": [
+            "runc"
+        ]
+    },
+    {
         "title": "USN-4945-2: Linux kernel (Raspberry Pi) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4945-2",
         "cves": [
