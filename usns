@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4966-2: libx11 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4966-2",
+        "cves": [
+            {
+                "title": "CVE-2021-31535",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31535",
+                "description": "XLookupColor() and other X libraries function lack proper validation of the length of their string parameters. If those parameters can be controlled by an external application (for instance a color name that can be emitted via a terminal control sequence) it can lead to the emission of extra X protocol requests to the X server."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4965-2: Apport vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4965-2",
         "cves": [
