@@ -1,5 +1,67 @@
 [
     {
+        "title": "USN-4965-2: Apport vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4965-2",
+        "cves": [
+            {
+                "title": "CVE-2021-32549",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32549",
+                "description": "add_info() arbitary file read in openjdk-13"
+            },
+            {
+                "title": "CVE-2021-32555",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32555",
+                "description": "attach_3d_info() arbitrary file read in xorg-hwe-18.04"
+            },
+            {
+                "title": "CVE-2021-32551",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32551",
+                "description": "add_info() arbitary file read in openjdk-15"
+            },
+            {
+                "title": "CVE-2021-32548",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32548",
+                "description": "add_info() arbitary file read in openjdk-8"
+            },
+            {
+                "title": "CVE-2021-32550",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32550",
+                "description": "add_info() arbitary file read in openjdk-14"
+            },
+            {
+                "title": "CVE-2021-32554",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32554",
+                "description": "attach_3d_info() arbitrary file read in xorg"
+            },
+            {
+                "title": "CVE-2021-32553",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32553",
+                "description": "add_info() arbitary file read in openjdk-17"
+            },
+            {
+                "title": "CVE-2021-32557",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32557",
+                "description": "process_report() arbitrary file write"
+            },
+            {
+                "title": "CVE-2021-32552",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32552",
+                "description": "add_info() arbitary file read in openjdk-16"
+            },
+            {
+                "title": "CVE-2021-32547",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32547",
+                "description": "add_info() arbitary file read in openjdk-lts"
+            },
+            {
+                "title": "CVE-2021-32556",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32556",
+                "description": "get_modified_conffiles() incorrect changed files"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4966-1: libx11 vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4966-1",
         "cves": [
