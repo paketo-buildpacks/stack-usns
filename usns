@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4967-1: nginx vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4967-1",
+        "cves": [
+            {
+                "title": "CVE-2021-23017",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23017",
+                "description": "off-by-one error in ngx_resolver_copy()"
+            }
+        ],
+        "affected_packages": [
+            "nginx-extras",
+            "nginx-core",
+            "nginx-common",
+            "nginx-full",
+            "nginx",
+            "nginx-light"
+        ]
+    },
+    {
         "title": "USN-4966-2: libx11 vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4966-2",
         "cves": [
