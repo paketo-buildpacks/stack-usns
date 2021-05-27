@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4969-1: DHCP vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4969-1",
+        "cves": [
+            {
+                "title": "CVE-2021-25217",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25217",
+                "description": "A buffer overrun in lease file parsing code can be used to exploit a common vulnerability shared by dhcpd and dhclient."
+            }
+        ],
+        "affected_packages": [
+            "isc-dhcp-server",
+            "isc-dhcp-client"
+        ]
+    },
+    {
         "title": "USN-4968-1: LZ4 vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4968-1",
         "cves": [
