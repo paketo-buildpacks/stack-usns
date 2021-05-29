@@ -34,8 +34,8 @@
             }
         ],
         "affected_packages": [
-            "isc-dhcp-server",
-            "isc-dhcp-client"
+            "isc-dhcp-client",
+            "isc-dhcp-server"
         ]
     },
     {
@@ -63,12 +63,12 @@
             }
         ],
         "affected_packages": [
+            "nginx-common",
             "nginx-extras",
             "nginx-core",
-            "nginx-common",
-            "nginx-full",
             "nginx",
-            "nginx-light"
+            "nginx-light",
+            "nginx-full"
         ]
     },
     {
@@ -220,9 +220,9 @@
             }
         ],
         "affected_packages": [
-            "apport",
             "python-apport",
-            "python3-apport"
+            "python3-apport",
+            "apport"
         ]
     },
     {
