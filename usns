@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4968-2: LZ4 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4968-2",
+        "cves": [
+            {
+                "title": "CVE-2021-3520",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3520",
+                "description": "memory corruption due to an integer overflow bug caused by memmove argument"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4967-2: nginx vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4967-2",
         "cves": [
