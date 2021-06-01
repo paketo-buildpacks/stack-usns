@@ -1,5 +1,119 @@
 [
     {
+        "title": "USN-4973-1: Python vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4973-1",
+        "cves": [
+            {
+                "title": "CVE-2021-29921",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29921",
+                "description": "Improper input validation of octal strings in Python stdlib ipaddress 3.10 and below allows unauthenticated remote attackers to perform indeterminate SSRF, RFI, and LFI attacks on many programs that rely on Python stdlib ipaddress. IP address octects are left stripped instead of evaluated as valid IP addresses."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4972-1: PostgreSQL vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4972-1",
+        "cves": [
+            {
+                "title": "CVE-2021-32029",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32029",
+                "description": "Fix possibly-incorrect computation of UPDATE ... RETURNING outputs for joined cross-partition updates"
+            },
+            {
+                "title": "CVE-2021-32028",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32028",
+                "description": "Fix mishandling of “junk” columns in INSERT ... ON CONFLICT ... UPDATE target lists"
+            },
+            {
+                "title": "CVE-2021-32027",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32027",
+                "description": "Prevent integer overflows in array subscripting calculations"
+            }
+        ],
+        "affected_packages": [
+            "postgresql-10"
+        ]
+    },
+    {
+        "title": "USN-4971-1: libwebp vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4971-1",
+        "cves": [
+            {
+                "title": "CVE-2020-36331",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36331",
+                "description": "heap-based buffer overflow in ChunkAssignData() in mux/muxinternal.c"
+            },
+            {
+                "title": "CVE-2018-25010",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-25010",
+                "description": "heap-based buffer overflow in ApplyFilter()"
+            },
+            {
+                "title": "CVE-2018-25011",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-25011",
+                "description": "heap-based buffer overflow in PutLE16()"
+            },
+            {
+                "title": "CVE-2020-36330",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36330",
+                "description": "heap-based buffer overflow in ChunkVerifyAndAssign() in mux/muxread.c"
+            },
+            {
+                "title": "CVE-2020-36329",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36329",
+                "description": "use-after-free in EmitFancyRGB() in dec/io_dec.c"
+            },
+            {
+                "title": "CVE-2018-25013",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-25013",
+                "description": "heap-based buffer overflow in ShiftBytes()"
+            },
+            {
+                "title": "CVE-2018-25009",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-25009",
+                "description": "heap-based buffer overflow in GetLE16()"
+            },
+            {
+                "title": "CVE-2020-36332",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36332",
+                "description": "extreme memory allocation when reading a file"
+            },
+            {
+                "title": "CVE-2020-36328",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36328",
+                "description": "heap-based buffer overflow in WebPDecode*Into functions"
+            },
+            {
+                "title": "CVE-2018-25014",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-25014",
+                "description": "heap-based buffer overflow in ReadSymbol()"
+            },
+            {
+                "title": "CVE-2018-25012",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-25012",
+                "description": "heap-based buffer overflow in GetLE24()"
+            }
+        ],
+        "affected_packages": [
+            "libwebp6",
+            "libwebpmux3",
+            "libwebpdemux2"
+        ]
+    },
+    {
+        "title": "USN-4970-1: GUPnP vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4970-1",
+        "cves": [
+            {
+                "title": "CVE-2021-33516",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33516",
+                "description": "An issue was discovered in GUPnP before 1.0.7 and 1.1.x and 1.2.x before 1.2.5. It allows DNS rebinding. A remote web server can exploit this vulnerability to trick a victim's browser into triggering actions against local UPnP services implemented using this library. Depending on the affected service, this could be used for data exfiltration, data tempering, etc."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4968-2: LZ4 vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4968-2",
         "cves": [
