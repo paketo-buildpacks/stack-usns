@@ -1,5 +1,42 @@
 [
     {
+        "title": "USN-4977-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4977-1",
+        "cves": [
+            {
+                "title": "CVE-2020-25673",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25673",
+                "description": "[nfc llcp socket denial of service]"
+            },
+            {
+                "title": "CVE-2021-3501",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3501",
+                "description": "A flaw was found in the Linux kernel in versions before 5.12. The value of internal.ndata, in the KVM API, is mapped to an array index, which can be updated by a user process at anytime which could lead to an out-of-bounds write. The highest threat from this vulnerability is to data integrity and system availability."
+            },
+            {
+                "title": "CVE-2021-29155",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29155",
+                "description": "An issue was discovered in the Linux kernel through 5.11.x. kernel/bpf/verifier.c performs undesirable out-of-bounds speculation on pointer arithmetic, leading to side-channel attacks that defeat Spectre mitigations and obtain sensitive information from kernel memory. Specifically, for sequences of pointer arithmetic operations, the pointer modification performed by the first operation is not correctly accounted for when restricting subsequent operations."
+            },
+            {
+                "title": "CVE-2020-25672",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25672",
+                "description": "[memory leak in llcp_sock_connect()]"
+            },
+            {
+                "title": "CVE-2020-25670",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25670",
+                "description": "[refcount leak in llcp_sock_bind()]"
+            },
+            {
+                "title": "CVE-2020-25671",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25671",
+                "description": "[refcount leak in llcp_sock_connect()]"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4976-1: Dnsmasq vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4976-1",
         "cves": [
