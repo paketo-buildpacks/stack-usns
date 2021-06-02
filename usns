@@ -1,12 +1,46 @@
 [
     {
+        "title": "USN-4978-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4978-1",
+        "cves": [
+            {
+                "title": "CVE-2021-29960",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29960",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-29959",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29959",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-29961",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29961",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-29966",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29966",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-29967",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29967",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-4977-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4977-1",
         "cves": [
             {
                 "title": "CVE-2020-25673",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25673",
-                "description": "A vulnerability was found in Linux kernel where non-blocking socket in llcp_sock_connect() leads to leak and eventually hanging-up the system."
+                "description": "[nfc llcp socket denial of service]"
             },
             {
                 "title": "CVE-2021-3501",
@@ -21,17 +55,17 @@
             {
                 "title": "CVE-2020-25672",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25672",
-                "description": "[memory leak in llcp_sock_connect()]"
+                "description": "A memory leak vulnerability was found in Linux kernel in llcp_sock_connect"
             },
             {
                 "title": "CVE-2020-25670",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25670",
-                "description": "[refcount leak in llcp_sock_bind()]"
+                "description": "A vulnerability was found in Linux Kernel where refcount leak in llcp_sock_bind() causing use-after-free which might lead to privilege escalations."
             },
             {
                 "title": "CVE-2020-25671",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25671",
-                "description": "[refcount leak in llcp_sock_connect()]"
+                "description": "A vulnerability was found in Linux Kernel, where a refcount leak in llcp_sock_connect() causing use-after-free which might lead to privilege escalations."
             }
         ],
         "affected_packages": []
