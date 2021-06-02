@@ -1,5 +1,21 @@
 [
     {
+        "title": "USN-4976-1: Dnsmasq vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4976-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3448",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3448",
+                "description": "A flaw was found in dnsmasq in versions before 2.85. When configured to use a specific server for a given network interface, dnsmasq uses a fixed port while forwarding queries. An attacker on the network, able to find the outgoing port used by dnsmasq, only needs to guess the random transmission ID to forge a reply and get it accepted by dnsmasq. This flaw makes a DNS Cache Poisoning attack much easier. The highest threat from this vulnerability is to data integrity."
+            }
+        ],
+        "affected_packages": [
+            "dnsmasq",
+            "dnsmasq-utils",
+            "dnsmasq-base"
+        ]
+    },
+    {
         "title": "USN-4975-1: Django vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4975-1",
         "cves": [
