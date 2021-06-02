@@ -40,7 +40,7 @@
             {
                 "title": "CVE-2020-25673",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25673",
-                "description": "[nfc llcp socket denial of service]"
+                "description": "A vulnerability was found in Linux kernel where non-blocking socket in llcp_sock_connect() leads to leak and eventually hanging-up the system."
             },
             {
                 "title": "CVE-2021-3501",
@@ -135,7 +135,7 @@
             {
                 "title": "CVE-2021-29921",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29921",
-                "description": "Improper input validation of octal strings in Python stdlib ipaddress 3.10 and below allows unauthenticated remote attackers to perform indeterminate SSRF, RFI, and LFI attacks on many programs that rely on Python stdlib ipaddress. IP address octects are left stripped instead of evaluated as valid IP addresses."
+                "description": "In Python before 3,9,5, the ipaddress library mishandles leading zero characters in the octets of an IP address string. This (in some situations) allows attackers to bypass access control that is based on IP addresses."
             }
         ],
         "affected_packages": []
