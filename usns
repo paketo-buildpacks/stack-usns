@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-4974-1: Lasso vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4974-1",
+        "cves": [
+            {
+                "title": "CVE-2021-28091",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28091",
+                "description": "Lasso incorrect assertion validation and verification"
+            }
+        ],
+        "affected_packages": [
+            "liblasso-perl",
+            "liblasso3",
+            "python-lasso",
+            "python3-lasso"
+        ]
+    },
+    {
         "title": "USN-4973-1: Python vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4973-1",
         "cves": [
