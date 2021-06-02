@@ -1,5 +1,30 @@
 [
     {
+        "title": "USN-4975-1: Django vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4975-1",
+        "cves": [
+            {
+                "title": "CVE-2021-32052",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32052",
+                "description": "In Django 2.2 before 2.2.22, 3.1 before 3.1.10, and 3.2 before 3.2.2 (with Python 3.9.5+), URLValidator does not prohibit newlines and tabs (unless the URLField form field is used). If an application uses values with newlines in an HTTP response, header injection can occur. Django itself is unaffected because HttpResponse prohibits newlines in HTTP headers."
+            },
+            {
+                "title": "CVE-2021-33571",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33571",
+                "description": "Possible indeterminate SSRF, RFI, and LFI attacks since validators accepted leading zeros in IPv4 addresses"
+            },
+            {
+                "title": "CVE-2021-33203",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33203",
+                "description": "Potential directory traversal via admindocs"
+            }
+        ],
+        "affected_packages": [
+            "python3-django",
+            "python-django"
+        ]
+    },
+    {
         "title": "USN-4974-1: Lasso vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4974-1",
         "cves": [
