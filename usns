@@ -1,5 +1,87 @@
 [
     {
+        "title": "USN-4982-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4982-1",
+        "cves": [
+            {
+                "title": "CVE-2021-28950",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28950",
+                "description": "An issue was discovered in fs/fuse/fuse_i.h in the Linux kernel before 5.11.8. A \"stall on CPU\" can occur because a retry loop continually finds the same bad inode, aka CID-775c5033a0d1."
+            },
+            {
+                "title": "CVE-2021-28972",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28972",
+                "description": "In drivers/pci/hotplug/rpadlpar_sysfs.c in the Linux kernel through 5.11.8, the RPA PCI Hotplug driver has a user-tolerable buffer overflow when writing a new device name to the driver from userspace, allowing userspace to write data to the kernel stack frame directly. This occurs because add_slot_store and remove_slot_store mishandle drc_name '\\0' termination, aka CID-cc7a0bb058b8."
+            },
+            {
+                "title": "CVE-2021-31916",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31916",
+                "description": "An out-of-bounds (OOB) memory write flaw was found in list_devices in drivers/md/dm-ioctl.c in the Multi-device driver module in the Linux kernel before 5.12. A bound check failure allows an attacker with special user (CAP_SYS_ADMIN) privilege to gain access to out-of-bounds memory leading to a system crash or a leak of internal kernel information. The highest threat from this vulnerability is to system availability."
+            },
+            {
+                "title": "CVE-2021-28964",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28964",
+                "description": "A race condition was discovered in get_old_root in fs/btrfs/ctree.c in the Linux kernel through 5.11.8. It allows attackers to cause a denial of service (BUG) because of a lack of locking on an extent buffer before a cloning operation, aka CID-dbcc7d57bffc."
+            },
+            {
+                "title": "CVE-2021-29647",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29647",
+                "description": "An issue was discovered in the Linux kernel before 5.11.11. qrtr_recvmsg in net/qrtr/qrtr.c allows attackers to obtain sensitive information from kernel memory because of a partially uninitialized data structure, aka CID-50535249f624."
+            },
+            {
+                "title": "CVE-2020-25670",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25670",
+                "description": "A vulnerability was found in Linux Kernel where refcount leak in llcp_sock_bind() causing use-after-free which might lead to privilege escalations."
+            },
+            {
+                "title": "CVE-2021-3483",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3483",
+                "description": "A flaw was found in the Nosy driver in the Linux kernel. This issue allows a device to be inserted twice into a doubly-linked list, leading to a use-after-free when one of these devices is removed. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability. Versions before kernel 5.12-rc6 are affected"
+            },
+            {
+                "title": "CVE-2020-25673",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25673",
+                "description": "A vulnerability was found in Linux kernel where non-blocking socket in llcp_sock_connect() leads to leak and eventually hanging-up the system."
+            },
+            {
+                "title": "CVE-2021-28688",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28688",
+                "description": "The fix for XSA-365 includes initialization of pointers such that subsequent cleanup code wouldn't use uninitialized or stale values. This initialization went too far and may under certain conditions also overwrite pointers which are in need of cleaning up. The lack of cleanup would result in leaking persistent grants. The leak in turn would prevent fully cleaning up after a respective guest has died, leaving around zombie domains. All Linux versions having the fix for XSA-365 applied are vulnerable. XSA-365 was classified to affect versions back to at least 3.11."
+            },
+            {
+                "title": "CVE-2020-25671",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25671",
+                "description": "A vulnerability was found in Linux Kernel, where a refcount leak in llcp_sock_connect() causing use-after-free which might lead to privilege escalations."
+            },
+            {
+                "title": "CVE-2020-25672",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25672",
+                "description": "A memory leak vulnerability was found in Linux kernel in llcp_sock_connect"
+            },
+            {
+                "title": "CVE-2021-28971",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28971",
+                "description": "In intel_pmu_drain_pebs_nhm in arch/x86/events/intel/ds.c in the Linux kernel through 5.11.8 on some Haswell CPUs, userspace applications (such as perf-fuzzer) can cause a system crash because the PEBS status in a PEBS record is mishandled, aka CID-d88d05a9e0b6."
+            },
+            {
+                "title": "CVE-2021-29264",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29264",
+                "description": "An issue was discovered in the Linux kernel through 5.11.10. drivers/net/ethernet/freescale/gianfar.c in the Freescale Gianfar Ethernet driver allows attackers to cause a system crash because a negative fragment size is calculated in situations involving an rx queue overrun when jumbo packets are used and NAPI is enabled, aka CID-d8861bab48b6."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-gke-5.4",
+            "linux-image-oem",
+            "linux-image-aws",
+            "linux-image-kvm",
+            "linux-image-generic-lpae",
+            "linux-image-gcp",
+            "linux-image-5.4.0-74-generic",
+            "linux-image-lowlatency",
+            "linux-image-5.4.0-1016-gkeop"
+        ]
+    },
+    {
         "title": "USN-4981-1: Squid vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4981-1",
         "cves": [
