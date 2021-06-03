@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4980-1: polkit vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4980-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3560",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3560",
+                "description": "local privilege escalation using polkit_system_bus_name_get_creds_sync()"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4979-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4979-1",
         "cves": [
