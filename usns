@@ -1,5 +1,32 @@
 [
     {
+        "title": "USN-4983-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4983-1",
+        "cves": [
+            {
+                "title": "CVE-2021-29155",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29155",
+                "description": "An issue was discovered in the Linux kernel through 5.11.x. kernel/bpf/verifier.c performs undesirable out-of-bounds speculation on pointer arithmetic, leading to side-channel attacks that defeat Spectre mitigations and obtain sensitive information from kernel memory. Specifically, for sequences of pointer arithmetic operations, the pointer modification performed by the first operation is not correctly accounted for when restricting subsequent operations."
+            },
+            {
+                "title": "CVE-2021-3501",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3501",
+                "description": "A flaw was found in the Linux kernel in versions before 5.12. The value of internal.ndata, in the KVM API, is mapped to an array index, which can be updated by a user process at anytime which could lead to an out-of-bounds write. The highest threat from this vulnerability is to data integrity and system availability."
+            },
+            {
+                "title": "CVE-2021-31829",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31829",
+                "description": "kernel/bpf/verifier.c in the Linux kernel through 5.12.1 performs undesirable speculative loads, leading to disclosure of stack content via side-channel attacks, aka CID-801c6058d14a. The specific concern is not protecting the BPF stack area against speculative loads. Also, the BPF stack can contain uninitialized data that might represent sensitive information previously operated on by the kernel."
+            },
+            {
+                "title": "CVE-2021-33200",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33200",
+                "description": "An issue has been discovered in the Linux kernel that can be abused by unprivileged local users to escalate privileges. The BPF verifier computes limits to enforce on the pointer arithmetic operations in BPF programs; in a particular scenario these limits are computed incorrectly. When any incorrect limits are enforced, performing the pointer arithmetic operation may lead to out-of-bounds reads and writes in the kernel memory."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4982-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4982-1",
         "cves": [
