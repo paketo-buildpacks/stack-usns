@@ -21,7 +21,7 @@
             {
                 "title": "CVE-2021-33200",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33200",
-                "description": "An issue has been discovered in the Linux kernel that can be abused by unprivileged local users to escalate privileges. The BPF verifier computes limits to enforce on the pointer arithmetic operations in BPF programs; in a particular scenario these limits are computed incorrectly. When any incorrect limits are enforced, performing the pointer arithmetic operation may lead to out-of-bounds reads and writes in the kernel memory."
+                "description": "kernel/bpf/verifier.c in the Linux kernel through 5.12.7 enforces incorrect limits for pointer arithmetic operations, aka CID-bb01a1bba579. This can be abused to perform out-of-bounds reads and writes in kernel memory, leading to local privilege escalation to root. In particular, there is a corner case where the off reg causes a masking direction change, which then results in an incorrect final aux->alu_limit."
             }
         ],
         "affected_packages": []
