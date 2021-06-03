@@ -1,5 +1,49 @@
 [
     {
+        "title": "USN-4981-1: Squid vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4981-1",
+        "cves": [
+            {
+                "title": "CVE-2021-28651",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28651",
+                "description": "An issue was discovered in Squid before 4.15 and 5.x before 5.0.6. Due to a buffer-management bug, it allows a denial of service. When resolving a request with the urn: scheme, the parser leaks a small amount of memory. However, there is an unspecified attack methodology that can easily trigger a large amount of memory consumption."
+            },
+            {
+                "title": "CVE-2021-28652",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28652",
+                "description": "An issue was discovered in Squid before 4.15 and 5.x before 5.0.6. Due to incorrect parser validation, it allows a Denial of Service attack against the Cache Manager API. This allows a trusted client to trigger memory leaks that. over time, lead to a Denial of Service via an unspecified short query string. This attack is limited to clients with Cache Manager API access privilege."
+            },
+            {
+                "title": "CVE-2021-31806",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31806",
+                "description": "An issue was discovered in Squid before 4.15 and 5.x before 5.0.6. Due to a memory-management bug, it is vulnerable to a Denial of Service attack (against all clients using the proxy) via HTTP Range request processing."
+            },
+            {
+                "title": "CVE-2021-28662",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28662",
+                "description": "An issue was discovered in Squid 4.x before 4.15 and 5.x before 5.0.6. If a remote server sends a certain response header over HTTP or HTTPS, there is a denial of service. This header can plausibly occur in benign network traffic."
+            },
+            {
+                "title": "CVE-2021-33620",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33620",
+                "description": "Squid before 4.15 and 5.x before 5.0.6 allows remote servers to cause a denial of service (affecting availability to all clients) via an HTTP response. The issue trigger is a header that can be expected to exist in HTTP traffic without any malicious intent by the server."
+            },
+            {
+                "title": "CVE-2021-31808",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31808",
+                "description": "An issue was discovered in Squid before 4.15 and 5.x before 5.0.6. Due to an input-validation bug, it is vulnerable to a Denial of Service attack (against all clients using the proxy). A client sends an HTTP Range request to trigger this."
+            },
+            {
+                "title": "CVE-2021-31807",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31807",
+                "description": "Due to an incorrect memory management bug Squid is vulnerable to a Denial of Service attack against all clients using the proxy."
+            }
+        ],
+        "affected_packages": [
+            "squid"
+        ]
+    },
+    {
         "title": "USN-4980-1: polkit vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4980-1",
         "cves": [
