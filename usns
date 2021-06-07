@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-4937-2: GNOME Autoar regression",
+        "link": "https://ubuntu.com/security/notices/USN-4937-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1929304",
+                "link": "https://launchpad.net/bugs/1929304",
+                "description": "file-roller / gnome archive manager fails to extract"
+            }
+        ],
+        "affected_packages": [
+            "libgnome-autoar-gtk-0-0",
+            "libgnome-autoar-0-0"
+        ]
+    },
+    {
         "title": "USN-4969-3: DHCP regression",
         "link": "https://ubuntu.com/security/notices/USN-4969-3",
         "cves": [
