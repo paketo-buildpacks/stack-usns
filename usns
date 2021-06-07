@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-4969-3: DHCP regression",
+        "link": "https://ubuntu.com/security/notices/USN-4969-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1930917",
+                "link": "https://launchpad.net/bugs/1930917",
+                "description": "Latest isc-dhcp-server rejects proper dhcpd.conf"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4975-2: Django vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4975-2",
+        "cves": [
+            {
+                "title": "CVE-2021-33203",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33203",
+                "description": "Potential directory traversal via admindocs"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4984-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4984-1",
         "cves": [
