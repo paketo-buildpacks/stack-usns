@@ -212,6 +212,7 @@
             "linux-image-oem",
             "linux-image-aws",
             "linux-image-kvm",
+            "linux-image-raspi2",
             "linux-image-generic-lpae",
             "linux-image-gcp",
             "linux-image-5.4.0-74-generic",
