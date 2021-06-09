@@ -1,5 +1,34 @@
 [
     {
+        "title": "USN-4985-1: Intel Microcode vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4985-1",
+        "cves": [
+            {
+                "title": "CVE-2020-24512",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24512",
+                "description": "Observable timing discrepancy in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access."
+            },
+            {
+                "title": "CVE-2021-24489",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24489",
+                "description": "Incomplete cleanup in some Intel(R) VT-d products may allow an authenticated user to potentially enable escalation of privilege via local access."
+            },
+            {
+                "title": "CVE-2020-24513",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24513",
+                "description": "A potential domain-bypass transient execution vulnerability in some Intel Atom(R) Processors may allow an authenticated user to potentially enable information disclosure via local access."
+            },
+            {
+                "title": "CVE-2020-24511",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24511",
+                "description": "Improper isolation of shared resources in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access. Root Cause Summary: Microcode misconfiguration in some Intel processors may cause EIBRS mitigation (CVE-2017-5715) to be incomplete."
+            }
+        ],
+        "affected_packages": [
+            "intel-microcode"
+        ]
+    },
+    {
         "title": "USN-4937-2: GNOME Autoar regression",
         "link": "https://ubuntu.com/security/notices/USN-4937-2",
         "cves": [
