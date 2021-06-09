@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4986-2: rpcbind vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4986-2",
+        "cves": [
+            {
+                "title": "CVE-2017-8779",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-8779",
+                "description": "rpcbind through 0.2.4, LIBTIRPC through 1.0.1 and 1.0.2-rc through 1.0.2-rc3, and NTIRPC through 1.4.3 do not consider the maximum RPC data size during memory allocation for XDR strings, which allows remote attackers to cause a denial of service (memory consumption with no subsequent free) via a crafted UDP packet to port 111, aka rpcbomb."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4986-1: rpcbind vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4986-1",
         "cves": [
