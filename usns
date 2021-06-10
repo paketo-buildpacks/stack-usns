@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-4986-3: rpcbind regression",
+        "link": "https://ubuntu.com/security/notices/USN-4986-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1931507",
+                "link": "https://launchpad.net/bugs/1931507",
+                "description": "rpcbind failing on 0.2.3-0.6ubuntu0.18.04.2"
+            }
+        ],
+        "affected_packages": [
+            "rpcbind"
+        ]
+    },
+    {
         "title": "USN-4971-2: libwebp vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4971-2",
         "cves": [
