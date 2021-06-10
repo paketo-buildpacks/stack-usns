@@ -1,5 +1,31 @@
 [
     {
+        "title": "USN-4986-4: rpcbind regression",
+        "link": "https://ubuntu.com/security/notices/USN-4986-4",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1931507",
+                "link": "https://launchpad.net/bugs/1931507",
+                "description": "rpcbind failing on 0.2.3-0.6ubuntu0.18.04.2"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-4987-1: ExifTool vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4987-1",
+        "cves": [
+            {
+                "title": "CVE-2021-22204",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22204",
+                "description": "Improper neutralization of user data in the DjVu file format in ExifTool versions 7.44 and up allows arbitrary code execution when parsing the malicious image"
+            }
+        ],
+        "affected_packages": [
+            "libimage-exiftool-perl"
+        ]
+    },
+    {
         "title": "USN-4986-3: rpcbind regression",
         "link": "https://ubuntu.com/security/notices/USN-4986-3",
         "cves": [
