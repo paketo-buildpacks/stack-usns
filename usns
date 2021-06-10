@@ -1,5 +1,62 @@
 [
     {
+        "title": "USN-4971-2: libwebp vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4971-2",
+        "cves": [
+            {
+                "title": "CVE-2020-36331",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36331",
+                "description": "A flaw was found in libwebp in versions before 1.0.1. An out-of-bounds read was found in function ChunkAssignData. The highest threat from this vulnerability is to data confidentiality and to the service availability."
+            },
+            {
+                "title": "CVE-2018-25014",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-25014",
+                "description": "A flaw was found in libwebp in versions before 1.0.1. An unitialized variable is used in function ReadSymbol. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+            },
+            {
+                "title": "CVE-2020-36328",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36328",
+                "description": "A flaw was found in libwebp in versions before 1.0.1. A heap-based buffer overflow in function WebPDecodeRGBInto is possible due to an invalid check for buffer size. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+            },
+            {
+                "title": "CVE-2018-25012",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-25012",
+                "description": "A flaw was found in libwebp in versions before 1.0.1. An out-of-bounds read was found in function WebPMuxCreateInternal. The highest threat from this vulnerability is to data confidentiality and to the service availability."
+            },
+            {
+                "title": "CVE-2018-25009",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-25009",
+                "description": "A flaw was found in libwebp in versions before 1.0.1. An out-of-bounds read was found in function WebPMuxCreateInternal. The highest threat from this vulnerability is to data confidentiality and to the service availability."
+            },
+            {
+                "title": "CVE-2018-25013",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-25013",
+                "description": "A flaw was found in libwebp in versions before 1.0.1. An out-of-bounds read was found in function ShiftBytes. The highest threat from this vulnerability is to data confidentiality and to the service availability."
+            },
+            {
+                "title": "CVE-2018-25011",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-25011",
+                "description": "A flaw was found in libwebp in versions before 1.0.1. A heap-based buffer overflow was found in PutLE16(). The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+            },
+            {
+                "title": "CVE-2018-25010",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-25010",
+                "description": "A flaw was found in libwebp in versions before 1.0.1. An out-of-bounds read was found in function ApplyFilter. The highest threat from this vulnerability is to data confidentiality and to the service availability."
+            },
+            {
+                "title": "CVE-2020-36330",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36330",
+                "description": "A flaw was found in libwebp in versions before 1.0.1. An out-of-bounds read was found in function ChunkVerifyAndAssign. The highest threat from this vulnerability is to data confidentiality and to the service availability."
+            },
+            {
+                "title": "CVE-2020-36329",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36329",
+                "description": "A flaw was found in libwebp in versions before 1.0.1. A use-after-free was found due to a thread being killed too early. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4986-2: rpcbind vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4986-2",
         "cves": [
