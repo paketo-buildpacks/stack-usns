@@ -183,7 +183,7 @@ arbitrary code.
 						Description: "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login &msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service.",
 					},
 				},
-				AffectedPackages: []string{"quassel-core", "quassel"},
+				AffectedPackages: []string{"quassel", "quassel-core"},
 			},
 			{
 				Title: "USN-4599-1: Firefox vulnerabilities",
@@ -294,7 +294,7 @@ arbitrary code.
 						Description: "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login &msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service.",
 					},
 				},
-				AffectedPackages: []string{"quassel-core", "quassel"},
+				AffectedPackages: []string{"quassel", "quassel-core"},
 			},
 			{
 				Title: "USN-4499-1: MilkyTracker vulnerabilities",
@@ -465,7 +465,7 @@ arbitrary code.
 							Description: "",
 						},
 					},
-					AffectedPackages: []string{"quassel-core", "quassel"},
+					AffectedPackages: []string{"quassel", "quassel-core"},
 				},
 			}
 
@@ -493,7 +493,7 @@ arbitrary code.
 						Description: "A NULL Pointer Dereference of CWE-476 exists in quassel version 0.12.4 in the quasselcore void CoreAuthHandler::handle(const Login &msg) coreauthhandler.cpp line 235 that allows an attacker to cause a denial of service.",
 					},
 				},
-				AffectedPackages: []string{"quassel-core", "quassel"},
+				AffectedPackages: []string{"quassel", "quassel-core"},
 			}
 
 			content, err := ioutil.ReadFile(usnList.Name())
