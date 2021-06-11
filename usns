@@ -132,11 +132,6 @@
                 "description": "Observable timing discrepancy in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access."
             },
             {
-                "title": "CVE-2021-24489",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24489",
-                "description": "Incomplete cleanup in some Intel(R) VT-d products may allow an authenticated user to potentially enable escalation of privilege via local access."
-            },
-            {
                 "title": "CVE-2020-24513",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24513",
                 "description": "Domain-bypass transient execution vulnerability in some Intel Atom(R) Processors may allow an authenticated user to potentially enable information disclosure via local access."
@@ -145,6 +140,11 @@
                 "title": "CVE-2020-24511",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24511",
                 "description": "Improper isolation of shared resources in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access."
+            },
+            {
+                "title": "CVE-2020-24489",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24489",
+                "description": "Incomplete cleanup in some Intel(R) VT-d products may allow an authenticated user to potentially enable escalation of privilege via local access."
             }
         ],
         "affected_packages": [
