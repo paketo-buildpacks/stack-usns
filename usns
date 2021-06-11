@@ -139,12 +139,12 @@
             {
                 "title": "CVE-2020-24513",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24513",
-                "description": "A potential domain-bypass transient execution vulnerability in some Intel Atom(R) Processors may allow an authenticated user to potentially enable information disclosure via local access."
+                "description": "Domain-bypass transient execution vulnerability in some Intel Atom(R) Processors may allow an authenticated user to potentially enable information disclosure via local access."
             },
             {
                 "title": "CVE-2020-24511",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24511",
-                "description": "Improper isolation of shared resources in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access. Root Cause Summary: Microcode misconfiguration in some Intel processors may cause EIBRS mitigation (CVE-2017-5715) to be incomplete."
+                "description": "Improper isolation of shared resources in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access."
             }
         ],
         "affected_packages": [
