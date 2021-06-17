@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-4990-1: Nettle vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4990-1",
+        "cves": [
+            {
+                "title": "CVE-2018-16869",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-16869",
+                "description": "A Bleichenbacher type side-channel based padding oracle attack was found in the way nettle handles endian conversion of RSA decrypted PKCS#1 v1.5 data. An attacker who is able to run a process on the same physical core as the victim process, could use this flaw extract plaintext or in some cases downgrade any TLS connections to a vulnerable server."
+            },
+            {
+                "title": "CVE-2021-3580",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3580",
+                "description": "Remote crash in RSA decryption via manipulated ciphertext"
+            }
+        ],
+        "affected_packages": [
+            "libnettle6"
+        ]
+    },
+    {
         "title": "USN-4989-2: BlueZ vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4989-2",
         "cves": [
