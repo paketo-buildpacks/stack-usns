@@ -35,10 +35,10 @@
             }
         ],
         "affected_packages": [
-            "grub-efi-arm64-bin",
             "grub-efi-amd64-bin",
-            "grub-efi-arm64-signed",
-            "grub-efi-amd64-signed"
+            "grub-efi-amd64-signed",
+            "grub-efi-arm64-bin",
+            "grub-efi-arm64-signed"
         ]
     },
     {
