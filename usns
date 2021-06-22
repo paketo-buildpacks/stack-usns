@@ -1,5 +1,40 @@
 [
     {
+        "title": "USN-4996-1: OpenEXR vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4996-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3605",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3605",
+                "description": "Heap buffer overflow in the rleUncompress function"
+            },
+            {
+                "title": "CVE-2021-23215",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23215",
+                "description": "An integer overflow leading to a heap-buffer overflow was found in the DwaCompressor of OpenEXR in versions before 3.0.1. An attacker could use this flaw to crash an application compiled with OpenEXR."
+            },
+            {
+                "title": "CVE-2021-20296",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20296",
+                "description": "A flaw was found in OpenEXR in versions before 3.0.0-beta. A crafted input file supplied by an attacker, that is processed by the Dwa decompression functionality of OpenEXR's IlmImf library, could cause a NULL pointer dereference. The highest threat from this vulnerability is to system availability."
+            },
+            {
+                "title": "CVE-2021-3598",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3598",
+                "description": "Heap-buffer-overflow found in function readChars in ImfIO.h."
+            },
+            {
+                "title": "CVE-2021-26260",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-26260",
+                "description": "An integer overflow leading to a heap-buffer overflow was found in the DwaCompressor of OpenEXR in versions before 3.0.1. An attacker could use this flaw to crash an application compiled with OpenEXR. This is a different flaw from CVE-2021-23215."
+            }
+        ],
+        "affected_packages": [
+            "openexr",
+            "libopenexr22"
+        ]
+    },
+    {
         "title": "USN-4994-2: Apache HTTP Server vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4994-2",
         "cves": [
