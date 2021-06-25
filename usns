@@ -1,5 +1,114 @@
 [
     {
+        "title": "USN-4995-2: Thunderbird vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4995-2",
+        "cves": [
+            {
+                "title": "CVE-2021-29948",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29948",
+                "description": "Mozilla: Race condition when reading from disk while verifying signatures"
+            },
+            {
+                "title": "CVE-2021-29957",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29957",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23992",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23992",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23961",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23961",
+                "description": "Further techniques that built on the slipstream research combined with a malicious webpage could have exposed both an internal network's hosts as well as services running on the user's local machine. This vulnerability affects Firefox < 85."
+            },
+            {
+                "title": "CVE-2021-23982",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23982",
+                "description": "Using techniques that built on the slipstream research, a malicious webpage could have scanned both an internal network's hosts as well as services running on the user's local machine utilizing WebRTC connections. This vulnerability affects Firefox ESR < 78.9, Thunderbird < 78.9, and Firefox < 87."
+            },
+            {
+                "title": "CVE-2021-23999",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23999",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23998",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23998",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23984",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23984",
+                "description": "A malicious extension could have opened a popup window lacking an address bar. The title of the popup lacking an address bar should not be fully controllable, but in this situation was. This could have been used to spoof a website and attempt to trick the user into providing credentials. This vulnerability affects Firefox ESR < 78.9, Thunderbird < 78.9, and Firefox < 87."
+            },
+            {
+                "title": "CVE-2021-24002",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24002",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23995",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23995",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23993",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23993",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-23981",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23981",
+                "description": "A texture upload of a Pixel Buffer Object could have confused the WebGL code to skip binding the buffer used to unpack it, resulting in memory corruption and a potentially exploitable information leak or crash. This vulnerability affects Firefox ESR < 78.9, Thunderbird < 78.9, and Firefox < 87."
+            },
+            {
+                "title": "CVE-2021-29946",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29946",
+                "description": "Mozilla: Port blocking could be bypassed"
+            },
+            {
+                "title": "CVE-2021-29949",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29949",
+                "description": "thunderbird security update"
+            },
+            {
+                "title": "CVE-2021-23987",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23987",
+                "description": "Mozilla developers and community members reported memory safety bugs present in Firefox 86 and Firefox ESR 78.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR < 78.9, Thunderbird < 78.9, and Firefox < 87."
+            },
+            {
+                "title": "CVE-2021-23994",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23994",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29956",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29956",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29945",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29945",
+                "description": "Mozilla: Incorrect size computation in WebAssembly JIT could lead to null-reads"
+            },
+            {
+                "title": "CVE-2021-23991",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23991",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29967",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29967",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            }
+        ],
+        "affected_packages": [
+            "thunderbird"
+        ]
+    },
+    {
         "title": "USN-4998-1: Ceph vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4998-1",
         "cves": [
