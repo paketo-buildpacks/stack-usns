@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4905-2: X.Org X Server vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4905-2",
+        "cves": [
+            {
+                "title": "CVE-2021-3472",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3472",
+                "description": "A flaw was found in xorg-x11-server in versions before 1.20.11. An integer underflow can occur in xserver which can lead to a local privilege escalation. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4997-2: Linux kernel (KVM) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4997-2",
         "cves": [
