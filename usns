@@ -192,17 +192,17 @@
             {
                 "title": "CVE-2021-29948",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29948",
-                "description": "Mozilla: Race condition when reading from disk while verifying signatures"
+                "description": "Signatures are written to disk before and read during verification, which might be subject to a race condition when a malicious local process or user is replacing the file. This vulnerability affects Thunderbird < 78.10."
             },
             {
                 "title": "CVE-2021-29957",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29957",
-                "description": "[Unknown description]"
+                "description": "If a MIME encoded email contains an OpenPGP inline signed or encrypted message part, but also contains an additional unprotected part, Thunderbird did not indicate that only parts of the message are protected. This vulnerability affects Thunderbird < 78.10.2."
             },
             {
                 "title": "CVE-2021-23992",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23992",
-                "description": "[Unknown description]"
+                "description": "Thunderbird did not check if the user ID associated with an OpenPGP key has a valid self signature. An attacker may create a crafted version of an OpenPGP key, by either replacing the original user ID, or by adding another user ID. If Thunderbird imports and accepts the crafted key, the Thunderbird user may falsely conclude that the false user ID belongs to the correspondent. This vulnerability affects Thunderbird < 78.9.1."
             },
             {
                 "title": "CVE-2021-23961",
@@ -212,82 +212,82 @@
             {
                 "title": "CVE-2021-23982",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23982",
-                "description": "Using techniques that built on the slipstream research, a malicious webpage could have scanned both an internal network's hosts as well as services running on the user's local machine utilizing WebRTC connections. This vulnerability affects Firefox ESR < 78.9, Thunderbird < 78.9, and Firefox < 87."
+                "description": "Using techniques that built on the slipstream research, a malicious webpage could have scanned both an internal network's hosts as well as services running on the user's local machine utilizing WebRTC connections. This vulnerability affects Firefox ESR < 78.9, Firefox < 87, and Thunderbird < 78.9."
             },
             {
                 "title": "CVE-2021-23999",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23999",
-                "description": "[Unknown description]"
+                "description": "If a Blob URL was loaded through some unusual user interaction, it could have been loaded by the System Principal and granted additional privileges that should not be granted to web content. This vulnerability affects Firefox ESR < 78.10, Thunderbird < 78.10, and Firefox < 88."
             },
             {
                 "title": "CVE-2021-23998",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23998",
-                "description": "[Unknown description]"
+                "description": "Through complicated navigations with new windows, an HTTP page could have inherited a secure lock icon from an HTTPS page. This vulnerability affects Firefox ESR < 78.10, Thunderbird < 78.10, and Firefox < 88."
             },
             {
                 "title": "CVE-2021-23984",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23984",
-                "description": "A malicious extension could have opened a popup window lacking an address bar. The title of the popup lacking an address bar should not be fully controllable, but in this situation was. This could have been used to spoof a website and attempt to trick the user into providing credentials. This vulnerability affects Firefox ESR < 78.9, Thunderbird < 78.9, and Firefox < 87."
+                "description": "A malicious extension could have opened a popup window lacking an address bar. The title of the popup lacking an address bar should not be fully controllable, but in this situation was. This could have been used to spoof a website and attempt to trick the user into providing credentials. This vulnerability affects Firefox ESR < 78.9, Firefox < 87, and Thunderbird < 78.9."
             },
             {
                 "title": "CVE-2021-24002",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24002",
-                "description": "[Unknown description]"
+                "description": "When a user clicked on an FTP URL containing encoded newline characters (%0A and %0D), the newlines would have been interpreted as such and allowed arbitrary commands to be sent to the FTP server. This vulnerability affects Firefox ESR < 78.10, Thunderbird < 78.10, and Firefox < 88."
             },
             {
                 "title": "CVE-2021-23995",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23995",
-                "description": "[Unknown description]"
+                "description": "When Responsive Design Mode was enabled, it used references to objects that were previously freed. We presume that with enough effort this could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR < 78.10, Thunderbird < 78.10, and Firefox < 88."
             },
             {
                 "title": "CVE-2021-23993",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23993",
-                "description": "[Unknown description]"
+                "description": "An attacker may perform a DoS attack to prevent a user from sending encrypted email to a correspondent. If an attacker creates a crafted OpenPGP key with a subkey that has an invalid self signature, and the Thunderbird user imports the crafted key, then Thunderbird may try to use the invalid subkey, but the RNP library rejects it from being used, causing encryption to fail. This vulnerability affects Thunderbird < 78.9.1."
             },
             {
                 "title": "CVE-2021-23981",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23981",
-                "description": "A texture upload of a Pixel Buffer Object could have confused the WebGL code to skip binding the buffer used to unpack it, resulting in memory corruption and a potentially exploitable information leak or crash. This vulnerability affects Firefox ESR < 78.9, Thunderbird < 78.9, and Firefox < 87."
+                "description": "A texture upload of a Pixel Buffer Object could have confused the WebGL code to skip binding the buffer used to unpack it, resulting in memory corruption and a potentially exploitable information leak or crash. This vulnerability affects Firefox ESR < 78.9, Firefox < 87, and Thunderbird < 78.9."
             },
             {
                 "title": "CVE-2021-29946",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29946",
-                "description": "Mozilla: Port blocking could be bypassed"
+                "description": "Ports that were written as an integer overflow above the bounds of a 16-bit integer could have bypassed port blocking restrictions when used in the Alt-Svc header. This vulnerability affects Firefox ESR < 78.10, Thunderbird < 78.10, and Firefox < 88."
             },
             {
                 "title": "CVE-2021-29949",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29949",
-                "description": "thunderbird security update"
+                "description": "When loading the shared library that provides the OTR protocol implementation, Thunderbird will initially attempt to open it using a filename that isn't distributed by Thunderbird. If a computer has already been infected with a malicious library of the alternative filename, and the malicious library has been copied to a directory that is contained in the search path for executable libraries, then Thunderbird will load the incorrect library. This vulnerability affects Thunderbird < 78.9.1."
             },
             {
                 "title": "CVE-2021-23987",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23987",
-                "description": "Mozilla developers and community members reported memory safety bugs present in Firefox 86 and Firefox ESR 78.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR < 78.9, Thunderbird < 78.9, and Firefox < 87."
+                "description": "Mozilla developers and community members reported memory safety bugs present in Firefox 86 and Firefox ESR 78.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR < 78.9, Firefox < 87, and Thunderbird < 78.9."
             },
             {
                 "title": "CVE-2021-23994",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23994",
-                "description": "[Unknown description]"
+                "description": "A WebGL framebuffer was not initialized early enough, resulting in memory corruption and an out of bound write. This vulnerability affects Firefox ESR < 78.10, Thunderbird < 78.10, and Firefox < 88."
             },
             {
                 "title": "CVE-2021-29956",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29956",
-                "description": "[Unknown description]"
+                "description": "OpenPGP secret keys that were imported using Thunderbird version 78.8.1 up to version 78.10.1 were stored unencrypted on the user's local disk. The master password protection was inactive for those keys. Version 78.10.2 will restore the protection mechanism for newly imported keys, and will automatically protect keys that had been imported using affected Thunderbird versions. This vulnerability affects Thunderbird < 78.10.2."
             },
             {
                 "title": "CVE-2021-29945",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29945",
-                "description": "Mozilla: Incorrect size computation in WebAssembly JIT could lead to null-reads"
+                "description": "The WebAssembly JIT could miscalculate the size of a return type, which could lead to a null read and result in a crash. *Note: This issue only affected x86-32 platforms. Other platforms are unaffected.*. This vulnerability affects Firefox ESR < 78.10, Thunderbird < 78.10, and Firefox < 88."
             },
             {
                 "title": "CVE-2021-23991",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23991",
-                "description": "[Unknown description]"
+                "description": "If a Thunderbird user has previously imported Alice's OpenPGP key, and Alice has extended the validity period of her key, but Alice's updated key has not yet been imported, an attacker may send an email containing a crafted version of Alice's key with an invalid subkey, Thunderbird might subsequently attempt to use the invalid subkey, and will fail to send encrypted email to Alice. This vulnerability affects Thunderbird < 78.9.1."
             },
             {
                 "title": "CVE-2021-29967",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29967",
-                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+                "description": "Mozilla developers reported memory safety bugs present in Firefox 88 and Firefox ESR 78.11. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Thunderbird < 78.11, Firefox < 89, and Firefox ESR < 78.11."
             }
         ],
         "affected_packages": [
