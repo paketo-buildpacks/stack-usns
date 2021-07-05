@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5005-1: DjVuLibre vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5005-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3630",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3630",
+                "description": "An out-of-bounds write vulnerability was found in DjVuLibre in DJVU::DjVuTXT::decode() in DjVuText.cpp via a crafted djvu file which may lead to crash and segmentation fault. This flaw affects DjVuLibre versions prior to 3.5.28."
+            }
+        ],
+        "affected_packages": [
+            "libdjvulibre21"
+        ]
+    },
+    {
         "title": "USN-4905-2: X.Org X Server vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4905-2",
         "cves": [
