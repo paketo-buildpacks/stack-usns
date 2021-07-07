@@ -1,5 +1,25 @@
 [
     {
+        "title": "USN-5008-1: Avahi vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5008-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3468",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3468",
+                "description": "A flaw was found in avahi in versions 0.6 up to 0.8. The event used to signal the termination of the client connection on the avahi Unix socket is not correctly handled in the client_work function, allowing a local attacker to trigger an infinite loop. The highest threat from this vulnerability is to the availability of the avahi service, which becomes unresponsive after this flaw is triggered."
+            },
+            {
+                "title": "CVE-2021-3502",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3502",
+                "description": "A flaw was found in avahi 0.8-5. A reachable assertion is present in avahi_s_host_name_resolver_start function allowing a local attacker to crash the avahi service by requesting hostname resolutions through the avahi socket or dbus methods for invalid hostnames. The highest threat from this vulnerability is to the service availability."
+            }
+        ],
+        "affected_packages": [
+            "libavahi-core7",
+            "avahi-daemon"
+        ]
+    },
+    {
         "title": "USN-5006-1: PHP vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5006-1",
         "cves": [
