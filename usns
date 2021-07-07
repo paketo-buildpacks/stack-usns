@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5008-2: Avahi vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5008-2",
+        "cves": [
+            {
+                "title": "CVE-2021-3468",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3468",
+                "description": "A flaw was found in avahi in versions 0.6 up to 0.8. The event used to signal the termination of the client connection on the avahi Unix socket is not correctly handled in the client_work function, allowing a local attacker to trigger an infinite loop. The highest threat from this vulnerability is to the availability of the avahi service, which becomes unresponsive after this flaw is triggered."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5008-1: Avahi vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5008-1",
         "cves": [
