@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5007-1: libuv vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5007-1",
+        "cves": [
+            {
+                "title": "CVE-2021-22918",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22918",
+                "description": "An out-of-bound read can occur when uv__idna_toascii() is used to convert strings to ASCII. The pointer p is read and increased without checking whether it is beyond pe, with the latter holding a pointer to the end of the buffer. This can lead to information disclosures or crashes. This function can be triggered via uv_getaddrinfo().  nodejs seems to use libuv and is possibly affected by this as well."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5005-1: DjVuLibre vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5005-1",
         "cves": [
