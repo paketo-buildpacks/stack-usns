@@ -38,14 +38,14 @@ func main() {
 		os.Exit(1)
 	}
 
-	err = updateUSNs(opts.USNListPath, opts.RSSURL)
+	err = UpdateUSNs(opts.USNListPath, opts.RSSURL)
 	if err != nil {
 		_, _ = fmt.Fprintf(os.Stderr, "Error updating USNs: %s\n", err.Error())
 		os.Exit(1)
 	}
 }
 
-func updateUSNs(usnListPath, rssURL string) error {
+func UpdateUSNs(usnListPath, rssURL string) error {
 	feedUSNs, err := getUSNsFromFeed(rssURL)
 	if err != nil {
 		_, _ = fmt.Fprintf(os.Stderr, "Error finding new USNs: %s\n", err.Error())
