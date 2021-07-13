@@ -1,5 +1,37 @@
 [
     {
+        "title": "USN-5006-2: PHP vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5006-2",
+        "cves": [
+            {
+                "title": "CVE-2021-21702",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21702",
+                "description": "In PHP versions 7.3.x below 7.3.27, 7.4.x below 7.4.15 and 8.0.x below 8.0.2, when using SOAP extension to connect to a SOAP server, a malicious SOAP server could return malformed XML data as a response that would cause PHP to access a null pointer and thus cause a crash."
+            },
+            {
+                "title": "CVE-2020-7071",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7071",
+                "description": "In PHP versions 7.3.x below 7.3.26, 7.4.x below 7.4.14 and 8.0.0, when validating URL with functions like filter_var($url, FILTER_VALIDATE_URL), PHP will accept an URL with invalid password as valid URL. This may lead to functions that rely on URL being valid to mis-parse the URL and produce wrong data as components of the URL."
+            },
+            {
+                "title": "CVE-2021-21705",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21705",
+                "description": "SSRF bypass in FILTER_VALIDATE_URL"
+            },
+            {
+                "title": "CVE-2020-7068",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7068",
+                "description": "In PHP versions 7.2.x below 7.2.33, 7.3.x below 7.3.21 and 7.4.x below 7.4.9, while processing PHAR files using phar extension, phar_parse_zipfile could be tricked into accessing freed memory, which could lead to a crash or information disclosure."
+            },
+            {
+                "title": "CVE-2021-21704",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21704",
+                "description": "Multiple Security vulnerabilities in pdo_firebase module"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5008-2: Avahi vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5008-2",
         "cves": [
