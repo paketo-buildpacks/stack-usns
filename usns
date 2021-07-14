@@ -107,7 +107,7 @@
             {
                 "title": "CVE-2021-22918",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22918",
-                "description": "An out-of-bound read can occur when uv__idna_toascii() is used to convert strings to ASCII. The pointer p is read and increased without checking whether it is beyond pe, with the latter holding a pointer to the end of the buffer. This can lead to information disclosures or crashes. This function can be triggered via uv_getaddrinfo().  nodejs seems to use libuv and is possibly affected by this as well."
+                "description": "Node.js before 16.4.1, 14.17.2, 12.22.2 is vulnerable to an out-of-bounds read when uv__idna_toascii() is used to convert strings to ASCII. The pointer p is read and increased without checking whether it is beyond pe, with the latter holding a pointer to the end of the buffer. This can lead to information disclosures or crashes. This function can be triggered via uv_getaddrinfo()."
             }
         ],
         "affected_packages": []
