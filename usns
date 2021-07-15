@@ -1,5 +1,163 @@
 [
     {
+        "title": "USN-5010-1: QEMU vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5010-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3594",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3594",
+                "description": "An invalid pointer initialization issue was found in the SLiRP networking implementation of QEMU. The flaw exists in the udp_input() function and could occur while processing a udp packet that is smaller than the size of the 'udphdr' structure. This issue may lead to out-of-bounds read access or indirect host memory disclosure to the guest. The highest threat from this vulnerability is to data confidentiality. This flaw affects libslirp versions prior to 4.6.0."
+            },
+            {
+                "title": "CVE-2021-3546",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3546",
+                "description": "A flaw was found in vhost-user-gpu of QEMU in versions up to and including 6.0. An out-of-bounds write vulnerability can allow a malicious guest to crash the QEMU process on the host resulting in a denial of service or potentially execute arbitrary code on the host with the privileges of the QEMU process. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+            },
+            {
+                "title": "CVE-2021-3545",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3545",
+                "description": "An information disclosure vulnerability was found in the virtio vhost-user GPU device (vhost-user-gpu) of QEMU in versions up to and including 6.0. The flaw exists in virgl_cmd_get_capset_info() in contrib/vhost-user-gpu/virgl.c and could occur due to the read of uninitialized memory. A malicious guest could exploit this issue to leak memory from the host."
+            },
+            {
+                "title": "CVE-2020-35504",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35504",
+                "description": "A NULL pointer dereference flaw was found in the SCSI emulation support of QEMU in versions before 6.0.0. This flaw allows a privileged guest user to crash the QEMU process on the host, resulting in a denial of service. The highest threat from this vulnerability is to system availability."
+            },
+            {
+                "title": "CVE-2020-15469",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15469",
+                "description": "In QEMU 4.2.0, a MemoryRegionOps object may lack read/write callback methods, leading to a NULL pointer dereference."
+            },
+            {
+                "title": "CVE-2021-3593",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3593",
+                "description": "An invalid pointer initialization issue was found in the SLiRP networking implementation of QEMU. The flaw exists in the udp6_input() function and could occur while processing a udp packet that is smaller than the size of the 'udphdr' structure. This issue may lead to out-of-bounds read access or indirect host memory disclosure to the guest. The highest threat from this vulnerability is to data confidentiality. This flaw affects libslirp versions prior to 4.6.0."
+            },
+            {
+                "title": "CVE-2021-3416",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3416",
+                "description": "A potential stack overflow via infinite loop issue was found in various NIC emulators of QEMU in versions up to and including 5.2.0. The issue occurs in loopback mode of a NIC wherein reentrant DMA checks get bypassed. A guest user/process may use this flaw to consume CPU cycles or crash the QEMU process on the host resulting in DoS scenario."
+            },
+            {
+                "title": "CVE-2021-3582",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3582",
+                "description": "hw/rdma: Fix possible mremap overflow in the pvrdma device"
+            },
+            {
+                "title": "CVE-2021-3544",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3544",
+                "description": "Several memory leaks were found in the virtio vhost-user GPU device (vhost-user-gpu) of QEMU in versions up to and including 6.0. They exist in contrib/vhost-user-gpu/vhost-user-gpu.c and contrib/vhost-user-gpu/virgl.c due to improper release of memory (i.e., free) after effective lifetime."
+            },
+            {
+                "title": "CVE-2021-20257",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20257",
+                "description": "net: e1000: infinite loop while processing transmit descriptors"
+            },
+            {
+                "title": "CVE-2020-29443",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29443",
+                "description": "ide_atapi_cmd_reply_end in hw/ide/atapi.c in QEMU 5.1.0 allows out-of-bounds read access because a buffer index is not validated."
+            },
+            {
+                "title": "CVE-2021-3527",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3527",
+                "description": "A flaw was found in the USB redirector device (usb-redir) of QEMU. Small USB packets are combined into a single, large transfer request, to reduce the overhead and improve performance. The combined size of the bulk transfer is used to dynamically allocate a variable length array (VLA) on the stack without proper validation. Since the total size is not bounded, a malicious guest could use this flaw to influence the array length and cause the QEMU process to perform an excessive allocation on the stack, resulting in a denial of service."
+            },
+            {
+                "title": "CVE-2021-3607",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3607",
+                "description": "pvrdma: unchecked malloc size due to integer overflow in init_dev_ring()"
+            },
+            {
+                "title": "CVE-2021-3595",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3595",
+                "description": "An invalid pointer initialization issue was found in the SLiRP networking implementation of QEMU. The flaw exists in the tftp_input() function and could occur while processing a udp packet that is smaller than the size of the 'tftp_t' structure. This issue may lead to out-of-bounds read access or indirect host memory disclosure to the guest. The highest threat from this vulnerability is to data confidentiality. This flaw affects libslirp versions prior to 4.6.0."
+            },
+            {
+                "title": "CVE-2020-35505",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35505",
+                "description": "A NULL pointer dereference flaw was found in the am53c974 SCSI host bus adapter emulation of QEMU in versions before 6.0.0. This issue occurs while handling the 'Information Transfer' command. This flaw allows a privileged guest user to crash the QEMU process on the host, resulting in a denial of service. The highest threat from this vulnerability is to system availability."
+            },
+            {
+                "title": "CVE-2021-3392",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3392",
+                "description": "A use-after-free flaw was found in the MegaRAID emulator of QEMU. This issue occurs while processing SCSI I/O requests in the case of an error mptsas_free_request() that does not dequeue the request object 'req' from a pending requests queue. This flaw allows a privileged guest user to crash the QEMU process on the host, resulting in a denial of service. Versions between 2.10.0 and 5.2.0 are potentially affected."
+            },
+            {
+                "title": "CVE-2021-3409",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3409",
+                "description": "The patch for CVE-2020-17380/CVE-2020-25085 was found to be ineffective, thus making QEMU vulnerable to the out-of-bounds read/write access issues previously found in the SDHCI controller emulation code. This flaw allows a malicious privileged guest to crash the QEMU process on the host, resulting in a denial of service or potential code execution. QEMU up to (including) 5.2.0 is affected by this."
+            },
+            {
+                "title": "CVE-2021-20221",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20221",
+                "description": "An out-of-bounds heap buffer access issue was found in the ARM Generic Interrupt Controller emulator of QEMU up to and including qemu 4.2.0on aarch64 platform. The issue occurs because while writing an interrupt ID to the controller memory area, it is not masked to be 4 bits wide. It may lead to the said issue while updating controller state fields and their subsequent processing. A privileged guest user may use this flaw to crash the QEMU process on the host resulting in DoS scenario."
+            },
+            {
+                "title": "CVE-2021-3608",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3608",
+                "description": "pvrdma: uninitialized memory unmap in pvrdma_ring_init()"
+            },
+            {
+                "title": "CVE-2020-35517",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35517",
+                "description": "A flaw was found in qemu. A host privilege escalation issue was found in the virtio-fs shared file system daemon where a privileged guest user is able to create a device special file in the shared directory and use it to r/w access host devices."
+            },
+            {
+                "title": "CVE-2021-3592",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3592",
+                "description": "An invalid pointer initialization issue was found in the SLiRP networking implementation of QEMU. The flaw exists in the bootp_input() function and could occur while processing a udp packet that is smaller than the size of the 'bootp_t' structure. A malicious guest could use this flaw to leak 10 bytes of uninitialized heap memory from the host. The highest threat from this vulnerability is to data confidentiality. This flaw affects libslirp versions prior to 4.6.0."
+            }
+        ],
+        "affected_packages": [
+            "qemu-system-misc",
+            "qemu-system-s390x",
+            "qemu-system",
+            "qemu-system-x86",
+            "qemu-system-arm",
+            "qemu-system-sparc",
+            "qemu-system-ppc",
+            "qemu-system-mips"
+        ]
+    },
+    {
+        "title": "USN-5009-1: libslirp vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5009-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3594",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3594",
+                "description": "An invalid pointer initialization issue was found in the SLiRP networking implementation of QEMU. The flaw exists in the udp_input() function and could occur while processing a udp packet that is smaller than the size of the 'udphdr' structure. This issue may lead to out-of-bounds read access or indirect host memory disclosure to the guest. The highest threat from this vulnerability is to data confidentiality. This flaw affects libslirp versions prior to 4.6.0."
+            },
+            {
+                "title": "CVE-2021-3593",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3593",
+                "description": "An invalid pointer initialization issue was found in the SLiRP networking implementation of QEMU. The flaw exists in the udp6_input() function and could occur while processing a udp packet that is smaller than the size of the 'udphdr' structure. This issue may lead to out-of-bounds read access or indirect host memory disclosure to the guest. The highest threat from this vulnerability is to data confidentiality. This flaw affects libslirp versions prior to 4.6.0."
+            },
+            {
+                "title": "CVE-2020-29130",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29130",
+                "description": "slirp.c in libslirp through 4.3.1 has a buffer over-read because it tries to read a certain amount of header data even if that exceeds the total packet length."
+            },
+            {
+                "title": "CVE-2021-3595",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3595",
+                "description": "An invalid pointer initialization issue was found in the SLiRP networking implementation of QEMU. The flaw exists in the tftp_input() function and could occur while processing a udp packet that is smaller than the size of the 'tftp_t' structure. This issue may lead to out-of-bounds read access or indirect host memory disclosure to the guest. The highest threat from this vulnerability is to data confidentiality. This flaw affects libslirp versions prior to 4.6.0."
+            },
+            {
+                "title": "CVE-2020-29129",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29129",
+                "description": "ncsi.c in libslirp through 4.3.1 has a buffer over-read because it tries to read a certain amount of header data even if that exceeds the total packet length."
+            },
+            {
+                "title": "CVE-2021-3592",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3592",
+                "description": "An invalid pointer initialization issue was found in the SLiRP networking implementation of QEMU. The flaw exists in the bootp_input() function and could occur while processing a udp packet that is smaller than the size of the 'bootp_t' structure. A malicious guest could use this flaw to leak 10 bytes of uninitialized heap memory from the host. The highest threat from this vulnerability is to data confidentiality. This flaw affects libslirp versions prior to 4.6.0."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5006-2: PHP vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5006-2",
         "cves": [
