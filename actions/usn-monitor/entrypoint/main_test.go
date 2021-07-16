@@ -70,35 +70,34 @@ a user were tricked into opening a malicious file, an attacker could cause
 MilkyTracker to crash or potentially execute arbitrary code.
 </description><guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4499-1</guid><pubDate>Tue, 15 Sep 2020 19:00:53 +0000</pubDate>
 </item>
-<item><title>USN-4594-1: Quassel vulnerabilities</title> <link>%s/USN-4594-1</link>
-<description>It was discovered that Quassel incorrectly handled Qdatastream protocol.
-(CVE-2018-1000179) </description> <guid isPermaLink="false">https://ubuntu.com/security/notices/USN-4594-1</guid> <pubDate>Tue, 20 Oct 2020 18:56:12 +0000</pubDate>
-</item>
-</channel></rss>`, testRSSFeed.URL, testRSSFeed.URL, testRSSFeed.URL))
+</channel></rss>`, testRSSFeed.URL, testRSSFeed.URL))
 
 			//body
 			case "/USN-4505-1":
 				w.WriteHeader(http.StatusOK)
+				fmt.Fprint(w, fmt.Sprintf(`<a href="%s/cve/CVE-2021-3468">CVE-2021-3468</a>
+<li href="%s/launchpad.net/bugs/cve/CVE-2021-3468">launchpad-bugs-2021-3468</li>
+<h2>Update instructions</h2>
+<ul>18.04 Affected Packages
+<li class="p-list__item">affected_package_1</li>
+<li class="p-list__item">affected_package_2</li>
+</ul>
+<ul>16.02 Affected Package 1
+<li class="p-list__item">affected_package_3</li>
+</ul>
+References`, testRSSFeed.URL, testRSSFeed.URL))
 
-				fmt.Fprint(w, fmt.Sprintf(`<a href="%s/cve/CVE-2021-3468">CVE-2021-3468</a>`, testRSSFeed.URL))
+			case "/cve/CVE-2021-3468":
+				w.WriteHeader(http.StatusOK)
+				fmt.Fprint(w, `Published: <strong><p>Main CVE Description</p>`)
+
+			case "/launchpad.net/bugs/cve/CVE-2021-3468":
+				w.WriteHeader(http.StatusOK)
+				fmt.Fprint(w, `<"edit-title"><span>Launchpad Description</span>`)
 
 			case "/USN-4499-1":
 				w.WriteHeader(http.StatusOK)
 				fmt.Fprint(w, ``)
-
-			case "/USN-4594-1":
-				w.WriteHeader(http.StatusOK)
-				fmt.Fprint(w, ``)
-
-			case "/cve/CVE-2021-3468":
-				w.WriteHeader(http.StatusOK)
-				fmt.Fprint(w, fmt.Sprintf(`<a href="%s/CVE-2021-3468">CVE-2021-3468</a> 
-<a href="%s/launchpad.net/bugs/cve/CVE-2021-3468">Launchpad</a></li>`, testRSSFeed.URL, testRSSFeed.URL))
-
-			case "/launchpad.net/bugs/cve/CVE-2021-3468":
-				w.WriteHeader(http.StatusOK)
-				fmt.Fprint(w, fmt.Sprintf(`<a href="%s/CVE-2021-3468">CVE-2021-3468</a> 
-<a href="%s/launchpad.net/bugs/cve/CVE-2021-3468">Launchpad</a>`, testRSSFeed.URL, testRSSFeed.URL))
 
 			default:
 				t.Fatal(fmt.Sprintf("unknown path: %s", r.URL.Path))
@@ -137,20 +136,19 @@ MilkyTracker to crash or potentially execute arbitrary code.
 							{
 								Title:       "CVE-2021-3468",
 								Link:        fmt.Sprintf("%s/cve/CVE-2021-3468", testRSSFeed.URL),
-								Description: "",
+								Description: "Main CVE Description",
+							},
+							{
+								Title:       "launchpad-bugs-2021-3468",
+								Link:        fmt.Sprintf("%s/launchpad.net/bugs/cve/CVE-2021-3468", testRSSFeed.URL),
+								Description: "Launchpad Description",
 							},
 						},
-						AffectedPackages: []string{},
+						AffectedPackages: []string{"affected_package_1", "affected_package_2"},
 					},
 					{
 						Title:            "USN-4499-1: MilkyTracker vulnerabilities",
 						Link:             fmt.Sprintf("%s/USN-4499-1", testRSSFeed.URL),
-						CveArray:         nil,
-						AffectedPackages: []string{},
-					},
-					{
-						Title:            "USN-4594-1: Quassel vulnerabilities",
-						Link:             fmt.Sprintf("%s/USN-4594-1", testRSSFeed.URL),
 						CveArray:         nil,
 						AffectedPackages: []string{},
 					},

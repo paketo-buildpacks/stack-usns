@@ -142,10 +142,10 @@ func getAffectedPackages(usnBody string) []string {
 	packagesList := re.FindString(usnBody)
 
 	re = regexp.MustCompile("18\\.04.*?</ul>")
-	bioinicPackages := re.FindString(packagesList)
+	bionicPackages := re.FindString(packagesList)
 
 	re = regexp.MustCompile(`<li class="p-list__item">(.*?)</li>`)
-	listMatches := re.FindAllStringSubmatch(bioinicPackages, -1)
+	listMatches := re.FindAllStringSubmatch(bionicPackages, -1)
 
 	packages := make([]string, 0)
 	for _, listItem := range listMatches {
@@ -159,6 +159,7 @@ func getPackageNameFromHTML(listItem string) string {
 	if strings.HasPrefix(listItem, "<a href=") {
 		re := regexp.MustCompile(`<a href=".*?">(.*?)</a>`)
 		packageMatch := re.FindStringSubmatch(listItem)
+		//TODO
 		return packageMatch[1]
 	} else {
 		return strings.Split(listItem, " ")[0]
