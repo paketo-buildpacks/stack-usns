@@ -1,5 +1,49 @@
 [
     {
+        "title": "USN-5011-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5011-1",
+        "cves": [
+            {
+                "title": "CVE-2021-29974",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29974",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29977",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29977",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-30547",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30547",
+                "description": "Out of bounds write in ANGLE in Google Chrome prior to 91.0.4472.101 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page."
+            },
+            {
+                "title": "CVE-2021-29972",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29972",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29975",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29975",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29976",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29976",
+                "description": "security update"
+            },
+            {
+                "title": "CVE-2021-29970",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29970",
+                "description": "security update"
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5010-1: QEMU vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5010-1",
         "cves": [
