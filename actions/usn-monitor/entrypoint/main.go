@@ -48,8 +48,7 @@ func main() {
 func UpdateUSNs(usnListPath, rssURL string) error {
 	feedUSNs, err := getUSNsFromFeed(rssURL)
 	if err != nil {
-		_, _ = fmt.Fprintf(os.Stderr, "Error finding new USNs: %s\n", err.Error())
-		os.Exit(1)
+		return fmt.Errorf("error finding new USNs: %w\n", err)
 	}
 
 	usnListBytes, err := ioutil.ReadFile(usnListPath)

@@ -102,6 +102,9 @@ References`, testRSSFeed.URL, testRSSFeed.URL))
 				w.WriteHeader(http.StatusOK)
 				fmt.Fprint(w, ``)
 
+			case "/bad-URL":
+				w.WriteHeader(http.StatusBadRequest)
+
 			default:
 				t.Fatal(fmt.Sprintf("unknown path: %s", r.URL.Path))
 			}
@@ -315,5 +318,47 @@ References`, testRSSFeed.URL, testRSSFeed.URL))
 			})
 		})
 
+		context("failure cases", func() {
+			context("RSS feed cannot be queried", func() {
+				it("returns an error", func() {
+					_, err := usnList.Write([]byte("[]"))
+					Expect(err).ToNot(HaveOccurred())
+
+					err = UpdateUSNs(usnList.Name(), fmt.Sprintf("%s/bad-URL", testRSSFeed.URL))
+					Expect(err).To(HaveOccurred())
+					Expect(err).To(MatchError(ContainSubstring("error finding new USNs")))
+				})
+			})
+
+			context("the USNs file cannot be read", func() {
+				it.Before(func() {
+					Expect(os.Chmod(usnList.Name(), 0000)).To(Succeed())
+				})
+
+				it.After(func() {
+					Expect(os.Chmod(usnList.Name(), 0644)).To(Succeed())
+				})
+				it("returns an error", func() {
+					_, err := usnList.Write([]byte("[]"))
+					Expect(err).ToNot(HaveOccurred())
+
+					err = UpdateUSNs(usnList.Name(), testRSSFeed.URL)
+					Expect(err).To(HaveOccurred())
+					Expect(err).To(MatchError(ContainSubstring("error reading USN file")))
+				})
+			})
+
+			context("existing USN file cannot be unmarshaled", func() {
+				it("returns an error", func() {
+					_, err := usnList.Write([]byte("bad JSON content"))
+					Expect(err).ToNot(HaveOccurred())
+
+					err = UpdateUSNs(usnList.Name(), testRSSFeed.URL)
+					Expect(err).To(HaveOccurred())
+					Expect(err).To(MatchError(ContainSubstring("error unmarshalling existing USN list")))
+				})
+			})
+
+		})
 	})
 }
