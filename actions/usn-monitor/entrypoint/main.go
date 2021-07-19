@@ -159,7 +159,6 @@ func getPackageNameFromHTML(listItem string) string {
 	if strings.HasPrefix(listItem, "<a href=") {
 		re := regexp.MustCompile(`<a href=".*?">(.*?)</a>`)
 		packageMatch := re.FindStringSubmatch(listItem)
-		//TODO
 		return packageMatch[1]
 	} else {
 		return strings.Split(listItem, " ")[0]
