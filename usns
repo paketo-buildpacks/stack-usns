@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5012-1: containerd vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5012-1",
+        "cves": [
+            {
+                "title": "CVE-2021-32760",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32760",
+                "description": "A bug was found in containerd where pulling and extracting a specially- crafted container image can result in Unix file permission changes for existing files in the host’s filesystem. Changes to file permissions can deny access to the expected owner of the file, widen access to others, or set extended bits like setuid, setgid, and sticky. This bug does not directly allow files to be read, modified, or executed without an additional cooperating process."
+            }
+        ],
+        "affected_packages": [
+            "containerd"
+        ]
+    },
+    {
         "title": "LSN-0078-1: Kernel Live Patch Security Notice",
         "link": "https://ubuntu.com/security/notices/LSN-0078-1",
         "cves": [
