@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-5013-2: systemd vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5013-2",
+        "cves": [
+            {
+                "title": "CVE-2020-13529",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13529",
+                "description": "An exploitable denial-of-service vulnerability exists in Systemd 245. A specially crafted DHCP FORCERENEW packet can cause a server running the DHCP client to be vulnerable to a DHCP ACK spoofing attack. An attacker can forge a pair of FORCERENEW and DCHP ACK packets to reconfigure the server."
+            },
+            {
+                "title": "CVE-2021-33910",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33910",
+                "description": "Denial of service (stack exhaustion) in systemd (PID 1)"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5013-1: systemd vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5013-1",
         "cves": [
