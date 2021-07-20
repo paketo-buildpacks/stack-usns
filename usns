@@ -1,5 +1,225 @@
 [
     {
+        "title": "USN-5018-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5018-1",
+        "cves": [
+            {
+                "title": "CVE-2021-0129",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-0129",
+                "description": "Improper access control in BlueZ may allow an authenticated user to potentially enable information disclosure via adjacent access."
+            },
+            {
+                "title": "CVE-2020-24586",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24586",
+                "description": "The 802.11 standard that underpins Wi-Fi Protected Access (WPA, WPA2, and WPA3) and Wired Equivalent Privacy (WEP) doesn't require that received fragments be cleared from memory after (re)connecting to a network. Under the right circumstances, when another device sends fragmented frames encrypted using WEP, CCMP, or GCMP, this can be abused to inject arbitrary network packets and/or exfiltrate user data."
+            },
+            {
+                "title": "CVE-2021-33909",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33909",
+                "description": "size_t-to-int vulnerability in Linux's filesystem layer"
+            },
+            {
+                "title": "CVE-2021-23134",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23134",
+                "description": "Use After Free vulnerability in nfc sockets in the Linux Kernel before 5.12.4 allows local attackers to elevate their privileges. In typical configurations, the issue can only be triggered by a privileged local user with the CAP_NET_RAW capability."
+            },
+            {
+                "title": "CVE-2021-33200",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33200",
+                "description": "kernel/bpf/verifier.c in the Linux kernel through 5.12.7 enforces incorrect limits for pointer arithmetic operations, aka CID-bb01a1bba579. This can be abused to perform out-of-bounds reads and writes in kernel memory, leading to local privilege escalation to root. In particular, there is a corner case where the off reg causes a masking direction change, which then results in an incorrect final aux->alu_limit."
+            },
+            {
+                "title": "CVE-2021-33034",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33034",
+                "description": "In the Linux kernel before 5.12.4, net/bluetooth/hci_event.c has a use-after-free when destroying an hci_chan, aka CID-5c4c8c954409. This leads to writing an arbitrary value."
+            },
+            {
+                "title": "CVE-2020-26139",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26139",
+                "description": "An issue was discovered in the kernel in NetBSD 7.1. An Access Point (AP) forwards EAPOL frames to other clients even though the sender has not yet successfully authenticated to the AP. This might be abused in projected Wi-Fi networks to launch denial-of-service attacks against connected clients and makes it easier to exploit other vulnerabilities in connected clients."
+            },
+            {
+                "title": "CVE-2020-26147",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26147",
+                "description": "An issue was discovered in the Linux kernel 5.8.9. The WEP, WPA, WPA2, and WPA3 implementations reassemble fragments even though some of them were sent in plaintext. This vulnerability can be abused to inject packets and/or exfiltrate selected fragments when another device sends fragmented frames and the WEP, CCMP, or GCMP data-confidentiality protocol is used."
+            },
+            {
+                "title": "CVE-2020-24587",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24587",
+                "description": "The 802.11 standard that underpins Wi-Fi Protected Access (WPA, WPA2, and WPA3) and Wired Equivalent Privacy (WEP) doesn't require that all fragments of a frame are encrypted under the same key. An adversary can abuse this to decrypt selected fragments when another device sends fragmented frames and the WEP, CCMP, or GCMP encryption key is periodically renewed."
+            },
+            {
+                "title": "CVE-2021-31829",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31829",
+                "description": "kernel/bpf/verifier.c in the Linux kernel through 5.12.1 performs undesirable speculative loads, leading to disclosure of stack content via side-channel attacks, aka CID-801c6058d14a. The specific concern is not protecting the BPF stack area against speculative loads. Also, the BPF stack can contain uninitialized data that might represent sensitive information previously operated on by the kernel."
+            },
+            {
+                "title": "CVE-2020-26558",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26558",
+                "description": "Bluetooth LE and BR/EDR secure pairing in Bluetooth Core Specification 2.1 through 5.2 may permit a nearby man-in-the-middle attacker to identify the Passkey used during pairing (in the Passkey authentication procedure) by reflection of the public key and the authentication evidence of the initiating device, potentially permitting this attacker to complete authenticated pairing with the responding device using the correct Passkey for the pairing session. The attack methodology determines the Passkey value one bit at a time."
+            },
+            {
+                "title": "CVE-2021-32399",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32399",
+                "description": "net/bluetooth/hci_request.c in the Linux kernel through 5.12.2 has a race condition for removal of the HCI controller."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-oracle-lts-18.04",
+            "linux-image-virtual",
+            "linux-image-4.15.0-1097-kvm",
+            "linux-image-4.15.0-151-generic",
+            "linux-image-aws-lts-18.04",
+            "linux-image-generic",
+            "linux-image-4.15.0-1078-oracle",
+            "linux-image-4.15.0-151-lowlatency",
+            "linux-image-4.15.0-1109-snapdragon",
+            "linux-image-4.15.0-1121-azure",
+            "linux-image-4.15.0-1092-raspi2",
+            "linux-image-snapdragon",
+            "linux-image-raspi2",
+            "linux-image-azure-lts-18.04",
+            "linux-image-generic-lpae",
+            "linux-image-4.15.0-1106-gcp",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-4.15.0-1109-aws",
+            "linux-image-kvm",
+            "linux-image-4.15.0-151-generic-lpae",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
+        "title": "USN-5017-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5017-1",
+        "cves": [
+            {
+                "title": "CVE-2021-33909",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33909",
+                "description": "size_t-to-int vulnerability in Linux's filesystem layer"
+            },
+            {
+                "title": "CVE-2021-0129",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-0129",
+                "description": "Improper access control in BlueZ may allow an authenticated user to potentially enable information disclosure via adjacent access."
+            },
+            {
+                "title": "CVE-2020-26558",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26558",
+                "description": "Bluetooth LE and BR/EDR secure pairing in Bluetooth Core Specification 2.1 through 5.2 may permit a nearby man-in-the-middle attacker to identify the Passkey used during pairing (in the Passkey authentication procedure) by reflection of the public key and the authentication evidence of the initiating device, potentially permitting this attacker to complete authenticated pairing with the responding device using the correct Passkey for the pairing session. The attack methodology determines the Passkey value one bit at a time."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-gkeop-5.4",
+            "linux-image-generic-hwe-18.04",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-5.4.0-80-generic-lpae",
+            "linux-image-oem",
+            "linux-image-aws",
+            "linux-image-5.4.0-1052-oracle",
+            "linux-image-raspi-hwe-18.04",
+            "linux-image-oem-osp1",
+            "linux-image-5.4.0-80-generic",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-5.4.0-1054-aws",
+            "linux-image-5.4.0-1049-gcp",
+            "linux-image-5.4.0-1049-gke",
+            "linux-image-azure",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-5.4.0-1041-raspi",
+            "linux-image-gcp",
+            "linux-image-5.4.0-80-lowlatency",
+            "linux-image-oracle",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-5.4.0-1055-azure",
+            "linux-image-gke-5.4",
+            "linux-image-5.4.0-1021-gkeop"
+        ]
+    },
+    {
+        "title": "USN-5014-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5014-1",
+        "cves": [
+            {
+                "title": "CVE-2021-33909",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33909",
+                "description": "size_t-to-int vulnerability in Linux's filesystem layer"
+            }
+        ],
+        "affected_packages": [
+            "linux-image-gkeop-5.3",
+            "linux-image-5.3.0-76-lowlatency",
+            "linux-image-5.3.0-1045-gke",
+            "linux-image-gke-5.3",
+            "linux-image-5.3.0-1042-raspi2",
+            "linux-image-5.3.0-76-generic",
+            "linux-image-raspi2-hwe-18.04"
+        ]
+    },
+    {
+        "title": "USN-5016-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5016-1",
+        "cves": [
+            {
+                "title": "CVE-2021-33034",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33034",
+                "description": "In the Linux kernel before 5.12.4, net/bluetooth/hci_event.c has a use-after-free when destroying an hci_chan, aka CID-5c4c8c954409. This leads to writing an arbitrary value."
+            },
+            {
+                "title": "CVE-2021-3506",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3506",
+                "description": "An out-of-bounds (OOB) memory access flaw was found in fs/f2fs/node.c in the f2fs module in the Linux kernel in versions before 5.12.0-rc4. A bounds check failure allows a local attacker to gain access to out-of-bounds memory leading to a system crash or a leak of internal kernel information. The highest threat from this vulnerability is to system availability."
+            },
+            {
+                "title": "CVE-2021-33909",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33909",
+                "description": "size_t-to-int vulnerability in Linux's filesystem layer"
+            },
+            {
+                "title": "CVE-2021-32399",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32399",
+                "description": "net/bluetooth/hci_request.c in the Linux kernel through 5.12.2 has a race condition for removal of the HCI controller."
+            },
+            {
+                "title": "CVE-2021-23134",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23134",
+                "description": "Use After Free vulnerability in nfc sockets in the Linux Kernel before 5.12.4 allows local attackers to elevate their privileges. In typical configurations, the issue can only be triggered by a privileged local user with the CAP_NET_RAW capability."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5015-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5015-1",
+        "cves": [
+            {
+                "title": "CVE-2021-33909",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33909",
+                "description": "size_t-to-int vulnerability in Linux's filesystem layer"
+            },
+            {
+                "title": "CVE-2021-3573",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3573",
+                "description": "[UAF vulnerability in function hci_sock_bound_ioctl()]"
+            },
+            {
+                "title": "CVE-2021-28691",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28691",
+                "description": "Guest triggered use-after-free in Linux xen-netback A malicious or buggy network PV frontend can force Linux netback to disable the interface and terminate the receive kernel thread associated with queue 0 in response to the frontend sending a malformed packet. Such kernel thread termination will lead to a use-after-free in Linux netback when the backend is destroyed, as the kernel thread associated with queue 0 will have already exited and thus the call to kthread_stop will be performed against a stale pointer."
+            },
+            {
+                "title": "CVE-2021-3564",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3564",
+                "description": "A flaw double-free memory corruption in the Linux kernel HCI device initialization subsystem was found in the way user attach malicious HCI TTY Bluetooth device. A local user could use this flaw to crash the system. This flaw affects all the Linux kernel versions starting from 3.13."
+            },
+            {
+                "title": "CVE-2021-3587",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3587",
+                "description": "[nfc: NULL ptr dereference in llcp_sock_getname() after failed connect]"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5013-2: systemd vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5013-2",
         "cves": [
