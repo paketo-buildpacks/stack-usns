@@ -1,5 +1,38 @@
 [
     {
+        "title": "USN-5019-1: NVIDIA graphics drivers vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5019-1",
+        "cves": [
+            {
+                "title": "CVE-2021-1095",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1095",
+                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handlers for all control calls with embedded parameters where an untrusted pointer dereference may lead to denial of service"
+            },
+            {
+                "title": "CVE-2021-1094",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1094",
+                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape where an out of bounds array access may lead to denial of service or information disclosure."
+            },
+            {
+                "title": "CVE-2021-1093",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1093",
+                "description": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in firmware where the driver contains an assert() or similar statement that can be triggered by an attacker, which leads to an application exit or other behavior that is more severe than necessary, and may lead to Denial of Service or system crash."
+            }
+        ],
+        "affected_packages": [
+            "xserver-xorg-video-nvidia-470",
+            "xserver-xorg-video-nvidia-418-server",
+            "xserver-xorg-video-nvidia-460",
+            "xserver-xorg-video-nvidia-465",
+            "xserver-xorg-video-nvidia-455",
+            "xserver-xorg-video-nvidia-450",
+            "xserver-xorg-video-nvidia-390",
+            "xserver-xorg-video-nvidia-440-server",
+            "xserver-xorg-video-nvidia-460-server",
+            "xserver-xorg-video-nvidia-450-server"
+        ]
+    },
+    {
         "title": "USN-5018-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5018-1",
         "cves": [
