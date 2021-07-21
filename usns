@@ -895,7 +895,7 @@
             {
                 "title": "CVE-2021-33909",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33909",
-                "description": "size_t-to-int vulnerability in Linux's filesystem layer"
+                "description": "fs/seq_file.c in the Linux kernel 3.16 through 5.13.x before 5.13.4 does not properly restrict seq buffer allocations, leading to an integer overflow, an Out-of-bounds Write, and escalation to root by an unprivileged user, aka CID-8cae8cd89f05."
             },
             {
                 "title": "CVE-2021-0129",
@@ -942,7 +942,7 @@
             {
                 "title": "CVE-2021-33909",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33909",
-                "description": "size_t-to-int vulnerability in Linux's filesystem layer"
+                "description": "fs/seq_file.c in the Linux kernel 3.16 through 5.13.x before 5.13.4 does not properly restrict seq buffer allocations, leading to an integer overflow, an Out-of-bounds Write, and escalation to root by an unprivileged user, aka CID-8cae8cd89f05."
             }
         ],
         "affected_packages": [
@@ -972,7 +972,7 @@
             {
                 "title": "CVE-2021-33909",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33909",
-                "description": "size_t-to-int vulnerability in Linux's filesystem layer"
+                "description": "fs/seq_file.c in the Linux kernel 3.16 through 5.13.x before 5.13.4 does not properly restrict seq buffer allocations, leading to an integer overflow, an Out-of-bounds Write, and escalation to root by an unprivileged user, aka CID-8cae8cd89f05."
             },
             {
                 "title": "CVE-2021-32399",
@@ -994,7 +994,7 @@
             {
                 "title": "CVE-2021-33909",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33909",
-                "description": "size_t-to-int vulnerability in Linux's filesystem layer"
+                "description": "fs/seq_file.c in the Linux kernel 3.16 through 5.13.x before 5.13.4 does not properly restrict seq buffer allocations, leading to an integer overflow, an Out-of-bounds Write, and escalation to root by an unprivileged user, aka CID-8cae8cd89f05."
             },
             {
                 "title": "CVE-2021-3573",
@@ -1048,7 +1048,7 @@
             {
                 "title": "CVE-2021-33910",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33910",
-                "description": "Denial of service (stack exhaustion) in systemd (PID 1)"
+                "description": "basic/unit-name.c in systemd 220 through 248 has a Memory Allocation with an Excessive Size Value (involving strdupa and alloca for a pathname controlled by a local attacker) that results in an operating system crash."
             }
         ],
         "affected_packages": [
