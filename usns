@@ -1,5 +1,30 @@
 [
     {
+        "title": "USN-5020-1: Ruby vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5020-1",
+        "cves": [
+            {
+                "title": "CVE-2021-31799",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31799",
+                "description": "[A command injection vulnerability in RDoc]"
+            },
+            {
+                "title": "CVE-2021-32066",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32066",
+                "description": "[A StartTLS stripping vulnerability in Net::IMAP]"
+            },
+            {
+                "title": "CVE-2021-31810",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31810",
+                "description": "An issue was discovered in Ruby through 2.6.7, 2.7.x through 2.7.3, and 3.x through 3.0.1. A malicious FTP server can use the PASV response to trick Net::FTP into connecting back to a given IP address and port. This potentially makes curl extract information about services that are otherwise private and not disclosed (e.g., the attacker can conduct port scans and service banner extractions)."
+            }
+        ],
+        "affected_packages": [
+            "ruby2.5",
+            "libruby2.5"
+        ]
+    },
+    {
         "title": "USN-4336-2: GNU binutils vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-4336-2",
         "cves": [
