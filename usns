@@ -1,5 +1,747 @@
 [
     {
+        "title": "USN-4336-2: GNU binutils vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-4336-2",
+        "cves": [
+            {
+                "title": "CVE-2018-19932",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19932",
+                "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils through 2.31. There is an integer overflow and infinite loop caused by the IS_CONTAINED_BY_LMA macro in elf.c."
+            },
+            {
+                "title": "CVE-2019-9074",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9074",
+                "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.32. It is an out-of-bounds read leading to a SEGV in bfd_getl32 in libbfd.c, when called from pex64_get_runtime_function in pei-x86_64.c."
+            },
+            {
+                "title": "CVE-2018-18309",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18309",
+                "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31. An invalid memory address dereference was discovered in read_reloc in reloc.c. The vulnerability causes a segmentation fault and application crash, which leads to denial of service, as demonstrated by objdump, because of missing _bfd_clear_contents bounds checking."
+            },
+            {
+                "title": "CVE-2017-12451",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12451",
+                "description": "The _bfd_xcoff_read_ar_hdr function in bfd/coff-rs6000.c and bfd/coff64-rs6000.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29 and earlier, allows remote attackers to cause an out of bounds stack read via a crafted COFF image file."
+            },
+            {
+                "title": "CVE-2017-16828",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-16828",
+                "description": "The display_debug_frames function in dwarf.c in GNU Binutils 2.29.1 allows remote attackers to cause a denial of service (integer overflow and heap-based buffer over-read, and application crash) or possibly have unspecified other impact via a crafted ELF file, related to print_debug_frame."
+            },
+            {
+                "title": "CVE-2017-7302",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-7302",
+                "description": "The Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, has a swap_std_reloc_out function in bfd/aoutx.h that is vulnerable to an invalid read (of size 4) because of missing checks for relocs that could not be recognised. This vulnerability causes Binutils utilities like strip to crash."
+            },
+            {
+                "title": "CVE-2017-9751",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9751",
+                "description": "opcodes/rl78-decode.opc in GNU Binutils 2.28 has an unbounded GETBYTE macro, which allows remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of this file during \"objdump -D\" execution."
+            },
+            {
+                "title": "CVE-2017-17080",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17080",
+                "description": "elf.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29.1, does not validate sizes of core notes, which allows remote attackers to cause a denial of service (bfd_getl32 heap-based buffer over-read and application crash) via a crafted object file, related to elfcore_grok_netbsd_procinfo, elfcore_grok_openbsd_procinfo, and elfcore_grok_nto_status."
+            },
+            {
+                "title": "CVE-2018-12700",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12700",
+                "description": "A Stack Exhaustion issue was discovered in debug_write_type in debug.c in GNU Binutils 2.30 because of DEBUG_KIND_INDIRECT infinite recursion."
+            },
+            {
+                "title": "CVE-2017-14130",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-14130",
+                "description": "The _bfd_elf_parse_attributes function in elf-attrs.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (_bfd_elf_attr_strdup heap-based buffer over-read and application crash) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2018-18483",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18483",
+                "description": "The get_count function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31, allows remote attackers to cause a denial of service (malloc called with the result of an integer-overflowing calculation) or possibly have unspecified other impact via a crafted string, as demonstrated by c++filt."
+            },
+            {
+                "title": "CVE-2018-7568",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7568",
+                "description": "The parse_die function in dwarf1.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.30, allows remote attackers to cause a denial of service (integer overflow and application crash) via an ELF file with corrupt dwarf1 debug information, as demonstrated by nm."
+            },
+            {
+                "title": "CVE-2017-14128",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-14128",
+                "description": "The decode_line_info function in dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (read_1_byte heap-based buffer over-read and application crash) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2017-9749",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9749",
+                "description": "The *regs* macros in opcodes/bfin-dis.c in GNU Binutils 2.28 allow remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of this file during \"objdump -D\" execution."
+            },
+            {
+                "title": "CVE-2017-12458",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12458",
+                "description": "The nlm_swap_auxiliary_headers_in function in bfd/nlmcode.h in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29 and earlier, allows remote attackers to cause an out of bounds heap read via a crafted nlm file."
+            },
+            {
+                "title": "CVE-2019-9070",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9070",
+                "description": "An issue was discovered in GNU libiberty, as distributed in GNU Binutils 2.32. It is a heap-based buffer over-read in d_expression_1 in cp-demangle.c after many recursive calls."
+            },
+            {
+                "title": "CVE-2017-9755",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9755",
+                "description": "opcodes/i386-dis.c in GNU Binutils 2.28 does not consider the number of registers for bnd mode, which allows remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of this file during \"objdump -D\" execution."
+            },
+            {
+                "title": "CVE-2018-10534",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-10534",
+                "description": "The _bfd_XX_bfd_copy_private_bfd_data_common function in peXXigen.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.30, processes a negative Data Directory size with an unbounded loop that increases the value of (external_IMAGE_DEBUG_DIRECTORY) *edd so that the address exceeds its own memory region, resulting in an out-of-bounds memory write, as demonstrated by objcopy copying private info with _bfd_pex64_bfd_copy_private_bfd_data_common in pex64igen.c."
+            },
+            {
+                "title": "CVE-2017-9746",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9746",
+                "description": "The disassemble_bytes function in objdump.c in GNU Binutils 2.28 allows remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of rae insns printing for this file during \"objdump -D\" execution."
+            },
+            {
+                "title": "CVE-2019-12972",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12972",
+                "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.32. There is a heap-based buffer over-read in _bfd_doprnt in bfd.c because elf_object_p in elfcode.h mishandles an e_shstrndx section of type SHT_GROUP by omitting a trailing '\\0' character."
+            },
+            {
+                "title": "CVE-2017-7300",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-7300",
+                "description": "The Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, has an aout_link_add_symbols function in bfd/aoutx.h that is vulnerable to a heap-based buffer over-read (off-by-one) because of an incomplete check for invalid string offsets while loading symbols, leading to a GNU linker (ld) program crash."
+            },
+            {
+                "title": "CVE-2018-9138",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-9138",
+                "description": "An issue was discovered in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.29 and 2.30. Stack Exhaustion occurs in the C++ demangling functions provided by libiberty, and there are recursive stack frames: demangle_nested_args, demangle_args, do_arg, and do_type."
+            },
+            {
+                "title": "CVE-2017-7299",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-7299",
+                "description": "The Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, has an invalid read (of size 8) because the code to emit relocs (bfd_elf_final_link function in bfd/elflink.c) does not check the format of the input file before trying to read the ELF reloc section header. The vulnerability leads to a GNU linker (ld) program crash."
+            },
+            {
+                "title": "CVE-2016-4488",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-4488",
+                "description": "Use-after-free vulnerability in libiberty allows remote attackers to cause a denial of service (segmentation fault and crash) via a crafted binary, related to \"ktypevec.\""
+            },
+            {
+                "title": "CVE-2017-15020",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15020",
+                "description": "dwarf1.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, mishandles pointers, which allows remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact via a crafted ELF file, related to parse_die and parse_line_table, as demonstrated by a parse_die heap-based buffer over-read."
+            },
+            {
+                "title": "CVE-2017-9742",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9742",
+                "description": "The score_opcodes function in opcodes/score7-dis.c in GNU Binutils 2.28 allows remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of this file during \"objdump -D\" execution."
+            },
+            {
+                "title": "CVE-2017-17125",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17125",
+                "description": "nm.c and objdump.c in GNU Binutils 2.29.1 mishandle certain global symbols, which allows remote attackers to cause a denial of service (_bfd_elf_get_symbol_version_string buffer over-read and application crash) or possibly have unspecified other impact via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2017-14939",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-14939",
+                "description": "decode_line_info in dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, mishandles a length calculation, which allows remote attackers to cause a denial of service (heap-based buffer over-read and application crash) via a crafted ELF file, related to read_1_byte."
+            },
+            {
+                "title": "CVE-2019-14250",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14250",
+                "description": "An issue was discovered in GNU libiberty, as distributed in GNU Binutils 2.32. simple_object_elf_match in simple-object-elf.c does not check for a zero shstrndx value, leading to an integer overflow and resultant heap-based buffer overflow."
+            },
+            {
+                "title": "CVE-2017-14129",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-14129",
+                "description": "The read_section function in dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (parse_comp_unit heap-based buffer over-read and application crash) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2017-12967",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12967",
+                "description": "The getsym function in tekhex.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (stack-based buffer over-read and application crash) via a malformed tekhex binary."
+            },
+            {
+                "title": "CVE-2017-17124",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17124",
+                "description": "The _bfd_coff_read_string_table function in coffgen.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29.1, does not properly validate the size of the external string table, which allows remote attackers to cause a denial of service (excessive memory consumption, or heap-based buffer overflow and application crash) or possibly have unspecified other impact via a crafted COFF binary."
+            },
+            {
+                "title": "CVE-2018-12934",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12934",
+                "description": "remember_Ktype in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.30, allows attackers to trigger excessive memory consumption (aka OOM). This can occur during execution of cxxfilt."
+            },
+            {
+                "title": "CVE-2017-7210",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-7210",
+                "description": "objdump in GNU Binutils 2.28 is vulnerable to multiple heap-based buffer over-reads (of size 1 and size 8) while handling corrupt STABS enum type strings in a crafted object file, leading to program crash."
+            },
+            {
+                "title": "CVE-2017-8395",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-8395",
+                "description": "The Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, is vulnerable to an invalid write of size 8 because of missing a malloc() return-value check to see if memory had actually been allocated in the _bfd_generic_get_section_contents function. This vulnerability causes programs that conduct an analysis of binary programs using the libbfd library, such as objcopy, to crash."
+            },
+            {
+                "title": "CVE-2017-7227",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-7227",
+                "description": "GNU linker (ld) in GNU Binutils 2.28 is vulnerable to a heap-based buffer overflow while processing a bogus input script, leading to a program crash. This relates to lack of '\\0' termination of a name field in ldlex.l."
+            },
+            {
+                "title": "CVE-2017-12459",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12459",
+                "description": "The bfd_mach_o_read_symtab_strtab function in bfd/mach-o.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29 and earlier, allows remote attackers to cause an out of bounds heap write and possibly achieve code execution via a crafted mach-o file."
+            },
+            {
+                "title": "CVE-2017-9754",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9754",
+                "description": "The process_otr function in bfd/versados.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, does not validate a certain offset, which allows remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of this file during \"objdump -D\" execution."
+            },
+            {
+                "title": "CVE-2018-20002",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20002",
+                "description": "The _bfd_generic_read_minisymbols function in syms.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31, has a memory leak via a crafted ELF file, leading to a denial of service (memory consumption), as demonstrated by nm."
+            },
+            {
+                "title": "CVE-2016-4489",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-4489",
+                "description": "Integer overflow in the gnu_special function in libiberty allows remote attackers to cause a denial of service (segmentation fault and crash) via a crafted binary, related to the \"demangling of virtual tables.\""
+            },
+            {
+                "title": "CVE-2019-9073",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9073",
+                "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.32. It is an attempted excessive memory allocation in _bfd_elf_slurp_version_tables in elf.c."
+            },
+            {
+                "title": "CVE-2018-8945",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-8945",
+                "description": "The bfd_section_from_shdr function in elf.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.30, allows remote attackers to cause a denial of service (segmentation fault) via a large attribute section."
+            },
+            {
+                "title": "CVE-2017-12448",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12448",
+                "description": "The bfd_cache_close function in bfd/cache.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29 and earlier, allows remote attackers to cause a heap use after free and possibly achieve code execution via a crafted nested archive file. This issue occurs because incorrect functions are called during an attempt to release memory. The issue can be addressed by better input validation in the bfd_generic_archive_p function in bfd/archive.c."
+            },
+            {
+                "title": "CVE-2016-4491",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-4491",
+                "description": "The d_print_comp function in cp-demangle.c in libiberty allows remote attackers to cause a denial of service (segmentation fault and crash) via a crafted binary, which triggers infinite recursion and a buffer overflow, related to a node having \"itself as ancestor more than once.\""
+            },
+            {
+                "title": "CVE-2018-17794",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-17794",
+                "description": "An issue was discovered in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31. There is a NULL pointer dereference in work_stuff_copy_to_from when called from iterate_demangle_function."
+            },
+            {
+                "title": "CVE-2017-13710",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13710",
+                "description": "The setup_group function in elf.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a group section that is too small."
+            },
+            {
+                "title": "CVE-2017-14333",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-14333",
+                "description": "The process_version_sections function in readelf.c in GNU Binutils 2.29 allows attackers to cause a denial of service (Integer Overflow, and hang because of a time-consuming loop) or possibly have unspecified other impact via a crafted binary file with invalid values of ent.vn_next, during \"readelf -a\" execution."
+            },
+            {
+                "title": "CVE-2017-15021",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15021",
+                "description": "bfd_get_debug_link_info_1 in opncls.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (heap-based buffer over-read and application crash) via a crafted ELF file, related to bfd_getl32."
+            },
+            {
+                "title": "CVE-2017-14940",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-14940",
+                "description": "scan_unit_for_symbols in dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2017-14930",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-14930",
+                "description": "Memory leak in decode_line_info in dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (memory consumption) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2017-7225",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-7225",
+                "description": "The find_nearest_line function in addr2line in GNU Binutils 2.28 does not handle the case where the main file name and the directory name are both empty, triggering a NULL pointer dereference and an invalid write, and leading to a program crash."
+            },
+            {
+                "title": "CVE-2017-7223",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-7223",
+                "description": "GNU assembler in GNU Binutils 2.28 is vulnerable to a global buffer overflow (of size 1) while attempting to unget an EOF character from the input stream, potentially leading to a program crash."
+            },
+            {
+                "title": "CVE-2017-12452",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12452",
+                "description": "The bfd_mach_o_i386_canonicalize_one_reloc function in bfd/mach-o-i386.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29 and earlier, allows remote attackers to cause an out of bounds heap read via a crafted mach-o file."
+            },
+            {
+                "title": "CVE-2017-6965",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6965",
+                "description": "readelf in GNU Binutils 2.28 writes to illegal addresses while processing corrupt input files containing symbol-difference relocations, leading to a heap-based buffer overflow."
+            },
+            {
+                "title": "CVE-2018-18701",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18701",
+                "description": "An issue was discovered in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31. There is a stack consumption vulnerability resulting from infinite recursion in the functions next_is_type_qual() and cplus_demangle_type() in cp-demangle.c. Remote attackers could leverage this vulnerability to cause a denial-of-service via an ELF file, as demonstrated by nm."
+            },
+            {
+                "title": "CVE-2017-15024",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15024",
+                "description": "find_abstract_instance_name in dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (infinite recursion and application crash) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2018-10372",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-10372",
+                "description": "process_cu_tu_index in dwarf.c in GNU Binutils 2.30 allows remote attackers to cause a denial of service (heap-based buffer over-read and application crash) via a crafted binary file, as demonstrated by readelf."
+            },
+            {
+                "title": "CVE-2018-18484",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18484",
+                "description": "An issue was discovered in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31. Stack Exhaustion occurs in the C++ demangling functions provided by libiberty, and there is a stack consumption problem caused by recursive stack frames: cplus_demangle_type, d_bare_function_type, d_function_type."
+            },
+            {
+                "title": "CVE-2017-16832",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-16832",
+                "description": "The pe_bfd_read_buildid function in peicode.h in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29.1, does not validate size and offset values in the data dictionary, which allows remote attackers to cause a denial of service (segmentation violation and application crash) or possibly have unspecified other impact via a crafted PE file."
+            },
+            {
+                "title": "CVE-2017-9748",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9748",
+                "description": "The ieee_object_p function in bfd/ieee.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, might allow remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of this file during \"objdump -D\" execution. NOTE: this may be related to a compiler bug."
+            },
+            {
+                "title": "CVE-2017-15225",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15225",
+                "description": "_bfd_dwarf2_cleanup_debug_info in dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (memory leak) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2018-7569",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7569",
+                "description": "dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.30, allows remote attackers to cause a denial of service (integer underflow or overflow, and application crash) via an ELF file with a corrupt DWARF FORM block, as demonstrated by nm."
+            },
+            {
+                "title": "CVE-2017-16831",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-16831",
+                "description": "coffgen.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29.1, does not validate the symbol count, which allows remote attackers to cause a denial of service (integer overflow and application crash, or excessive memory allocation) or possibly have unspecified other impact via a crafted PE file."
+            },
+            {
+                "title": "CVE-2018-17358",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-17358",
+                "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31. An invalid memory access exists in _bfd_stab_section_find_nearest_line in syms.c. Attackers could leverage this vulnerability to cause a denial of service (application crash) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2018-6543",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-6543",
+                "description": "In GNU Binutils 2.30, there's an integer overflow in the function load_specific_debug_section() in objdump.c, which results in `malloc()` with 0 size. A crafted ELF file allows remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact."
+            },
+            {
+                "title": "CVE-2017-7224",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-7224",
+                "description": "The find_nearest_line function in objdump in GNU Binutils 2.28 is vulnerable to an invalid write (of size 1) while disassembling a corrupt binary that contains an empty function name, leading to a program crash."
+            },
+            {
+                "title": "CVE-2016-4493",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-4493",
+                "description": "The demangle_template_value_parm and do_hpacc_template_literal functions in cplus-dem.c in libiberty allow remote attackers to cause a denial of service (out-of-bounds read and crash) via a crafted binary."
+            },
+            {
+                "title": "CVE-2017-17121",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17121",
+                "description": "The Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29.1, allows remote attackers to cause a denial of service (memory access violation) or possibly have unspecified other impact via a COFF binary in which a relocation refers to a location after the end of the to-be-relocated section."
+            },
+            {
+                "title": "CVE-2017-9041",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9041",
+                "description": "GNU Binutils 2.28 allows remote attackers to cause a denial of service (heap-based buffer over-read and application crash) via a crafted ELF file, related to MIPS GOT mishandling in the process_mips_specific function in readelf.c."
+            },
+            {
+                "title": "CVE-2019-9071",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9071",
+                "description": "An issue was discovered in GNU libiberty, as distributed in GNU Binutils 2.32. It is a stack consumption issue in d_count_templates_scopes in cp-demangle.c after many recursive calls."
+            },
+            {
+                "title": "CVE-2018-19931",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19931",
+                "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils through 2.31. There is a heap-based buffer overflow in bfd_elf32_swap_phdr_in in elfcode.h because the number of program headers is not restricted."
+            },
+            {
+                "title": "CVE-2017-9756",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9756",
+                "description": "The aarch64_ext_ldst_reglist function in opcodes/aarch64-dis.c in GNU Binutils 2.28 allows remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of this file during \"objdump -D\" execution."
+            },
+            {
+                "title": "CVE-2018-18700",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18700",
+                "description": "An issue was discovered in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31. There is a stack consumption vulnerability resulting from infinite recursion in the functions d_name(), d_encoding(), and d_local_name() in cp-demangle.c. Remote attackers could leverage this vulnerability to cause a denial-of-service via an ELF file, as demonstrated by nm."
+            },
+            {
+                "title": "CVE-2018-10373",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-10373",
+                "description": "concat_filename in dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.30, allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted binary file, as demonstrated by nm-new."
+            },
+            {
+                "title": "CVE-2019-17451",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17451",
+                "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.32. It is an integer overflow leading to a SEGV in _bfd_dwarf2_find_nearest_line in dwarf2.c, as demonstrated by nm."
+            },
+            {
+                "title": "CVE-2018-12697",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12697",
+                "description": "A NULL pointer dereference (aka SEGV on unknown address 0x000000000000) was discovered in work_stuff_copy_to_from in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.30. This can occur during execution of objdump."
+            },
+            {
+                "title": "CVE-2018-18606",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18606",
+                "description": "An issue was discovered in the merge_strings function in merge.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31. There is a NULL pointer dereference in _bfd_add_merge_section when attempting to merge sections with large alignments. A specially crafted ELF allows remote attackers to cause a denial of service, as demonstrated by ld."
+            },
+            {
+                "title": "CVE-2018-12641",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12641",
+                "description": "An issue was discovered in arm_pt in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.30. Stack Exhaustion occurs in the C++ demangling functions provided by libiberty, and there are recursive stack frames: demangle_arm_hp_template, demangle_class_name, demangle_fund_type, do_type, do_arg, demangle_args, and demangle_nested_args. This can occur during execution of nm-new."
+            },
+            {
+                "title": "CVE-2017-17123",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17123",
+                "description": "The coff_slurp_reloc_table function in coffcode.h in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29.1, allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted COFF based file."
+            },
+            {
+                "title": "CVE-2016-4492",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-4492",
+                "description": "Buffer overflow in the do_type function in cplus-dem.c in libiberty allows remote attackers to cause a denial of service (segmentation fault and crash) via a crafted binary."
+            },
+            {
+                "title": "CVE-2017-16826",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-16826",
+                "description": "The coff_slurp_line_table function in coffcode.h in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29.1, allows remote attackers to cause a denial of service (invalid memory access and application crash) or possibly have unspecified other impact via a crafted PE file."
+            },
+            {
+                "title": "CVE-2017-9753",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9753",
+                "description": "The versados_mkobject function in bfd/versados.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, does not initialize a certain data structure, which allows remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of this file during \"objdump -D\" execution."
+            },
+            {
+                "title": "CVE-2018-6323",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-6323",
+                "description": "The elf_object_p function in elfcode.h in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29.1, has an unsigned integer overflow because bfd_size_type multiplication is not used. A crafted ELF file allows remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact."
+            },
+            {
+                "title": "CVE-2017-8394",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-8394",
+                "description": "The Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, is vulnerable to an invalid read of size 4 due to NULL pointer dereferencing of _bfd_elf_large_com_section. This vulnerability causes programs that conduct an analysis of binary programs using the libbfd library, such as objcopy, to crash."
+            },
+            {
+                "title": "CVE-2017-16827",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-16827",
+                "description": "The aout_get_external_symbols function in aoutx.h in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29.1, allows remote attackers to cause a denial of service (slurp_symtab invalid free and application crash) or possibly have unspecified other impact via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2017-12450",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12450",
+                "description": "The alpha_vms_object_p function in bfd/vms-alpha.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29 and earlier, allows remote attackers to cause an out of bounds heap write and possibly achieve code execution via a crafted vms alpha file."
+            },
+            {
+                "title": "CVE-2016-6131",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-6131",
+                "description": "The demangler in GNU Libiberty allows remote attackers to cause a denial of service (infinite loop, stack overflow, and crash) via a cycle in the references of remembered mangled types."
+            },
+            {
+                "title": "CVE-2017-14529",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-14529",
+                "description": "The pe_print_idata function in peXXigen.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, mishandles HintName vector entries, which allows remote attackers to cause a denial of service (heap-based buffer over-read and application crash) via a crafted PE file, related to the bfd_getl16 function."
+            },
+            {
+                "title": "CVE-2017-9038",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9038",
+                "description": "GNU Binutils 2.28 allows remote attackers to cause a denial of service (heap-based buffer over-read and application crash) via a crafted ELF file, related to the byte_get_little_endian function in elfcomm.c, the get_unwind_section_word function in readelf.c, and ARM unwind information that contains invalid word offsets."
+            },
+            {
+                "title": "CVE-2016-2226",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-2226",
+                "description": "Integer overflow in the string_appends function in cplus-dem.c in libiberty allows remote attackers to execute arbitrary code via a crafted executable, which triggers a buffer overflow."
+            },
+            {
+                "title": "CVE-2017-9747",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9747",
+                "description": "The ieee_archive_p function in bfd/ieee.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, might allow remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of this file during \"objdump -D\" execution. NOTE: this may be related to a compiler bug."
+            },
+            {
+                "title": "CVE-2016-4490",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-4490",
+                "description": "Integer overflow in cp-demangle.c in libiberty allows remote attackers to cause a denial of service (segmentation fault and crash) via a crafted binary, related to inconsistent use of the long and int types for lengths."
+            },
+            {
+                "title": "CVE-2017-12456",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12456",
+                "description": "The read_symbol_stabs_debugging_info function in rddbg.c in GNU Binutils 2.29 and earlier allows remote attackers to cause an out of bounds heap read via a crafted binary file."
+            },
+            {
+                "title": "CVE-2018-20671",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20671",
+                "description": "load_specific_debug_section in objdump.c in GNU Binutils through 2.31.1 contains an integer overflow vulnerability that can trigger a heap-based buffer overflow via a crafted section size."
+            },
+            {
+                "title": "CVE-2018-10535",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-10535",
+                "description": "The ignore_section_sym function in elf.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.30, does not validate the output_section pointer in the case of a symtab entry with a \"SECTION\" type that has a \"0\" value, which allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted file, as demonstrated by objcopy."
+            },
+            {
+                "title": "CVE-2016-4487",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2016-4487",
+                "description": "Use-after-free vulnerability in libiberty allows remote attackers to cause a denial of service (segmentation fault and crash) via a crafted binary, related to \"btypevec.\""
+            },
+            {
+                "title": "CVE-2017-15939",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15939",
+                "description": "dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, mishandles NULL files in a .debug_line file table, which allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted ELF file, related to concat_filename. NOTE: this issue is caused by an incomplete fix for CVE-2017-15023."
+            },
+            {
+                "title": "CVE-2018-7643",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7643",
+                "description": "The display_debug_ranges function in dwarf.c in GNU Binutils 2.30 allows remote attackers to cause a denial of service (integer overflow and application crash) or possibly have unspecified other impact via a crafted ELF file, as demonstrated by objdump."
+            },
+            {
+                "title": "CVE-2018-13033",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-13033",
+                "description": "The Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.30, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted ELF file, as demonstrated by _bfd_elf_parse_attributes in elf-attrs.c and bfd_malloc in libbfd.c. This can occur during execution of nm."
+            },
+            {
+                "title": "CVE-2017-9039",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9039",
+                "description": "GNU Binutils 2.28 allows remote attackers to cause a denial of service (memory consumption) via a crafted ELF file with many program headers, related to the get_program_headers function in readelf.c."
+            },
+            {
+                "title": "CVE-2017-15022",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15022",
+                "description": "dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, does not validate the DW_AT_name data type, which allows remote attackers to cause a denial of service (bfd_hash_hash NULL pointer dereference, or out-of-bounds access, and application crash) via a crafted ELF file, related to scan_unit_for_symbols and parse_comp_unit."
+            },
+            {
+                "title": "CVE-2017-8393",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-8393",
+                "description": "The Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, is vulnerable to a global buffer over-read error because of an assumption made by code that runs for objcopy and strip, that SHT_REL/SHR_RELA sections are always named starting with a .rel/.rela prefix. This vulnerability causes programs that conduct an analysis of binary programs using the libbfd library, such as objcopy and strip, to crash."
+            },
+            {
+                "title": "CVE-2018-20623",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20623",
+                "description": "In GNU Binutils 2.31.1, there is a use-after-free in the error function in elfcomm.c when called from the process_archive function in readelf.c via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2017-9744",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9744",
+                "description": "The sh_elf_set_mach_from_flags function in bfd/elf32-sh.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, allows remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of this file during \"objdump -D\" execution."
+            },
+            {
+                "title": "CVE-2018-7642",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7642",
+                "description": "The swap_std_reloc_in function in aoutx.h in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.30, allows remote attackers to cause a denial of service (aout_32_swap_std_reloc_out NULL pointer dereference and application crash) via a crafted ELF file, as demonstrated by objcopy."
+            },
+            {
+                "title": "CVE-2017-9752",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9752",
+                "description": "bfd/vms-alpha.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, allows remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of this file in the _bfd_vms_get_value and _bfd_vms_slurp_etir functions during \"objdump -D\" execution."
+            },
+            {
+                "title": "CVE-2018-12698",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12698",
+                "description": "demangle_template in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.30, allows attackers to trigger excessive memory consumption (aka OOM) during the \"Create an array for saving the template argument values\" XNEWVEC call. This can occur during execution of objdump."
+            },
+            {
+                "title": "CVE-2018-12699",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12699",
+                "description": "finish_stab in stabs.c in GNU Binutils 2.30 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write of 8 bytes. This can occur during execution of objdump."
+            },
+            {
+                "title": "CVE-2017-15996",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15996",
+                "description": "elfcomm.c in readelf in GNU Binutils 2.29 allows remote attackers to cause a denial of service (excessive memory allocation) or possibly have unspecified other impact via a crafted ELF file that triggers a \"buffer overflow on fuzzed archive header,\" related to an uninitialized variable, an improper conditional jump, and the get_archive_member_name, process_archive_index_and_symbols, and setup_archive functions."
+            },
+            {
+                "title": "CVE-2017-9044",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9044",
+                "description": "The print_symbol_for_build_attribute function in readelf.c in GNU Binutils 2017-04-12 allows remote attackers to cause a denial of service (invalid read and SEGV) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2018-6759",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-6759",
+                "description": "The bfd_get_debug_link_info_1 function in opncls.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.30, has an unchecked strnlen operation. Remote attackers could leverage this vulnerability to cause a denial of service (segmentation fault) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2017-9745",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9745",
+                "description": "The _bfd_vms_slurp_etir function in bfd/vms-alpha.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, allows remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of this file during \"objdump -D\" execution."
+            },
+            {
+                "title": "CVE-2018-7208",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7208",
+                "description": "In the coff_pointerize_aux function in coffgen.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.30, an index is not validated, which allows remote attackers to cause a denial of service (segmentation fault) or possibly have unspecified other impact via a crafted file, as demonstrated by objcopy of a COFF object."
+            },
+            {
+                "title": "CVE-2017-6969",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6969",
+                "description": "readelf in GNU Binutils 2.28 is vulnerable to a heap-based buffer over-read while processing corrupt RL78 binaries. The vulnerability can trigger program crashes. It may lead to an information leak as well."
+            },
+            {
+                "title": "CVE-2017-12449",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12449",
+                "description": "The _bfd_vms_save_sized_string function in vms-misc.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29 and earlier, allows remote attackers to cause an out of bounds heap read via a crafted vms file."
+            },
+            {
+                "title": "CVE-2017-14932",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-14932",
+                "description": "decode_line_info in dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (infinite loop) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2017-7614",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-7614",
+                "description": "elflink.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, has a \"member access within null pointer\" undefined behavior issue, which might allow remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact via an \"int main() {return 0;}\" program."
+            },
+            {
+                "title": "CVE-2017-12454",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12454",
+                "description": "The _bfd_vms_slurp_egsd function in bfd/vms-alpha.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29 and earlier, allows remote attackers to cause an arbitrary memory read via a crafted vms alpha file."
+            },
+            {
+                "title": "CVE-2018-1000876",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000876",
+                "description": "binutils version 2.32 and earlier contains a Integer Overflow vulnerability in objdump, bfd_get_dynamic_reloc_upper_bound,bfd_canonicalize_dynamic_reloc that can result in Integer overflow trigger heap overflow. Successful exploitation allows execution of arbitrary code.. This attack appear to be exploitable via Local. This vulnerability appears to have been fixed in after commit 3a551c7a1b80fca579461774860574eabfd7f18f."
+            },
+            {
+                "title": "CVE-2017-8396",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-8396",
+                "description": "The Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, is vulnerable to an invalid read of size 1 because the existing reloc offset range tests didn't catch small negative offsets less than the size of the reloc field. This vulnerability causes programs that conduct an analysis of binary programs using the libbfd library, such as objdump, to crash."
+            },
+            {
+                "title": "CVE-2017-8397",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-8397",
+                "description": "The Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, is vulnerable to an invalid read of size 1 and an invalid write of size 1 during processing of a corrupt binary containing reloc(s) with negative addresses. This vulnerability causes programs that conduct an analysis of binary programs using the libbfd library, such as objdump, to crash."
+            },
+            {
+                "title": "CVE-2017-12455",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12455",
+                "description": "The evax_bfd_print_emh function in vms-alpha.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29 and earlier, allows remote attackers to cause an out of bounds heap read via a crafted vms alpha file."
+            },
+            {
+                "title": "CVE-2017-9954",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9954",
+                "description": "The getvalue function in tekhex.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, allows remote attackers to cause a denial of service (stack-based buffer over-read and application crash) via a crafted tekhex file, as demonstrated by mishandling within the nm program."
+            },
+            {
+                "title": "CVE-2018-17360",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-17360",
+                "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31. a heap-based buffer over-read in bfd_getl32 in libbfd.c allows an attacker to cause a denial of service through a crafted PE file. This vulnerability can be triggered by the executable objdump."
+            },
+            {
+                "title": "CVE-2019-14444",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14444",
+                "description": "apply_relocations in readelf.c in GNU Binutils 2.32 contains an integer overflow that allows attackers to trigger a write access violation (in byte_put_little_endian function in elfcomm.c) via an ELF file, as demonstrated by readelf."
+            },
+            {
+                "title": "CVE-2019-9075",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9075",
+                "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.32. It is a heap-based buffer overflow in _bfd_archive_64_bit_slurp_armap in archive64.c."
+            },
+            {
+                "title": "CVE-2018-17985",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-17985",
+                "description": "An issue was discovered in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31. There is a stack consumption problem caused by the cplus_demangle_type function making recursive calls to itself in certain scenarios involving many 'P' characters."
+            },
+            {
+                "title": "CVE-2017-8398",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-8398",
+                "description": "dwarf.c in GNU Binutils 2.28 is vulnerable to an invalid read of size 1 during dumping of debug information from a corrupt binary. This vulnerability causes programs that conduct an analysis of binary programs, such as objdump and readelf, to crash."
+            },
+            {
+                "title": "CVE-2018-18607",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18607",
+                "description": "An issue was discovered in elf_link_input_bfd in elflink.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31. There is a NULL pointer dereference in elf_link_input_bfd when used for finding STT_TLS symbols without any TLS section. A specially crafted ELF allows remote attackers to cause a denial of service, as demonstrated by ld."
+            },
+            {
+                "title": "CVE-2017-8421",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-8421",
+                "description": "The function coff_set_alignment_hook in coffcode.h in Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, has a memory leak vulnerability which can cause memory exhaustion in objdump via a crafted PE file. Additional validation in dump_relocs_in_section in objdump.c can resolve this."
+            },
+            {
+                "title": "CVE-2019-17450",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17450",
+                "description": "find_abstract_instance in dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.32, allows remote attackers to cause a denial of service (infinite recursion and application crash) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2017-12799",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12799",
+                "description": "The elf_read_notesfunction in bfd/elf.c in GNU Binutils 2.29 allows remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file."
+            },
+            {
+                "title": "CVE-2017-15938",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15938",
+                "description": "dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, miscalculates DW_FORM_ref_addr die refs in the case of a relocatable object file, which allows remote attackers to cause a denial of service (find_abstract_instance_name invalid memory read, segmentation fault, and application crash)."
+            },
+            {
+                "title": "CVE-2017-7301",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-7301",
+                "description": "The Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, has an aout_link_add_symbols function in bfd/aoutx.h that has an off-by-one vulnerability because it does not carefully check the string offset. The vulnerability could lead to a GNU linker (ld) program crash."
+            },
+            {
+                "title": "CVE-2017-9750",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9750",
+                "description": "opcodes/rx-decode.opc in GNU Binutils 2.28 lacks bounds checks for certain scale arrays, which allows remote attackers to cause a denial of service (buffer overflow and application crash) or possibly have unspecified other impact via a crafted binary file, as demonstrated by mishandling of this file during \"objdump -D\" execution."
+            },
+            {
+                "title": "CVE-2017-7226",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-7226",
+                "description": "The pe_ILF_object_p function in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.28, is vulnerable to a heap-based buffer over-read of size 4049 because it uses the strlen function instead of strnlen, leading to program crashes in several utilities such as addr2line, size, and strings. It could lead to information disclosure as well."
+            },
+            {
+                "title": "CVE-2017-15025",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15025",
+                "description": "decode_line_info in dwarf2.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (divide-by-zero error and application crash) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2018-18605",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18605",
+                "description": "A heap-based buffer over-read issue was discovered in the function sec_merge_hash_lookup in merge.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31, because _bfd_add_merge_section mishandles section merges when size is not a multiple of entsize. A specially crafted ELF allows remote attackers to cause a denial of service, as demonstrated by ld."
+            },
+            {
+                "title": "CVE-2017-9042",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9042",
+                "description": "readelf.c in GNU Binutils 2017-04-12 has a \"cannot be represented in type long\" issue, which might allow remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2017-12457",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12457",
+                "description": "The bfd_make_section_with_flags function in section.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29 and earlier, allows remote attackers to cause a NULL dereference via a crafted file."
+            },
+            {
+                "title": "CVE-2017-12453",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12453",
+                "description": "The _bfd_vms_slurp_eeom function in libbfd.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29 and earlier, allows remote attackers to cause an out of bounds heap read via a crafted vms alpha file."
+            },
+            {
+                "title": "CVE-2018-17359",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-17359",
+                "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31. An invalid memory access exists in bfd_zalloc in opncls.c. Attackers could leverage this vulnerability to cause a denial of service (application crash) via a crafted ELF file."
+            },
+            {
+                "title": "CVE-2017-9040",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9040",
+                "description": "GNU Binutils 2017-04-03 allows remote attackers to cause a denial of service (NULL pointer dereference and application crash), related to the process_mips_specific function in readelf.c, via a crafted ELF file that triggers a large memory-allocation attempt."
+            },
+            {
+                "title": "CVE-2017-7209",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-7209",
+                "description": "The dump_section_as_bytes function in readelf in GNU Binutils 2.28 accesses a NULL pointer while reading section contents in a corrupt binary, leading to a program crash."
+            },
+            {
+                "title": "CVE-2019-9077",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9077",
+                "description": "An issue was discovered in GNU Binutils 2.32. It is a heap-based buffer overflow in process_mips_specific in readelf.c via a malformed MIPS option section."
+            },
+            {
+                "title": "CVE-2017-6966",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6966",
+                "description": "readelf in GNU Binutils 2.28 has a use-after-free (specifically read-after-free) error while processing multiple, relocated sections in an MSP430 binary. This is caused by mishandling of an invalid symbol index, and mishandling of state across invocations."
+            },
+            {
+                "title": "CVE-2017-14938",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-14938",
+                "description": "_bfd_elf_slurp_version_tables in elf.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted ELF file."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5019-1: NVIDIA graphics drivers vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5019-1",
         "cves": [
