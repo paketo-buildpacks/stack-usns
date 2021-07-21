@@ -1031,7 +1031,7 @@
             {
                 "title": "CVE-2021-33910",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33910",
-                "description": "Denial of service (stack exhaustion) in systemd (PID 1)"
+                "description": "basic/unit-name.c in systemd 220 through 248 has a Memory Allocation with an Excessive Size Value (involving strdupa and alloca for a pathname controlled by a local attacker) that results in an operating system crash."
             }
         ],
         "affected_packages": []
