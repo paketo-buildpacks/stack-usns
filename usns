@@ -1,5 +1,32 @@
 [
     {
+        "title": "USN-5021-1: curl vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5021-1",
+        "cves": [
+            {
+                "title": "CVE-2021-22898",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22898",
+                "description": "curl 7.7 through 7.76.1 suffers from an information disclosure when the `-t` command line option, known as `CURLOPT_TELNETOPTIONS` in libcurl, is used to send variable=content pairs to TELNET servers. Due to a flaw in the option parser for sending NEW_ENV variables, libcurl could be made to pass on uninitialized data from a stack based buffer to the server, resulting in potentially revealing sensitive internal information to the server using a clear-text network protocol."
+            },
+            {
+                "title": "CVE-2021-22925",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22925",
+                "description": "TELNET stack contents disclosure again"
+            },
+            {
+                "title": "CVE-2021-22924",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22924",
+                "description": "Bad connection reuse due to flawed path name checks"
+            }
+        ],
+        "affected_packages": [
+            "libcurl3-gnutls",
+            "libcurl3-nss",
+            "libcurl4",
+            "curl"
+        ]
+    },
+    {
         "title": "USN-5020-1: Ruby vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5020-1",
         "cves": [
