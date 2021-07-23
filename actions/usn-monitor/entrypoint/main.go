@@ -159,9 +159,8 @@ func getPackageNameFromHTML(listItem string) string {
 		re := regexp.MustCompile(`<a href=".*?">(.*?)</a>`)
 		packageMatch := re.FindStringSubmatch(listItem)
 		return packageMatch[1]
-	} else {
-		return strings.Split(listItem, " ")[0]
 	}
+	return strings.Split(listItem, " ")[0]
 }
 
 func extractCVEs(usnBody string) ([]CVE, error) {

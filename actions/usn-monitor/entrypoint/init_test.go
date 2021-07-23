@@ -15,5 +15,6 @@ func TestUSNMonitor(t *testing.T) {
 
 	suite := spec.New("usnMonitor", spec.Report(report.Terminal{}))
 	suite("UpdateUSNs", testUpdateUSNs)
+	suite("QueryRSSFeed", testQueryRSSFeed)
 	suite.Run(t)
 }

@@ -11,9 +11,6 @@ import (
 
 	"github.com/sclevine/spec"
 
-	// "github.com/stretchr/testify/assert"
-	// "github.com/stretchr/testify/require"
-
 	. "github.com/onsi/gomega"
 	. "github.com/paketo-buildpacks/stack-usns/actions/usn-monitor/entrypoint"
 )
@@ -358,7 +355,6 @@ References`, testRSSFeed.URL, testRSSFeed.URL))
 					Expect(err).To(MatchError(ContainSubstring("error unmarshalling existing USN list")))
 				})
 			})
-
 		})
 	})
 }
