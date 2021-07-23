@@ -167,7 +167,6 @@ References`, testRSSFeed.URL, testRSSFeed.URL))
 				Expect(actualUSNArray).To(Equal(expectedUSNArray))
 			})
 		})
-
 		context("given a partially filled out USNs file and RSS feed", func() {
 			it("prepends new USN entries onto the file", func() {
 				preExistentUSNs := []USN{
