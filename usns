@@ -1,5 +1,22 @@
 [
     {
+        "title": "LSN-0079-1: Kernel Live Patch Security Notice",
+        "link": "https://ubuntu.com/security/notices/LSN-0079-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3600",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3600",
+                "description": "It was discovered that the eBPF implementation in the Linux kernel did not properly track bounds information for 32 bit registers when performing div and mod operations. A local attacker could use this to possibly execute arbitrary code."
+            },
+            {
+                "title": "CVE-2021-33909",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33909",
+                "description": "fs/seq_file.c in the Linux kernel 3.16 through 5.13.x before 5.13.4 does not properly restrict seq buffer allocations, leading to an integer overflow, an Out-of-bounds Write, and escalation to root by an unprivileged user, aka CID-8cae8cd89f05."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5021-1: curl vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5021-1",
         "cves": [
