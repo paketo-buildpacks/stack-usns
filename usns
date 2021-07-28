@@ -1,5 +1,80 @@
 [
     {
+        "title": "USN-5024-1: WebKitGTK vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5024-1",
+        "cves": [
+            {
+                "title": "CVE-2021-30797",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30797",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-30744",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30744",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-30799",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30799",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-21775",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21775",
+                "description": "A use-after-free vulnerability exists in the way certain events are processed for ImageLoader objects of Webkit WebKitGTK 2.30.4. A specially crafted web page can lead to a potential information leak and further memory corruption. In order to trigger the vulnerability, a victim must be tricked into visiting a malicious webpage."
+            },
+            {
+                "title": "CVE-2021-30749",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30749",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-30758",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30758",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-30795",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30795",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-30689",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30689",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-21779",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21779",
+                "description": "A use-after-free vulnerability exists in the way Webkit’s GraphicsContext handles certain events in WebKitGTK 2.30.4. A specially crafted web page can lead to a potential information leak and further memory corruption. A victim must be tricked into visiting a malicious web page to trigger this vulnerability."
+            },
+            {
+                "title": "CVE-2021-30665",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30665",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-30720",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30720",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-30663",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30663",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-30734",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30734",
+                "description": "Canonical is offering Ubuntu 14.04 Extended Security Maintenance (ESM) for security fixes and essential packages."
+            }
+        ],
+        "affected_packages": [
+            "libwebkit2gtk-4.0-37",
+            "libjavascriptcoregtk-4.0-18"
+        ]
+    },
+    {
         "title": "USN-5023-1: Aspell vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5023-1",
         "cves": [
