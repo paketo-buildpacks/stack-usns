@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-4944-2: MariaDB regression",
+        "link": "https://ubuntu.com/security/notices/USN-4944-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1913676",
+                "link": "https://launchpad.net/bugs/1913676",
+                "description": "libmariadb3 fails to include caching_sha2_password.so"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5024-1: WebKitGTK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5024-1",
         "cves": [
