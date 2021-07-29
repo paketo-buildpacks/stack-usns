@@ -1,5 +1,39 @@
 [
     {
+        "title": "USN-5027-1: PEAR vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5027-1",
+        "cves": [
+            {
+                "title": "CVE-2021-32610",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32610",
+                "description": "In Archive_Tar before 1.4.14, symlinks can refer to targets outside of the extracted archive, a different vulnerability than CVE-2020-36193."
+            }
+        ],
+        "affected_packages": [
+            "php-pear"
+        ]
+    },
+    {
+        "title": "USN-5026-1: QPDF vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5026-1",
+        "cves": [
+            {
+                "title": "CVE-2018-18020",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18020",
+                "description": "In QPDF 8.2.1, in libqpdf/QPDFWriter.cc, QPDFWriter::unparseObject and QPDFWriter::unparseChild have recursive calls for a long time, which allows remote attackers to cause a denial of service via a crafted PDF file."
+            },
+            {
+                "title": "CVE-2021-36978",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-36978",
+                "description": "QPDF 9.x through 9.1.1 and 10.x through 10.0.4 has a heap-based buffer overflow in Pl_ASCII85Decoder::write (called from Pl_AES_PDF::flush and Pl_AES_PDF::finish) when a certain downstream write fails."
+            }
+        ],
+        "affected_packages": [
+            "qpdf",
+            "libqpdf21"
+        ]
+    },
+    {
         "title": "USN-5025-2: libsndfile vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5025-2",
         "cves": [
