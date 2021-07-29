@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-5025-1: libsndfile vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5025-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3246",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3246",
+                "description": "A heap buffer overflow vulnerability in msadpcm_decode_block of libsndfile 1.0.30 allows attackers to execute arbitrary code via a crafted WAV file."
+            }
+        ],
+        "affected_packages": [
+            "libsndfile1",
+            "sndfile-programs"
+        ]
+    },
+    {
         "title": "USN-4944-2: MariaDB regression",
         "link": "https://ubuntu.com/security/notices/USN-4944-2",
         "cves": [
