@@ -1,5 +1,36 @@
 [
     {
+        "title": "USN-5029-1: GnuTLS vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5029-1",
+        "cves": [
+            {
+                "title": "CVE-2021-20232",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20232",
+                "description": "A flaw was found in gnutls. A use after free issue in client_send_params in lib/ext/pre_shared_key.c may lead to memory corruption and other potential consequences."
+            },
+            {
+                "title": "CVE-2021-20231",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20231",
+                "description": "A flaw was found in gnutls. A use after free issue in client sending key_share extension may lead to memory corruption and other consequences."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5028-1: Exiv2 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5028-1",
+        "cves": [
+            {
+                "title": "CVE-2021-31291",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31291",
+                "description": "A heap-based buffer overflow vulnerability in jp2image.cpp of Exiv2 0.27.3 allows attackers to cause a denial of service (DOS) via crafted metadata."
+            }
+        ],
+        "affected_packages": [
+            "libexiv2-14"
+        ]
+    },
+    {
         "title": "USN-5026-2: QPDF vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5026-2",
         "cves": [
