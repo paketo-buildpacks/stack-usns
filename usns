@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-5026-2: QPDF vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5026-2",
+        "cves": [
+            {
+                "title": "CVE-2021-36978",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-36978",
+                "description": "QPDF 9.x through 9.1.1 and 10.x through 10.0.4 has a heap-based buffer overflow in Pl_ASCII85Decoder::write (called from Pl_AES_PDF::flush and Pl_AES_PDF::finish) when a certain downstream write fails."
+            },
+            {
+                "title": "CVE-2018-18020",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18020",
+                "description": "In QPDF 8.2.1, in libqpdf/QPDFWriter.cc, QPDFWriter::unparseObject and QPDFWriter::unparseChild have recursive calls for a long time, which allows remote attackers to cause a denial of service via a crafted PDF file."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5027-1: PEAR vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5027-1",
         "cves": [
