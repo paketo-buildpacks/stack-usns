@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-5030-1: Perl DBI module vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5030-1",
+        "cves": [
+            {
+                "title": "CVE-2020-14393",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14393",
+                "description": "A buffer overflow was found in perl-DBI < 1.643 in DBI.xs. A local attacker who is able to supply a string longer than 300 characters could cause an out-of-bounds write, affecting the availability of the service or integrity of data."
+            },
+            {
+                "title": "CVE-2014-10402",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2014-10402",
+                "description": "An issue was discovered in the DBI module through 1.643 for Perl. DBD::File drivers can open files from folders other than those specifically passed via the f_dir attribute in the data source name (DSN). NOTE: this issue exists because of an incomplete fix for CVE-2014-10401."
+            }
+        ],
+        "affected_packages": [
+            "libdbi-perl"
+        ]
+    },
+    {
         "title": "USN-5029-1: GnuTLS vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5029-1",
         "cves": [
