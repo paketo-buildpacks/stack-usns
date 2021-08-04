@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5031-1: openCryptoki vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5031-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1928780",
+                "link": "https://launchpad.net/bugs/1928780",
+                "description": "[UBUNTU 21.04] openCryptoki: Soft token does not check if an EC key is valid"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5027-2: PEAR vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5027-2",
         "cves": [
