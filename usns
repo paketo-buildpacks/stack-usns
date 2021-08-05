@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5032-1: Docker vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5032-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1938908",
+                "link": "https://launchpad.net/bugs/1938908",
+                "description": "Backport the container stack in Impish"
+            }
+        ],
+        "affected_packages": [
+            "docker.io"
+        ]
+    },
+    {
         "title": "USN-5031-1: openCryptoki vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5031-1",
         "cves": [
