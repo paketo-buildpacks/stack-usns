@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5033-1: Perl vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5033-1",
+        "cves": [
+            {
+                "title": "CVE-2021-36770",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-36770",
+                "description": "Encode library can be made to run arbitrary Perl code from the current working directory."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5032-2: Docker vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5032-2",
         "cves": [
