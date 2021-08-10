@@ -1,5 +1,31 @@
 [
     {
+        "title": "USN-5035-1: GPSd vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5035-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1938730",
+                "link": "https://launchpad.net/bugs/1938730",
+                "description": "GPSD time will jump back 1024 weeks at after week=2180 (23-October-2021)"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5034-1: c-ares vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5034-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3672",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3672",
+                "description": "Missing input validation on hostnames returned by DNS servers"
+            }
+        ],
+        "affected_packages": [
+            "libc-ares2"
+        ]
+    },
+    {
         "title": "USN-5033-1: Perl vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5033-1",
         "cves": [
