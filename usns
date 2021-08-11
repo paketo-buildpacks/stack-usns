@@ -1,5 +1,64 @@
 [
     {
+        "title": "USN-5037-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5037-1",
+        "cves": [
+            {
+                "title": "CVE-2021-29984",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29984",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29981",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29981",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29989",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29989",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29982",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29982",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29986",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29986",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29988",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29988",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29980",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29980",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29985",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29985",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29990",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29990",
+                "description": "[Unknown description]"
+            },
+            {
+                "title": "CVE-2021-29987",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29987",
+                "description": "[Unknown description]"
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5034-2: c-ares vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5034-2",
         "cves": [
