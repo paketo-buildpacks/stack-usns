@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-3809-2: OpenSSH regression",
+        "link": "https://ubuntu.com/security/notices/USN-3809-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1934501",
+                "link": "https://launchpad.net/bugs/1934501",
+                "description": ""
+            }
+        ],
+        "affected_packages": [
+            "openssh-server"
+        ]
+    },
+    {
         "title": "USN-5037-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5037-1",
         "cves": [
