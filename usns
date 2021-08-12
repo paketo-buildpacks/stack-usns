@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5039-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5039-1",
+        "cves": [
+            {
+                "title": "CVE-2021-22555",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22555",
+                "description": "A heap out-of-bounds write affecting Linux since v2.6.19-rc1 was discovered in net/netfilter/x_tables.c. This allows an attacker to gain privileges or cause a DoS (via heap memory corruption) through user name space"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5038-1: PostgreSQL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5038-1",
         "cves": [
