@@ -6,7 +6,7 @@
             {
                 "title": "https://launchpad.net/bugs/1934501",
                 "link": "https://launchpad.net/bugs/1934501",
-                "description": ""
+                "description": "CVE-2018-15473 patch introduce user enumeration vulnerability"
             }
         ],
         "affected_packages": [
