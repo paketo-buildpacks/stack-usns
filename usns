@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5042-1: HAProxy vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5042-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1940314",
+                "link": "https://launchpad.net/bugs/1940314",
+                "description": "Aug 2021 security update"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "LSN-0080-1: Kernel Live Patch Security Notice",
         "link": "https://ubuntu.com/security/notices/LSN-0080-1",
         "cves": [
