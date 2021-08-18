@@ -1,5 +1,99 @@
 [
     {
+        "title": "USN-5044-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5044-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3573",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3573",
+                "description": "[UAF vulnerability in function hci_sock_bound_ioctl()]"
+            },
+            {
+                "title": "CVE-2021-3587",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3587",
+                "description": "[nfc: NULL ptr dereference in llcp_sock_getname() after failed connect]"
+            },
+            {
+                "title": "CVE-2021-3564",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3564",
+                "description": "A flaw double-free memory corruption in the Linux kernel HCI device initialization subsystem was found in the way user attach malicious HCI TTY Bluetooth device. A local user could use this flaw to crash the system. This flaw affects all the Linux kernel versions starting from 3.13."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-aws-lts-18.04",
+            "linux-image-generic",
+            "linux-image-4.15.0-154-generic-lpae",
+            "linux-image-4.15.0-154-lowlatency",
+            "linux-image-oracle-lts-18.04",
+            "linux-image-4.15.0-1098-kvm",
+            "linux-image-4.15.0-1122-azure",
+            "linux-image-virtual",
+            "linux-image-snapdragon",
+            "linux-image-4.15.0-1079-oracle",
+            "linux-image-4.15.0-1107-gcp",
+            "linux-image-raspi2",
+            "linux-image-azure-lts-18.04",
+            "linux-image-4.15.0-1094-raspi2",
+            "linux-image-4.15.0-1110-aws",
+            "linux-image-4.15.0-1111-snapdragon",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-kvm",
+            "linux-image-generic-lpae",
+            "linux-image-4.15.0-154-generic",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
+        "title": "USN-5045-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5045-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3573",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3573",
+                "description": "[UAF vulnerability in function hci_sock_bound_ioctl()]"
+            },
+            {
+                "title": "CVE-2021-34693",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-34693",
+                "description": "net/can/bcm.c in the Linux kernel through 5.12.10 allows local users to obtain sensitive information from kernel stack memory because parts of a data structure are uninitialized."
+            },
+            {
+                "title": "CVE-2021-3587",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3587",
+                "description": "[nfc: NULL ptr dereference in llcp_sock_getname() after failed connect]"
+            },
+            {
+                "title": "CVE-2021-3564",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3564",
+                "description": "A flaw double-free memory corruption in the Linux kernel HCI device initialization subsystem was found in the way user attach malicious HCI TTY Bluetooth device. A local user could use this flaw to crash the system. This flaw affects all the Linux kernel versions starting from 3.13."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-5.4.0-1051-gcp",
+            "linux-image-5.4.0-1055-aws",
+            "linux-image-generic-hwe-18.04",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-5.4.0-81-generic",
+            "linux-image-oem",
+            "linux-image-aws",
+            "linux-image-5.4.0-1056-azure",
+            "linux-image-oem-osp1",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-azure",
+            "linux-image-5.4.0-1022-gkeop",
+            "linux-image-5.4.0-1051-gke",
+            "linux-image-gkeop-5.4",
+            "linux-image-5.4.0-1053-oracle",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-gcp",
+            "linux-image-oracle",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-gke-5.4",
+            "linux-image-5.4.0-81-generic-lpae",
+            "linux-image-5.4.0-81-lowlatency"
+        ]
+    },
+    {
         "title": "USN-5043-1: Exiv2 vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5043-1",
         "cves": [
