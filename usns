@@ -1,5 +1,42 @@
 [
     {
+        "title": "USN-5046-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5046-1",
+        "cves": [
+            {
+                "title": "CVE-2021-0129",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-0129",
+                "description": "Improper access control in BlueZ may allow an authenticated user to potentially enable information disclosure via adjacent access."
+            },
+            {
+                "title": "CVE-2020-26558",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26558",
+                "description": "Bluetooth LE and BR/EDR secure pairing in Bluetooth Core Specification 2.1 through 5.2 may permit a nearby man-in-the-middle attacker to identify the Passkey used during pairing (in the Passkey authentication procedure) by reflection of the public key and the authentication evidence of the initiating device, potentially permitting this attacker to complete authenticated pairing with the responding device using the correct Passkey for the pairing session. The attack methodology determines the Passkey value one bit at a time."
+            },
+            {
+                "title": "CVE-2021-28691",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28691",
+                "description": "Guest triggered use-after-free in Linux xen-netback A malicious or buggy network PV frontend can force Linux netback to disable the interface and terminate the receive kernel thread associated with queue 0 in response to the frontend sending a malformed packet. Such kernel thread termination will lead to a use-after-free in Linux netback when the backend is destroyed, as the kernel thread associated with queue 0 will have already exited and thus the call to kthread_stop will be performed against a stale pointer."
+            },
+            {
+                "title": "CVE-2021-3587",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3587",
+                "description": "[nfc: NULL ptr dereference in llcp_sock_getname() after failed connect]"
+            },
+            {
+                "title": "CVE-2021-3564",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3564",
+                "description": "A flaw double-free memory corruption in the Linux kernel HCI device initialization subsystem was found in the way user attach malicious HCI TTY Bluetooth device. A local user could use this flaw to crash the system. This flaw affects all the Linux kernel versions starting from 3.13."
+            },
+            {
+                "title": "CVE-2021-3573",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3573",
+                "description": "[UAF vulnerability in function hci_sock_bound_ioctl()]"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5044-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5044-1",
         "cves": [
