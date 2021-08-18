@@ -113,21 +113,23 @@
             "linux-image-5.4.0-81-generic",
             "linux-image-oem",
             "linux-image-aws",
+            "linux-image-raspi-hwe-18.04",
             "linux-image-5.4.0-1056-azure",
             "linux-image-oem-osp1",
             "linux-image-generic-lpae-hwe-18.04",
-            "linux-image-azure",
             "linux-image-5.4.0-1022-gkeop",
             "linux-image-5.4.0-1051-gke",
             "linux-image-gkeop-5.4",
             "linux-image-5.4.0-1053-oracle",
+            "linux-image-azure",
             "linux-image-virtual-hwe-18.04",
+            "linux-image-5.4.0-81-lowlatency",
             "linux-image-gcp",
+            "linux-image-5.4.0-1042-raspi",
             "linux-image-oracle",
             "linux-image-lowlatency-hwe-18.04",
             "linux-image-gke-5.4",
-            "linux-image-5.4.0-81-generic-lpae",
-            "linux-image-5.4.0-81-lowlatency"
+            "linux-image-5.4.0-81-generic-lpae"
         ]
     },
     {
