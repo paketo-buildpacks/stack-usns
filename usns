@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5047-1: Firefox vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5047-1",
+        "cves": [
+            {
+                "title": "CVE-2021-29991",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29991",
+                "description": "Firefox incorrectly accepted a newline in a HTTP/3 header, interpretting it as two separate headers. This allowed for a header splitting attack against servers using HTTP/3."
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5046-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5046-1",
         "cves": [
