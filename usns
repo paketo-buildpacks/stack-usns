@@ -21,7 +21,7 @@
             {
                 "title": "CVE-2021-3587",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3587",
-                "description": "[nfc: NULL ptr dereference in llcp_sock_getname() after failed connect]"
+                "description": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2021-38208. Reason: This candidate is a reservation duplicate of CVE-2021-38208. Notes: All CVE users should reference CVE-2021-38208 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage."
             },
             {
                 "title": "CVE-2021-3564",
@@ -31,7 +31,7 @@
             {
                 "title": "CVE-2021-3573",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3573",
-                "description": "[UAF vulnerability in function hci_sock_bound_ioctl()]"
+                "description": "A use-after-free in function hci_sock_bound_ioctl() of the Linux kernel HCI subsystem was found in the way user calls ioct HCIUNBLOCKADDR or other way triggers race condition of the call hci_unregister_dev() together with one of the calls hci_sock_blacklist_add(), hci_sock_blacklist_del(), hci_get_conn_info(), hci_get_auth_info(). A privileged local user could use this flaw to crash the system or escalate their privileges on the system. This flaw affects the Linux kernel versions prior to 5.13-rc5."
             }
         ],
         "affected_packages": []
@@ -43,12 +43,12 @@
             {
                 "title": "CVE-2021-3573",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3573",
-                "description": "[UAF vulnerability in function hci_sock_bound_ioctl()]"
+                "description": "A use-after-free in function hci_sock_bound_ioctl() of the Linux kernel HCI subsystem was found in the way user calls ioct HCIUNBLOCKADDR or other way triggers race condition of the call hci_unregister_dev() together with one of the calls hci_sock_blacklist_add(), hci_sock_blacklist_del(), hci_get_conn_info(), hci_get_auth_info(). A privileged local user could use this flaw to crash the system or escalate their privileges on the system. This flaw affects the Linux kernel versions prior to 5.13-rc5."
             },
             {
                 "title": "CVE-2021-3587",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3587",
-                "description": "[nfc: NULL ptr dereference in llcp_sock_getname() after failed connect]"
+                "description": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2021-38208. Reason: This candidate is a reservation duplicate of CVE-2021-38208. Notes: All CVE users should reference CVE-2021-38208 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage."
             },
             {
                 "title": "CVE-2021-3564",
@@ -87,7 +87,7 @@
             {
                 "title": "CVE-2021-3573",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3573",
-                "description": "[UAF vulnerability in function hci_sock_bound_ioctl()]"
+                "description": "A use-after-free in function hci_sock_bound_ioctl() of the Linux kernel HCI subsystem was found in the way user calls ioct HCIUNBLOCKADDR or other way triggers race condition of the call hci_unregister_dev() together with one of the calls hci_sock_blacklist_add(), hci_sock_blacklist_del(), hci_get_conn_info(), hci_get_auth_info(). A privileged local user could use this flaw to crash the system or escalate their privileges on the system. This flaw affects the Linux kernel versions prior to 5.13-rc5."
             },
             {
                 "title": "CVE-2021-34693",
@@ -97,7 +97,7 @@
             {
                 "title": "CVE-2021-3587",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3587",
-                "description": "[nfc: NULL ptr dereference in llcp_sock_getname() after failed connect]"
+                "description": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2021-38208. Reason: This candidate is a reservation duplicate of CVE-2021-38208. Notes: All CVE users should reference CVE-2021-38208 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage."
             },
             {
                 "title": "CVE-2021-3564",
