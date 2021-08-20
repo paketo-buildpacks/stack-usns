@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5048-1: Inetutils vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5048-1",
+        "cves": [
+            {
+                "title": "CVE-2020-10188",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10188",
+                "description": "utility.c in telnetd in netkit telnet through 0.17 allows remote attackers to execute arbitrary code via short writes or urgent data, because of a buffer overflow involving the netclear and nextitem functions."
+            }
+        ],
+        "affected_packages": [
+            "inetutils-telnetd"
+        ]
+    },
+    {
         "title": "USN-5047-1: Firefox vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5047-1",
         "cves": [
