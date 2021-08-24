@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-5051-1: OpenSSL vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5051-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3711",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3711",
+                "description": "SM2 Decryption Buffer Overflow"
+            },
+            {
+                "title": "CVE-2021-3712",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3712",
+                "description": "Read buffer overrun in X509_aux_print()"
+            }
+        ],
+        "affected_packages": [
+            "libssl1.1"
+        ]
+    },
+    {
         "title": "USN-5050-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5050-1",
         "cves": [
