@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5037-2: Firefox regression",
+        "link": "https://ubuntu.com/security/notices/USN-5037-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1941496",
+                "link": "https://launchpad.net/bugs/1941496",
+                "description": "Update to 91.0.2"
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5051-1: OpenSSL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5051-1",
         "cves": [
