@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5051-3: OpenSSL vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5051-3",
+        "cves": [
+            {
+                "title": "CVE-2021-3712",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3712",
+                "description": "Read buffer overrun in X509_aux_print()"
+            }
+        ],
+        "affected_packages": [
+            "libssl1.0.0"
+        ]
+    },
+    {
         "title": "USN-5051-2: OpenSSL vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5051-2",
         "cves": [
