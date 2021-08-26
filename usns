@@ -1,5 +1,21 @@
 [
     {
+        "title": "USN-5052-1: MongoDB vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5052-1",
+        "cves": [
+            {
+                "title": "CVE-2019-2386",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2386",
+                "description": "After user deletion in MongoDB Server the improper invalidation of authorization sessions allows an authenticated user's session to persist and become conflated with new accounts, if those accounts reuse the names of deleted ones. This issue affects: MongoDB Inc. MongoDB Server v4.0 versions prior to 4.0.9; v3.6 versions prior to 3.6.13; v3.4 versions prior to 3.4.22."
+            }
+        ],
+        "affected_packages": [
+            "mongodb-server",
+            "mongodb-clients",
+            "mongodb-server-core"
+        ]
+    },
+    {
         "title": "USN-5037-2: Firefox regression",
         "link": "https://ubuntu.com/security/notices/USN-5037-2",
         "cves": [
