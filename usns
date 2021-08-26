@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5053-1: libssh vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5053-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3634",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3634",
+                "description": "Possible heap-buffer overflow when rekeying"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5051-3: OpenSSL vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5051-3",
         "cves": [
