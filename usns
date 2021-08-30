@@ -1,5 +1,23 @@
 [
     {
+        "title": "USN-5054-1: uWSGI vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5054-1",
+        "cves": [
+            {
+                "title": "CVE-2020-11984",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11984",
+                "description": "Apache HTTP server 2.4.32 to 2.4.44 mod_proxy_uwsgi info disclosure and possible RCE"
+            }
+        ],
+        "affected_packages": [
+            "libapache2-mod-uwsgi",
+            "uwsgi",
+            "libapache2-mod-proxy-uwsgi",
+            "libapache2-mod-ruwsgi",
+            "uwsgi-core"
+        ]
+    },
+    {
         "title": "USN-5056-1: APR vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5056-1",
         "cves": [
