@@ -1,5 +1,64 @@
 [
     {
+        "title": "USN-5058-1: Thunderbird vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5058-1",
+        "cves": [
+            {
+                "title": "CVE-2021-29985",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29985",
+                "description": "A use-after-free vulnerability in media channels could have led to memory corruption and a potentially exploitable crash. This vulnerability affects Thunderbird < 78.13, Thunderbird < 91, Firefox ESR < 78.13, and Firefox < 91."
+            },
+            {
+                "title": "CVE-2021-29970",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29970",
+                "description": "A malicious webpage could have triggered a use-after-free, memory corruption, and a potentially exploitable crash. *This bug could only be triggered when accessibility was enabled.*. This vulnerability affects Thunderbird < 78.12, Firefox ESR < 78.12, and Firefox < 90."
+            },
+            {
+                "title": "CVE-2021-30547",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30547",
+                "description": "Out of bounds write in ANGLE in Google Chrome prior to 91.0.4472.101 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page."
+            },
+            {
+                "title": "CVE-2021-29986",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29986",
+                "description": "A suspected race condition when calling getaddrinfo led to memory corruption and a potentially exploitable crash. *Note: This issue only affected Linux operating systems. Other operating systems are unaffected.* This vulnerability affects Thunderbird < 78.13, Thunderbird < 91, Firefox ESR < 78.13, and Firefox < 91."
+            },
+            {
+                "title": "CVE-2021-29984",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29984",
+                "description": "Instruction reordering resulted in a sequence of instructions that would cause an object to be incorrectly considered during garbage collection. This led to memory corruption and a potentially exploitable crash. This vulnerability affects Thunderbird < 78.13, Thunderbird < 91, Firefox ESR < 78.13, and Firefox < 91."
+            },
+            {
+                "title": "CVE-2021-29976",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29976",
+                "description": "Mozilla developers reported memory safety bugs present in code shared between Firefox and Thunderbird. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Thunderbird < 78.12, Firefox ESR < 78.12, and Firefox < 90."
+            },
+            {
+                "title": "CVE-2021-29969",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29969",
+                "description": "If Thunderbird was configured to use STARTTLS for an IMAP connection, and an attacker injected IMAP server responses prior to the completion of the STARTTLS handshake, then Thunderbird didn't ignore the injected data. This could have resulted in Thunderbird showing incorrect information, for example the attacker could have tricked Thunderbird to show folders that didn't exist on the IMAP server. This vulnerability affects Thunderbird < 78.12."
+            },
+            {
+                "title": "CVE-2021-29989",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29989",
+                "description": "Mozilla developers reported memory safety bugs present in Firefox 90 and Firefox ESR 78.12. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Thunderbird < 78.13, Firefox ESR < 78.13, and Firefox < 91."
+            },
+            {
+                "title": "CVE-2021-29988",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29988",
+                "description": "Firefox incorrectly treated an inline list-item element as a block element, resulting in an out of bounds read or memory corruption, and a potentially exploitable crash. This vulnerability affects Thunderbird < 78.13, Thunderbird < 91, Firefox ESR < 78.13, and Firefox < 91."
+            },
+            {
+                "title": "CVE-2021-29980",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29980",
+                "description": "Uninitialized memory in a canvas object could have caused an incorrect free() leading to memory corruption and a potentially exploitable crash. This vulnerability affects Thunderbird < 78.13, Thunderbird < 91, Firefox ESR < 78.13, and Firefox < 91."
+            }
+        ],
+        "affected_packages": [
+            "thunderbird"
+        ]
+    },
+    {
         "title": "USN-5057-1: Squashfs-Tools vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5057-1",
         "cves": [
