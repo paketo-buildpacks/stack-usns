@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5060-2: NTFS-3G vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5060-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1942235",
+                "link": "https://launchpad.net/bugs/1942235",
+                "description": "Multiple security issues"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5060-1: NTFS-3G vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5060-1",
         "cves": [
