@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5060-1: NTFS-3G vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5060-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1942235",
+                "link": "https://launchpad.net/bugs/1942235",
+                "description": "Multiple security issues"
+            }
+        ],
+        "affected_packages": [
+            "ntfs-3g"
+        ]
+    },
+    {
         "title": "USN-5058-1: Thunderbird vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5058-1",
         "cves": [
