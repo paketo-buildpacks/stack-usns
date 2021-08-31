@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5057-1: Squashfs-Tools vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5057-1",
+        "cves": [
+            {
+                "title": "CVE-2021-40153",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-40153",
+                "description": "squashfs_opendir in unsquash-1.c in Squashfs-Tools 4.5 stores the filename in the directory entry; this is then used by unsquashfs to create the new file during the unsquash. The filename is not validated for traversal outside of the destination directory, and thus allows writing to locations outside of the destination."
+            }
+        ],
+        "affected_packages": [
+            "squashfs-tools"
+        ]
+    },
+    {
         "title": "USN-5054-1: uWSGI vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5054-1",
         "cves": [
