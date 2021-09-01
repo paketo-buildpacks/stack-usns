@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5051-4: OpenSSL regression",
+        "link": "https://ubuntu.com/security/notices/USN-5051-4",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1942357",
+                "link": "https://launchpad.net/bugs/1942357",
+                "description": "Regression in openssl 1.0.1f for trusty/esm after last update"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5060-2: NTFS-3G vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5060-2",
         "cves": [
