@@ -138,7 +138,7 @@
             {
                 "title": "CVE-2021-40346",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-40346",
-                "description": "An integer overflow exists in HAProxy 2.0 through 2.5 in the htx_add_header() can be exploited to perform an HTTP request smuggling attack, allowing an attacker to bypass all configured http-request HAProxy ACLs and possibly other ACLs."
+                "description": "HTTP header name length encoding issue in the HTX representation"
             }
         ],
         "affected_packages": []
