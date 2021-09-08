@@ -1,5 +1,101 @@
 [
     {
+        "title": "USN-5069-1: mod-auth-mellon vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5069-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3639",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3639",
+                "description": "Prevent redirect to URLs that begin with ///"
+            }
+        ],
+        "affected_packages": [
+            "libapache2-mod-auth-mellon"
+        ]
+    },
+    {
+        "title": "USN-5067-1: SSSD vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5067-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3621",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3621",
+                "description": "shell command injection in sssctl comment"
+            },
+            {
+                "title": "CVE-2018-10852",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-10852",
+                "description": "The UNIX pipe which sudo uses to contact SSSD and read the available sudo rules from SSSD has too wide permissions, which means that anyone who can send a message using the same raw protocol that sudo and SSSD use can read the sudo rules available for any user. This affects versions of SSSD before 1.16.3."
+            },
+            {
+                "title": "CVE-2019-3811",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-3811",
+                "description": "A vulnerability was found in sssd. If a user was configured with no home directory set, sssd would return '/' (the root directory) instead of '' (the empty string / no home directory). This could impact services that restrict the user's filesystem access to within their home directory through chroot() etc. All versions before 2.1 are vulnerable."
+            },
+            {
+                "title": "CVE-2018-16838",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-16838",
+                "description": "A flaw was found in sssd Group Policy Objects implementation. When the GPO is not readable by SSSD due to a too strict permission settings on the server side, SSSD will allow all authenticated users to login instead of denying access."
+            }
+        ],
+        "affected_packages": [
+            "sssd"
+        ]
+    },
+    {
+        "title": "USN-5066-1: PySAML2 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5066-1",
+        "cves": [
+            {
+                "title": "CVE-2021-21239",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21239",
+                "description": "PySAML2 is a pure python implementation of SAML Version 2 Standard. PySAML2 before 6.5.0 has an improper verification of cryptographic signature vulnerability. Users of pysaml2 that use the default CryptoBackendXmlSec1 backend and need to verify signed SAML documents are impacted. PySAML2 does not ensure that a signed SAML document is correctly signed. The default CryptoBackendXmlSec1 backend is using the xmlsec1 binary to verify the signature of signed SAML documents, but by default xmlsec1 accepts any type of key found within the given document. xmlsec1 needs to be configured explicitly to only use only _x509 certificates_ for the verification process of the SAML document signature. This is fixed in PySAML2 6.5.0."
+            }
+        ],
+        "affected_packages": [
+            "python-pysaml2",
+            "python3-pysaml2"
+        ]
+    },
+    {
+        "title": "USN-5065-1: Open vSwitch vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5065-1",
+        "cves": [
+            {
+                "title": "CVE-2021-36980",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-36980",
+                "description": "Open vSwitch (aka openvswitch) 2.11.0 through 2.15.0 has a use-after-free in decode_NXAST_RAW_ENCAP (called from ofpact_decode and ofpacts_decode) during the decoding of a RAW_ENCAP action."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5064-1: GNU cpio vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5064-1",
+        "cves": [
+            {
+                "title": "CVE-2021-38185",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38185",
+                "description": "GNU cpio through 2.13 allows attackers to execute arbitrary code via a crafted pattern file, because of a dstring.c ds_fgetstr integer overflow that triggers an out-of-bounds heap write. NOTE: it is unclear whether there are common cases where the pattern file, associated with the -E option, is untrusted data."
+            }
+        ],
+        "affected_packages": [
+            "cpio"
+        ]
+    },
+    {
+        "title": "USN-5063-1: HAProxy vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5063-1",
+        "cves": [
+            {
+                "title": "CVE-2021-40346",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-40346",
+                "description": "HTTP header name length encoding issue in the HTX representation"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5062-1: Linux kernel vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5062-1",
         "cves": [
