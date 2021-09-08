@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-5068-1: GD library vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5068-1",
+        "cves": [
+            {
+                "title": "CVE-2021-40145",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-40145",
+                "description": "** DISPUTED ** gdImageGd2Ptr in gd_gd2.c in the GD Graphics Library (aka LibGD) through 2.3.2 has a double free. NOTE: the vendor's position is \"The GD2 image format is a proprietary image format of libgd. It has to be regarded as being obsolete, and should only be used for development and testing purposes.\""
+            },
+            {
+                "title": "CVE-2021-38115",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38115",
+                "description": "read_header_tga in gd_tga.c in the GD Graphics Library (aka LibGD) through 2.3.2 allows remote attackers to cause a denial of service (out-of-bounds read) via a crafted TGA file."
+            },
+            {
+                "title": "CVE-2017-6363",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6363",
+                "description": "** DISPUTED ** In the GD Graphics Library (aka LibGD) through 2.2.5, there is a heap-based buffer over-read in tiffWriter in gd_tiff.c. NOTE: the vendor says \"In my opinion this issue should not have a CVE, since the GD and GD2 formats are documented to be 'obsolete, and should only be used for development and testing purposes.'\""
+            }
+        ],
+        "affected_packages": [
+            "libgd3"
+        ]
+    },
+    {
         "title": "USN-5069-1: mod-auth-mellon vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5069-1",
         "cves": [
