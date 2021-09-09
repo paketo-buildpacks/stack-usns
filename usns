@@ -1,5 +1,124 @@
 [
     {
+        "title": "USN-5072-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5072-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3656",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3656",
+                "description": "[KVM AMD missing validation of the the `virt_ext` VMCB field and allows a malicious L1 guest to disable both VMLOAD/VMSAVE intercepts and VLS (Virtual VMLOAD/VMSAVE) for the L2 guest. Under these circumstances, the L2 guest is able to run VMLOAD/VMSAVE unintercepted, and thus read/write portions of the host physical memory.]"
+            },
+            {
+                "title": "CVE-2021-3653",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3653",
+                "description": "[KVM AMD missing validation of the `int_ctl` VMCB field and allows a malicious L1 guest to enable AVIC support (Advanced Virtual Interrupt Controller) for the L2 guest. The L2 guest is able to write to a limited but still relatively large subset of the host physical memory.]"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5071-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5071-1",
+        "cves": [
+            {
+                "title": "CVE-2020-36311",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36311",
+                "description": "An issue was discovered in the Linux kernel before 5.9. arch/x86/kvm/svm/sev.c allows attackers to cause a denial of service (soft lockup) by triggering destruction of a large SEV VM (which requires unregistering many encrypted regions), aka CID-7be74942f184."
+            },
+            {
+                "title": "CVE-2021-22543",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22543",
+                "description": "An issue was discovered in Linux: KVM through Improper handling of VM_IO|VM_PFNMAP vmas in KVM can bypass RO checks and can lead to pages being freed while still accessible by the VMM and guest. This allows users with the ability to start and control a VM to read/write random pages of memory and can result in local privilege escalation."
+            },
+            {
+                "title": "CVE-2021-3653",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3653",
+                "description": "[KVM AMD missing validation of the `int_ctl` VMCB field and allows a malicious L1 guest to enable AVIC support (Advanced Virtual Interrupt Controller) for the L2 guest. The L2 guest is able to write to a limited but still relatively large subset of the host physical memory.]"
+            },
+            {
+                "title": "CVE-2021-3612",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3612",
+                "description": "An out-of-bounds memory write flaw was found in the Linux kernel's joystick devices subsystem in versions before 5.9-rc1, in the way the user calls ioctl JSIOCSBTNMAP. This flaw allows a local user to crash the system or possibly escalate their privileges on the system. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability."
+            },
+            {
+                "title": "CVE-2021-3656",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3656",
+                "description": "[KVM AMD missing validation of the the `virt_ext` VMCB field and allows a malicious L1 guest to disable both VMLOAD/VMSAVE intercepts and VLS (Virtual VMLOAD/VMSAVE) for the L2 guest. Under these circumstances, the L2 guest is able to run VMLOAD/VMSAVE unintercepted, and thus read/write portions of the host physical memory.]"
+            }
+        ],
+        "affected_packages": [
+            "linux-image-5.4.0-1052-gke",
+            "linux-image-5.4.0-1052-gcp",
+            "linux-image-5.4.0-1023-gkeop",
+            "linux-image-aws",
+            "linux-image-5.4.0-1058-azure",
+            "linux-image-gkeop-5.4",
+            "linux-image-5.4.0-1054-oracle",
+            "linux-image-azure",
+            "linux-image-5.4.0-1056-aws",
+            "linux-image-gcp",
+            "linux-image-oracle",
+            "linux-image-gke-5.4"
+        ]
+    },
+    {
+        "title": "USN-5070-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5070-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3612",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3612",
+                "description": "An out-of-bounds memory write flaw was found in the Linux kernel's joystick devices subsystem in versions before 5.9-rc1, in the way the user calls ioctl JSIOCSBTNMAP. This flaw allows a local user to crash the system or possibly escalate their privileges on the system. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability."
+            },
+            {
+                "title": "CVE-2021-38198",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38198",
+                "description": "arch/x86/kvm/mmu/paging_tmpl.h in the Linux kernel before 5.12.11 incorrectly computes the access permissions of a shadow page, leading to a missing guest protection page fault."
+            },
+            {
+                "title": "CVE-2021-22543",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22543",
+                "description": "An issue was discovered in Linux: KVM through Improper handling of VM_IO|VM_PFNMAP vmas in KVM can bypass RO checks and can lead to pages being freed while still accessible by the VMM and guest. This allows users with the ability to start and control a VM to read/write random pages of memory and can result in local privilege escalation."
+            },
+            {
+                "title": "CVE-2021-38206",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38206",
+                "description": "The mac80211 subsystem in the Linux kernel before 5.12.13, when a device supporting only 5 GHz is used, allows attackers to cause a denial of service (NULL pointer dereference in the radiotap parser) by injecting a frame with 802.11a rates."
+            },
+            {
+                "title": "CVE-2021-34693",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-34693",
+                "description": "net/can/bcm.c in the Linux kernel through 5.12.10 allows local users to obtain sensitive information from kernel stack memory because parts of a data structure are uninitialized."
+            },
+            {
+                "title": "CVE-2021-3656",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3656",
+                "description": "[KVM AMD missing validation of the the `virt_ext` VMCB field and allows a malicious L1 guest to disable both VMLOAD/VMSAVE intercepts and VLS (Virtual VMLOAD/VMSAVE) for the L2 guest. Under these circumstances, the L2 guest is able to run VMLOAD/VMSAVE unintercepted, and thus read/write portions of the host physical memory.]"
+            },
+            {
+                "title": "CVE-2021-3653",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3653",
+                "description": "[KVM AMD missing validation of the `int_ctl` VMCB field and allows a malicious L1 guest to enable AVIC support (Advanced Virtual Interrupt Controller) for the L2 guest. The L2 guest is able to write to a limited but still relatively large subset of the host physical memory.]"
+            },
+            {
+                "title": "CVE-2021-38207",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38207",
+                "description": "drivers/net/ethernet/xilinx/ll_temac_main.c in the Linux kernel before 5.12.13 allows remote attackers to cause a denial of service (buffer overflow and lockup) by sending heavy network traffic for about ten minutes."
+            },
+            {
+                "title": "CVE-2021-38200",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38200",
+                "description": "arch/powerpc/perf/core-book3s.c in the Linux kernel before 5.12.13, on systems with perf_event_paranoid=-1 and no specific PMU driver support registered, allows local users to cause a denial of service (perf_instruction_pointer NULL pointer dereference and OOPS) via a \"perf record\" command."
+            },
+            {
+                "title": "CVE-2020-26541",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26541",
+                "description": "The Linux kernel through 5.8.13 does not properly enforce the Secure Boot Forbidden Signature Database (aka dbx) protection mechanism. This affects certs/blacklist.c and certs/system_keyring.c."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5069-2: mod-auth-mellon vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5069-2",
         "cves": [
