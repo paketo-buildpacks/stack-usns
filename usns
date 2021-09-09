@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-5074-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5074-1",
+        "cves": [
+            {
+                "title": "CVE-2021-38493",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38493",
+                "description": "Mozilla: Memory safety bugs fixed in Firefox 92, Firefox ESR 78.14 and Firefox ESR 91.1"
+            },
+            {
+                "title": "CVE-2021-38494",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38494",
+                "description": "Canonical is offering Ubuntu Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-38491",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38491",
+                "description": "Canonical is offering Ubuntu Extended Security Maintenance (ESM) for security fixes and essential packages."
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5073-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5073-1",
         "cves": [
