@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5076-1: Git vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5076-1",
+        "cves": [
+            {
+                "title": "CVE-2021-40330",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-40330",
+                "description": "git_connect_git in connect.c in Git before 2.30.1 allows a repository path to contain a newline character, which may result in unexpected cross-protocol requests, as demonstrated by the git://localhost:1234/%0d%0a%0d%0aGET%20/%20HTTP/1.1 substring."
+            }
+        ],
+        "affected_packages": [
+            "git"
+        ]
+    },
+    {
         "title": "LSN-0081-1: Kernel Live Patch Security Notice",
         "link": "https://ubuntu.com/security/notices/LSN-0081-1",
         "cves": [
