@@ -1,5 +1,26 @@
 [
     {
+        "title": "USN-5077-1: Apport vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5077-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3710",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3710",
+                "description": "Info disclosure via path traversal"
+            },
+            {
+                "title": "CVE-2021-3709",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3709",
+                "description": "Arbitrary file read"
+            }
+        ],
+        "affected_packages": [
+            "python-apport",
+            "python3-apport",
+            "apport"
+        ]
+    },
+    {
         "title": "USN-5076-1: Git vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5076-1",
         "cves": [
