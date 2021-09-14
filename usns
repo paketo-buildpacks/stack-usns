@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-5077-2: Apport vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5077-2",
+        "cves": [
+            {
+                "title": "CVE-2021-3709",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3709",
+                "description": "Arbitrary file read"
+            },
+            {
+                "title": "CVE-2021-3710",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3710",
+                "description": "Info disclosure via path traversal"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5077-1: Apport vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5077-1",
         "cves": [
