@@ -1,5 +1,32 @@
 [
     {
+        "title": "USN-5079-1: curl vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5079-1",
+        "cves": [
+            {
+                "title": "CVE-2021-22947",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22947",
+                "description": "[STARTTLS protocol injection via MITM]"
+            },
+            {
+                "title": "CVE-2021-22945",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22945",
+                "description": "UAF and double-free in MQTT sending."
+            },
+            {
+                "title": "CVE-2021-22946",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22946",
+                "description": "Protocol downgrade required TLS bypassed"
+            }
+        ],
+        "affected_packages": [
+            "libcurl3-gnutls",
+            "libcurl3-nss",
+            "libcurl4",
+            "curl"
+        ]
+    },
+    {
         "title": "USN-5078-1: Squashfs-Tools vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5078-1",
         "cves": [
