@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5078-1: Squashfs-Tools vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5078-1",
+        "cves": [
+            {
+                "title": "CVE-2021-41072",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-41072",
+                "description": "[path traversal via crafted a squashfs image containing a symlink pointing outside the destination and a file of the same name.]"
+            }
+        ],
+        "affected_packages": [
+            "squashfs-tools"
+        ]
+    },
+    {
         "title": "USN-5077-2: Apport vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5077-2",
         "cves": [
