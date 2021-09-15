@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-5079-2: curl vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5079-2",
+        "cves": [
+            {
+                "title": "CVE-2021-22946",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22946",
+                "description": "Protocol downgrade required TLS bypassed"
+            },
+            {
+                "title": "CVE-2021-22947",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22947",
+                "description": "[STARTTLS protocol injection via MITM]"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5079-1: curl vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5079-1",
         "cves": [
