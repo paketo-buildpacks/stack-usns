@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-5083-1: Python vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5083-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3733",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3733",
+                "description": "[Denial of service when identifying crafted invalid RFCs]"
+            },
+            {
+                "title": "CVE-2021-3737",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3737",
+                "description": "[client can enter an infinite loop on a 100 Continue response from the server]"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5071-2: Linux kernel (HWE) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5071-2",
         "cves": [
