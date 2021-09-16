@@ -1,5 +1,70 @@
 [
     {
+        "title": "USN-5071-2: Linux kernel (HWE) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5071-2",
+        "cves": [
+            {
+                "title": "CVE-2021-3656",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3656",
+                "description": "[KVM AMD missing validation of the the `virt_ext` VMCB field and allows a malicious L1 guest to disable both VMLOAD/VMSAVE intercepts and VLS (Virtual VMLOAD/VMSAVE) for the L2 guest. Under these circumstances, the L2 guest is able to run VMLOAD/VMSAVE unintercepted, and thus read/write portions of the host physical memory.]"
+            },
+            {
+                "title": "CVE-2021-3612",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3612",
+                "description": "An out-of-bounds memory write flaw was found in the Linux kernel's joystick devices subsystem in versions before 5.9-rc1, in the way the user calls ioctl JSIOCSBTNMAP. This flaw allows a local user to crash the system or possibly escalate their privileges on the system. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability."
+            },
+            {
+                "title": "CVE-2021-3653",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3653",
+                "description": "[KVM AMD missing validation of the `int_ctl` VMCB field and allows a malicious L1 guest to enable AVIC support (Advanced Virtual Interrupt Controller) for the L2 guest. The L2 guest is able to write to a limited but still relatively large subset of the host physical memory.]"
+            },
+            {
+                "title": "CVE-2020-36311",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36311",
+                "description": "An issue was discovered in the Linux kernel before 5.9. arch/x86/kvm/svm/sev.c allows attackers to cause a denial of service (soft lockup) by triggering destruction of a large SEV VM (which requires unregistering many encrypted regions), aka CID-7be74942f184."
+            },
+            {
+                "title": "CVE-2021-22543",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22543",
+                "description": "An issue was discovered in Linux: KVM through Improper handling of VM_IO|VM_PFNMAP vmas in KVM can bypass RO checks and can lead to pages being freed while still accessible by the VMM and guest. This allows users with the ability to start and control a VM to read/write random pages of memory and can result in local privilege escalation."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-5.4.0-84-generic-lpae",
+            "linux-image-5.4.0-84-generic",
+            "linux-image-oem-osp1",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-generic-hwe-18.04",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-oem",
+            "linux-image-5.4.0-84-lowlatency",
+            "linux-image-generic-lpae-hwe-18.04"
+        ]
+    },
+    {
+        "title": "USN-5082-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5082-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3653",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3653",
+                "description": "[KVM AMD missing validation of the `int_ctl` VMCB field and allows a malicious L1 guest to enable AVIC support (Advanced Virtual Interrupt Controller) for the L2 guest. The L2 guest is able to write to a limited but still relatively large subset of the host physical memory.]"
+            },
+            {
+                "title": "CVE-2021-3656",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3656",
+                "description": "[KVM AMD missing validation of the the `virt_ext` VMCB field and allows a malicious L1 guest to disable both VMLOAD/VMSAVE intercepts and VLS (Virtual VMLOAD/VMSAVE) for the L2 guest. Under these circumstances, the L2 guest is able to run VMLOAD/VMSAVE unintercepted, and thus read/write portions of the host physical memory.]"
+            },
+            {
+                "title": "CVE-2021-3609",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3609",
+                "description": "[Race condition in net/can/bcm.c leads to local privilege escalation]"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5081-1: Qt vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5081-1",
         "cves": [
