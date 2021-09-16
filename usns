@@ -1,5 +1,25 @@
 [
     {
+        "title": "USN-5081-1: Qt vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5081-1",
+        "cves": [
+            {
+                "title": "CVE-2021-38593",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38593",
+                "description": "Qt 5.0.0 through 6.1.2 has an out-of-bounds write in QOutlineMapper::convertPath (called from QRasterPaintEngine::fill and QPaintEngineEx::stroke)."
+            },
+            {
+                "title": "CVE-2020-17507",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-17507",
+                "description": "An issue was discovered in Qt through 5.12.9, and 5.13.x through 5.15.x before 5.15.1. read_xbm_body in gui/image/qxbmhandler.cpp has a buffer over-read."
+            }
+        ],
+        "affected_packages": [
+            "libqt5core5a",
+            "libqt5gui5"
+        ]
+    },
+    {
         "title": "USN-5080-2: Libgcrypt vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5080-2",
         "cves": [
