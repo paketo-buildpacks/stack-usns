@@ -178,7 +178,7 @@
             {
                 "title": "CVE-2021-22947",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22947",
-                "description": "[STARTTLS protocol injection via MITM]"
+                "description": ""
             },
             {
                 "title": "CVE-2021-22945",
