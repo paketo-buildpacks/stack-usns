@@ -111,7 +111,7 @@
             {
                 "title": "CVE-2021-3609",
                 "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3609",
-                "description": "[Race condition in net/can/bcm.c leads to local privilege escalation]"
+                "description": ""
             }
         ],
         "affected_packages": []
