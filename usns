@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5079-4: curl regression",
+        "link": "https://ubuntu.com/security/notices/USN-5079-4",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1944120",
+                "link": "https://launchpad.net/bugs/1944120",
+                "description": "Regression in USN-5079-1"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5084-1: LibTIFF vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5084-1",
         "cves": [
