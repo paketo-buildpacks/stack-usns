@@ -1,5 +1,34 @@
 [
     {
+        "title": "USN-5084-1: LibTIFF vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5084-1",
+        "cves": [
+            {
+                "title": "CVE-2020-19143",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-19143",
+                "description": "Buffer Overflow in LibTiff v4.0.10 allows attackers to cause a denial of service via the \"TIFFVGetField\" funtion in the component 'libtiff/tif_dir.c'."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5079-3: curl vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5079-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1944120",
+                "link": "https://launchpad.net/bugs/1944120",
+                "description": "Regression in USN-5079-1"
+            }
+        ],
+        "affected_packages": [
+            "libcurl3-gnutls",
+            "libcurl3-nss",
+            "libcurl4",
+            "curl"
+        ]
+    },
+    {
         "title": "USN-5073-2: Linux kernel (GCP) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5073-2",
         "cves": [
