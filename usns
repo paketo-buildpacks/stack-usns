@@ -1,5 +1,50 @@
 [
     {
+        "title": "USN-5071-3: Linux kernel (Raspberry Pi) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5071-3",
+        "cves": [
+            {
+                "title": "CVE-2021-3612",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3612",
+                "description": "An out-of-bounds memory write flaw was found in the Linux kernel's joystick devices subsystem in versions before 5.9-rc1, in the way the user calls ioctl JSIOCSBTNMAP. This flaw allows a local user to crash the system or possibly escalate their privileges on the system. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability."
+            },
+            {
+                "title": "CVE-2021-22543",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22543",
+                "description": "An issue was discovered in Linux: KVM through Improper handling of VM_IO|VM_PFNMAP vmas in KVM can bypass RO checks and can lead to pages being freed while still accessible by the VMM and guest. This allows users with the ability to start and control a VM to read/write random pages of memory and can result in local privilege escalation."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-5.4.0-1043-raspi",
+            "linux-image-raspi-hwe-18.04"
+        ]
+    },
+    {
+        "title": "USN-5073-3: Linux kernel (Raspberry Pi) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5073-3",
+        "cves": [
+            {
+                "title": "CVE-2021-38160",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38160",
+                "description": "** DISPUTED ** In drivers/char/virtio_console.c in the Linux kernel before 5.13.4, data corruption or loss can be triggered by an untrusted device that supplies a buf->len value exceeding the buffer size. NOTE: the vendor indicates that the cited data corruption is not a vulnerability in any existing use case; the length validation was added solely for robustness in the face of anomalous host OS behavior."
+            },
+            {
+                "title": "CVE-2021-34693",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-34693",
+                "description": "net/can/bcm.c in the Linux kernel through 5.12.10 allows local users to obtain sensitive information from kernel stack memory because parts of a data structure are uninitialized."
+            },
+            {
+                "title": "CVE-2021-3612",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3612",
+                "description": "An out-of-bounds memory write flaw was found in the Linux kernel's joystick devices subsystem in versions before 5.9-rc1, in the way the user calls ioctl JSIOCSBTNMAP. This flaw allows a local user to crash the system or possibly escalate their privileges on the system. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-4.15.0-1095-raspi2",
+            "linux-image-raspi2"
+        ]
+    },
+    {
         "title": "USN-5079-4: curl regression",
         "link": "https://ubuntu.com/security/notices/USN-5079-4",
         "cves": [
