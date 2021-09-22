@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5085-1: SQL parse vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5085-1",
+        "cves": [
+            {
+                "title": "CVE-2021-32839",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32839",
+                "description": "sqlparse is a non-validating SQL parser module for Python. In sqlparse versions 0.4.0 and 0.4.1 there is a regular Expression Denial of Service in sqlparse vulnerability. The regular expression may cause exponential backtracking on strings containing many repetitions of '\\r\\n' in SQL comments. Only the formatting feature that removes comments from SQL statements is affected by this regular expression. As a workaround don't use the sqlformat.format function with keyword strip_comments=True or the --strip-comments command line flag when using the sqlformat command line tool. The issues has been fixed in sqlparse 0.4.2."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5086-1: Linux kernel vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5086-1",
         "cves": [
