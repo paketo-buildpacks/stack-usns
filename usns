@@ -1,5 +1,35 @@
 [
     {
+        "title": "USN-5086-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5086-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1943960",
+                "link": "https://launchpad.net/bugs/1943960",
+                "description": "s390x BPF JIT vulnerabilities"
+            }
+        ],
+        "affected_packages": [
+            "linux-image-generic-hwe-18.04",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-5.4.0-86-generic-lpae",
+            "linux-image-generic",
+            "linux-image-oem",
+            "linux-image-oem-osp1",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-4.15.0-158-generic",
+            "linux-image-5.4.0-86-lowlatency",
+            "linux-image-4.15.0-158-generic-lpae",
+            "linux-image-virtual",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-4.15.0-158-lowlatency",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-generic-lpae",
+            "linux-image-5.4.0-86-generic",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
         "title": "USN-5071-3: Linux kernel (Raspberry Pi) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5071-3",
         "cves": [
