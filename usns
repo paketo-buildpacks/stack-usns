@@ -4,9 +4,9 @@
         "link": "https://ubuntu.com/security/notices/USN-5089-2",
         "cves": [
             {
-                "title": "https://launchpad.net/bugs/XXXXXX",
-                "link": "https://launchpad.net/bugs/XXXXXX",
-                "description": ""
+                "title": "https://launchpad.net/bugs/1944481",
+                "link": "https://launchpad.net/bugs/1944481",
+                "description": "Distrust \"DST Root CA X3\""
             }
         ],
         "affected_packages": []
