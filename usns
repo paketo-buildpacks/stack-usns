@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5090-4: Apache HTTP Server regression",
+        "link": "https://ubuntu.com/security/notices/USN-5090-4",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/XXXXXX",
+                "link": "https://launchpad.net/bugs/XXXXXX",
+                "description": ""
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5090-3: Apache HTTP Server regression",
         "link": "https://ubuntu.com/security/notices/USN-5090-3",
         "cves": [
