@@ -4,9 +4,9 @@
         "link": "https://ubuntu.com/security/notices/USN-5090-4",
         "cves": [
             {
-                "title": "https://launchpad.net/bugs/XXXXXX",
-                "link": "https://launchpad.net/bugs/XXXXXX",
-                "description": ""
+                "title": "https://launchpad.net/bugs/1945311",
+                "link": "https://launchpad.net/bugs/1945311",
+                "description": "Fix for CVE-2021-40438 breaks existing configs"
             }
         ],
         "affected_packages": []
