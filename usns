@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-5093-1: Vim vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5093-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3796",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3796",
+                "description": "vim is vulnerable to Use After Free"
+            },
+            {
+                "title": "CVE-2021-3778",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3778",
+                "description": "vim is vulnerable to Heap-based Buffer Overflow"
+            },
+            {
+                "title": "CVE-2021-3770",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3770",
+                "description": "vim is vulnerable to Heap-based Buffer Overflow"
+            }
+        ],
+        "affected_packages": [
+            "vim"
+        ]
+    },
+    {
         "title": "USN-5092-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5092-1",
         "cves": [
