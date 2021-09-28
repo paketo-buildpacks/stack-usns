@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-5090-3: Apache HTTP Server regression",
+        "link": "https://ubuntu.com/security/notices/USN-5090-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1945311",
+                "link": "https://launchpad.net/bugs/1945311",
+                "description": "Fix for CVE-2021-40438 breaks existing configs"
+            }
+        ],
+        "affected_packages": [
+            "apache2",
+            "apache2-bin"
+        ]
+    },
+    {
         "title": "USN-5093-1: Vim vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5093-1",
         "cves": [
