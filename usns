@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5095-1: Apache Commons IO vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5095-1",
+        "cves": [
+            {
+                "title": "CVE-2021-29425",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29425",
+                "description": "In Apache Commons IO before 2.7, When invoking the method FileNameUtils.normalize with an improper input string, like \"//../foo\", or \"\\\\..\\foo\", the result would be the same value, thus possibly providing access to files in the parent directory, but not further above (thus \"limited\" path traversal), if the calling code would use the result to construct a path value."
+            }
+        ],
+        "affected_packages": [
+            "libcommons-io-java"
+        ]
+    },
+    {
         "title": "USN-5092-2: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5092-2",
         "cves": [
