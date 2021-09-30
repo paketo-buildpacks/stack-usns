@@ -1,5 +1,75 @@
 [
     {
+        "title": "USN-5094-2: Linux kernel (Raspberry Pi) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5094-2",
+        "cves": [
+            {
+                "title": "CVE-2021-38204",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38204",
+                "description": "drivers/usb/host/max3421-hcd.c in the Linux kernel before 5.13.6 allows physically proximate attackers to cause a denial of service (use-after-free and panic) by removing a MAX-3421 USB device in certain situations."
+            },
+            {
+                "title": "CVE-2021-38205",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38205",
+                "description": "drivers/net/ethernet/xilinx/xilinx_emaclite.c in the Linux kernel before 5.13.3 makes it easier for attackers to defeat an ASLR protection mechanism because it prints a kernel pointer (i.e., the real IOMEM pointer)."
+            },
+            {
+                "title": "CVE-2021-3679",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3679",
+                "description": "A lack of CPU resource in the Linux kernel tracing module functionality in versions prior to 5.14-rc3 was found in the way user uses trace ring buffer in a specific way. Only privileged local users (with CAP_SYS_ADMIN capability) could use this flaw to starve the resources causing denial of service."
+            },
+            {
+                "title": "CVE-2021-3732",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3732",
+                "description": "[overlayfs: Mounting overlayfs inside an unprivileged user namespace can reveal files]"
+            },
+            {
+                "title": "CVE-2021-22543",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22543",
+                "description": "An issue was discovered in Linux: KVM through Improper handling of VM_IO|VM_PFNMAP vmas in KVM can bypass RO checks and can lead to pages being freed while still accessible by the VMM and guest. This allows users with the ability to start and control a VM to read/write random pages of memory and can result in local privilege escalation."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-4.15.0-1096-raspi2",
+            "linux-image-raspi2"
+        ]
+    },
+    {
+        "title": "USN-5091-2: Linux kernel (Raspberry Pi) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5091-2",
+        "cves": [
+            {
+                "title": "CVE-2021-3679",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3679",
+                "description": "A lack of CPU resource in the Linux kernel tracing module functionality in versions prior to 5.14-rc3 was found in the way user uses trace ring buffer in a specific way. Only privileged local users (with CAP_SYS_ADMIN capability) could use this flaw to starve the resources causing denial of service."
+            },
+            {
+                "title": "CVE-2021-38160",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38160",
+                "description": "** DISPUTED ** In drivers/char/virtio_console.c in the Linux kernel before 5.13.4, data corruption or loss can be triggered by an untrusted device that supplies a buf->len value exceeding the buffer size. NOTE: the vendor indicates that the cited data corruption is not a vulnerability in any existing use case; the length validation was added solely for robustness in the face of anomalous host OS behavior."
+            },
+            {
+                "title": "CVE-2021-33624",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33624",
+                "description": "In kernel/bpf/verifier.c in the Linux kernel before 5.12.13, a branch can be mispredicted (e.g., because of type confusion) and consequently an unprivileged BPF program can read arbitrary memory locations via a side-channel attack, aka CID-9183671af6db."
+            },
+            {
+                "title": "CVE-2021-38199",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38199",
+                "description": "fs/nfs/nfs4client.c in the Linux kernel before 5.13.4 has incorrect connection-setup ordering, which allows operators of remote NFSv4 servers to cause a denial of service (hanging of mounts) by arranging for those servers to be unreachable during trunking detection."
+            },
+            {
+                "title": "CVE-2021-38204",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38204",
+                "description": "drivers/usb/host/max3421-hcd.c in the Linux kernel before 5.13.6 allows physically proximate attackers to cause a denial of service (use-after-free and panic) by removing a MAX-3421 USB device in certain situations."
+            }
+        ],
+        "affected_packages": [
+            "linux-image-raspi-hwe-18.04",
+            "linux-image-5.4.0-1044-raspi"
+        ]
+    },
+    {
         "title": "USN-5096-1: Linux kernel (OEM) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5096-1",
         "cves": [
