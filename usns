@@ -1,5 +1,25 @@
 [
     {
+        "title": "USN-5102-1: Mercurial vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5102-1",
+        "cves": [
+            {
+                "title": "CVE-2019-3902",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-3902",
+                "description": "A flaw was found in Mercurial before 4.9. It was possible to use symlinks and subrepositories to defeat Mercurial's path-checking logic and write files outside a repository."
+            },
+            {
+                "title": "CVE-2018-17983",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2018-17983",
+                "description": "cext/manifest.c in Mercurial before 4.7.2 has an out-of-bounds read during parsing of a malformed manifest entry."
+            }
+        ],
+        "affected_packages": [
+            "mercurial",
+            "mercurial-common"
+        ]
+    },
+    {
         "title": "USN-5101-1: MongoDB vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5101-1",
         "cves": [
