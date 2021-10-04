@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-4973-2: Python vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4973-2",
+        "cves": [
+            {
+                "title": "CVE-2021-29921",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29921",
+                "description": "In Python before 3,9,5, the ipaddress library mishandles leading zero characters in the octets of an IP address string. This (in some situations) allows attackers to bypass access control that is based on IP addresses."
+            },
+            {
+                "title": "https://launchpad.net/bugs/1945240",
+                "link": "https://launchpad.net/bugs/1945240",
+                "description": ""
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5094-2: Linux kernel (Raspberry Pi) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5094-2",
         "cves": [
