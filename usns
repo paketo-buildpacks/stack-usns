@@ -1,5 +1,27 @@
 [
     {
+        "title": "USN-5097-1: LedgerSMB vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5097-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3693",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3693",
+                "description": "LedgerSMB does not check the origin of HTML fragments merged into the browser's DOM. By sending a specially crafted URL to an authenticated user, this flaw can be abused for remote code execution and information disclosure."
+            },
+            {
+                "title": "CVE-2021-3694",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3694",
+                "description": "LedgerSMB does not sufficiently HTML-encode error messages sent to the browser. By sending a specially crafted URL to an authenticated user, this flaw can be abused for remote code execution and information disclosure."
+            },
+            {
+                "title": "CVE-2021-3731",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3731",
+                "description": "LedgerSMB does not sufficiently guard against being wrapped by other sites, making it vulnerable to 'clickjacking'. This allows an attacker to trick a targetted user to execute unintended actions."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5102-1: Mercurial vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5102-1",
         "cves": [
