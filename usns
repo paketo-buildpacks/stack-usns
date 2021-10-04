@@ -1,5 +1,36 @@
 [
     {
+        "title": "USN-5101-1: MongoDB vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5101-1",
+        "cves": [
+            {
+                "title": "CVE-2019-20925",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20925",
+                "description": "An unauthenticated client can trigger denial of service by issuing specially crafted wire protocol messages, which cause the message decompressor to incorrectly allocate memory. This issue affects: MongoDB Inc. MongoDB Server v4.2 versions prior to 4.2.1; v4.0 versions prior to 4.0.13; v3.6 versions prior to 3.6.15; v3.4 versions prior to 3.4.24."
+            }
+        ],
+        "affected_packages": [
+            "mongodb-server",
+            "mongodb",
+            "mongodb-clients",
+            "mongodb-server-core"
+        ]
+    },
+    {
+        "title": "USN-5100-1: containerd vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5100-1",
+        "cves": [
+            {
+                "title": "CVE-2021-41103",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-41103",
+                "description": "insufficiently restricted directory permissions"
+            }
+        ],
+        "affected_packages": [
+            "containerd"
+        ]
+    },
+    {
         "title": "USN-5099-1: Imlib2 vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5099-1",
         "cves": [
