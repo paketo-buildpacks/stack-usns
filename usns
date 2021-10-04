@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5099-1: Imlib2 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5099-1",
+        "cves": [
+            {
+                "title": "CVE-2020-12761",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12761",
+                "description": "modules/loaders/loader_ico.c in imlib2 1.6.0 has an integer overflow (with resultant invalid memory allocations and out-of-bounds reads) via an icon with many colors in its color map."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-4973-2: Python vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4973-2",
         "cves": [
