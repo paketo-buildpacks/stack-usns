@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5103-1: docker.io vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5103-1",
+        "cves": [
+            {
+                "title": "CVE-2021-41089",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-41089",
+                "description": "A bug was found in Moby (Docker Engine) where attempting to copy files using `docker cp` into a specially-crafted container can result in Unix file permission changes for existing files in the host's filesystem, widening access to others."
+            }
+        ],
+        "affected_packages": [
+            "docker.io"
+        ]
+    },
+    {
         "title": "USN-5098-1: bl vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5098-1",
         "cves": [
