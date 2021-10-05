@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5104-1: Squid vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5104-1",
+        "cves": [
+            {
+                "title": "CVE-2021-28116",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28116",
+                "description": "Squid through 4.14 and 5.x through 5.0.5, in some configurations, allows information disclosure because of an out-of-bounds read in WCCP protocol data. This can be leveraged as part of a chain for remote code execution as nobody."
+            }
+        ],
+        "affected_packages": [
+            "squid"
+        ]
+    },
+    {
         "title": "USN-5103-1: docker.io vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5103-1",
         "cves": [
