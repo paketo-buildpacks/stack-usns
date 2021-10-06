@@ -1,5 +1,42 @@
 [
     {
+        "title": "USN-5106-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5106-1",
+        "cves": [
+            {
+                "title": "CVE-2021-22543",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22543",
+                "description": "An issue was discovered in Linux: KVM through Improper handling of VM_IO|VM_PFNMAP vmas in KVM can bypass RO checks and can lead to pages being freed while still accessible by the VMM and guest. This allows users with the ability to start and control a VM to read/write random pages of memory and can result in local privilege escalation."
+            },
+            {
+                "title": "CVE-2021-38160",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38160",
+                "description": "** DISPUTED ** In drivers/char/virtio_console.c in the Linux kernel before 5.13.4, data corruption or loss can be triggered by an untrusted device that supplies a buf->len value exceeding the buffer size. NOTE: the vendor indicates that the cited data corruption is not a vulnerability in any existing use case; the length validation was added solely for robustness in the face of anomalous host OS behavior."
+            },
+            {
+                "title": "CVE-2021-41073",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-41073",
+                "description": "loop_rw_iter in fs/io_uring.c in the Linux kernel 5.10 through 5.14.6 allows local users to gain privileges by using IORING_OP_PROVIDE_BUFFERS to trigger a free of a kernel buffer, as demonstrated by using /proc/<pid>/maps for exploitation."
+            },
+            {
+                "title": "CVE-2021-3612",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3612",
+                "description": "An out-of-bounds memory write flaw was found in the Linux kernel's joystick devices subsystem in versions before 5.9-rc1, in the way the user calls ioctl JSIOCSBTNMAP. This flaw allows a local user to crash the system or possibly escalate their privileges on the system. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability."
+            },
+            {
+                "title": "CVE-2020-26541",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26541",
+                "description": "The Linux kernel through 5.8.13 does not properly enforce the Secure Boot Forbidden Signature Database (aka dbx) protection mechanism. This affects certs/blacklist.c and certs/system_keyring.c."
+            },
+            {
+                "title": "CVE-2021-38199",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38199",
+                "description": "fs/nfs/nfs4client.c in the Linux kernel before 5.13.4 has incorrect connection-setup ordering, which allows operators of remote NFSv4 servers to cause a denial of service (hanging of mounts) by arranging for those servers to be unreachable during trunking detection."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5104-1: Squid vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5104-1",
         "cves": [
