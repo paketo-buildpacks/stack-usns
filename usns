@@ -1,5 +1,49 @@
 [
     {
+        "title": "USN-5107-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5107-1",
+        "cves": [
+            {
+                "title": "CVE-2021-38497",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38497",
+                "description": "Canonical is offering Ubuntu Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-32810",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32810",
+                "description": "crossbeam-deque is a package of work-stealing deques for building task schedulers when programming in Rust. In versions prior to 0.7.4 and 0.8.0, the result of the race condition is that one or more tasks in the worker queue can be popped twice instead of other tasks that are forgotten and never popped. If tasks are allocated on the heap, this can cause double free and a memory leak. If not, this still can cause a logical bug. Crates using `Stealer::steal`, `Stealer::steal_batch`, or `Stealer::steal_batch_and_pop` are affected by this issue. This has been fixed in crossbeam-deque 0.8.1 and 0.7.4."
+            },
+            {
+                "title": "CVE-2021-38501",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38501",
+                "description": "Canonical is offering Ubuntu Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-38499",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38499",
+                "description": "Canonical is offering Ubuntu Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-38496",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38496",
+                "description": "Canonical is offering Ubuntu Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-38498",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38498",
+                "description": "Canonical is offering Ubuntu Extended Security Maintenance (ESM) for security fixes and essential packages."
+            },
+            {
+                "title": "CVE-2021-38500",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38500",
+                "description": "Canonical is offering Ubuntu Extended Security Maintenance (ESM) for security fixes and essential packages."
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5106-1: Linux kernel (OEM) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5106-1",
         "cves": [
