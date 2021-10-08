@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5108-1: libntlm vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5108-1",
+        "cves": [
+            {
+                "title": "CVE-2019-17455",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17455",
+                "description": "Libntlm through 1.5 relies on a fixed buffer size for tSmbNtlmAuthRequest, tSmbNtlmAuthChallenge, and tSmbNtlmAuthResponse read and write operations, as demonstrated by a stack-based buffer over-read in buildSmbNtlmAuthRequest in smbutil.c for a crafted NTLM request."
+            }
+        ],
+        "affected_packages": [
+            "libntlm0"
+        ]
+    },
+    {
         "title": "USN-5022-3: MySQL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5022-3",
         "cves": [
