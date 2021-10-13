@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5078-3: Squashfs-Tools vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5078-3",
+        "cves": [
+            {
+                "title": "CVE-2021-41072",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-41072",
+                "description": "squashfs_opendir in unsquash-2.c in Squashfs-Tools 4.5 allows Directory Traversal, a different vulnerability than CVE-2021-40153. A squashfs filesystem that has been crafted to include a symbolic link and then contents under the same filename in a filesystem can cause unsquashfs to first create the symbolic link pointing outside the expected directory, and then the subsequent write operation will cause the unsquashfs process to write through the symbolic link elsewhere in the filesystem."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5108-1: libntlm vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5108-1",
         "cves": [
