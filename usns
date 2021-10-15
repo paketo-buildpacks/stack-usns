@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-5091-3: Linux kernel (Azure) regression",
+        "link": "https://ubuntu.com/security/notices/USN-5091-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1940564",
+                "link": "https://launchpad.net/bugs/1940564",
+                "description": "Azure kernels fail to boot on some large Azure instance types"
+            }
+        ],
+        "affected_packages": [
+            "linux-image-azure",
+            "linux-image-5.4.0-1061-azure"
+        ]
+    },
+    {
         "title": "USN-5078-3: Squashfs-Tools vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5078-3",
         "cves": [
