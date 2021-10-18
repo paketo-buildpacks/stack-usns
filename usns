@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5092-3: Linux kernel (Azure) regression",
+        "link": "https://ubuntu.com/security/notices/USN-5092-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1940564",
+                "link": "https://launchpad.net/bugs/1940564",
+                "description": "Azure kernels fail to boot on some large Azure instance types"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5110-1: Ardour vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5110-1",
         "cves": [
