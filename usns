@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5110-1: Ardour vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5110-1",
+        "cves": [
+            {
+                "title": "CVE-2020-22617",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-22617",
+                "description": "Ardour v5.12 contains a use-after-free vulnerability in the component ardour/libs/pbd/xml++.cc when using xmlFreeDoc and xmlXPathFreeContext."
+            }
+        ],
+        "affected_packages": [
+            "ardour"
+        ]
+    },
+    {
         "title": "USN-5109-1: nginx vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5109-1",
         "cves": [
