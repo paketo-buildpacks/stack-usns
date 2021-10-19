@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5111-2: strongSwan vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5111-2",
+        "cves": [
+            {
+                "title": "CVE-2021-41991",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-41991",
+                "description": "Integer Overflow When Replacing Certificates in Cache"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5111-1: strongSwan vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5111-1",
         "cves": [
