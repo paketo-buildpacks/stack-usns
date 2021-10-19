@@ -1,5 +1,25 @@
 [
     {
+        "title": "USN-5111-1: strongSwan vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5111-1",
+        "cves": [
+            {
+                "title": "CVE-2021-41991",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-41991",
+                "description": "Integer Overflow When Replacing Certificates in Cache"
+            },
+            {
+                "title": "CVE-2021-41990",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-41990",
+                "description": "Integer Overflow in gmp Plugin"
+            }
+        ],
+        "affected_packages": [
+            "libstrongswan",
+            "strongswan"
+        ]
+    },
+    {
         "title": "USN-5092-3: Linux kernel (Azure) regression",
         "link": "https://ubuntu.com/security/notices/USN-5092-3",
         "cves": [
