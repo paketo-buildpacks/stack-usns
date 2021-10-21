@@ -1,5 +1,25 @@
 [
     {
+        "title": "USN-5119-1: libcaca vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5119-1",
+        "cves": [
+            {
+                "title": "CVE-2021-30498",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30498",
+                "description": "A flaw was found in libcaca. A heap buffer overflow in export.c in function export_tga might lead to memory corruption and other potential consequences."
+            },
+            {
+                "title": "CVE-2021-30499",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30499",
+                "description": "A flaw was found in libcaca. A buffer overflow of export.c in function export_troff might lead to memory corruption and other potential consequences."
+            }
+        ],
+        "affected_packages": [
+            "caca-utils",
+            "libcaca0"
+        ]
+    },
+    {
         "title": "USN-5117-1: Linux kernel (OEM) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5117-1",
         "cves": [
