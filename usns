@@ -330,7 +330,6 @@
             }
         ],
         "affected_packages": [
-            "linux-image-4.15.0-1097-raspi2",
             "linux-image-4.15.0-1101-kvm",
             "linux-image-virtual",
             "linux-image-aws-lts-18.04",
@@ -340,17 +339,18 @@
             "linux-image-4.15.0-1110-gcp",
             "linux-image-4.15.0-161-generic-lpae",
             "linux-image-4.15.0-161-generic",
-            "linux-image-snapdragon",
+            "linux-image-generic-lpae",
+            "linux-image-kvm",
             "linux-image-dell300x",
+            "linux-image-4.15.0-1097-raspi2",
             "linux-image-4.15.0-1114-aws",
             "linux-image-raspi2",
             "linux-image-azure-lts-18.04",
-            "linux-image-gcp-lts-18.04",
-            "linux-image-lowlatency",
             "linux-image-4.15.0-1114-snapdragon",
-            "linux-image-kvm",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-snapdragon",
             "linux-image-4.15.0-1029-dell300x",
-            "linux-image-generic-lpae"
+            "linux-image-lowlatency"
         ]
     },
     {
