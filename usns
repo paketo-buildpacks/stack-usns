@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-5121-1: Mailman vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5121-1",
+        "cves": [
+            {
+                "title": "CVE-2021-42096",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-42096",
+                "description": "A list member can discover the list admin password."
+            },
+            {
+                "title": "CVE-2021-42097",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-42097",
+                "description": "A list member can create a successful CSRF attack against another list member enabling takeover of the members account."
+            }
+        ],
+        "affected_packages": [
+            "mailman"
+        ]
+    },
+    {
         "title": "USN-5116-2: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5116-2",
         "cves": [
