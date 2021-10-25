@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-5122-1: Apport vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5122-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1948657",
+                "link": "https://launchpad.net/bugs/1948657",
+                "description": "Oct 2021 security update tracking bug"
+            }
+        ],
+        "affected_packages": [
+            "python3-apport",
+            "apport"
+        ]
+    },
+    {
         "title": "USN-5121-1: Mailman vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5121-1",
         "cves": [
