@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-5123-2: MySQL vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5123-2",
+        "cves": [
+            {
+                "title": "CVE-2021-35624",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35624",
+                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Security: Privileges). Supported versions that are affected are 5.7.35 and prior and 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all MySQL Server accessible data. CVSS 3.1 Base Score 4.9 (Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N)."
+            },
+            {
+                "title": "CVE-2021-35604",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35604",
+                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.35 and prior and 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H)."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5123-1: MySQL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5123-1",
         "cves": [
