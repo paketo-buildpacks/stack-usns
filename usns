@@ -1,5 +1,25 @@
 [
     {
+        "title": "USN-5124-1: GNU binutils vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5124-1",
+        "cves": [
+            {
+                "title": "CVE-2021-3487",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3487",
+                "description": "There's a flaw in the BFD library of binutils in versions before 2.36. An attacker who supplies a crafted file to an application linked with BFD, and using the DWARF functionality, could cause an impact to system availability by way of excessive memory consumption."
+            },
+            {
+                "title": "CVE-2020-16592",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16592",
+                "description": "A use after free issue exists in the Binary File Descriptor (BFD) library (aka libbfd) in GNU Binutils 2.34 in bfd_hash_lookup, as demonstrated in nm-new, that can cause a denial of service via a crafted file."
+            }
+        ],
+        "affected_packages": [
+            "binutils-multiarch",
+            "binutils"
+        ]
+    },
+    {
         "title": "USN-5123-2: MySQL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5123-2",
         "cves": [
