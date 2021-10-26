@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5122-2: Apport vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5122-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1948657",
+                "link": "https://launchpad.net/bugs/1948657",
+                "description": "Oct 2021 security update tracking bug"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5124-1: GNU binutils vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5124-1",
         "cves": [
