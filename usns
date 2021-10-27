@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5125-1: PHP vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5125-1",
+        "cves": [
+            {
+                "title": "CVE-2021-21703",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21703",
+                "description": "PHP-FPM oob R/W in root process leading to privilege escalation"
+            }
+        ],
+        "affected_packages": [
+            "php7.2-fpm"
+        ]
+    },
+    {
         "title": "USN-5009-2: libslirp vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5009-2",
         "cves": [
