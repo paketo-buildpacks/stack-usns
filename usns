@@ -1,5 +1,27 @@
 [
     {
+        "title": "USN-5127-1: WebKitGTK vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5127-1",
+        "cves": [
+            {
+                "title": "CVE-2021-42762",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-42762",
+                "description": "BubblewrapLauncher.cpp in WebKitGTK and WPE WebKit before 2.34.1 allows a limited sandbox bypass that allows a sandboxed process to trick host processes into thinking the sandboxed process is not confined by the sandbox, by abusing VFS syscalls that manipulate its filesystem namespace. The impact is limited to host services that create UNIX sockets that WebKit mounts inside its sandbox, and the sandboxed process remains otherwise confined. NOTE: this is similar to CVE-2021-41133."
+            },
+            {
+                "title": "CVE-2021-30846",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30846",
+                "description": ""
+            },
+            {
+                "title": "CVE-2021-30851",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30851",
+                "description": ""
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5126-2: Bind vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5126-2",
         "cves": [
