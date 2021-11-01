@@ -1,5 +1,37 @@
 [
     {
+        "title": "USN-5121-2: Mailman vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5121-2",
+        "cves": [
+            {
+                "title": "CVE-2020-12108",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12108",
+                "description": "/options/mailman in GNU Mailman before 2.1.31 allows Arbitrary Content Injection."
+            },
+            {
+                "title": "CVE-2020-12137",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12137",
+                "description": "GNU Mailman 2.x before 2.1.30 uses the .obj extension for scrubbed application/octet-stream MIME parts. This behavior may contribute to XSS attacks against list-archive visitors, because an HTTP reply from an archive web server may lack a MIME type, and a web browser may perform MIME sniffing, conclude that the MIME type should have been text/html, and execute JavaScript code."
+            },
+            {
+                "title": "CVE-2021-42096",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-42096",
+                "description": "A list member can discover the list admin password."
+            },
+            {
+                "title": "CVE-2020-15011",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15011",
+                "description": "GNU Mailman before 2.1.33 allows arbitrary content injection via the Cgi/private.py private archive login page."
+            },
+            {
+                "title": "CVE-2021-42097",
+                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-42097",
+                "description": "A list member can create a successful CSRF attack against another list member enabling takeover of the members account."
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5127-1: WebKitGTK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5127-1",
         "cves": [
