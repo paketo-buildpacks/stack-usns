@@ -2,33 +2,7 @@
     {
         "title": "USN-5128-1: Ceph vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5128-1",
-        "cves": [
-            {
-                "title": "CVE-2021-3531",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3531",
-                "description": "A flaw was found in the Red Hat Ceph Storage RGW in versions before 14.2.21. When processing a GET Request for a swift URL that ends with two slashes it can cause the rgw to crash, resulting in a denial of service. The greatest threat to the system is of availability."
-            },
-            {
-                "title": "CVE-2021-3524",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3524",
-                "description": "A flaw was found in the Red Hat Ceph Storage RadosGW (Ceph Object Gateway) in versions before 14.2.21. The vulnerability is related to the injection of HTTP headers via a CORS ExposeHeader tag. The newline character in the ExposeHeader tag in the CORS configuration file generates a header injection in the response when the CORS request is made. In addition, the prior bug fix for CVE-2020-10753 did not account for the use of \\r as a header separator, thus a new flaw has been created."
-            },
-            {
-                "title": "CVE-2021-3509",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3509",
-                "description": "A flaw was found in Red Hat Ceph Storage 4, in the Dashboard component. In response to CVE-2020-27839, the JWT token was moved from localStorage to an httpOnly cookie. However, token cookies are used in the body of the HTTP response for the documentation, which again makes it available to XSS.The greatest threat to the system is for confidentiality, integrity, and availability."
-            },
-            {
-                "title": "CVE-2021-20288",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20288",
-                "description": "An authentication flaw was found in ceph in versions before 14.2.20. When the monitor handles CEPHX_GET_AUTH_SESSION_KEY requests, it doesn't sanitize other_keys, allowing key reuse. An attacker who can request a global_id can exploit the ability of any user to request a global_id previously associated with another user, as ceph does not force the reuse of old keys to generate new ones. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
-            },
-            {
-                "title": "CVE-2020-27781",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27781",
-                "description": "User credentials can be manipulated and stolen by Native CephFS consumers of OpenStack Manila, resulting in potential privilege escalation. An Open Stack Manila user can request access to a share to an arbitrary cephx user, including existing users. The access key is retrieved via the interface drivers. Then, all users of the requesting OpenStack project can view the access key. This enables the attacker to target any resource that the user has access to. This can be done to even \"admin\" users, compromising the ceph administrator. This flaw affects Ceph versions prior to 14.2.16, 15.x prior to 15.2.8, and 16.x prior to 16.2.0."
-            }
-        ],
+        "cves": null,
         "affected_packages": [
             "ceph",
             "ceph-base",
@@ -38,79 +12,25 @@
     {
         "title": "USN-5121-2: Mailman vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5121-2",
-        "cves": [
-            {
-                "title": "CVE-2020-12108",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12108",
-                "description": "/options/mailman in GNU Mailman before 2.1.31 allows Arbitrary Content Injection."
-            },
-            {
-                "title": "CVE-2020-12137",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12137",
-                "description": "GNU Mailman 2.x before 2.1.30 uses the .obj extension for scrubbed application/octet-stream MIME parts. This behavior may contribute to XSS attacks against list-archive visitors, because an HTTP reply from an archive web server may lack a MIME type, and a web browser may perform MIME sniffing, conclude that the MIME type should have been text/html, and execute JavaScript code."
-            },
-            {
-                "title": "CVE-2021-42096",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-42096",
-                "description": "A list member can discover the list admin password."
-            },
-            {
-                "title": "CVE-2020-15011",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15011",
-                "description": "GNU Mailman before 2.1.33 allows arbitrary content injection via the Cgi/private.py private archive login page."
-            },
-            {
-                "title": "CVE-2021-42097",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-42097",
-                "description": "A list member can create a successful CSRF attack against another list member enabling takeover of the members account."
-            }
-        ],
+        "cves": null,
         "affected_packages": []
     },
     {
         "title": "USN-5127-1: WebKitGTK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5127-1",
-        "cves": [
-            {
-                "title": "CVE-2021-42762",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-42762",
-                "description": "BubblewrapLauncher.cpp in WebKitGTK and WPE WebKit before 2.34.1 allows a limited sandbox bypass that allows a sandboxed process to trick host processes into thinking the sandboxed process is not confined by the sandbox, by abusing VFS syscalls that manipulate its filesystem namespace. The impact is limited to host services that create UNIX sockets that WebKit mounts inside its sandbox, and the sandboxed process remains otherwise confined. NOTE: this is similar to CVE-2021-41133."
-            },
-            {
-                "title": "CVE-2021-30846",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30846",
-                "description": ""
-            },
-            {
-                "title": "CVE-2021-30851",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30851",
-                "description": ""
-            }
-        ],
+        "cves": null,
         "affected_packages": []
     },
     {
         "title": "USN-5126-2: Bind vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5126-2",
-        "cves": [
-            {
-                "title": "CVE-2021-25219",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25219",
-                "description": ""
-            }
-        ],
+        "cves": null,
         "affected_packages": []
     },
     {
         "title": "USN-5125-1: PHP vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5125-1",
-        "cves": [
-            {
-                "title": "CVE-2021-21703",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21703",
-                "description": "PHP-FPM oob R/W in root process leading to privilege escalation"
-            }
-        ],
+        "cves": null,
         "affected_packages": [
             "php7.2-fpm"
         ]
@@ -118,28 +38,7 @@
     {
         "title": "USN-5009-2: libslirp vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5009-2",
-        "cves": [
-            {
-                "title": "CVE-2021-3593",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3593",
-                "description": "An invalid pointer initialization issue was found in the SLiRP networking implementation of QEMU. The flaw exists in the udp6_input() function and could occur while processing a udp packet that is smaller than the size of the 'udphdr' structure. This issue may lead to out-of-bounds read access or indirect host memory disclosure to the guest. The highest threat from this vulnerability is to data confidentiality. This flaw affects libslirp versions prior to 4.6.0."
-            },
-            {
-                "title": "CVE-2021-3595",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3595",
-                "description": "An invalid pointer initialization issue was found in the SLiRP networking implementation of QEMU. The flaw exists in the tftp_input() function and could occur while processing a udp packet that is smaller than the size of the 'tftp_t' structure. This issue may lead to out-of-bounds read access or indirect host memory disclosure to the guest. The highest threat from this vulnerability is to data confidentiality. This flaw affects libslirp versions prior to 4.6.0."
-            },
-            {
-                "title": "CVE-2021-3594",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3594",
-                "description": "An invalid pointer initialization issue was found in the SLiRP networking implementation of QEMU. The flaw exists in the udp_input() function and could occur while processing a udp packet that is smaller than the size of the 'udphdr' structure. This issue may lead to out-of-bounds read access or indirect host memory disclosure to the guest. The highest threat from this vulnerability is to data confidentiality. This flaw affects libslirp versions prior to 4.6.0."
-            },
-            {
-                "title": "CVE-2021-3592",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3592",
-                "description": "An invalid pointer initialization issue was found in the SLiRP networking implementation of QEMU. The flaw exists in the bootp_input() function and could occur while processing a udp packet that is smaller than the size of the 'bootp_t' structure. A malicious guest could use this flaw to leak 10 bytes of uninitialized heap memory from the host. The highest threat from this vulnerability is to data confidentiality. This flaw affects libslirp versions prior to 4.6.0."
-            }
-        ],
+        "cves": null,
         "affected_packages": []
     },
     {
@@ -157,18 +56,7 @@
     {
         "title": "USN-5124-1: GNU binutils vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5124-1",
-        "cves": [
-            {
-                "title": "CVE-2021-3487",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3487",
-                "description": "There's a flaw in the BFD library of binutils in versions before 2.36. An attacker who supplies a crafted file to an application linked with BFD, and using the DWARF functionality, could cause an impact to system availability by way of excessive memory consumption."
-            },
-            {
-                "title": "CVE-2020-16592",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16592",
-                "description": "A use after free issue exists in the Binary File Descriptor (BFD) library (aka libbfd) in GNU Binutils 2.34 in bfd_hash_lookup, as demonstrated in nm-new, that can cause a denial of service via a crafted file."
-            }
-        ],
+        "cves": null,
         "affected_packages": [
             "binutils-multiarch",
             "binutils"
@@ -177,240 +65,13 @@
     {
         "title": "USN-5123-2: MySQL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5123-2",
-        "cves": [
-            {
-                "title": "CVE-2021-35624",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35624",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Security: Privileges). Supported versions that are affected are 5.7.35 and prior and 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all MySQL Server accessible data. CVSS 3.1 Base Score 4.9 (Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N)."
-            },
-            {
-                "title": "CVE-2021-35604",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35604",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.35 and prior and 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H)."
-            }
-        ],
+        "cves": null,
         "affected_packages": []
     },
     {
         "title": "USN-5123-1: MySQL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5123-1",
-        "cves": [
-            {
-                "title": "CVE-2021-35602",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35602",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Options). Supported versions that are affected are 8.0.26 and prior. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.0 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:L/A:H)."
-            },
-            {
-                "title": "CVE-2021-35634",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35634",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35643",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35643",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-2478",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2478",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: DML). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35635",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35635",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35575",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35575",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35597",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35597",
-                "description": "Vulnerability in the MySQL Client product of Oracle MySQL (component: C API). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Client. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Client. CVSS 3.1 Base Score 6.5 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35642",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35642",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35607",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35607",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: DML). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 6.5 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35637",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35637",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: PS). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35630",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35630",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Options). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all MySQL Server accessible data. CVSS 3.1 Base Score 4.9 (Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N)."
-            },
-            {
-                "title": "CVE-2021-35612",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35612",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H)."
-            },
-            {
-                "title": "CVE-2021-35636",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35636",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35640",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35640",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: DDL). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 2.7 (Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N)."
-            },
-            {
-                "title": "CVE-2021-35644",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35644",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35648",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35648",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: FTS). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35645",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35645",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35632",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35632",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Data Dictionary). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where MySQL Server executes to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.4 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35641",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35641",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35639",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35639",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Stored Procedure). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35631",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35631",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: GIS). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35627",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35627",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35610",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35610",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 7.1 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H)."
-            },
-            {
-                "title": "CVE-2021-2479",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2479",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: DML). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35625",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35625",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Security: Privileges). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized read access to a subset of MySQL Server accessible data. CVSS 3.1 Base Score 2.7 (Confidentiality impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N)."
-            },
-            {
-                "title": "CVE-2021-35613",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35613",
-                "description": "Vulnerability in the MySQL Cluster product of Oracle MySQL (component: Cluster: General). Supported versions that are affected are 8.0.26 and prior. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise MySQL Cluster. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of MySQL Cluster. CVSS 3.1 Base Score 3.7 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L)."
-            },
-            {
-                "title": "CVE-2021-35546",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35546",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Replication). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35626",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35626",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35638",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35638",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35577",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35577",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via MySQL Protcol to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-2481",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2481",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 6.5 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35608",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35608",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Group Replication Plugin). Supported versions that are affected are 8.0.26 and prior. Difficult to exploit vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 5.3 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35628",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35628",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35624",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35624",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Security: Privileges). Supported versions that are affected are 5.7.35 and prior and 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all MySQL Server accessible data. CVSS 3.1 Base Score 4.9 (Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N)."
-            },
-            {
-                "title": "CVE-2021-35633",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35633",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Logging). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of MySQL Server. CVSS 3.1 Base Score 2.7 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L)."
-            },
-            {
-                "title": "CVE-2021-35591",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35591",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: DML). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35596",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35596",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Error Handling). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35622",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35622",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Security: Encryption). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35623",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35623",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Security: Roles). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized read access to a subset of MySQL Server accessible data. CVSS 3.1 Base Score 2.7 (Confidentiality impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N)."
-            },
-            {
-                "title": "CVE-2021-35604",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35604",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.35 and prior and 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H)."
-            },
-            {
-                "title": "CVE-2021-35584",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35584",
-                "description": "Vulnerability in the MySQL Cluster product of Oracle MySQL (component: Cluster: ndbcluster/plugin DDL). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Cluster. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of MySQL Cluster. CVSS 3.1 Base Score 4.3 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L)."
-            },
-            {
-                "title": "CVE-2021-35647",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35647",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            },
-            {
-                "title": "CVE-2021-35646",
-                "link": "https://people.canonical.com/~ubuntu-security/cve/CVE-2021-35646",
-                "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
-            }
-        ],
+        "cves": null,
         "affected_packages": [
             "mysql-server-5.7"
         ]
