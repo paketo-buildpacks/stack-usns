@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5131-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5131-1",
+        "cves": null,
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5128-1: Ceph vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5128-1",
         "cves": null,
