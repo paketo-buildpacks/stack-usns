@@ -1,5 +1,15 @@
 [
     {
+        "title": "USN-5133-1: ICU vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5133-1",
+        "cves": null,
+        "affected_packages": [
+            "icu-devtools",
+            "libiculx60",
+            "libicu60"
+        ]
+    },
+    {
         "title": "USN-5132-1: Thunderbird vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5132-1",
         "cves": null,
