@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5126-1: Bind vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5126-1",
+        "cves": null,
+        "affected_packages": [
+            "bind9"
+        ]
+    },
+    {
         "title": "USN-5133-1: ICU vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5133-1",
         "cves": null,
