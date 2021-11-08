@@ -60,7 +60,6 @@ func testQueryRSSFeed(t *testing.T, context spec.G, it spec.S) {
 			Expect(len(actualUSNArray) > 0).To(BeTrue())
 			Expect(actualUSNArray[0].Title).ToNot(Equal(""))
 			Expect(actualUSNArray[0].Link).ToNot(Equal(""))
-			Expect(len(actualUSNArray[0].CveArray)).ToNot(Equal(0))
 		})
 	})
 
