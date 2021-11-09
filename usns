@@ -1,5 +1,72 @@
 [
     {
+        "title": "USN-5137-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5137-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-generic-hwe-18.04",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-oem",
+            "linux-image-aws",
+            "linux-image-oem-osp1",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-5.4.0-1059-aws",
+            "linux-image-gkeop-5.4",
+            "linux-image-azure",
+            "linux-image-5.4.0-90-generic-lpae",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-5.4.0-1026-gkeop",
+            "linux-image-5.4.0-90-generic",
+            "linux-image-gcp",
+            "linux-image-5.4.0-90-lowlatency",
+            "linux-image-5.4.0-1057-gcp",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-5.4.0-1063-azure"
+        ]
+    },
+    {
+        "title": "USN-5136-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5136-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-virtual",
+            "linux-image-aws-lts-18.04",
+            "linux-image-generic",
+            "linux-image-4.15.0-1102-kvm",
+            "linux-image-4.15.0-1115-aws",
+            "linux-image-4.15.0-162-generic-lpae",
+            "linux-image-oracle-lts-18.04",
+            "linux-image-4.15.0-1115-snapdragon",
+            "linux-image-4.15.0-1030-dell300x",
+            "linux-image-generic-lpae",
+            "linux-image-4.15.0-162-generic",
+            "linux-image-4.15.0-1111-gcp",
+            "linux-image-dell300x",
+            "linux-image-4.15.0-1083-oracle",
+            "linux-image-snapdragon",
+            "linux-image-raspi2",
+            "linux-image-azure-lts-18.04",
+            "linux-image-4.15.0-1098-raspi2",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-4.15.0-1126-azure",
+            "linux-image-kvm",
+            "linux-image-4.15.0-162-lowlatency",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
+        "title": "USN-5130-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5130-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5135-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5135-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5134-1: Docker vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5134-1",
         "cves": null,
