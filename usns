@@ -1,6 +1,6 @@
 [
     {
-        "title": "USN-5134-1: docker.io vulnerability",
+        "title": "USN-5134-1: Docker vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5134-1",
         "cves": null,
         "affected_packages": [
