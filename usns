@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5134-1: docker.io vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5134-1",
+        "cves": null,
+        "affected_packages": [
+            "docker.io"
+        ]
+    },
+    {
         "title": "USN-5126-1: Bind vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5126-1",
         "cves": null,
