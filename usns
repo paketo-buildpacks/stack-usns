@@ -1,5 +1,15 @@
 [
     {
+        "title": "USN-5138-1: python-py vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5138-1",
+        "cves": null,
+        "affected_packages": [
+            "pypy-py",
+            "python3-py",
+            "python-py"
+        ]
+    },
+    {
         "title": "USN-5137-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5137-1",
         "cves": null,
