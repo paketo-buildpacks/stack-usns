@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5142-1: Samba vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5142-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "LSN-0082-1: Kernel Live Patch Security Notice",
         "link": "https://ubuntu.com/security/notices/LSN-0082-1",
         "cves": null,
