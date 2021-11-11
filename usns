@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5145-1: PostgreSQL vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5145-1",
+        "cves": null,
+        "affected_packages": [
+            "postgresql-10"
+        ]
+    },
+    {
         "title": "USN-5144-1: OpenEXR vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5144-1",
         "cves": null,
