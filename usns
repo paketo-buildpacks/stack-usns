@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5144-1: OpenEXR vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5144-1",
+        "cves": null,
+        "affected_packages": [
+            "openexr",
+            "libopenexr22"
+        ]
+    },
+    {
         "title": "USN-5142-1: Samba vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5142-1",
         "cves": null,
