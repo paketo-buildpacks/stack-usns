@@ -1,5 +1,16 @@
 [
     {
+        "title": "USN-5137-2: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5137-2",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-oracle",
+            "linux-image-5.4.0-1055-gke",
+            "linux-image-gke-5.4",
+            "linux-image-5.4.0-1057-oracle"
+        ]
+    },
+    {
         "title": "USN-5140-1: Linux kernel (OEM 5.14) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5140-1",
         "cves": null,
