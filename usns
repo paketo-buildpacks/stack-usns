@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5141-1: Firejail vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5141-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5137-2: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5137-2",
         "cves": null,
