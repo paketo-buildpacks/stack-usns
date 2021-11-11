@@ -1,5 +1,11 @@
 [
     {
+        "title": "LSN-0082-1: Kernel Live Patch Security Notice",
+        "link": "https://ubuntu.com/security/notices/LSN-0082-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5141-1: Firejail vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5141-1",
         "cves": null,
