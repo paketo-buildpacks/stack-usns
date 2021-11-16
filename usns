@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5149-1: AccountsService vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5149-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5147-1: Vim vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5147-1",
         "cves": null,
