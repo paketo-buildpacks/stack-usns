@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5148-1: hivex vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5148-1",
+        "cves": null,
+        "affected_packages": [
+            "libhivex-bin",
+            "libhivex0"
+        ]
+    },
+    {
         "title": "USN-5149-1: AccountsService vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5149-1",
         "cves": null,
