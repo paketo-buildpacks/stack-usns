@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5150-1: OpenEXR vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5150-1",
+        "cves": null,
+        "affected_packages": [
+            "openexr",
+            "libopenexr22"
+        ]
+    },
+    {
         "title": "USN-5148-1: hivex vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5148-1",
         "cves": null,
