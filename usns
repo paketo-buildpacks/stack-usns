@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5151-1: Mailman vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5151-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1949401",
+                "link": "https://launchpad.net/bugs/1949401",
+                "description": "Potential XSS attack via the user options page."
+            }
+        ],
+        "affected_packages": [
+            "mailman"
+        ]
+    },
+    {
         "title": "USN-5150-1: OpenEXR vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5150-1",
         "cves": null,
