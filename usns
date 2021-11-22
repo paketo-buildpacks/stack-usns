@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5153-1: LibreOffice vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5153-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5151-1: Mailman vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5151-1",
         "cves": [
