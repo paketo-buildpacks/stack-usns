@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5154-1: FreeRDP vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5154-1",
+        "cves": null,
+        "affected_packages": [
+            "libfreerdp-client2-2"
+        ]
+    },
+    {
         "title": "USN-5153-1: LibreOffice vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5153-1",
         "cves": null,
