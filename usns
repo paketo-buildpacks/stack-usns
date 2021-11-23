@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5155-1: BlueZ vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5155-1",
+        "cves": null,
+        "affected_packages": [
+            "libbluetooth3",
+            "bluez"
+        ]
+    },
+    {
         "title": "USN-5154-1: FreeRDP vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5154-1",
         "cves": null,
