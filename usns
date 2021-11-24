@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5156-1: ICU vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5156-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5155-1: BlueZ vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5155-1",
         "cves": null,
