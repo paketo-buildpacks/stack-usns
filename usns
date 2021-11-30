@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5158-1: ImageMagick vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5158-1",
+        "cves": null,
+        "affected_packages": [
+            "libmagick++-6.q16-7"
+        ]
+    },
+    {
         "title": "USN-5152-1: Thunderbird vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5152-1",
         "cves": null,
