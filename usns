@@ -1,5 +1,21 @@
 [
     {
+        "title": "USN-5168-1: NSS vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5168-1",
+        "cves": null,
+        "affected_packages": [
+            "libnss3"
+        ]
+    },
+    {
+        "title": "USN-5168-2: Thunderbird vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5168-2",
+        "cves": null,
+        "affected_packages": [
+            "thunderbird"
+        ]
+    },
+    {
         "title": "USN-5165-1: Linux kernel (OEM) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5165-1",
         "cves": null,
