@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5168-3: NSS vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5168-3",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5168-1: NSS vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5168-1",
         "cves": null,
