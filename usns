@@ -1,5 +1,78 @@
 [
     {
+        "title": "USN-5165-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5165-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5164-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5164-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-virtual",
+            "linux-image-aws-lts-18.04",
+            "linux-image-oracle-lts-18.04",
+            "linux-image-4.15.0-1127-azure",
+            "linux-image-4.15.0-1116-aws",
+            "linux-image-4.15.0-1031-dell300x",
+            "linux-image-4.15.0-1116-snapdragon",
+            "linux-image-snapdragon",
+            "linux-image-dell300x",
+            "linux-image-raspi2",
+            "linux-image-azure-lts-18.04",
+            "linux-image-4.15.0-1103-kvm",
+            "linux-image-generic-lpae",
+            "linux-image-4.15.0-1112-gcp",
+            "linux-image-4.15.0-1084-oracle",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-4.15.0-1099-raspi2",
+            "linux-image-4.15.0-163-generic",
+            "linux-image-4.15.0-163-generic-lpae",
+            "linux-image-kvm",
+            "linux-image-lowlatency",
+            "linux-image-4.15.0-163-lowlatency",
+            "linux-image-generic"
+        ]
+    },
+    {
+        "title": "USN-5163-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5163-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-5.4.0-91-generic-lpae",
+            "linux-image-generic-hwe-18.04",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-oem",
+            "linux-image-aws",
+            "linux-image-5.4.0-1058-oracle",
+            "linux-image-oem-osp1",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-5.4.0-1056-gke",
+            "linux-image-gkeop-5.4",
+            "linux-image-5.4.0-91-generic",
+            "linux-image-5.4.0-91-lowlatency",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-5.4.0-1027-gkeop",
+            "linux-image-5.4.0-1060-aws",
+            "linux-image-oracle",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-gke-5.4"
+        ]
+    },
+    {
+        "title": "USN-5162-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5162-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5161-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5161-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5158-1: ImageMagick vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5158-1",
         "cves": null,
