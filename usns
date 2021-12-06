@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5170-1: MariaDB vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5170-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5174-1: Samba vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5174-1",
         "cves": null,
