@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5174-1: Samba vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5174-1",
+        "cves": null,
+        "affected_packages": [
+            "samba"
+        ]
+    },
+    {
         "title": "USN-5168-3: NSS vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5168-3",
         "cves": null,
