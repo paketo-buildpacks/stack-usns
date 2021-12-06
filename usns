@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-5142-2: Samba regressions",
+        "link": "https://ubuntu.com/security/notices/USN-5142-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1950363",
+                "link": "https://launchpad.net/bugs/1950363",
+                "description": "Nov 2021 security update tracking bug"
+            },
+            {
+                "title": "https://launchpad.net/bugs/1952187",
+                "link": "https://launchpad.net/bugs/1952187",
+                "description": "backup command raises FileNotFoundError"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5173-1: libmodbus vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5173-1",
         "cves": null,
