@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5180-1: Mailman vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5180-1",
+        "cves": null,
+        "affected_packages": [
+            "mailman"
+        ]
+    },
+    {
         "title": "USN-5179-1: BusyBox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5179-1",
         "cves": null,
