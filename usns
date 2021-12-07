@@ -1,5 +1,21 @@
 [
     {
+        "title": "USN-5179-1: BusyBox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5179-1",
+        "cves": null,
+        "affected_packages": [
+            "busybox",
+            "busybox-initramfs",
+            "busybox-static"
+        ]
+    },
+    {
+        "title": "USN-5178-1: Django vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5178-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5142-2: Samba regressions",
         "link": "https://ubuntu.com/security/notices/USN-5142-2",
         "cves": [
