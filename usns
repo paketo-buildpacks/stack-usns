@@ -1,5 +1,31 @@
 [
     {
+        "title": "USN-5174-2: Samba regression",
+        "link": "https://ubuntu.com/security/notices/USN-5174-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1950363",
+                "link": "https://launchpad.net/bugs/1950363",
+                "description": "Nov 2021 security update tracking bug"
+            }
+        ],
+        "affected_packages": [
+            "samba"
+        ]
+    },
+    {
+        "title": "USN-5142-3: Samba regression",
+        "link": "https://ubuntu.com/security/notices/USN-5142-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1950363",
+                "link": "https://launchpad.net/bugs/1950363",
+                "description": "Nov 2021 security update tracking bug"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5189-1: GLib vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5189-1",
         "cves": null,
