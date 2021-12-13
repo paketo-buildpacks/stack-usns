@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5188-1: Keepalived vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5188-1",
+        "cves": null,
+        "affected_packages": [
+            "keepalived"
+        ]
+    },
+    {
         "title": "USN-5186-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5186-1",
         "cves": null,
