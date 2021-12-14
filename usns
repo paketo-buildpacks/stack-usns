@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5191-1: Flatpak vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5191-1",
+        "cves": null,
+        "affected_packages": [
+            "libflatpak0",
+            "flatpak"
+        ]
+    },
+    {
         "title": "USN-5174-2: Samba regression",
         "link": "https://ubuntu.com/security/notices/USN-5174-2",
         "cves": [
