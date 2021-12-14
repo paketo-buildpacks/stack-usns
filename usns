@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5192-1: Apache Log4j 2 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5192-1",
+        "cves": null,
+        "affected_packages": [
+            "liblog4j2-java"
+        ]
+    },
+    {
         "title": "USN-5191-1: Flatpak vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5191-1",
         "cves": null,
