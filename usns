@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5193-1: X.Org X Server vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5193-1",
+        "cves": null,
+        "affected_packages": [
+            "xserver-xorg-core",
+            "xserver-xorg-core-hwe-18.04"
+        ]
+    },
+    {
         "title": "USN-5192-1: Apache Log4j 2 vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5192-1",
         "cves": null,
