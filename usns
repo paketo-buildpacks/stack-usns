@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5198-1: HTMLDOC vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5198-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5195-1: Mumble vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5195-1",
         "cves": null,
