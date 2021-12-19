@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5203-1: Apache Log4j 2 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5203-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5201-1: Python vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5201-1",
         "cves": null,
