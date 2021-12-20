@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5186-2: Firefox regressions",
+        "link": "https://ubuntu.com/security/notices/USN-5186-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1955433",
+                "link": "https://launchpad.net/bugs/1955433",
+                "description": "Update to 95.0.1"
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5203-1: Apache Log4j 2 vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5203-1",
         "cves": null,
