@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5204-1: Django vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5204-1",
+        "cves": null,
+        "affected_packages": [
+            "python3-django",
+            "python-django"
+        ]
+    },
+    {
         "title": "USN-5186-2: Firefox regressions",
         "link": "https://ubuntu.com/security/notices/USN-5186-2",
         "cves": [
