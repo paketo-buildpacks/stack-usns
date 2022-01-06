@@ -1,5 +1,11 @@
 [
     {
+        "title": "LSN-0083-1: Kernel Live Patch Security Notice",
+        "link": "https://ubuntu.com/security/notices/LSN-0083-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5211-1: Linux kernel vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5211-1",
         "cves": null,
