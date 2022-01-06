@@ -95,7 +95,7 @@
             {
                 "title": "https://launchpad.net/bugs/1955433",
                 "link": "https://launchpad.net/bugs/1955433",
-                "description": ""
+                "description": "Update to 95.0.1"
             }
         ],
         "affected_packages": [
