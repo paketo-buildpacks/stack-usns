@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-5213-1: WebKitGTK vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5213-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5212-1: Apache HTTP Server vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5212-1",
+        "cves": null,
+        "affected_packages": [
+            "apache2",
+            "apache2-bin"
+        ]
+    },
+    {
         "title": "LSN-0083-1: Kernel Live Patch Security Notice",
         "link": "https://ubuntu.com/security/notices/LSN-0083-1",
         "cves": null,
