@@ -1,5 +1,85 @@
 [
     {
+        "title": "USN-5211-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5211-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5209-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5209-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-4.15.0-1129-azure",
+            "linux-image-4.15.0-1118-snapdragon",
+            "linux-image-virtual",
+            "linux-image-raspi2",
+            "linux-image-aws-lts-18.04",
+            "linux-image-generic",
+            "linux-image-4.15.0-1114-gcp",
+            "linux-image-4.15.0-1033-dell300x",
+            "linux-image-4.15.0-1101-raspi2",
+            "linux-image-4.15.0-1085-oracle",
+            "linux-image-oracle-lts-18.04",
+            "linux-image-4.15.0-1118-aws",
+            "linux-image-generic-lpae",
+            "linux-image-snapdragon",
+            "linux-image-4.15.0-1105-kvm",
+            "linux-image-azure-lts-18.04",
+            "linux-image-4.15.0-166-lowlatency",
+            "linux-image-4.15.0-166-generic-lpae",
+            "linux-image-dell300x",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-4.15.0-166-generic",
+            "linux-image-kvm",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
+        "title": "USN-5210-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5210-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-generic-hwe-18.04",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-oem",
+            "linux-image-aws",
+            "linux-image-5.4.0-1065-azure",
+            "linux-image-oem-osp1",
+            "linux-image-5.4.0-92-generic",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-5.4.0-1059-oracle",
+            "linux-image-5.4.0-92-lowlatency",
+            "linux-image-azure",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-gcp",
+            "linux-image-oracle",
+            "linux-image-5.4.0-1059-gcp",
+            "linux-image-5.4.0-1057-gke",
+            "linux-image-5.4.0-92-generic-lpae",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-gke-5.4"
+        ]
+    },
+    {
+        "title": "USN-5208-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5208-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5206-1: Linux kernel (OEM) vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5206-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5207-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5207-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5204-1: Django vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5204-1",
         "cves": null,
