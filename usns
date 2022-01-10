@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5212-2: Apache HTTP Server vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5212-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5213-1: WebKitGTK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5213-1",
         "cves": null,
