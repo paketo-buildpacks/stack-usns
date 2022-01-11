@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5043-2: Exiv2 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5043-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1941752",
+                "link": "https://launchpad.net/bugs/1941752",
+                "description": "Regression: exiv2 0.27.3-3ubuntu1.5 makes Gwenview crash when opening images exported by darktable"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5219-1: Linux kernel vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5219-1",
         "cves": [
