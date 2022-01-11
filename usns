@@ -1,5 +1,41 @@
 [
     {
+        "title": "USN-5219-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5219-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1956585",
+                "link": "https://launchpad.net/bugs/1956585",
+                "description": "OOB write on BPF_RINGBUF"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5218-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5218-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1956585",
+                "link": "https://launchpad.net/bugs/1956585",
+                "description": "OOB write on BPF_RINGBUF"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5217-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5217-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1956585",
+                "link": "https://launchpad.net/bugs/1956585",
+                "description": "OOB write on BPF_RINGBUF"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5212-2: Apache HTTP Server vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5212-2",
         "cves": null,
