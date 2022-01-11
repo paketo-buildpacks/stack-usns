@@ -1,6 +1,6 @@
 [
     {
-        "title": "USN-5043-2: Exiv2 vulnerability",
+        "title": "USN-5043-2: Exiv2 regression",
         "link": "https://ubuntu.com/security/notices/USN-5043-2",
         "cves": [
             {
