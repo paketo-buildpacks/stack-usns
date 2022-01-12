@@ -1,5 +1,30 @@
 [
     {
+        "title": "USN-5210-2: Linux kernel regression",
+        "link": "https://ubuntu.com/security/notices/USN-5210-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1956575",
+                "link": "https://launchpad.net/bugs/1956575",
+                "description": "[Regression] Focal kernel  5.4.0-92.103 fails to boot when Secure Encrypted Virtualization(SEV) is enabled"
+            }
+        ],
+        "affected_packages": [
+            "linux-image-generic-hwe-18.04",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-5.4.0-94-lowlatency",
+            "linux-image-oem",
+            "linux-image-5.4.0-94-generic",
+            "linux-image-oem-osp1",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-gcp",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-5.4.0-1060-gcp",
+            "linux-image-5.4.0-94-generic-lpae"
+        ]
+    },
+    {
         "title": "USN-5225-1: lxml vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5225-1",
         "cves": null,
