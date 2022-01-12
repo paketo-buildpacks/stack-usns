@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5225-1: lxml vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5225-1",
+        "cves": null,
+        "affected_packages": [
+            "python3-lxml",
+            "python-lxml"
+        ]
+    },
+    {
         "title": "USN-5224-1: Ghostscript vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5224-1",
         "cves": null,
