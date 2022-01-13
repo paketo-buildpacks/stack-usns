@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5224-2: Ghostscript vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5224-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5223-1: Apache Log4j 1.2 vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5223-1",
         "cves": null,
