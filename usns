@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5223-1: Apache Log4j 1.2 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5223-1",
+        "cves": null,
+        "affected_packages": [
+            "liblog4j1.2-java"
+        ]
+    },
+    {
         "title": "USN-5226-1: systemd vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5226-1",
         "cves": null,
