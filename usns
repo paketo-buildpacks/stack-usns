@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5227-1: Pillow vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5227-1",
+        "cves": null,
+        "affected_packages": [
+            "python3-pil",
+            "python-pil"
+        ]
+    },
+    {
         "title": "USN-5224-2: Ghostscript vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5224-2",
         "cves": null,
