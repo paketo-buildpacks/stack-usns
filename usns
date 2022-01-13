@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5229-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5229-1",
+        "cves": null,
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5227-1: Pillow vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5227-1",
         "cves": null,
