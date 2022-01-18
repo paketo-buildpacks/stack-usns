@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5234-1: Byobu vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5234-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5235-1: Ruby vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5235-1",
         "cves": null,
