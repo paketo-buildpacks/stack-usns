@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5235-1: Ruby vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5235-1",
+        "cves": null,
+        "affected_packages": [
+            "ruby2.5"
+        ]
+    },
+    {
         "title": "USN-5233-1: ClamAV vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5233-1",
         "cves": null,
