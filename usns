@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5233-1: ClamAV vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5233-1",
+        "cves": null,
+        "affected_packages": [
+            "clamav"
+        ]
+    },
+    {
         "title": "USN-5227-2: Pillow vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5227-2",
         "cves": null,
