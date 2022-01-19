@@ -1,5 +1,35 @@
 [
     {
+        "title": "USN-5240-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5240-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-generic-hwe-18.04",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-5.4.0-96-lowlatency",
+            "linux-image-oem",
+            "linux-image-aws",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-5.4.0-96-generic",
+            "linux-image-raspi-hwe-18.04",
+            "linux-image-5.4.0-1061-oracle",
+            "linux-image-oem-osp1",
+            "linux-image-gkeop-5.4",
+            "linux-image-azure",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-5.4.0-1062-gcp",
+            "linux-image-gcp",
+            "linux-image-5.4.0-1050-raspi",
+            "linux-image-5.4.0-1067-azure",
+            "linux-image-5.4.0-96-generic-lpae",
+            "linux-image-oracle",
+            "linux-image-5.4.0-1031-gkeop",
+            "linux-image-5.4.0-1059-gke",
+            "linux-image-gke-5.4"
+        ]
+    },
+    {
         "title": "USN-5233-2: ClamAV vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5233-2",
         "cves": null,
