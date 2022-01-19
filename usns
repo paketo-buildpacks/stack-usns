@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5241-1: QtSvg vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5241-1",
+        "cves": null,
+        "affected_packages": [
+            "libqt5svg5"
+        ]
+    },
+    {
         "title": "USN-5240-1: Linux kernel vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5240-1",
         "cves": null,
