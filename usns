@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5021-2: curl vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5021-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5241-1: QtSvg vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5241-1",
         "cves": null,
