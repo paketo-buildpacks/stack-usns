@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5244-1: DBus vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5244-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5243-2: AIDE vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5243-2",
         "cves": null,
