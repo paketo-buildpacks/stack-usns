@@ -1,5 +1,11 @@
 [
     {
+        "title": "LSN-0084-1: Kernel Live Patch Security Notice",
+        "link": "https://ubuntu.com/security/notices/LSN-0084-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5021-2: curl vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5021-2",
         "cves": null,
