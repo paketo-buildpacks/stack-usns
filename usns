@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5243-1: AIDE vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5243-1",
+        "cves": null,
+        "affected_packages": [
+            "aide"
+        ]
+    },
+    {
         "title": "USN-5242-1: Open vSwitch vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5242-1",
         "cves": null,
