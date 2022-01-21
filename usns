@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5248-1: Thunderbird vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5248-1",
+        "cves": null,
+        "affected_packages": [
+            "thunderbird"
+        ]
+    },
+    {
         "title": "USN-5249-1: USBView vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5249-1",
         "cves": null,
