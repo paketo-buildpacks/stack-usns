@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5246-1: Thunderbird vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5246-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5244-1: DBus vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5244-1",
         "cves": null,
