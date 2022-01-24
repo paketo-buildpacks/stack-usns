@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5250-2: strongSwan vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5250-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5250-1: strongSwan vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5250-1",
         "cves": null,
