@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5250-1: strongSwan vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5250-1",
+        "cves": null,
+        "affected_packages": [
+            "libstrongswan",
+            "strongswan"
+        ]
+    },
+    {
         "title": "USN-5248-1: Thunderbird vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5248-1",
         "cves": null,
