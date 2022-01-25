@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5252-1: PolicyKit vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5252-1",
+        "cves": null,
+        "affected_packages": [
+            "policykit-1"
+        ]
+    },
+    {
         "title": "USN-5250-2: strongSwan vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5250-2",
         "cves": null,
