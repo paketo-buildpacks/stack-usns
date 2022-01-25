@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5252-2: PolicyKit vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5252-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5252-1: PolicyKit vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5252-1",
         "cves": null,
