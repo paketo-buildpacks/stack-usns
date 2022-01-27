@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5247-1: Vim vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5247-1",
+        "cves": null,
+        "affected_packages": [
+            "vim"
+        ]
+    },
+    {
         "title": "USN-5193-2: X.Org X Server vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5193-2",
         "cves": null,
