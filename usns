@@ -1,5 +1,15 @@
 [
     {
+        "title": "USN-5254-1: shadow vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5254-1",
+        "cves": null,
+        "affected_packages": [
+            "passwd",
+            "login",
+            "uidmap"
+        ]
+    },
+    {
         "title": "USN-5247-1: Vim vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5247-1",
         "cves": null,
