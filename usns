@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5257-1: ldns vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5257-1",
+        "cves": null,
+        "affected_packages": [
+            "libldns2"
+        ]
+    },
+    {
         "title": "USN-5255-1: WebKitGTK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5255-1",
         "cves": null,
