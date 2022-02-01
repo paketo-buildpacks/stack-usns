@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5260-2: Samba vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5260-2",
+        "cves": null,
+        "affected_packages": [
+            "samba"
+        ]
+    },
+    {
+        "title": "USN-5260-1: Samba vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5260-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5257-1: ldns vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5257-1",
         "cves": null,
