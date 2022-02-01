@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5259-1: Cron vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5259-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5260-2: Samba vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5260-2",
         "cves": null,
