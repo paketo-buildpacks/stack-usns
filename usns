@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5030-2: Perl DBI module vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5030-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5270-2: MySQL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5270-2",
         "cves": null,
