@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5260-3: Samba vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5260-3",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5268-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5268-1",
         "cves": null,
