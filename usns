@@ -1,5 +1,86 @@
 [
     {
+        "title": "USN-5268-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5268-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-4.15.0-167-generic-lpae",
+            "linux-image-virtual",
+            "linux-image-raspi2",
+            "linux-image-4.15.0-1115-gcp",
+            "linux-image-aws-lts-18.04",
+            "linux-image-generic",
+            "linux-image-4.15.0-1102-raspi2",
+            "linux-image-4.15.0-1086-oracle",
+            "linux-image-oracle-lts-18.04",
+            "linux-image-4.15.0-1119-snapdragon",
+            "linux-image-snapdragon",
+            "linux-image-4.15.0-167-lowlatency",
+            "linux-image-dell300x",
+            "linux-image-4.15.0-167-generic",
+            "linux-image-generic-lpae",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-4.15.0-1034-dell300x",
+            "linux-image-4.15.0-1106-kvm",
+            "linux-image-kvm",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
+        "title": "USN-5265-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5265-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5267-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5267-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-generic-hwe-18.04",
+            "linux-image-gkeop",
+            "linux-image-virtual",
+            "linux-image-generic",
+            "linux-image-oem",
+            "linux-image-bluefield",
+            "linux-image-5.4.0-1063-gcp",
+            "linux-image-ibm",
+            "linux-image-oem-osp1",
+            "linux-image-5.4.0-1032-gkeop",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-5.4.0-97-lowlatency",
+            "linux-image-5.4.0-97-generic-lpae",
+            "linux-image-5.4.0-1064-aws",
+            "linux-image-5.4.0-1026-bluefield",
+            "linux-image-5.4.0-1013-ibm",
+            "linux-image-gkeop-5.4",
+            "linux-image-generic-lpae-hwe-18.04-edge",
+            "linux-image-gcp-lts-20.04",
+            "linux-image-ibm-lts-20.04",
+            "linux-image-lowlatency-hwe-18.04-edge",
+            "linux-image-aws-lts-20.04",
+            "linux-image-generic-hwe-18.04-edge",
+            "linux-image-5.4.0-1062-oracle",
+            "linux-image-oracle-lts-20.04",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-5.4.0-1054-kvm",
+            "linux-image-kvm",
+            "linux-image-5.4.0-97-generic",
+            "linux-image-generic-lpae",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
+        "title": "USN-5266-1: Linux kernel (GKE) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5266-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-gke-5.4",
+            "linux-image-5.4.0-1061-gke"
+        ]
+    },
+    {
         "title": "USN-5259-1: Cron vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5259-1",
         "cves": null,
