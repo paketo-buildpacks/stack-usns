@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-5270-1: MySQL vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5270-1",
+        "cves": null,
+        "affected_packages": [
+            "mysql-server-5.7"
+        ]
+    },
+    {
+        "title": "USN-5269-1: Django vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5269-1",
+        "cves": null,
+        "affected_packages": [
+            "python3-django",
+            "python-django"
+        ]
+    },
+    {
         "title": "USN-5260-3: Samba vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5260-3",
         "cves": null,
