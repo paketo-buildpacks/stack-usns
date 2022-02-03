@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5264-1: Graphviz vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5264-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5030-2: Perl DBI module vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5030-2",
         "cves": null,
