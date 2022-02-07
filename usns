@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5269-2: Django vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5269-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5262-1: GPT fdisk vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5262-1",
         "cves": null,
