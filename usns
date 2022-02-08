@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-4754-5: Python vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4754-5",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5275-1: BlueZ vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5275-1",
         "cves": null,
