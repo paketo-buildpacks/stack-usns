@@ -1,5 +1,33 @@
 [
     {
+        "title": "USN-5267-2: Linux kernel regression",
+        "link": "https://ubuntu.com/security/notices/USN-5267-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1959665",
+                "link": "https://launchpad.net/bugs/1959665",
+                "description": "linux-image-5.4.0-97.110 freezes by accessing cifs shares"
+            }
+        ],
+        "affected_packages": [
+            "linux-image-generic-hwe-18.04",
+            "linux-image-5.4.0-99-generic",
+            "linux-image-oem",
+            "linux-image-aws",
+            "linux-image-5.4.0-1063-oracle",
+            "linux-image-oem-osp1",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-5.4.0-99-generic-lpae",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-5.4.0-1064-gcp",
+            "linux-image-gcp",
+            "linux-image-oracle",
+            "linux-image-5.4.0-99-lowlatency",
+            "linux-image-lowlatency-hwe-18.04"
+        ]
+    },
+    {
         "title": "USN-5276-1: NVIDIA graphics drivers vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5276-1",
         "cves": null,
