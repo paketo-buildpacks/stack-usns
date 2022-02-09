@@ -60,8 +60,8 @@
         "link": "https://ubuntu.com/security/notices/USN-5275-1",
         "cves": null,
         "affected_packages": [
-            "libbluetooth3",
-            "bluez"
+            "bluez",
+            "libbluetooth3"
         ]
     },
     {
