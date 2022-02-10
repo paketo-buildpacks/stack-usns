@@ -22,21 +22,25 @@
             }
         ],
         "affected_packages": [
+            "linux-image-aws",
             "linux-image-generic-hwe-18.04",
             "linux-image-5.4.0-99-generic",
             "linux-image-oem",
-            "linux-image-aws",
+            "linux-image-5.4.0-1033-gkeop",
             "linux-image-5.4.0-1063-oracle",
             "linux-image-oem-osp1",
+            "linux-image-5.4.0-1062-gke",
             "linux-image-generic-lpae-hwe-18.04",
             "linux-image-5.4.0-99-generic-lpae",
             "linux-image-snapdragon-hwe-18.04",
+            "linux-image-gkeop-5.4",
             "linux-image-virtual-hwe-18.04",
             "linux-image-5.4.0-1064-gcp",
             "linux-image-gcp",
             "linux-image-oracle",
             "linux-image-5.4.0-99-lowlatency",
-            "linux-image-lowlatency-hwe-18.04"
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-gke-5.4"
         ]
     },
     {
