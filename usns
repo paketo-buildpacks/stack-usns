@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5286-1: cryptsetup vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5286-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5284-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5284-1",
         "cves": null,
