@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5292-1: snapd vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5292-1",
+        "cves": null,
+        "affected_packages": [
+            "snap-confine",
+            "snapd"
+        ]
+    },
+    {
         "title": "USN-5291-1: libarchive vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5291-1",
         "cves": null,
