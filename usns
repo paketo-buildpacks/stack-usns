@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5267-3: Linux kernel (Raspberry Pi) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5267-3",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-raspi-hwe-18.04",
+            "linux-image-5.4.0-1052-raspi"
+        ]
+    },
+    {
         "title": "USN-5286-1: cryptsetup vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5286-1",
         "cves": null,
