@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5291-1: libarchive vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5291-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5267-3: Linux kernel (Raspberry Pi) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5267-3",
         "cves": null,
