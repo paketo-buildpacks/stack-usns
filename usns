@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5295-1: Linux kernel (HWE) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5295-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5294-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5294-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5292-1: snapd vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5292-1",
         "cves": null,
