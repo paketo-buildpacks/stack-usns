@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5292-3: snapd vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5292-3",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5292-2: snapd vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5292-2",
         "cves": null,
