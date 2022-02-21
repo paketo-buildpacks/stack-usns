@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5288-1: Expat vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5288-1",
+        "cves": null,
+        "affected_packages": [
+            "libexpat1"
+        ]
+    },
+    {
         "title": "USN-5292-3: snapd vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5292-3",
         "cves": null,
