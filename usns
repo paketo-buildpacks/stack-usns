@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5301-1: Cyrus SASL vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5301-1",
+        "cves": null,
+        "affected_packages": [
+            "libsasl2-modules-sql"
+        ]
+    },
+    {
         "title": "USN-5299-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5299-1",
         "cves": null,
