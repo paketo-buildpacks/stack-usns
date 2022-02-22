@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5302-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5302-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5301-2: Cyrus SASL vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5301-2",
         "cves": null,
