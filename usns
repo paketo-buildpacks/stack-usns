@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5292-4: snapd regression",
+        "link": "https://ubuntu.com/security/notices/USN-5292-4",
+        "cves": null,
+        "affected_packages": [
+            "snap-confine",
+            "snapd"
+        ]
+    },
+    {
         "title": "USN-5302-1: Linux kernel (OEM) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5302-1",
         "cves": null,
