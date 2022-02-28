@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5309-1: virglrenderer vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5309-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5307-1: QEMU vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5307-1",
         "cves": null,
