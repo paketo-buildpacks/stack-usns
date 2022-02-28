@@ -1,5 +1,38 @@
 [
     {
+        "title": "USN-5307-1: QEMU vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5307-1",
+        "cves": null,
+        "affected_packages": [
+            "qemu-system-misc",
+            "qemu-system-s390x",
+            "qemu-system",
+            "qemu-system-x86",
+            "qemu-system-arm",
+            "qemu-system-sparc",
+            "qemu-system-ppc",
+            "qemu-system-mips"
+        ]
+    },
+    {
+        "title": "USN-5306-1: WebKitGTK vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5306-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5305-1: MariaDB vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5305-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5304-1: PolicyKit vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5304-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5303-1: PHP vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5303-1",
         "cves": null,
