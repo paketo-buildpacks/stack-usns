@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5310-1: GNU C Library vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5310-1",
+        "cves": null,
+        "affected_packages": [
+            "libc6"
+        ]
+    },
+    {
         "title": "USN-5309-1: virglrenderer vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5309-1",
         "cves": null,
