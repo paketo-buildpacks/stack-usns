@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5311-1: containerd vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5311-1",
+        "cves": null,
+        "affected_packages": [
+            "containerd"
+        ]
+    },
+    {
         "title": "USN-5300-2: PHP vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5300-2",
         "cves": null,
