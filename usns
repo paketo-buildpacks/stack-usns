@@ -1,5 +1,15 @@
 [
     {
+        "title": "USN-5300-2: PHP vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5300-2",
+        "cves": null,
+        "affected_packages": [
+            "php7.2-fpm",
+            "php7.2-cli",
+            "php7.2-cgi"
+        ]
+    },
+    {
         "title": "USN-5312-1: HAProxy vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5312-1",
         "cves": null,
