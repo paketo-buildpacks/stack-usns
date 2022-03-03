@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5312-1: HAProxy vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5312-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5310-1: GNU C Library vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5310-1",
         "cves": null,
