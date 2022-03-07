@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5300-3: PHP vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5300-3",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5314-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5314-1",
         "cves": null,
