@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5310-2: GNU C Library vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5310-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5313-1: OpenJDK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5313-1",
         "cves": null,
