@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5322-1: Subversion vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5322-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5321-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5321-1",
+        "cves": null,
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5320-1: Expat vulnerabilities and regression",
         "link": "https://ubuntu.com/security/notices/USN-5320-1",
         "cves": [
