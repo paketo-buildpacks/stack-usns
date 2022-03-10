@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5320-1: Expat vulnerabilities and regression",
+        "link": "https://ubuntu.com/security/notices/USN-5320-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1963903",
+                "link": "https://launchpad.net/bugs/1963903",
+                "description": "expat relax fix for CVE-2022-25236 and possible regressions"
+            }
+        ],
+        "affected_packages": [
+            "libexpat1"
+        ]
+    },
+    {
         "title": "USN-5319-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5319-1",
         "cves": null,
