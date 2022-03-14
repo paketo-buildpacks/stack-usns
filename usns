@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5325-1: Zsh vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5325-1",
+        "cves": null,
+        "affected_packages": [
+            "zsh-static",
+            "zsh"
+        ]
+    },
+    {
         "title": "USN-5324-1: libxml2 vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5324-1",
         "cves": null,
