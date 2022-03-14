@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-5324-1: libxml2 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5324-1",
+        "cves": null,
+        "affected_packages": [
+            "libxml2-utils",
+            "libxml2"
+        ]
+    },
+    {
+        "title": "USN-5323-1: NBD vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5323-1",
+        "cves": null,
+        "affected_packages": [
+            "nbd-server"
+        ]
+    },
+    {
         "title": "USN-5322-1: Subversion vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5322-1",
         "cves": null,
