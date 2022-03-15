@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5328-1: OpenSSL vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5328-1",
+        "cves": null,
+        "affected_packages": [
+            "libssl1.0.0",
+            "libssl1.1"
+        ]
+    },
+    {
         "title": "USN-5327-1: rsh vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5327-1",
         "cves": null,
