@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5328-2: OpenSSL vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5328-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5328-1: OpenSSL vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5328-1",
         "cves": null,
