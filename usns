@@ -1,5 +1,21 @@
 [
     {
+        "title": "USN-5330-1: LibreOffice vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5330-1",
+        "cves": null,
+        "affected_packages": [
+            "libreoffice-core"
+        ]
+    },
+    {
+        "title": "USN-5329-1: tar vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5329-1",
+        "cves": null,
+        "affected_packages": [
+            "tar"
+        ]
+    },
+    {
         "title": "USN-5328-2: OpenSSL vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5328-2",
         "cves": null,
