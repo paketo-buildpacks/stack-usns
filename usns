@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5327-1: rsh vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5327-1",
+        "cves": null,
+        "affected_packages": [
+            "rsh-server",
+            "rsh-client"
+        ]
+    },
+    {
         "title": "USN-5325-1: Zsh vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5325-1",
         "cves": null,
