@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5331-1: tcpdump vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5331-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5330-1: LibreOffice vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5330-1",
         "cves": null,
