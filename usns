@@ -1,5 +1,30 @@
 [
     {
+        "title": "USN-5321-2: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5321-2",
+        "cves": null,
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
+        "title": "USN-5333-1: Apache HTTP Server vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5333-1",
+        "cves": null,
+        "affected_packages": [
+            "apache2",
+            "apache2-bin"
+        ]
+    },
+    {
+        "title": "USN-5332-1: Bind vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5332-1",
+        "cves": null,
+        "affected_packages": [
+            "bind9"
+        ]
+    },
+    {
         "title": "USN-5334-1: man-db vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5334-1",
         "cves": null,
