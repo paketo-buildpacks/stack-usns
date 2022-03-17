@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5333-2: Apache HTTP Server vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5333-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5332-2: Bind vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5332-2",
         "cves": null,
