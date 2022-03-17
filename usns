@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5334-1: man-db vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5334-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5331-1: tcpdump vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5331-1",
         "cves": null,
