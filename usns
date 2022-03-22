@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5343-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5343-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5340-1: CKEditor vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5340-1",
         "cves": null,
@@ -46,24 +52,32 @@
         "link": "https://ubuntu.com/security/notices/USN-5338-1",
         "cves": null,
         "affected_packages": [
+            "linux-image-5.4.0-1056-raspi",
             "linux-image-5.4.0-105-generic-lpae",
             "linux-image-generic-hwe-18.04",
-            "linux-image-snapdragon-hwe-18.04",
             "linux-image-oem",
             "linux-image-aws",
-            "linux-image-5.4.0-1018-ibm",
+            "linux-image-raspi-hwe-18.04",
             "linux-image-ibm",
             "linux-image-oem-osp1",
             "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-5.4.0-1018-ibm",
+            "linux-image-5.4.0-1068-gcp",
+            "linux-image-5.4.0-1066-gke",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-5.4.0-1037-gkeop",
+            "linux-image-gkeop-5.4",
             "linux-image-azure",
             "linux-image-virtual-hwe-18.04",
-            "linux-image-5.4.0-105-lowlatency",
             "linux-image-5.4.0-105-generic",
+            "linux-image-5.4.0-105-lowlatency",
+            "linux-image-gcp",
             "linux-image-oracle",
             "linux-image-5.4.0-1073-azure",
             "linux-image-5.4.0-1067-oracle",
             "linux-image-lowlatency-hwe-18.04",
-            "linux-image-5.4.0-1069-aws"
+            "linux-image-5.4.0-1069-aws",
+            "linux-image-gke-5.4"
         ]
     },
     {
