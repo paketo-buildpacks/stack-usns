@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5341-1: GNU binutils vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5341-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5339-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5339-1",
         "cves": null,
