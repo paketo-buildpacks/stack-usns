@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5340-1: CKEditor vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5340-1",
+        "cves": null,
+        "affected_packages": [
+            "ckeditor"
+        ]
+    },
+    {
         "title": "USN-5341-1: GNU binutils vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5341-1",
         "cves": null,
