@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5346-1: Linux kernel (OEM) vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5346-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5345-1: Thunderbird vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5345-1",
         "cves": null,
@@ -51,7 +57,9 @@
             "linux-image-snapdragon",
             "linux-image-dell300x",
             "linux-image-4.15.0-1124-aws",
+            "linux-image-4.15.0-1106-raspi2",
             "linux-image-4.15.0-1038-dell300x",
+            "linux-image-raspi2",
             "linux-image-azure-lts-18.04",
             "linux-image-4.15.0-173-lowlatency",
             "linux-image-gcp-lts-18.04",
