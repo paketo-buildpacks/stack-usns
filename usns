@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5347-1: OpenVPN vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5347-1",
+        "cves": null,
+        "affected_packages": [
+            "openvpn"
+        ]
+    },
+    {
         "title": "USN-5346-1: Linux kernel (OEM) vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5346-1",
         "cves": null,
