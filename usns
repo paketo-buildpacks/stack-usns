@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5321-3: Firefox regressions",
+        "link": "https://ubuntu.com/security/notices/USN-5321-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1966306",
+                "link": "https://launchpad.net/bugs/1966306",
+                "description": "Update to 98.0.2"
+            }
+        ],
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5347-1: OpenVPN vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5347-1",
         "cves": null,
