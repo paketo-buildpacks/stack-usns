@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5352-1: Libtasn1 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5352-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5351-1: Paramiko vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5351-1",
         "cves": null,
