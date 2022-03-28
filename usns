@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5348-1: Smarty vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5348-1",
+        "cves": null,
+        "affected_packages": [
+            "smarty3"
+        ]
+    },
+    {
         "title": "USN-5342-1: Python vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5342-1",
         "cves": null,
