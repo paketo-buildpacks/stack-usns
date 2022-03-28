@@ -1,5 +1,16 @@
 [
     {
+        "title": "USN-5342-1: Python vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5342-1",
+        "cves": null,
+        "affected_packages": [
+            "python2.7",
+            "python3.6-minimal",
+            "python3.6",
+            "python2.7-minimal"
+        ]
+    },
+    {
         "title": "USN-5321-3: Firefox regressions",
         "link": "https://ubuntu.com/security/notices/USN-5321-3",
         "cves": [
