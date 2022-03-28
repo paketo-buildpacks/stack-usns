@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5351-1: Paramiko vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5351-1",
+        "cves": null,
+        "affected_packages": [
+            "python3-paramiko",
+            "python-paramiko"
+        ]
+    },
+    {
         "title": "USN-5349-1: GNU binutils vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5349-1",
         "cves": null,
