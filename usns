@@ -1,5 +1,23 @@
 [
     {
+        "title": "USN-5313-2: OpenJDK 11 regression",
+        "link": "https://ubuntu.com/security/notices/USN-5313-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1966338",
+                "link": "https://launchpad.net/bugs/1966338",
+                "description": "openjdk11 update breaks customers"
+            }
+        ],
+        "affected_packages": [
+            "openjdk-11-jre-zero",
+            "openjdk-11-jre-headless",
+            "openjdk-11-jdk",
+            "openjdk-11-jdk-headless",
+            "openjdk-11-jre"
+        ]
+    },
+    {
         "title": "USN-5350-1: Chromium vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5350-1",
         "cves": null,
