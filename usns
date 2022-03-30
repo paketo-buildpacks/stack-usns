@@ -1,5 +1,16 @@
 [
     {
+        "title": "USN-5355-1: zlib vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5355-1",
+        "cves": null,
+        "affected_packages": [
+            "lib64z1",
+            "libx32z1",
+            "lib32z1",
+            "zlib1g"
+        ]
+    },
+    {
         "title": "USN-5354-1: Twisted vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5354-1",
         "cves": null,
