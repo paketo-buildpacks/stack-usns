@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5355-2: zlib vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5355-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5355-1: zlib vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5355-1",
         "cves": null,
