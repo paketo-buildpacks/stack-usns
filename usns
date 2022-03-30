@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5351-2: Paramiko vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5351-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5313-2: OpenJDK 11 regression",
         "link": "https://ubuntu.com/security/notices/USN-5313-2",
         "cves": [
