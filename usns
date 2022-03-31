@@ -1,5 +1,48 @@
 [
     {
+        "title": "USN-5358-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5358-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-generic-hwe-18.04",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-oem",
+            "linux-image-5.4.0-107-generic-lpae",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-5.4.0-107-lowlatency",
+            "linux-image-5.4.0-1069-oracle",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-5.4.0-107-generic",
+            "linux-image-oem-osp1",
+            "linux-image-oracle",
+            "linux-image-lowlatency-hwe-18.04"
+        ]
+    },
+    {
+        "title": "USN-5357-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5357-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-4.15.0-175-lowlatency",
+            "linux-image-virtual",
+            "linux-image-aws-lts-18.04",
+            "linux-image-generic",
+            "linux-image-4.15.0-175-generic",
+            "linux-image-4.15.0-1112-kvm",
+            "linux-image-generic-lpae",
+            "linux-image-dell300x",
+            "linux-image-snapdragon",
+            "linux-image-4.15.0-1040-dell300x",
+            "linux-image-azure-lts-18.04",
+            "linux-image-4.15.0-1125-snapdragon",
+            "linux-image-4.15.0-1136-azure",
+            "linux-image-4.15.0-1126-aws",
+            "linux-image-4.15.0-175-generic-lpae",
+            "linux-image-kvm",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
         "title": "USN-5355-2: zlib vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5355-2",
         "cves": null,
