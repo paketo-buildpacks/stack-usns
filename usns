@@ -1,5 +1,16 @@
 [
     {
+        "title": "USN-5360-1: Tomcat vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5360-1",
+        "cves": null,
+        "affected_packages": [
+            "libtomcat9-embed-java",
+            "tomcat9-common",
+            "libtomcat9-java",
+            "tomcat9"
+        ]
+    },
+    {
         "title": "USN-5359-1: rsync vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5359-1",
         "cves": null,
