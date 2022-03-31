@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5359-1: rsync vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5359-1",
+        "cves": null,
+        "affected_packages": [
+            "rsync"
+        ]
+    },
+    {
         "title": "USN-5356-1: DOSBox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5356-1",
         "cves": null,
