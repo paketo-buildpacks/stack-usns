@@ -1,5 +1,43 @@
 [
     {
+        "title": "USN-5362-1: Linux kernel (Intel IOTG) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5362-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5361-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5361-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5358-2: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5358-2",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-gkeop-5.4",
+            "linux-image-5.4.0-1038-gkeop",
+            "linux-image-aws",
+            "linux-image-5.4.0-1067-gke",
+            "linux-image-5.4.0-1069-gcp",
+            "linux-image-5.4.0-1071-aws",
+            "linux-image-gcp",
+            "linux-image-gke-5.4"
+        ]
+    },
+    {
+        "title": "USN-5357-2: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5357-2",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-4.15.0-1120-gcp",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-oracle-lts-18.04",
+            "linux-image-4.15.0-1091-oracle"
+        ]
+    },
+    {
         "title": "USN-5360-1: Tomcat vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5360-1",
         "cves": null,
