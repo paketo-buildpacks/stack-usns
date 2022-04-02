@@ -16,13 +16,15 @@
         "link": "https://ubuntu.com/security/notices/USN-5358-2",
         "cves": null,
         "affected_packages": [
-            "linux-image-gkeop-5.4",
-            "linux-image-5.4.0-1038-gkeop",
-            "linux-image-aws",
-            "linux-image-5.4.0-1067-gke",
             "linux-image-5.4.0-1069-gcp",
-            "linux-image-5.4.0-1071-aws",
+            "linux-image-aws",
+            "linux-image-gkeop-5.4",
+            "linux-image-azure",
+            "linux-image-5.4.0-1067-gke",
+            "linux-image-5.4.0-1074-azure",
             "linux-image-gcp",
+            "linux-image-5.4.0-1038-gkeop",
+            "linux-image-5.4.0-1071-aws",
             "linux-image-gke-5.4"
         ]
     },
