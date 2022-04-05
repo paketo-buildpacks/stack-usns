@@ -16,15 +16,17 @@
         "link": "https://ubuntu.com/security/notices/USN-5358-2",
         "cves": null,
         "affected_packages": [
+            "linux-image-5.4.0-1019-ibm",
             "linux-image-5.4.0-1069-gcp",
             "linux-image-aws",
+            "linux-image-ibm",
+            "linux-image-5.4.0-1071-aws",
             "linux-image-gkeop-5.4",
             "linux-image-azure",
             "linux-image-5.4.0-1067-gke",
             "linux-image-5.4.0-1074-azure",
             "linux-image-gcp",
             "linux-image-5.4.0-1038-gkeop",
-            "linux-image-5.4.0-1071-aws",
             "linux-image-gke-5.4"
         ]
     },
@@ -36,7 +38,9 @@
             "linux-image-4.15.0-1120-gcp",
             "linux-image-gcp-lts-18.04",
             "linux-image-oracle-lts-18.04",
-            "linux-image-4.15.0-1091-oracle"
+            "linux-image-raspi2",
+            "linux-image-4.15.0-1091-oracle",
+            "linux-image-4.15.0-1107-raspi2"
         ]
     },
     {
