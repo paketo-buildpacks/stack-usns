@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5365-1: H2 vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5365-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5364-1: Waitress vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5364-1",
         "cves": null,
