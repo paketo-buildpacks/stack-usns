@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5369-1: oslo.utils vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5369-1",
+        "cves": null,
+        "affected_packages": [
+            "python-oslo.utils",
+            "python3-oslo.utils"
+        ]
+    },
+    {
         "title": "USN-5366-1: FriBidi vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5366-1",
         "cves": null,
