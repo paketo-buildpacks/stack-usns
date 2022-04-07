@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5366-1: FriBidi vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5366-1",
+        "cves": null,
+        "affected_packages": [
+            "libfribidi-bin",
+            "libfribidi0"
+        ]
+    },
+    {
         "title": "USN-5368-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5368-1",
         "cves": null,
