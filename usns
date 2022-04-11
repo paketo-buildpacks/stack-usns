@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5331-2: tcpdump vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5331-2",
+        "cves": null,
+        "affected_packages": [
+            "tcpdump"
+        ]
+    },
+    {
         "title": "USN-5370-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5370-1",
         "cves": null,
