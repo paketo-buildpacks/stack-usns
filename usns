@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5372-1: Subversion vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5372-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5374-1: libarchive vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5374-1",
         "cves": null,
