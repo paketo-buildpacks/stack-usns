@@ -1,5 +1,21 @@
 [
     {
+        "title": "USN-5378-2: XZ Utils vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5378-2",
+        "cves": null,
+        "affected_packages": [
+            "xz-utils"
+        ]
+    },
+    {
+        "title": "USN-5378-1: Gzip vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5378-1",
+        "cves": null,
+        "affected_packages": [
+            "gzip"
+        ]
+    },
+    {
         "title": "USN-5377-1: Linux kernel (BlueField) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5377-1",
         "cves": null,
