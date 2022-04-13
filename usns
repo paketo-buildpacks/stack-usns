@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5378-3: XZ Utils vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5378-3",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5378-2: XZ Utils vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5378-2",
         "cves": null,
