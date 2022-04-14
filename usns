@@ -1,5 +1,59 @@
 [
     {
+        "title": "USN-5378-4: Gzip vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5378-4",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5378-3: XZ Utils vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5378-3",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5378-2: XZ Utils vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5378-2",
+        "cves": null,
+        "affected_packages": [
+            "xz-utils"
+        ]
+    },
+    {
+        "title": "USN-5378-1: Gzip vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5378-1",
+        "cves": null,
+        "affected_packages": [
+            "gzip"
+        ]
+    },
+    {
+        "title": "USN-5377-1: Linux kernel (BlueField) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5377-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5376-1: Git vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5376-1",
+        "cves": null,
+        "affected_packages": [
+            "git"
+        ]
+    },
+    {
+        "title": "USN-5371-1: nginx vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5371-1",
+        "cves": null,
+        "affected_packages": [
+            "nginx-light",
+            "nginx-extras",
+            "libnginx-mod-http-lua",
+            "nginx-core",
+            "nginx-full"
+        ]
+    },
+    {
         "title": "USN-5372-1: Subversion vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5372-1",
         "cves": null,
