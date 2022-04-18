@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5379-1: klibc vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5379-1",
+        "cves": null,
+        "affected_packages": [
+            "klibc-utils",
+            "libklibc"
+        ]
+    },
+    {
         "title": "USN-5378-4: Gzip vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5378-4",
         "cves": null,
