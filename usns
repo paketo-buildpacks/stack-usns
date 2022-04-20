@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5380-1: Bash vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5380-1",
+        "cves": null,
+        "affected_packages": [
+            "bash"
+        ]
+    },
+    {
         "title": "USN-5379-1: klibc vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5379-1",
         "cves": null,
