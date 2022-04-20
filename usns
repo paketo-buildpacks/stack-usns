@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5382-1: libinput vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5382-1",
+        "cves": null,
+        "affected_packages": [
+            "libinput10"
+        ]
+    },
+    {
         "title": "USN-5380-1: Bash vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5380-1",
         "cves": null,
