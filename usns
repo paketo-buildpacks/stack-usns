@@ -1,5 +1,33 @@
 [
     {
+        "title": "USN-5385-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5385-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-virtual",
+            "linux-image-azure-lts-18.04",
+            "linux-image-aws-lts-18.04",
+            "linux-image-generic",
+            "linux-image-4.15.0-1127-aws",
+            "linux-image-4.15.0-176-generic",
+            "linux-image-oracle-lts-18.04",
+            "linux-image-4.15.0-1092-oracle",
+            "linux-image-4.15.0-1137-azure",
+            "linux-image-snapdragon",
+            "linux-image-dell300x",
+            "linux-image-4.15.0-1126-snapdragon",
+            "linux-image-4.15.0-1041-dell300x",
+            "linux-image-4.15.0-1121-gcp",
+            "linux-image-4.15.0-176-lowlatency",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-4.15.0-1113-kvm",
+            "linux-image-kvm",
+            "linux-image-4.15.0-176-generic-lpae",
+            "linux-image-generic-lpae",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
         "title": "USN-5384-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5384-1",
         "cves": null,
