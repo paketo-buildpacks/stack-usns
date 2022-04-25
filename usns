@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5387-1: Barbican vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5387-1",
+        "cves": null,
+        "affected_packages": [
+            "python-barbican"
+        ]
+    },
+    {
         "title": "USN-5385-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5385-1",
         "cves": null,
