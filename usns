@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5389-1: Libcroco vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5389-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5388-2: OpenJDK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5388-2",
         "cves": null,
