@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-5388-2: OpenJDK vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5388-2",
+        "cves": null,
+        "affected_packages": [
+            "openjdk-17-jdk",
+            "openjdk-17-jre-zero",
+            "openjdk-17-jdk-headless",
+            "openjdk-17-jre-headless",
+            "openjdk-17-jre"
+        ]
+    },
+    {
+        "title": "USN-5388-1: OpenJDK vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5388-1",
+        "cves": null,
+        "affected_packages": [
+            "openjdk-11-jre-zero",
+            "openjdk-11-jre-headless",
+            "openjdk-11-jdk",
+            "openjdk-11-jdk-headless",
+            "openjdk-11-jre"
+        ]
+    },
+    {
         "title": "USN-5376-2: Git vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5376-2",
         "cves": null,
