@@ -50,9 +50,12 @@
             "linux-image-generic-hwe-18.04",
             "linux-image-snapdragon-hwe-18.04",
             "linux-image-oem",
+            "linux-image-aws",
             "linux-image-5.4.0-109-generic",
             "linux-image-raspi-hwe-18.04",
+            "linux-image-5.4.0-1072-gcp",
             "linux-image-5.4.0-1059-raspi",
+            "linux-image-5.4.0-1072-aws",
             "linux-image-generic-lpae-hwe-18.04",
             "linux-image-5.4.0-1068-gke",
             "linux-image-gkeop-5.4",
@@ -67,7 +70,6 @@
             "linux-image-gcp",
             "linux-image-oem-osp1",
             "linux-image-oracle",
-            "linux-image-5.4.0-1072-gcp",
             "linux-image-lowlatency-hwe-18.04",
             "linux-image-gke-5.4"
         ]
