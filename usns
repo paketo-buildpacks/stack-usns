@@ -1,5 +1,25 @@
 [
     {
+        "title": "USN-5390-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5390-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5376-3: Git regression",
+        "link": "https://ubuntu.com/security/notices/USN-5376-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1970260",
+                "link": "https://launchpad.net/bugs/1970260",
+                "description": ""
+            }
+        ],
+        "affected_packages": [
+            "git"
+        ]
+    },
+    {
         "title": "USN-5389-1: Libcroco vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5389-1",
         "cves": null,
