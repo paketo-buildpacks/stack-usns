@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5391-1: libsepol vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5391-1",
+        "cves": null,
+        "affected_packages": [
+            "libsepol1",
+            "sepol-utils"
+        ]
+    },
+    {
         "title": "USN-5366-2: FriBidi vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5366-2",
         "cves": null,
