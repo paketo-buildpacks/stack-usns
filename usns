@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5393-1: Thunderbird vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5393-1",
+        "cves": null,
+        "affected_packages": [
+            "thunderbird"
+        ]
+    },
+    {
         "title": "USN-5391-1: libsepol vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5391-1",
         "cves": null,
