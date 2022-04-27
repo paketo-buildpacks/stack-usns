@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5366-2: fribidi vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5366-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5390-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5390-1",
         "cves": null,
