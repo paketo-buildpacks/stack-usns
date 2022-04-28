@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5371-2: nginx vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5371-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5393-1: Thunderbird vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5393-1",
         "cves": null,
