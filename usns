@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5398-1: Simple DirectMedia Layer vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5398-1",
+        "cves": null,
+        "affected_packages": [
+            "libsdl1.2debian"
+        ]
+    },
+    {
         "title": "USN-5397-1: curl vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5397-1",
         "cves": null,
