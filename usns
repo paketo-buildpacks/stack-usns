@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5392-1: Mutt vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5392-1",
+        "cves": null,
+        "affected_packages": [
+            "mutt"
+        ]
+    },
+    {
         "title": "USN-5371-2: nginx vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5371-2",
         "cves": null,
