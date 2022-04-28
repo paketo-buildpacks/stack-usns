@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5396-1: Ghostscript vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5396-1",
+        "cves": null,
+        "affected_packages": [
+            "ghostscript",
+            "libgs9"
+        ]
+    },
+    {
         "title": "USN-5395-1: networkd-dispatcher vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5395-1",
         "cves": null,
