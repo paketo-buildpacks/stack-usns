@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5395-1: networkd-dispatcher vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5395-1",
+        "cves": null,
+        "affected_packages": [
+            "networkd-dispatcher"
+        ]
+    },
+    {
         "title": "USN-5394-1: WebKitGTK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5394-1",
         "cves": null,
