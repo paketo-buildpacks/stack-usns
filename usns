@@ -1,5 +1,15 @@
 [
     {
+        "title": "USN-5399-1: libvirt vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5399-1",
+        "cves": null,
+        "affected_packages": [
+            "libvirt0",
+            "libvirt-daemon",
+            "libvirt-daemon-system"
+        ]
+    },
+    {
         "title": "USN-5382-2: libinput vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5382-2",
         "cves": null,
