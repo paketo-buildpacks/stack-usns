@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5382-2: libinput vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5382-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5398-1: Simple DirectMedia Layer vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5398-1",
         "cves": null,
