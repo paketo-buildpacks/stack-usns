@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5400-1: MySQL vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5400-1",
+        "cves": null,
+        "affected_packages": [
+            "mysql-server-5.7"
+        ]
+    },
+    {
         "title": "USN-5399-1: libvirt vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5399-1",
         "cves": null,
