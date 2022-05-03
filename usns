@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5390-2: Linux kernel (Raspberry Pi) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5390-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5400-1: MySQL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5400-1",
         "cves": null,
