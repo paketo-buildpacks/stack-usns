@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5395-2: networkd-dispatcher regression",
+        "link": "https://ubuntu.com/security/notices/USN-5395-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1971550",
+                "link": "https://launchpad.net/bugs/1971550",
+                "description": "networkd-dispatcher missing state 'initialized'"
+            }
+        ],
+        "affected_packages": [
+            "networkd-dispatcher"
+        ]
+    },
+    {
         "title": "USN-5402-1: OpenSSL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5402-1",
         "cves": null,
