@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-5402-1: OpenSSL vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5402-1",
+        "cves": null,
+        "affected_packages": [
+            "libssl1.0.0",
+            "libssl1.1"
+        ]
+    },
+    {
+        "title": "USN-5401-1: DPDK vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5401-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5400-2: MySQL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5400-2",
         "cves": null,
