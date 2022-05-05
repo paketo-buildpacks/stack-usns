@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5400-3: MySQL regression",
+        "link": "https://ubuntu.com/security/notices/USN-5400-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1971565",
+                "link": "https://launchpad.net/bugs/1971565",
+                "description": "charm no longer works with latest mysql-router version"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5403-1: SQLite vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5403-1",
         "cves": null,
