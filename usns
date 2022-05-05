@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5403-1: SQLite vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5403-1",
+        "cves": null,
+        "affected_packages": [
+            "sqlite3"
+        ]
+    },
+    {
         "title": "USN-5354-2: Twisted vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5354-2",
         "cves": null,
