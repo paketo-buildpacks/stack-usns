@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5354-2: Twisted vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5354-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5395-2: networkd-dispatcher regression",
         "link": "https://ubuntu.com/security/notices/USN-5395-2",
         "cves": [
