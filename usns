@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5259-2: Cron vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5259-2",
+        "cves": null,
+        "affected_packages": [
+            "cron"
+        ]
+    },
+    {
         "title": "USN-5405-1: jbig2dec vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5405-1",
         "cves": null,
