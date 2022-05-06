@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5404-1: Rsyslog vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5404-1",
+        "cves": null,
+        "affected_packages": [
+            "rsyslog"
+        ]
+    },
+    {
         "title": "USN-5259-2: Cron vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5259-2",
         "cves": null,
