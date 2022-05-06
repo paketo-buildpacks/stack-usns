@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5405-1: jbig2dec vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5405-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5400-3: MySQL regression",
         "link": "https://ubuntu.com/security/notices/USN-5400-3",
         "cves": [
