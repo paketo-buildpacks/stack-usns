@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5244-2: DBus vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5244-2",
+        "cves": null,
+        "affected_packages": [
+            "dbus",
+            "libdbus-1-3"
+        ]
+    },
+    {
         "title": "USN-5404-1: Rsyslog vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5404-1",
         "cves": null,
