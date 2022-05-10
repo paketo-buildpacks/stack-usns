@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5409-1: libsndfile vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5409-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5408-1: Dnsmasq vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5408-1",
         "cves": null,
