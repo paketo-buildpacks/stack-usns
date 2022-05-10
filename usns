@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5179-2: BusyBox vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5179-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5244-2: DBus vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5244-2",
         "cves": null,
