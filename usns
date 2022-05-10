@@ -1,5 +1,15 @@
 [
     {
+        "title": "USN-5408-1: Dnsmasq vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5408-1",
+        "cves": null,
+        "affected_packages": [
+            "dnsmasq",
+            "dnsmasq-utils",
+            "dnsmasq-base"
+        ]
+    },
+    {
         "title": "USN-5407-1: Cairo vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5407-1",
         "cves": null,
