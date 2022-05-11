@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-5411-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5411-1",
+        "cves": null,
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
+        "title": "USN-5412-1: curl vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5412-1",
+        "cves": null,
+        "affected_packages": [
+            "libcurl3-gnutls",
+            "libcurl3-nss",
+            "libcurl4",
+            "curl"
+        ]
+    },
+    {
         "title": "USN-5410-1: NSS vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5410-1",
         "cves": null,
