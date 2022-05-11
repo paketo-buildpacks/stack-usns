@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5410-1: NSS vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5410-1",
+        "cves": null,
+        "affected_packages": [
+            "libnss3"
+        ]
+    },
+    {
         "title": "USN-5259-3: Cron regression",
         "link": "https://ubuntu.com/security/notices/USN-5259-3",
         "cves": [
