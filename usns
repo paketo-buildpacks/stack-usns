@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5259-3: Cron regression",
+        "link": "https://ubuntu.com/security/notices/USN-5259-3",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1971895",
+                "link": "https://launchpad.net/bugs/1971895",
+                "description": "Warning messages from stat printed on installation with no user crontabs"
+            }
+        ],
+        "affected_packages": [
+            "cron"
+        ]
+    },
+    {
         "title": "USN-5409-1: libsndfile vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5409-1",
         "cves": null,
