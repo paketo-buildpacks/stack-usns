@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5420-1: Vorbis vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5420-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5419-1: Rsyslog vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5419-1",
         "cves": null,
