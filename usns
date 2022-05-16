@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5421-1: LibTIFF vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5421-1",
+        "cves": null,
+        "affected_packages": [
+            "libtiff5",
+            "libtiff-tools"
+        ]
+    },
+    {
         "title": "USN-5420-1: Vorbis vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5420-1",
         "cves": null,
