@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5422-1: libxml2 vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5422-1",
+        "cves": null,
+        "affected_packages": [
+            "libxml2-utils",
+            "libxml2"
+        ]
+    },
+    {
         "title": "USN-5421-1: LibTIFF vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5421-1",
         "cves": null,
