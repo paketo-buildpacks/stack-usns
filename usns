@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-5427-1: Apport vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5427-1",
+        "cves": null,
+        "affected_packages": [
+            "python3-apport",
+            "apport"
+        ]
+    },
+    {
+        "title": "USN-5426-1: needrestart vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5426-1",
+        "cves": null,
+        "affected_packages": [
+            "needrestart"
+        ]
+    },
+    {
         "title": "USN-5425-1: PCRE vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5425-1",
         "cves": null,
