@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5423-2: ClamAV vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5423-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5427-1: Apport vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5427-1",
         "cves": null,
