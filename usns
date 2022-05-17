@@ -1,5 +1,21 @@
 [
     {
+        "title": "USN-5424-1: OpenLDAP vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5424-1",
+        "cves": null,
+        "affected_packages": [
+            "slapd"
+        ]
+    },
+    {
+        "title": "USN-5423-1: ClamAV vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5423-1",
+        "cves": null,
+        "affected_packages": [
+            "clamav"
+        ]
+    },
+    {
         "title": "USN-5311-2: containerd regression",
         "link": "https://ubuntu.com/security/notices/USN-5311-2",
         "cves": null,
