@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5425-1: PCRE vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5425-1",
+        "cves": null,
+        "affected_packages": [
+            "libpcre3"
+        ]
+    },
+    {
         "title": "USN-5424-1: OpenLDAP vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5424-1",
         "cves": null,
