@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5430-1: GNOME Settings vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5430-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5429-1: Bind vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5429-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5428-1: libXrandr vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5428-1",
         "cves": null,
