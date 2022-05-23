@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5436-1: libXrender vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5436-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5435-1: Thunderbird vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5435-1",
         "cves": null,
