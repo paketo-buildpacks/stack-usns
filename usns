@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5438-1: HTMLDOC vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5438-1",
+        "cves": null,
+        "affected_packages": [
+            "htmldoc",
+            "htmldoc-common"
+        ]
+    },
+    {
         "title": "USN-5437-1: libXfixes vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5437-1",
         "cves": null,
