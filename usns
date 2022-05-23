@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5435-1: Thunderbird vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5435-1",
+        "cves": null,
+        "affected_packages": [
+            "thunderbird"
+        ]
+    },
+    {
         "title": "USN-5434-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5434-1",
         "cves": null,
