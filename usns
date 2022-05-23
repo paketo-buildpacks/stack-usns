@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5434-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5434-1",
+        "cves": null,
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5432-1: libpng vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5432-1",
         "cves": null,
