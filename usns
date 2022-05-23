@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5437-1: libXfixes vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5437-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5436-1: libXrender vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5436-1",
         "cves": null,
