@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5433-1: Vim vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5433-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5424-2: OpenLDAP vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5424-2",
         "cves": null,
