@@ -1,5 +1,48 @@
 [
     {
+        "title": "USN-5444-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5444-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5442-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5442-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-generic-hwe-18.04",
+            "linux-image-5.4.0-113-generic-lpae",
+            "linux-image-oem",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-5.4.0-113-lowlatency",
+            "linux-image-5.4.0-113-generic",
+            "linux-image-oem-osp1"
+        ]
+    },
+    {
+        "title": "USN-5443-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5443-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-virtual",
+            "linux-image-4.15.0-180-lowlatency",
+            "linux-image-aws-lts-18.04",
+            "linux-image-generic",
+            "linux-image-oracle-lts-18.04",
+            "linux-image-4.15.0-1095-oracle",
+            "linux-image-4.15.0-1130-aws",
+            "linux-image-4.15.0-180-generic",
+            "linux-image-4.15.0-1116-kvm",
+            "linux-image-4.15.0-180-generic-lpae",
+            "linux-image-kvm",
+            "linux-image-generic-lpae",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
         "title": "USN-5441-1: WebKitGTK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5441-1",
         "cves": [
