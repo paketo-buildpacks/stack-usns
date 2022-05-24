@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5440-1: PostgreSQL vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5440-1",
+        "cves": null,
+        "affected_packages": [
+            "postgresql-10"
+        ]
+    },
+    {
+        "title": "USN-5439-1: AccountsService vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5439-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5438-1: HTMLDOC vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5438-1",
         "cves": null,
