@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5441-1: WebKitGTK vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5441-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1975602",
+                "link": "https://launchpad.net/bugs/1975602",
+                "description": "2.36.2 security update tracking bug"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5404-2: Rsyslog vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5404-2",
         "cves": null,
