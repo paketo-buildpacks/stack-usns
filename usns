@@ -1,5 +1,15 @@
 [
     {
+        "title": "USN-5445-1: Subversion vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5445-1",
+        "cves": null,
+        "affected_packages": [
+            "libapache2-mod-svn",
+            "libsvn1",
+            "subversion"
+        ]
+    },
+    {
         "title": "USN-5444-1: Linux kernel vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5444-1",
         "cves": null,
