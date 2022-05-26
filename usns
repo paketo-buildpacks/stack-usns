@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5448-1: ncurses vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5448-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5402-2: OpenSSL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5402-2",
         "cves": null,
