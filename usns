@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-5447-1: logrotate vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5447-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5446-1: dpkg vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5446-1",
+        "cves": null,
+        "affected_packages": [
+            "dpkg",
+            "libdpkg-perl"
+        ]
+    },
+    {
         "title": "USN-5445-1: Subversion vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5445-1",
         "cves": null,
