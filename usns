@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5450-1: Subversion vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5450-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5449-1: libXv vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5449-1",
         "cves": null,
