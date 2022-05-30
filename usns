@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5431-1: GnuPG vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5431-1",
+        "cves": null,
+        "affected_packages": [
+            "gnupg"
+        ]
+    },
+    {
         "title": "USN-5450-1: Subversion vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5450-1",
         "cves": null,
