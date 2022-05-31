@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5454-1: CUPS vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5454-1",
+        "cves": null,
+        "affected_packages": [
+            "cups"
+        ]
+    },
+    {
         "title": "USN-5446-2: dpkg vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5446-2",
         "cves": null,
