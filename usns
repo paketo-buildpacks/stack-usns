@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5451-1: InfluxDB vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5451-1",
+        "cves": null,
+        "affected_packages": [
+            "influxdb"
+        ]
+    },
+    {
         "title": "USN-5454-1: CUPS vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5454-1",
         "cves": null,
