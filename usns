@@ -1,5 +1,28 @@
 [
     {
+        "title": "USN-5443-2: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5443-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5442-2: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5442-2",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-5.4.0-1043-gkeop",
+            "linux-image-raspi-hwe-18.04",
+            "linux-image-ibm",
+            "linux-image-5.4.0-1075-gcp",
+            "linux-image-5.4.0-1062-raspi",
+            "linux-image-gkeop-5.4",
+            "linux-image-5.4.0-1073-oracle",
+            "linux-image-gcp",
+            "linux-image-oracle",
+            "linux-image-5.4.0-1023-ibm"
+        ]
+    },
+    {
         "title": "USN-5454-2: CUPS vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5454-2",
         "cves": null,
