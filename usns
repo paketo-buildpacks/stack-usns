@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5456-1: ImageMagick vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5456-1",
+        "cves": null,
+        "affected_packages": [
+            "imagemagick-6-common",
+            "libmagick++-6.q16hdri-7",
+            "imagemagick",
+            "libmagickcore-6.q16-3",
+            "imagemagick-common",
+            "libmagick++-6.q16-7",
+            "libmagickcore-6.q16hdri-3"
+        ]
+    },
+    {
         "title": "LSN-0086-1: Kernel Live Patch Security Notice",
         "link": "https://ubuntu.com/security/notices/LSN-0086-1",
         "cves": null,
