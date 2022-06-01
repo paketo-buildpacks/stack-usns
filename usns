@@ -1,5 +1,11 @@
 [
     {
+        "title": "LSN-0086-1: Kernel Live Patch Security Notice",
+        "link": "https://ubuntu.com/security/notices/LSN-0086-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5457-1: WebKitGTK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5457-1",
         "cves": null,
