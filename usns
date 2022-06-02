@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5459-1: cifs-utils vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5459-1",
+        "cves": null,
+        "affected_packages": [
+            "cifs-utils"
+        ]
+    },
+    {
         "title": "USN-5458-1: Vim vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5458-1",
         "cves": null,
