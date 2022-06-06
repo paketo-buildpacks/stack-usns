@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5462-1: Ruby vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5462-1",
+        "cves": null,
+        "affected_packages": [
+            "ruby2.5",
+            "libruby2.5"
+        ]
+    },
+    {
         "title": "USN-5461-1: FreeRDP vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5461-1",
         "cves": null,
