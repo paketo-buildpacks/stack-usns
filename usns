@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5461-1: FreeRDP vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5461-1",
+        "cves": null,
+        "affected_packages": [
+            "libfreerdp-server2-2",
+            "libfreerdp-client2-2"
+        ]
+    },
+    {
         "title": "USN-5460-1: Vim vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5460-1",
         "cves": null,
