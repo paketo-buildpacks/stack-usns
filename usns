@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5462-2: Ruby vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5462-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5462-1: Ruby vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5462-1",
         "cves": null,
