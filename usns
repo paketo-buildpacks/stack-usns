@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5463-1: NTFS-3G vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5463-1",
+        "cves": null,
+        "affected_packages": [
+            "ntfs-3g"
+        ]
+    },
+    {
         "title": "USN-5462-2: Ruby vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5462-2",
         "cves": null,
