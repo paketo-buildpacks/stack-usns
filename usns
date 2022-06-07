@@ -1,5 +1,15 @@
 [
     {
+        "title": "USN-5464-1: E2fsprogs vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5464-1",
+        "cves": null,
+        "affected_packages": [
+            "e2fsprogs",
+            "e2fsck-static",
+            "fuse2fs"
+        ]
+    },
+    {
         "title": "USN-5463-1: NTFS-3G vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5463-1",
         "cves": null,
