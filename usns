@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5473-1: ca-certificates update",
+        "link": "https://ubuntu.com/security/notices/USN-5473-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1976631",
+                "link": "https://launchpad.net/bugs/1976631",
+                "description": "Update to 20211016 bundle"
+            }
+        ],
+        "affected_packages": [
+            "ca-certificates"
+        ]
+    },
+    {
         "title": "USN-5471-1: Linux kernel (OEM) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5471-1",
         "cves": null,
@@ -87,7 +101,7 @@
         "affected_packages": []
     },
     {
-        "title": "USN-5464-1: E2fsprogs vulnerability",
+        "title": "USN-5464-1: e2fsprogs vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5464-1",
         "cves": null,
         "affected_packages": [
