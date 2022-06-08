@@ -1,5 +1,68 @@
 [
     {
+        "title": "USN-5467-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5467-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-5.4.0-1076-oracle",
+            "linux-image-generic-hwe-18.04",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-oem",
+            "linux-image-aws",
+            "linux-image-raspi-hwe-18.04",
+            "linux-image-ibm",
+            "linux-image-oem-osp1",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-5.4.0-1026-ibm",
+            "linux-image-5.4.0-1083-azure",
+            "linux-image-5.4.0-117-generic-lpae",
+            "linux-image-gkeop-5.4",
+            "linux-image-azure",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-5.4.0-117-generic",
+            "linux-image-5.4.0-117-lowlatency",
+            "linux-image-5.4.0-1065-raspi",
+            "linux-image-oracle",
+            "linux-image-5.4.0-1046-gkeop",
+            "linux-image-5.4.0-1078-aws",
+            "linux-image-5.4.0-1074-gke",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-gke-5.4"
+        ]
+    },
+    {
+        "title": "USN-5466-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5466-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-4.15.0-1133-aws",
+            "linux-image-4.15.0-1119-kvm",
+            "linux-image-virtual",
+            "linux-image-4.15.0-184-generic-lpae",
+            "linux-image-aws-lts-18.04",
+            "linux-image-generic",
+            "linux-image-oracle-lts-18.04",
+            "linux-image-snapdragon",
+            "linux-image-4.15.0-1142-azure",
+            "linux-image-raspi2",
+            "linux-image-azure-lts-18.04",
+            "linux-image-generic-lpae",
+            "linux-image-4.15.0-184-lowlatency",
+            "linux-image-4.15.0-1132-snapdragon",
+            "linux-image-4.15.0-1098-oracle",
+            "linux-image-4.15.0-1114-raspi2",
+            "linux-image-kvm",
+            "linux-image-4.15.0-184-generic",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
+        "title": "USN-5465-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5465-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5464-1: E2fsprogs vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5464-1",
         "cves": null,
