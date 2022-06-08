@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-5471-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5471-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5470-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5470-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5469-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5469-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5468-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5468-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5467-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5467-1",
         "cves": null,
