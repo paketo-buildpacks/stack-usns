@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5396-2: Ghostscript vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5396-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5473-1: ca-certificates update",
         "link": "https://ubuntu.com/security/notices/USN-5473-1",
         "cves": [
