@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5474-1: Varnish Cache vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5474-1",
+        "cves": null,
+        "affected_packages": [
+            "varnish",
+            "libvarnishapi1"
+        ]
+    },
+    {
         "title": "USN-5396-2: Ghostscript vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5396-2",
         "cves": null,
