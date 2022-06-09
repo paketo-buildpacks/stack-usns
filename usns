@@ -4,18 +4,18 @@
         "link": "https://ubuntu.com/security/notices/USN-5472-1",
         "cves": null,
         "affected_packages": [
-            "libavutil55",
-            "libavresample3",
-            "libswresample2",
             "libswscale4",
             "libpostproc54",
             "libavdevice57",
             "libavformat57",
+            "libavutil55",
             "libavfilter-extra6",
+            "libavresample3",
             "libavfilter6",
             "libavcodec-extra57",
             "libavcodec57",
-            "ffmpeg"
+            "ffmpeg",
+            "libswresample2"
         ]
     },
     {
