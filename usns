@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-5472-1: FFmpeg vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5472-1",
+        "cves": null,
+        "affected_packages": [
+            "libavutil55",
+            "libavresample3",
+            "libswresample2",
+            "libswscale4",
+            "libpostproc54",
+            "libavdevice57",
+            "libavformat57",
+            "libavfilter-extra6",
+            "libavfilter6",
+            "libavcodec-extra57",
+            "libavcodec57",
+            "ffmpeg"
+        ]
+    },
+    {
         "title": "USN-5474-1: Varnish Cache vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5474-1",
         "cves": null,
