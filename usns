@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5475-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5475-1",
+        "cves": null,
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5472-1: FFmpeg vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5472-1",
         "cves": null,
