@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-5359-2: rsync vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5359-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5476-1: Liblouis vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5476-1",
+        "cves": null,
+        "affected_packages": [
+            "liblouis-bin",
+            "liblouis14"
+        ]
+    },
+    {
         "title": "USN-5475-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5475-1",
         "cves": null,
