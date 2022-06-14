@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5478-1: util-linux vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5478-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5477-1: ncurses vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5477-1",
         "cves": null,
