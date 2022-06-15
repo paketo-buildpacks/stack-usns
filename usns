@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-5481-1: BlueZ vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5481-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1977968",
+                "link": "https://launchpad.net/bugs/1977968",
+                "description": "Security update tracking bug"
+            }
+        ],
+        "affected_packages": [
+            "libbluetooth3",
+            "bluez"
+        ]
+    },
+    {
         "title": "USN-5479-1: PHP vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5479-1",
         "cves": null,
