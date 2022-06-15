@@ -1,5 +1,18 @@
 [
     {
+        "title": "USN-5479-1: PHP vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5479-1",
+        "cves": null,
+        "affected_packages": [
+            "php7.2-fpm",
+            "php7.2-cli",
+            "libapache2-mod-php7.2",
+            "php7.2-mysql",
+            "php7.2-pgsql",
+            "php7.2-cgi"
+        ]
+    },
+    {
         "title": "USN-5478-1: util-linux vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5478-1",
         "cves": null,
