@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5483-1: Exempi vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5483-1",
+        "cves": null,
+        "affected_packages": [
+            "exempi",
+            "libexempi3"
+        ]
+    },
+    {
         "title": "LSN-0087-1: Kernel Live Patch Security Notice",
         "link": "https://ubuntu.com/security/notices/LSN-0087-1",
         "cves": null,
