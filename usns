@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5482-1: SPIP vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5482-1",
+        "cves": null,
+        "affected_packages": [
+            "spip"
+        ]
+    },
+    {
         "title": "USN-5483-1: Exempi vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5483-1",
         "cves": null,
