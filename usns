@@ -1,5 +1,61 @@
 [
     {
+        "title": "USN-5485-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5485-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-5.4.0-1076-gke",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-virtual",
+            "linux-image-aws-lts-18.04",
+            "linux-image-aws",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-gkeop-5.4",
+            "linux-image-azure",
+            "linux-image-dell300x",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-gke-5.4",
+            "linux-image-kvm",
+            "linux-image-lowlatency",
+            "linux-image-4.15.0-1130-gcp",
+            "linux-image-4.15.0-1145-azure",
+            "linux-image-5.4.0-1028-ibm",
+            "linux-image-5.4.0-1080-aws",
+            "linux-image-oem-osp1",
+            "linux-image-5.4.0-1048-gkeop",
+            "linux-image-5.4.0-120-generic",
+            "linux-image-gcp",
+            "linux-image-5.4.0-120-lowlatency",
+            "linux-image-generic-lpae",
+            "linux-image-4.15.0-1122-kvm",
+            "linux-image-generic-hwe-18.04",
+            "linux-image-oem",
+            "linux-image-ibm",
+            "linux-image-5.4.0-1080-gcp",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-5.4.0-1085-azure",
+            "linux-image-azure-lts-18.04",
+            "linux-image-4.15.0-1048-dell300x",
+            "linux-image-oracle",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-4.15.0-187-lowlatency",
+            "linux-image-4.15.0-1136-aws",
+            "linux-image-5.4.0-1078-oracle",
+            "linux-image-generic",
+            "linux-image-oracle-lts-18.04",
+            "linux-image-5.4.0-120-generic-lpae",
+            "linux-image-4.15.0-187-generic-lpae",
+            "linux-image-4.15.0-187-generic",
+            "linux-image-4.15.0-1101-oracle"
+        ]
+    },
+    {
+        "title": "USN-5484-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5484-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5482-1: SPIP vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5482-1",
         "cves": null,
@@ -29,7 +85,7 @@
             {
                 "title": "https://launchpad.net/bugs/1977968",
                 "link": "https://launchpad.net/bugs/1977968",
-                "description": ""
+                "description": "Security update tracking bug"
             }
         ],
         "affected_packages": [
