@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5487-1: Apache HTTP Server vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5487-1",
+        "cves": null,
+        "affected_packages": [
+            "apache2",
+            "apache2-bin"
+        ]
+    },
+    {
         "title": "USN-5486-1: Intel Microcode vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5486-1",
         "cves": null,
