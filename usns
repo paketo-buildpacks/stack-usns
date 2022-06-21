@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5490-1: Protocol Buffers vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5490-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5489-1: QEMU vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5489-1",
         "cves": null,
