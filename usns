@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-5489-1: QEMU vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5489-1",
+        "cves": null,
+        "affected_packages": [
+            "qemu-system-misc",
+            "qemu-system-s390x",
+            "qemu-system",
+            "qemu-system-x86",
+            "qemu-system-arm",
+            "qemu-system-sparc",
+            "qemu-system-ppc",
+            "qemu-system-mips"
+        ]
+    },
+    {
+        "title": "USN-5488-1: OpenSSL vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5488-1",
+        "cves": null,
+        "affected_packages": [
+            "openssl",
+            "openssl1.0"
+        ]
+    },
+    {
         "title": "USN-5487-1: Apache HTTP Server vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5487-1",
         "cves": null,
