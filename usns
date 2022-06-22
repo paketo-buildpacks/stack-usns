@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5491-1: Squid vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5491-1",
+        "cves": null,
+        "affected_packages": [
+            "squid"
+        ]
+    },
+    {
         "title": "USN-5490-1: Protocol Buffers vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5490-1",
         "cves": null,
