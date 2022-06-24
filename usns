@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5492-1: Vim vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5492-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5487-3: Apache HTTP Server regression",
         "link": "https://ubuntu.com/security/notices/USN-5487-3",
         "cves": [
