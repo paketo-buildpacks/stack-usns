@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5493-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5493-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-4.15.0-188-generic-lpae",
+            "linux-image-virtual",
+            "linux-image-generic",
+            "linux-image-4.15.0-188-lowlatency",
+            "linux-image-4.15.0-188-generic",
+            "linux-image-generic-lpae",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
         "title": "USN-5492-1: Vim vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5492-1",
         "cves": null,
