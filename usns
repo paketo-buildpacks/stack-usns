@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-5494-1: SpiderMonkey JavaScript Library vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5494-1",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1978961",
+                "link": "https://launchpad.net/bugs/1978961",
+                "description": "Update mozjs91 to 91.10"
+            },
+            {
+                "title": "https://launchpad.net/bugs/1976260",
+                "link": "https://launchpad.net/bugs/1976260",
+                "description": "mozjs91 ftbfs in the jammy release pocket"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5493-1: Linux kernel vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5493-1",
         "cves": null,
