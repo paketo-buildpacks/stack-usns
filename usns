@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5496-1: cloud-init vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5496-1",
+        "cves": null,
+        "affected_packages": [
+            "cloud-init"
+        ]
+    },
+    {
         "title": "USN-5495-1: curl vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5495-1",
         "cves": null,
