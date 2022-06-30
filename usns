@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5497-1: Libjpeg6b vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5497-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5496-1: cloud-init vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5496-1",
         "cves": null,
