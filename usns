@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5500-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5500-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5493-2: Linux kernel (HWE) vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5493-2",
         "cves": null,
