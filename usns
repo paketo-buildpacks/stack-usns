@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5493-2: Linux kernel (HWE) vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5493-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5485-2: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5485-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5499-1: curl vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5499-1",
         "cves": null,
