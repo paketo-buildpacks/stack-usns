@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5479-2: PHP vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5479-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5501-1: Django vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5501-1",
         "cves": null,
