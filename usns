@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5501-1: Django vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5501-1",
+        "cves": null,
+        "affected_packages": [
+            "python3-django",
+            "python-django"
+        ]
+    },
+    {
         "title": "USN-5500-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5500-1",
         "cves": null,
