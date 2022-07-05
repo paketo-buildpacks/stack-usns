@@ -1,5 +1,23 @@
 [
     {
+        "title": "USN-5503-1: GnuPG vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5503-1",
+        "cves": null,
+        "affected_packages": [
+            "gnupg",
+            "gpg",
+            "gnupg2"
+        ]
+    },
+    {
+        "title": "USN-5502-1: OpenSSL vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5502-1",
+        "cves": null,
+        "affected_packages": [
+            "libssl1.1"
+        ]
+    },
+    {
         "title": "USN-5479-2: PHP vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5479-2",
         "cves": null,
