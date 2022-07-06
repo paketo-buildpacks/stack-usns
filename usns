@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5488-2: OpenSSL vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5488-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5504-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5504-1",
         "cves": null,
