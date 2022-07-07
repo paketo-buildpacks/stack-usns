@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5505-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5505-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5488-2: OpenSSL vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5488-2",
         "cves": null,
@@ -56,7 +62,23 @@
         "title": "USN-5493-2: Linux kernel (HWE) vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5493-2",
         "cves": null,
-        "affected_packages": []
+        "affected_packages": [
+            "linux-image-oem-osp1",
+            "linux-image-generic-hwe-18.04-edge",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-generic-hwe-18.04",
+            "linux-image-5.4.0-121-lowlatency",
+            "linux-image-generic-lpae-hwe-18.04-edge",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-oem",
+            "linux-image-snapdragon-hwe-18.04-edge",
+            "linux-image-5.4.0-121-generic",
+            "linux-image-lowlatency-hwe-18.04-edge",
+            "linux-image-virtual-hwe-18.04-edge",
+            "linux-image-5.4.0-121-generic-lpae"
+        ]
     },
     {
         "title": "USN-5485-2: Linux kernel (OEM) vulnerabilities",
