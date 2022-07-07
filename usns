@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5506-1: NSS vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5506-1",
+        "cves": null,
+        "affected_packages": [
+            "libnss3"
+        ]
+    },
+    {
         "title": "USN-5505-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5505-1",
         "cves": null,
