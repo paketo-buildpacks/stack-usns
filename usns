@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5507-1: Vim vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5507-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5479-3: PHP regression",
         "link": "https://ubuntu.com/security/notices/USN-5479-3",
         "cves": null,
