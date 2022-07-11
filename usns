@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5509-1: Dovecot vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5509-1",
+        "cves": null,
+        "affected_packages": [
+            "dovecot-core"
+        ]
+    },
+    {
         "title": "USN-5507-1: Vim vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5507-1",
         "cves": null,
