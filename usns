@@ -1,5 +1,16 @@
 [
     {
+        "title": "USN-5508-1: Python LDAP vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5508-1",
+        "cves": null,
+        "affected_packages": [
+            "python3-pyldap",
+            "python-pyldap",
+            "python3-ldap",
+            "python-ldap"
+        ]
+    },
+    {
         "title": "USN-5509-1: Dovecot vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5509-1",
         "cves": null,
