@@ -1,5 +1,16 @@
 [
     {
+        "title": "USN-5510-1: X.Org X Server vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5510-1",
+        "cves": null,
+        "affected_packages": [
+            "xserver-xorg-core",
+            "xwayland",
+            "xwayland-hwe-18.04",
+            "xserver-xorg-core-hwe-18.04"
+        ]
+    },
+    {
         "title": "USN-5503-2: GnuPG vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5503-2",
         "cves": null,
