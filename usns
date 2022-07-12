@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5503-2: GnuPG vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5503-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5508-1: Python LDAP vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5508-1",
         "cves": null,
