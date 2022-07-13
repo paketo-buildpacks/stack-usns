@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5511-1: Git vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5511-1",
+        "cves": null,
+        "affected_packages": [
+            "git"
+        ]
+    },
+    {
         "title": "USN-5256-1: uriparser vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5256-1",
         "cves": null,
