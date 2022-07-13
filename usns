@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5473-2: ca-certificates update",
+        "link": "https://ubuntu.com/security/notices/USN-5473-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1976631",
+                "link": "https://launchpad.net/bugs/1976631",
+                "description": "Update to 20211016 bundle"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5511-1: Git vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5511-1",
         "cves": null,
