@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5516-1: Vim vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5516-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5515-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5515-1",
         "cves": null,
