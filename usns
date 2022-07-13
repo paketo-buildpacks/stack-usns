@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5256-1: uriparser vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5256-1",
+        "cves": null,
+        "affected_packages": [
+            "liburiparser-dev",
+            "liburiparser1"
+        ]
+    },
+    {
         "title": "USN-5510-2: X.Org X Server vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5510-2",
         "cves": null,
