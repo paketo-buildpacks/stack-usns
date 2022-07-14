@@ -1,5 +1,16 @@
 [
     {
+        "title": "USN-5519-1: Python vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5519-1",
+        "cves": null,
+        "affected_packages": [
+            "python2.7",
+            "python3.6-minimal",
+            "python3.6",
+            "python2.7-minimal"
+        ]
+    },
+    {
         "title": "USN-5520-1: HTTP-Daemon vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5520-1",
         "cves": null,
