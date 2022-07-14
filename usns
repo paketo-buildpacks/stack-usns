@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5518-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5518-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5517-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5517-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5516-1: Vim vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5516-1",
         "cves": null,
