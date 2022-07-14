@@ -25,6 +25,8 @@
             "linux-image-4.15.0-1123-kvm",
             "linux-image-4.15.0-189-generic",
             "linux-image-virtual",
+            "linux-image-raspi2",
+            "linux-image-4.15.0-1049-dell300x",
             "linux-image-aws-lts-18.04",
             "linux-image-generic",
             "linux-image-4.15.0-1137-aws",
@@ -33,16 +35,16 @@
             "linux-image-4.15.0-189-lowlatency",
             "linux-image-oracle-lts-18.04",
             "linux-image-4.15.0-1133-snapdragon",
+            "linux-image-generic-lpae",
             "linux-image-snapdragon",
+            "linux-image-dell300x",
             "linux-image-4.15.0-1131-gcp",
-            "linux-image-raspi2",
             "linux-image-azure-lts-18.04",
             "linux-image-4.15.0-1115-raspi2",
             "linux-image-gcp-lts-18.04",
             "linux-image-kvm",
-            "linux-image-generic-lpae",
-            "linux-image-lowlatency",
-            "linux-image-4.15.0-1146-azure"
+            "linux-image-4.15.0-1146-azure",
+            "linux-image-lowlatency"
         ]
     },
     {
