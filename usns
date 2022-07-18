@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5522-1: WebKitGTK vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5522-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5520-2: HTTP-Daemon vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5520-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5519-1: Python vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5519-1",
         "cves": null,
