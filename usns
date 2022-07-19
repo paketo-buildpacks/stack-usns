@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5524-1: HarfBuzz vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5524-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5523-1: LibTIFF vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5523-1",
         "cves": null,
