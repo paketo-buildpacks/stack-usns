@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5526-1: PyJWT vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5526-1",
+        "cves": null,
+        "affected_packages": [
+            "python-jwt",
+            "python3-jwt"
+        ]
+    },
+    {
         "title": "USN-5524-1: HarfBuzz vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5524-1",
         "cves": null,
