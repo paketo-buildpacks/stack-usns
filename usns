@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5525-1: Apache XML Security for Java vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5525-1",
+        "cves": null,
+        "affected_packages": [
+            "libxml-security-java"
+        ]
+    },
+    {
         "title": "USN-5527-1: Checkmk vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5527-1",
         "cves": null,
