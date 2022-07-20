@@ -1,5 +1,15 @@
 [
     {
+        "title": "USN-5527-1: Checkmk vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5527-1",
+        "cves": null,
+        "affected_packages": [
+            "check-mk-multisite",
+            "check-mk-server",
+            "check-mk-livestatus"
+        ]
+    },
+    {
         "title": "USN-5526-1: PyJWT vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5526-1",
         "cves": null,
