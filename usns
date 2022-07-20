@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5528-1: FreeType vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5528-1",
+        "cves": null,
+        "affected_packages": [
+            "libfreetype6"
+        ]
+    },
+    {
         "title": "USN-5525-1: Apache XML Security for Java vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5525-1",
         "cves": null,
