@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5529-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5529-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5528-1: FreeType vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5528-1",
         "cves": null,
