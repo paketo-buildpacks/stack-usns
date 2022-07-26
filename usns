@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5532-1: Bottle vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5532-1",
+        "cves": null,
+        "affected_packages": [
+            "python3-bottle",
+            "python-bottle"
+        ]
+    },
+    {
         "title": "USN-5530-1: PHP vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5530-1",
         "cves": null,
