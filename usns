@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5533-1: Vim vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5533-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5534-1: ImageMagick vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5534-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5532-1: Bottle vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5532-1",
         "cves": null,
