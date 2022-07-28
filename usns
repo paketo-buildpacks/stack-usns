@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5537-1: MySQL vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5537-1",
+        "cves": null,
+        "affected_packages": [
+            "mysql-server-5.7"
+        ]
+    },
+    {
         "title": "USN-5536-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5536-1",
         "cves": null,
