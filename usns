@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5536-1: Firefox vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5536-1",
+        "cves": null,
+        "affected_packages": [
+            "firefox"
+        ]
+    },
+    {
         "title": "USN-5535-1: Intel Microcode vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5535-1",
         "cves": null,
