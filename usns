@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5538-1: libtirpc vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5538-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5537-1: MySQL vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5537-1",
         "cves": null,
