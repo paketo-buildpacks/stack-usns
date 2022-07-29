@@ -1,5 +1,28 @@
 [
     {
+        "title": "USN-5540-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5540-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5541-1: Linux kernel (Azure) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5541-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5539-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5539-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-gcp",
+            "linux-image-5.4.0-1078-gke",
+            "linux-image-gke-5.4",
+            "linux-image-5.4.0-1084-gcp"
+        ]
+    },
+    {
         "title": "USN-5537-2: MySQL vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5537-2",
         "cves": null,
