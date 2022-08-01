@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5542-1: Samba vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5542-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5540-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5540-1",
         "cves": null,
