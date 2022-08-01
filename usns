@@ -1,5 +1,16 @@
 [
     {
+        "title": "USN-5543-1: Net-SNMP vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5543-1",
+        "cves": null,
+        "affected_packages": [
+            "libsnmp-perl",
+            "snmp",
+            "libsnmp30",
+            "snmpd"
+        ]
+    },
+    {
         "title": "USN-5542-1: Samba vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5542-1",
         "cves": null,
