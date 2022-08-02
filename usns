@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5463-2: NTFS-3G vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5463-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5544-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5544-1",
         "cves": null,
