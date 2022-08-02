@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5545-1: Linux kernel (OEM) vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5545-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5463-2: NTFS-3G vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5463-2",
         "cves": null,
