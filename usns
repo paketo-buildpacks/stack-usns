@@ -1,5 +1,25 @@
 [
     {
+        "title": "USN-5547-1: NVIDIA graphics drivers vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5547-1",
+        "cves": null,
+        "affected_packages": [
+            "xserver-xorg-video-nvidia-450-server",
+            "xserver-xorg-video-nvidia-460",
+            "xserver-xorg-video-nvidia-465",
+            "xserver-xorg-video-nvidia-510-server",
+            "xserver-xorg-video-nvidia-510",
+            "xserver-xorg-video-nvidia-470-server",
+            "xserver-xorg-video-nvidia-390",
+            "xserver-xorg-video-nvidia-440-server",
+            "xserver-xorg-video-nvidia-515-server",
+            "xserver-xorg-video-nvidia-515",
+            "xserver-xorg-video-nvidia-470",
+            "xserver-xorg-video-nvidia-460-server",
+            "xserver-xorg-video-nvidia-495"
+        ]
+    },
+    {
         "title": "USN-5545-1: Linux kernel (OEM) vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5545-1",
         "cves": null,
