@@ -1,5 +1,34 @@
 [
     {
+        "title": "USN-5546-2: OpenJDK 8 vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5546-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5551-1: mod-wsgi vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5551-1",
+        "cves": null,
+        "affected_packages": [
+            "libapache2-mod-wsgi",
+            "libapache2-mod-wsgi-py3"
+        ]
+    },
+    {
+        "title": "USN-5550-1: GnuTLS vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5550-1",
+        "cves": null,
+        "affected_packages": [
+            "libgnutls30"
+        ]
+    },
+    {
+        "title": "USN-5549-1: Django vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5549-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5546-1: OpenJDK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5546-1",
         "cves": null,
