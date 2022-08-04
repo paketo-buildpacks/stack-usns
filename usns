@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-5546-1: OpenJDK vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5546-1",
+        "cves": null,
+        "affected_packages": [
+            "openjdk-8-jre-headless",
+            "openjdk-8-jre",
+            "openjdk-11-jdk",
+            "openjdk-17-jre-headless",
+            "openjdk-17-jre",
+            "openjdk-17-jdk",
+            "openjdk-17-jre-zero",
+            "openjdk-8-jre-zero",
+            "openjdk-8-jdk",
+            "openjdk-11-jre-zero",
+            "openjdk-11-jre-headless",
+            "openjdk-11-jre"
+        ]
+    },
+    {
         "title": "USN-5547-1: NVIDIA graphics drivers vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5547-1",
         "cves": null,
