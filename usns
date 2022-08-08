@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5552-1: phpLiteAdmin vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5552-1",
+        "cves": null,
+        "affected_packages": [
+            "phpliteadmin"
+        ]
+    },
+    {
         "title": "USN-5548-1: libxml2 vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5548-1",
         "cves": null,
