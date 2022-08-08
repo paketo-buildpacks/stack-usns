@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5553-1: libjpeg-turbo vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5553-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5554-1: GDK-PixBuf vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5554-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5552-1: phpLiteAdmin vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5552-1",
         "cves": null,
