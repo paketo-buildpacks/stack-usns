@@ -1,5 +1,25 @@
 [
     {
+        "title": "USN-5567-1: Linux kernel (OEM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5567-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5566-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5566-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5563-1: http-parser vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5563-1",
+        "cves": null,
+        "affected_packages": [
+            "libhttp-parser2.7.1"
+        ]
+    },
+    {
         "title": "USN-5565-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5565-1",
         "cves": null,
