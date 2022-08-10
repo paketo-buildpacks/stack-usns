@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5564-1: Linux kernel (Intel IoTG) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5564-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5562-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5562-1",
         "cves": null,
