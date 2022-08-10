@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5559-1: Moment.js vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5559-1",
+        "cves": null,
+        "affected_packages": [
+            "node-moment",
+            "libjs-moment"
+        ]
+    },
+    {
         "title": "USN-5561-1: GNOME Web vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5561-1",
         "cves": null,
