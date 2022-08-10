@@ -1,5 +1,35 @@
 [
     {
+        "title": "USN-5560-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5560-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-4.15.0-1134-gcp",
+            "linux-image-4.15.0-1149-azure",
+            "linux-image-virtual",
+            "linux-image-aws-lts-18.04",
+            "linux-image-generic",
+            "linux-image-oracle-lts-18.04",
+            "linux-image-4.15.0-191-lowlatency",
+            "linux-image-4.15.0-1051-dell300x",
+            "linux-image-4.15.0-1135-snapdragon",
+            "linux-image-4.15.0-1125-kvm",
+            "linux-image-4.15.0-1139-aws",
+            "linux-image-dell300x",
+            "linux-image-snapdragon",
+            "linux-image-raspi2",
+            "linux-image-azure-lts-18.04",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-4.15.0-1117-raspi2",
+            "linux-image-kvm",
+            "linux-image-4.15.0-191-generic",
+            "linux-image-generic-lpae",
+            "linux-image-4.15.0-1104-oracle",
+            "linux-image-lowlatency",
+            "linux-image-4.15.0-191-generic-lpae"
+        ]
+    },
+    {
         "title": "USN-5558-1: libcdio vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5558-1",
         "cves": null,
