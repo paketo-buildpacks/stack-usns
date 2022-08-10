@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5557-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5557-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5555-1: GStreamer Good Plugins vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5555-1",
         "cves": null,
