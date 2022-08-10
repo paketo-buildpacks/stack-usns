@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5560-2: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5560-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5560-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5560-1",
         "cves": null,
