@@ -1,5 +1,38 @@
 [
     {
+        "title": "USN-5562-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5562-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-generic-hwe-18.04",
+            "linux-image-5.4.0-1083-aws",
+            "linux-image-5.4.0-1068-raspi",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-oem",
+            "linux-image-5.4.0-1086-gcp",
+            "linux-image-aws",
+            "linux-image-5.4.0-1051-gkeop",
+            "linux-image-raspi-hwe-18.04",
+            "linux-image-5.4.0-124-generic-lpae",
+            "linux-image-ibm",
+            "linux-image-oem-osp1",
+            "linux-image-gke-5.4",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-5.4.0-1080-gke",
+            "linux-image-5.4.0-1031-ibm",
+            "linux-image-5.4.0-1081-oracle",
+            "linux-image-gkeop-5.4",
+            "linux-image-5.4.0-124-generic",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-5.4.0-1089-azure",
+            "linux-image-gcp",
+            "linux-image-oracle",
+            "linux-image-5.4.0-124-lowlatency",
+            "linux-image-azure",
+            "linux-image-lowlatency-hwe-18.04"
+        ]
+    },
+    {
         "title": "USN-5559-1: Moment.js vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5559-1",
         "cves": null,
