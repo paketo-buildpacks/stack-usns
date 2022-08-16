@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5569-1: Unbound vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5569-1",
+        "cves": null,
+        "affected_packages": [
+            "libunbound2",
+            "unbound"
+        ]
+    },
+    {
         "title": "USN-5568-1: WebKitGTK vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5568-1",
         "cves": null,
