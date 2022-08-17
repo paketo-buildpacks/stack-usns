@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5526-2: PyJWT regression",
+        "link": "https://ubuntu.com/security/notices/USN-5526-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1986487",
+                "link": "https://launchpad.net/bugs/1986487",
+                "description": "python3-jwt (2.3.0-1ubuntu0.1) contains pyjwt 2.4.0 metadata but install 2.3.0 library"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5569-1: Unbound vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5569-1",
         "cves": null,
