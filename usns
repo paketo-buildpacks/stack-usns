@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5573-1: rsync vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5573-1",
+        "cves": null,
+        "affected_packages": [
+            "rsync"
+        ]
+    },
+    {
         "title": "USN-5572-1: Linux kernel (AWS) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5572-1",
         "cves": null,
