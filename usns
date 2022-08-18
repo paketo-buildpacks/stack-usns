@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5572-1: Linux kernel (AWS) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5572-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5571-1: PostgreSQL vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5571-1",
+        "cves": null,
+        "affected_packages": [
+            "postgresql-10"
+        ]
+    },
+    {
         "title": "USN-5570-1: zlib vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5570-1",
         "cves": null,
