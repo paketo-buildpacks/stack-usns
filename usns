@@ -1,5 +1,16 @@
 [
     {
+        "title": "USN-5570-1: zlib vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5570-1",
+        "cves": null,
+        "affected_packages": [
+            "lib64z1",
+            "libx32z1",
+            "lib32z1",
+            "zlib1g"
+        ]
+    },
+    {
         "title": "USN-5526-2: PyJWT regression",
         "link": "https://ubuntu.com/security/notices/USN-5526-2",
         "cves": [
