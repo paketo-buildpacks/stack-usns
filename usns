@@ -1,5 +1,23 @@
 [
     {
+        "title": "USN-5575-1: Libxslt vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5575-1",
+        "cves": null,
+        "affected_packages": [
+            "libxslt1.1"
+        ]
+    },
+    {
+        "title": "USN-5574-1: Exim vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5574-1",
+        "cves": null,
+        "affected_packages": [
+            "exim4-base",
+            "exim4-daemon-heavy",
+            "exim4-daemon-light"
+        ]
+    },
+    {
         "title": "USN-5573-1: rsync vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5573-1",
         "cves": null,
