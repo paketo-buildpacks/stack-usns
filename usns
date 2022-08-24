@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5474-2: Varnish Cache regression",
+        "link": "https://ubuntu.com/security/notices/USN-5474-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5578-1: Open VM Tools vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5578-1",
         "cves": null,
