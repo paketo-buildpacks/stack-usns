@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5580-1: Linux kernel (AWS) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5580-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5579-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5579-1",
         "cves": null,
