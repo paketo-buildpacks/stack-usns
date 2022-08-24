@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5579-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5579-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5474-2: Varnish Cache regression",
         "link": "https://ubuntu.com/security/notices/USN-5474-2",
         "cves": null,
