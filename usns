@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5578-1: Open VM Tools vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5578-1",
+        "cves": null,
+        "affected_packages": [
+            "open-vm-tools"
+        ]
+    },
+    {
         "title": "USN-5577-1: Linux kernel (OEM) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5577-1",
         "cves": null,
