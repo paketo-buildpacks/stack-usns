@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5576-1: Twisted vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5576-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5575-2: Libxslt vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5575-2",
         "cves": null,
