@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5582-1: Linux kernel (Azure CVM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5582-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5581-1: Firefox vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5581-1",
         "cves": null,
