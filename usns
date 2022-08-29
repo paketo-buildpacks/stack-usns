@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5586-1: SDL vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5586-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5584-1: Schroot vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5584-1",
         "cves": null,
