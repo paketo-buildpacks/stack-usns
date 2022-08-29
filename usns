@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5584-1: Schroot vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5584-1",
+        "cves": null,
+        "affected_packages": [
+            "schroot"
+        ]
+    },
+    {
         "title": "USN-5582-1: Linux kernel (Azure CVM) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5582-1",
         "cves": null,
