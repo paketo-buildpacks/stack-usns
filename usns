@@ -1,5 +1,15 @@
 [
     {
+        "title": "USN-5585-1: Jupyter Notebook vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5585-1",
+        "cves": null,
+        "affected_packages": [
+            "python3-notebook",
+            "python-notebook",
+            "jupyter-notebook"
+        ]
+    },
+    {
         "title": "USN-5583-1: systemd vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5583-1",
         "cves": null,
