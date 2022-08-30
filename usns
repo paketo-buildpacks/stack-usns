@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5588-1: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5588-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5572-2: Linux kernel (AWS) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5572-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5585-1: Jupyter Notebook vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5585-1",
         "cves": null,
