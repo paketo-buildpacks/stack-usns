@@ -1,5 +1,16 @@
 [
     {
+        "title": "USN-5587-1: curl vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5587-1",
+        "cves": null,
+        "affected_packages": [
+            "libcurl3-gnutls",
+            "libcurl3-nss",
+            "libcurl4",
+            "curl"
+        ]
+    },
+    {
         "title": "USN-5592-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5592-1",
         "cves": null,
