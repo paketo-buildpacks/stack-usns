@@ -1,5 +1,35 @@
 [
     {
+        "title": "USN-5591-3: Linux kernel vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5591-3",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-virtual",
+            "linux-image-generic",
+            "linux-image-4.15.0-1135-gcp",
+            "linux-image-4.15.0-192-lowlatency",
+            "linux-image-snapdragon",
+            "linux-image-dell300x",
+            "linux-image-4.15.0-1150-azure",
+            "linux-image-4.15.0-192-generic-lpae",
+            "linux-image-azure-lts-18.04",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-4.15.0-1126-kvm",
+            "linux-image-4.15.0-1052-dell300x",
+            "linux-image-4.15.0-1136-snapdragon",
+            "linux-image-4.15.0-192-generic",
+            "linux-image-kvm",
+            "linux-image-generic-lpae",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
+        "title": "USN-5591-2: Linux kernel (HWE) vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5591-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5591-1: Linux kernel vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5591-1",
         "cves": null,
