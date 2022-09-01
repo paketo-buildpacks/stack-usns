@@ -1,5 +1,18 @@
 [
     {
+        "title": "USN-5592-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5592-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-5.4.0-1087-gcp",
+            "linux-image-oracle",
+            "linux-image-ibm",
+            "linux-image-5.4.0-1032-ibm",
+            "linux-image-5.4.0-1082-oracle",
+            "linux-image-gcp"
+        ]
+    },
+    {
         "title": "USN-5591-3: Linux kernel vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5591-3",
         "cves": null,
