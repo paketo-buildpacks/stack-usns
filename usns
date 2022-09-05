@@ -1,5 +1,37 @@
 [
     {
+        "title": "USN-5600-1: Linux kernel (HWE) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5600-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-generic-hwe-18.04",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-oem",
+            "linux-image-oem-osp1",
+            "linux-image-5.4.0-125-generic-lpae",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-5.4.0-125-generic",
+            "linux-image-lowlatency-hwe-18.04",
+            "linux-image-5.4.0-125-lowlatency"
+        ]
+    },
+    {
+        "title": "USN-5599-1: Linux kernel (Oracle) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5599-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5598-1: Linux kernel (Oracle) vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5598-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-oracle-lts-18.04",
+            "linux-image-4.15.0-1105-oracle"
+        ]
+    },
+    {
         "title": "USN-5597-1: Linux kernel (Oracle) vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5597-1",
         "cves": null,
