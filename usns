@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5597-1: Linux kernel (Oracle) vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5597-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5591-4: Linux kernel (AWS) vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5591-4",
         "cves": null,
