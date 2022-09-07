@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-4976-2: Dnsmasq vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-4976-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5600-1: Linux kernel (HWE) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5600-1",
         "cves": null,
