@@ -1,5 +1,20 @@
 [
     {
+        "title": "USN-5603-1: Linux kernel (Raspberry Pi) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5603-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-raspi-hwe-18.04",
+            "linux-image-5.4.0-1069-raspi"
+        ]
+    },
+    {
+        "title": "USN-5602-1: Linux kernel (Raspberry Pi) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5602-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-4976-2: Dnsmasq vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-4976-2",
         "cves": null,
