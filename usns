@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5605-1: Linux kernel (Azure CVM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5605-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5604-1: LibTIFF vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5604-1",
         "cves": null,
