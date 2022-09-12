@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5606-1: poppler vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5606-1",
+        "cves": null,
+        "affected_packages": [
+            "libpoppler73",
+            "poppler-utils"
+        ]
+    },
+    {
         "title": "USN-5523-2: LibTIFF vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5523-2",
         "cves": null,
