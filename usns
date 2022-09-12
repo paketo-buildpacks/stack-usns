@@ -1,5 +1,16 @@
 [
     {
+        "title": "USN-5523-2: LibTIFF vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5523-2",
+        "cves": null,
+        "affected_packages": [
+            "libtiff-opengl",
+            "libtiffxx5",
+            "libtiff5",
+            "libtiff-tools"
+        ]
+    },
+    {
         "title": "USN-5605-1: Linux kernel (Azure CVM) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5605-1",
         "cves": null,
