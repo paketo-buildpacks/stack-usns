@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5608-1: DPDK vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5608-1",
+        "cves": null,
+        "affected_packages": [
+            "dpdk"
+        ]
+    },
+    {
+        "title": "USN-5607-1: GDK-PixBuf vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5607-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5606-1: poppler vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5606-1",
         "cves": null,
