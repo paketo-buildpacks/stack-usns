@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5609-1: .NET 6 vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5609-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5608-1: DPDK vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5608-1",
         "cves": null,
