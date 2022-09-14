@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5583-2: systemd regression",
+        "link": "https://ubuntu.com/security/notices/USN-5583-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1988119",
+                "link": "https://launchpad.net/bugs/1988119",
+                "description": "systemd-udevd: Run net_setup_link on 'change' uevents to prevent DNS outages on Azure"
+            }
+        ],
+        "affected_packages": [
+            "systemd"
+        ]
+    },
+    {
         "title": "USN-5609-1: .NET 6 vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5609-1",
         "cves": null,
