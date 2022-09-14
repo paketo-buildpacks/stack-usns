@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5611-1: WebKitGTK vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5611-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5610-1: rust-regex vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5610-1",
         "cves": null,
