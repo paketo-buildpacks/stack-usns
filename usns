@@ -1,5 +1,24 @@
 [
     {
+        "title": "USN-5615-1: SQLite vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5615-1",
+        "cves": null,
+        "affected_packages": [
+            "sqlite3"
+        ]
+    },
+    {
+        "title": "USN-5614-1: Wayland vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5614-1",
+        "cves": null,
+        "affected_packages": [
+            "libwayland-egl1",
+            "libwayland-bin",
+            "libwayland-server0",
+            "libwayland-client0"
+        ]
+    },
+    {
         "title": "USN-5613-1: Vim vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5613-1",
         "cves": null,
