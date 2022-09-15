@@ -1,5 +1,29 @@
 [
     {
+        "title": "USN-5612-1: Intel Microcode vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5612-1",
+        "cves": null,
+        "affected_packages": [
+            "intel-microcode"
+        ]
+    },
+    {
+        "title": "USN-5606-2: poppler regression",
+        "link": "https://ubuntu.com/security/notices/USN-5606-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1989515",
+                "link": "https://launchpad.net/bugs/1989515",
+                "description": "\"goo/GooCheckedOps.h\" is missing in 0.62.0-2ubuntu2.13 on Ubuntu Bionic"
+            }
+        ],
+        "affected_packages": [
+            "libpoppler73",
+            "libpoppler-private-dev",
+            "poppler-utils"
+        ]
+    },
+    {
         "title": "USN-5611-1: WebKitGTK vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5611-1",
         "cves": null,
