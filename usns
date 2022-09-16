@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5616-1: Linux kernel (Intel IoTG) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5616-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5615-1: SQLite vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5615-1",
         "cves": null,
