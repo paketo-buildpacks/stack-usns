@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5617-1: Xen vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5617-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5613-2: Vim regression",
         "link": "https://ubuntu.com/security/notices/USN-5613-2",
         "cves": [
