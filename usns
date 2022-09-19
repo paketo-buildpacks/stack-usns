@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5613-2: Vim regression",
+        "link": "https://ubuntu.com/security/notices/USN-5613-2",
+        "cves": [
+            {
+                "title": "https://launchpad.net/bugs/1989973",
+                "link": "https://launchpad.net/bugs/1989973",
+                "description": "focal: Vim 2:8.1.2269-1ubuntu5.8 failed to build for arm32, makes it uninstallable without explicit version"
+            }
+        ],
+        "affected_packages": []
+    },
+    {
         "title": "USN-5616-1: Linux kernel (Intel IoTG) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5616-1",
         "cves": null,
