@@ -1,5 +1,16 @@
 [
     {
+        "title": "USN-5619-1: LibTIFF vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5619-1",
+        "cves": null,
+        "affected_packages": [
+            "libtiff-opengl",
+            "libtiffxx5",
+            "libtiff5",
+            "libtiff-tools"
+        ]
+    },
+    {
         "title": "USN-5617-1: Xen vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5617-1",
         "cves": null,
