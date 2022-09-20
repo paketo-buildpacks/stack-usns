@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5618-1: Ghostscript vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5618-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5619-1: LibTIFF vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5619-1",
         "cves": null,
