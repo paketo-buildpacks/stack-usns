@@ -1,5 +1,42 @@
 [
     {
+        "title": "USN-5623-1: Linux kernel (HWE) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5623-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5624-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5624-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5622-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5622-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-generic-hwe-18.04",
+            "linux-image-snapdragon-hwe-18.04",
+            "linux-image-oem",
+            "linux-image-aws",
+            "linux-image-ibm",
+            "linux-image-oem-osp1",
+            "linux-image-5.4.0-1091-azure",
+            "linux-image-generic-lpae-hwe-18.04",
+            "linux-image-5.4.0-1085-aws",
+            "linux-image-5.4.0-126-lowlatency",
+            "linux-image-azure",
+            "linux-image-virtual-hwe-18.04",
+            "linux-image-5.4.0-126-generic",
+            "linux-image-5.4.0-126-generic-lpae",
+            "linux-image-oracle",
+            "linux-image-5.4.0-1033-ibm",
+            "linux-image-5.4.0-1083-oracle",
+            "linux-image-lowlatency-hwe-18.04"
+        ]
+    },
+    {
         "title": "USN-5621-1: Linux kernel vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5621-1",
         "cves": null,
