@@ -27,7 +27,7 @@
         "link": "https://ubuntu.com/security/notices/USN-5613-2",
         "cves": [
             {
-                "title": "https://launchpad.net/bugs/1989973",
+                "title": "https://launchpad.net/bugs/1989973</a>",
                 "link": "https://launchpad.net/bugs/1989973",
                 "description": "focal: Vim 2:8.1.2269-1ubuntu5.8 failed to build for arm32, makes it uninstallable without explicit version"
             }
@@ -80,7 +80,7 @@
         "link": "https://ubuntu.com/security/notices/USN-5606-2",
         "cves": [
             {
-                "title": "https://launchpad.net/bugs/1989515",
+                "title": "https://launchpad.net/bugs/1989515</a>",
                 "link": "https://launchpad.net/bugs/1989515",
                 "description": "\"goo/GooCheckedOps.h\" is missing in 0.62.0-2ubuntu2.13 on Ubuntu Bionic"
             }
