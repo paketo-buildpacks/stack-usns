@@ -1,5 +1,35 @@
 [
     {
+        "title": "USN-5621-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5621-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-dell300x",
+            "linux-image-virtual",
+            "linux-image-4.15.0-1136-gcp",
+            "linux-image-aws-lts-18.04",
+            "linux-image-4.15.0-193-lowlatency",
+            "linux-image-4.15.0-1119-raspi2",
+            "linux-image-4.15.0-1137-snapdragon",
+            "linux-image-oracle-lts-18.04",
+            "linux-image-raspi2",
+            "linux-image-snapdragon",
+            "linux-image-4.15.0-1053-dell300x",
+            "linux-image-4.15.0-193-generic",
+            "linux-image-azure-lts-18.04",
+            "linux-image-kvm",
+            "linux-image-4.15.0-193-generic-lpae",
+            "linux-image-4.15.0-1106-oracle",
+            "linux-image-gcp-lts-18.04",
+            "linux-image-4.15.0-1141-aws",
+            "linux-image-4.15.0-1127-kvm",
+            "linux-image-generic",
+            "linux-image-generic-lpae",
+            "linux-image-4.15.0-1151-azure",
+            "linux-image-lowlatency"
+        ]
+    },
+    {
         "title": "USN-5618-1: Ghostscript vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5618-1",
         "cves": null,
