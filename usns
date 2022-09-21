@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5626-2: Bind vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5626-2",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5626-1: Bind vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5626-1",
         "cves": null,
