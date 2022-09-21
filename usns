@@ -1,5 +1,22 @@
 [
     {
+        "title": "USN-5626-1: Bind vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5626-1",
+        "cves": null,
+        "affected_packages": [
+            "bind9"
+        ]
+    },
+    {
+        "title": "USN-5625-1: Mako vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5625-1",
+        "cves": null,
+        "affected_packages": [
+            "python-mako",
+            "python3-mako"
+        ]
+    },
+    {
         "title": "USN-5623-1: Linux kernel (HWE) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5623-1",
         "cves": null,
