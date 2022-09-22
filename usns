@@ -1,5 +1,32 @@
 [
     {
+        "title": "USN-5634-1: Linux kernel (OEM) vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5634-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5633-1: Linux kernel vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5633-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5632-1: OAuthLib vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5632-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5631-1: libjpeg-turbo vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5631-1",
+        "cves": null,
+        "affected_packages": [
+            "libturbojpeg",
+            "libjpeg-turbo8"
+        ]
+    },
+    {
         "title": "USN-5630-1: Linux kernel (Raspberry Pi) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5630-1",
         "cves": null,
