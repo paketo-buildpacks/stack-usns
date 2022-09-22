@@ -1,5 +1,14 @@
 [
     {
+        "title": "USN-5630-1: Linux kernel (Raspberry Pi) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5630-1",
+        "cves": null,
+        "affected_packages": [
+            "linux-image-raspi-hwe-18.04",
+            "linux-image-5.4.0-1070-raspi"
+        ]
+    },
+    {
         "title": "USN-5628-1: etcd vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5628-1",
         "cves": null,
