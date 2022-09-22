@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5629-1: Python vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5629-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5634-1: Linux kernel (OEM) vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5634-1",
         "cves": null,
