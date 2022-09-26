@@ -1,5 +1,13 @@
 [
     {
+        "title": "USN-5636-1: SoS vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5636-1",
+        "cves": null,
+        "affected_packages": [
+            "sosreport"
+        ]
+    },
+    {
         "title": "USN-5635-1: Linux kernel (GKE) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5635-1",
         "cves": null,
