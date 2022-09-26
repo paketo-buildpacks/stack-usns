@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5638-1: Expat vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5638-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5637-1: libvpx vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5637-1",
         "cves": null,
