@@ -1,5 +1,17 @@
 [
     {
+        "title": "USN-5640-1: Linux kernel (Oracle) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5640-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5639-1: Linux kernel (Azure CVM) vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5639-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5638-1: Expat vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5638-1",
         "cves": null,
