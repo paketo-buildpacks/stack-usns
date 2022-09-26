@@ -1,5 +1,11 @@
 [
     {
+        "title": "USN-5637-1: libvpx vulnerability",
+        "link": "https://ubuntu.com/security/notices/USN-5637-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
         "title": "USN-5636-1: SoS vulnerability",
         "link": "https://ubuntu.com/security/notices/USN-5636-1",
         "cves": null,
