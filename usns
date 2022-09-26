@@ -1,5 +1,19 @@
 [
     {
+        "title": "USN-5642-1: WebKitGTK vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5642-1",
+        "cves": null,
+        "affected_packages": []
+    },
+    {
+        "title": "USN-5641-1: Squid vulnerabilities",
+        "link": "https://ubuntu.com/security/notices/USN-5641-1",
+        "cves": null,
+        "affected_packages": [
+            "squid"
+        ]
+    },
+    {
         "title": "USN-5640-1: Linux kernel (Oracle) vulnerabilities",
         "link": "https://ubuntu.com/security/notices/USN-5640-1",
         "cves": null,
